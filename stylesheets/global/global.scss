@@ -1,0 +1,265 @@
+
+// -------------------------------------
+// Row Structure: Global
+// -------------------------------------
+
+
+
+
+// Row Variables
+// -----------------------------
+
+
+// Background
+$row-background-color: #2B3D4B;
+
+
+// Height
+$row-height-default: auto;
+$row-height-small: 300px;
+$row-height-medium: 600px;
+$row-height-large: 100vh;
+
+
+// Width
+$row-width-small: 968px;
+$row-width-medium: 1200px;
+$row-width-large: 100%;
+
+
+// Spacing
+$row-padding: 0;
+
+
+
+
+// Rows
+// -----------------------------
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    position: relative;
+
+    @media #{$tablet-860px} {
+        display: block;
+    }
+}
+
+
+
+
+// Column Variables
+// -----------------------------
+
+
+// Spacing
+$column-gutter: 0;
+
+
+
+
+// Columns
+// -----------------------------
+
+.column {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+
+    &-25 {
+        width: 25%;
+    }
+
+
+    &-30 {
+        width: 30%;
+
+        @media #{$desktop-1400px} {
+            width: 40%;
+        }
+    }
+
+
+    &-40 {
+        width: 40%;
+    }
+
+
+    &-50 {
+        width: 50%;
+    }
+
+
+    &-60 {
+        width: 60%;
+    }
+
+
+    &-70 {
+        width: 70%;
+
+        @media #{$desktop-1400px} {
+            width: 60%;
+        }
+    }
+
+
+    &-80 {
+        width: 80%;
+    }
+
+
+    &-90 {
+        width: 90%;
+    }
+
+
+    &-100 {
+        width: 100%;
+    }
+
+
+    @media #{$tablet-860px} {
+        width: 100%!important;
+    }
+}
+
+
+
+
+// Column Alignment
+// -----------------------------
+
+
+// Top Alignment
+.top {
+
+    &-left {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+    &-middle {
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    &-right {
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+}
+
+
+// Center alignment
+.center {
+
+    &-left {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+    &-middle {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    &-right {
+        align-items: flex-end;
+        justify-content: center;
+    }
+}
+
+
+// Bottom Alignment
+.bottom {
+
+    &-left {
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+
+    &-center {
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+    &--right {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}
+
+
+
+
+// Widget Variables
+// -----------------------------
+
+
+// Background
+$widget-background-color: white;
+
+
+
+
+// Widgets
+// -----------------------------
+
+.widget {
+    margin: 20px;
+    position: relative;
+
+
+    &+ .widget {
+        margin-top: 25px;
+    }
+
+
+    &-content * {
+        max-width: 680px;
+    }
+
+
+    &-image {
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+    }
+}
+
+
+// Image Widget
+.widget-image {
+
+
+    &.cover {
+        background-size: cover;
+    }
+
+
+    &.contain {
+        background-size: contain;
+    }
+}

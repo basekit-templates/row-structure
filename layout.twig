@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.seoLang }}">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ page.title }}</title>
+        <meta name="keywords" content="{{ page.keywords }}" />
+        <meta name="description" content="{{ page.description }}" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- TypeKit -->
+        <script src="https://use.typekit.net/oqr1dvv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        {% include basekit.headScript %}
+
+    </head>
+
+    <body class="{{ page.backgroundClass }}">
+
+        {% block content %}
+        {% endblock %}
+
+        {% include basekit.bodyScript %}
+
+        {% block scripts %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,85 @@
+
+// -------------------------------------
+// Content Design Two: Stylesheet
+// -------------------------------------
+
+
+.row-design-two {
+
+
+    // Row Styling
+    // -----------------------------
+
+    &.row {
+        background-color: white;
+        padding: $row-padding;
+        height: $row-height-default;
+        width: $row-width-large;
+    }
+
+
+
+
+    // Column Styling
+    // -----------------------------
+
+    .column {
+        margin-right: $column-gutter;
+    }
+
+
+
+
+    // Widget Styling
+    // -----------------------------
+
+    .widget {
+
+        h2,
+        p {
+            padding: 30px 30px;
+            text-align: center;
+        }
+
+
+        &-image {
+            min-height: 350px;
+            height: 50vh;
+            width: 100%;
+
+            @media #{$tablet-860px} {
+                height: 50vh;
+            }
+        }
+
+
+        &-compound-content {
+            background-color: $widget-background-color;
+            box-shadow: 0 0 40px rgba(0,0,0, 0.3);
+            padding: 45px;
+
+            @media #{$tablet-860px} {
+                margin: 0 30px 40px;
+            }
+        }
+    }
+
+
+    // Widget offset value
+    .offset {
+
+
+        .widget-compound-content {
+            left: calc(#{- $row-width-large} / 4);
+
+            @media only screen and (max-width: 1024px) {
+                left: calc(#{- $row-width-large} / 3);
+            }
+
+            @media #{$tablet-860px} {
+                left: initial;
+                margin-top: -30px;
+            }
+        }
+    }
+}

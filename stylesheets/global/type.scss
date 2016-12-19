@@ -1,0 +1,57 @@
+
+// -------------------------------------
+// Row Structure: Typography
+// -------------------------------------
+
+
+body {
+    color: #698193;
+    font-family: PT Serif;
+    font-weight: 400;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+// Headings
+// -----------------------------
+
+h1, h2, h3, h4, h5 {
+    color: #2B3D4B;
+    font-family: Gibson;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 42px;
+}
+
+
+h2 {
+    font-size: 34px;
+}
+
+
+h3 {
+    font-size: 28px;
+}
+
+
+h4 {
+    font-size: 24px;
+}
+
+
+p {
+    font-size: 17px;
+    margin: 0;
+
+    &+ p {
+        margin-top: 20px;
+    }
+}

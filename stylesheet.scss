@@ -8,10 +8,10 @@
 // Imports: Global
 // -----------------------------
 
-@import "stylesheets/global/normalize.scss";             // Normalize
-@import "stylesheets/global/mixins.scss";                  // Mixins
-@import "stylesheets/global/global.scss";                // Global Styles
-@import "stylesheets/global/type.scss";                  // Typography
+@import "stylesheets/framework/normalize.scss";             // Normalize
+@import "stylesheets/framework/mixins.scss";                // Mixins
+@import "stylesheets/framework/global.scss";                // Global Styles
+@import "stylesheets/framework/type.scss";                  // Typography
 
 
 
@@ -23,5 +23,9 @@
 
 
 // Content
-@import "stylesheets/content/row-design-one.scss";          // Row Design One
-@import "stylesheets/content/row-design-two.scss";          // Row Design Two
+//@import "stylesheets/rows/row-design-one.scss";          // Row Design One
+//@import "stylesheets/rows/row-design-two.scss";          // Row Design Two
+
+
+// Template
+@import "stylesheets/template/template-one.scss";              // Template Styling

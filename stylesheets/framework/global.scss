@@ -22,13 +22,21 @@ $row-height-large: 100vh;
 
 
 // Width
-$row-width-small: 968px;
+$row-width-small: 1024px;
 $row-width-medium: 1200px;
 $row-width-large: 100%;
 
 
 // Spacing
-$row-padding: 0;
+$row-padding-small: 50px;
+$row-padding-medium: 30px;
+$row-padding-large: 0;
+
+
+// Text Alignment
+$text-align-left: left;
+$text-align-center: center;
+$text-align-right: right;
 
 
 
@@ -37,13 +45,17 @@ $row-padding: 0;
 // -----------------------------
 
 .row {
-    display: flex;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    position: relative;
 
-    @media #{$tablet-860px} {
-        display: block;
+
+    .container {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        position: relative;
+
+        @media #{$tablet-860px} {
+            display: block;
+        }
     }
 }
 
@@ -55,7 +67,9 @@ $row-padding: 0;
 
 
 // Spacing
-$column-gutter: 0;
+$column-gutter-small: 20px;
+$column-gutter-medium: 40px;
+$column-gutter-large: 60px;
 
 
 
@@ -65,29 +79,42 @@ $column-gutter: 0;
 
 .column {
     display: flex;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     flex-direction: column;
     height: 100%;
     z-index: 1;
 
 
     &:first-child {
-        margin-left: 0;
+        margin-left: 0!important;
     }
 
 
     &:last-child {
-        margin-right: 0;
+        margin-right: 0!important;
+    }
+
+
+    &.offset {
+        z-index: 2;
     }
 
 
     &-25 {
         width: 25%;
+
+        @media #{$desktop-1400px} {
+            width: 30%;
+        }
     }
 
 
     &-30 {
         width: 30%;
+
+        @media #{$desktop-1400px} {
+            width: 40%;
+        }
 
         @media #{$desktop-1400px} {
             width: 40%;
@@ -121,11 +148,19 @@ $column-gutter: 0;
 
     &-80 {
         width: 80%;
+
+        @media #{$desktop-1400px} {
+            width: 70%;
+        }
     }
 
 
     &-90 {
         width: 90%;
+
+        @media #{$desktop-1400px} {
+            width: 80%;
+        }
     }
 
 

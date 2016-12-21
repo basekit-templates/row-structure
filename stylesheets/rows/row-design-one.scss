@@ -12,7 +12,7 @@
 
     &.row {
         background-color: $row-background-color;
-        padding: $row-padding;
+        padding: $row-padding-large;
         height: $row-height-large;
         width: $row-width-large;
 
@@ -50,13 +50,18 @@
         }
 
 
-        &-compound-content {
+        &-compound-content,
+        &-content {
             background-color: $widget-background-color;
             box-shadow: 0 0 40px rgba(0,0,0, 0.3);
             padding: 45px;
 
             @media #{$tablet-860px} {
                 margin: 0 30px 40px;
+            }
+
+            h2 {
+                color: #2B3D4B;
             }
         }
     }
@@ -66,7 +71,8 @@
     .offset {
 
 
-        .widget-compound-content {
+        .widget {
+            background-color: $widget-background-color;
             left: calc(#{- $row-width-large} / 4);
 
             @media only screen and (max-width: 1024px) {

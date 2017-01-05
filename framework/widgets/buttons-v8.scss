@@ -1,0 +1,53 @@
+// -------------------------
+// WIDGETS: Buttons
+// -------------------------
+
+
+
+// ---------------------
+// 1. Main Button
+// ---------------------
+
+
+// Standard
+button,
+.button {
+
+    // Font Styles
+    font-family: $font__button--font-family;
+    font-weight: $font__button--font-weight;
+    color: $color__button--text;
+    line-height: $font__button--line-height;
+    letter-spacing: $font__button--letter-spacing;
+    font-size: $font__button--font-size;
+    background-color: $color__button--background;
+
+    &:hover {
+        background-color: $color__button--background--hover;
+    }
+}
+
+
+
+
+// ------------------------
+// 5. #Click to Call Button
+// ------------------------
+
+.clicktocall__phone-number-link {
+    @media #{$mobile}, only screen and (max-width:700px) and (orientation:landscape) {
+
+        // Font Styles
+        font-family: $font__button--font-family;
+        font-weight: $font__button--font-weight;
+        color: $color__button--text;
+        line-height: $font__button--line-height;
+        letter-spacing: $font__button--letter-spacing;
+        font-size: $font__button--font-size;
+        background-color: $color__button--background;
+
+        &:hover {
+            background-color: $color__button--background--hover;
+        }
+    }
+}

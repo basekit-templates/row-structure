@@ -1,20 +1,43 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
+// -------------------------------------
+//  Framework - Resets
+// -------------------------------------
+
+
+
+
+// Zone Reset
+// -------------------------------------
+
+.bk-zone {
+    min-height: 80px;
+}
+
+
+
+//  Normalize - V5.0.0 | MIT License | github.com/necolas/normalize.css
+// -------------------------------------------------------------------------
+
 
 /* Document
    ========================================================================== */
 
 html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* Sections
@@ -23,10 +46,6 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;

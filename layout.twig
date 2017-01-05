@@ -8,22 +8,23 @@
 
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <!-- TypeKit -->
-        <script src="https://use.typekit.net/oqr1dvv.js"></script>
-        <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
         {% include basekit.headScript %}
 
     </head>
 
-    <body class="{{ page.backgroundClass }}">
+    <body>
 
         {% block content %}
         {% endblock %}
 
         {% include basekit.bodyScript %}
 
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Page Specific Scripts -->
         {% block scripts %}
         {% endblock %}
+
     </body>
 </html>

@@ -1,0 +1,32 @@
+// -------------------------
+// WIDGETS: Navigation
+// -------------------------
+
+
+
+// Navigation Text
+// ---------------
+
+.navigation-item .item-name {
+    font-family: $font__navigation--font-family;
+    font-size: $font__navigation--font-size;
+    font-weight: $font__navigation--font-weight;
+    line-height: $font__navigation--line-height;
+    color: $color__navigation--text;
+    letter-spacing: $font__navigation--letter-spacing;
+
+    &:hover {
+        color: $color__navigation--text--hover;
+    }
+}
+
+
+
+// Navigation Layout
+// -----------------
+
+
+// Dropdown Menu
+.navigation-list--children {
+    background-color: $color__body--background;
+}

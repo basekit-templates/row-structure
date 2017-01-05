@@ -1,0 +1,87 @@
+
+// -------------------------------------
+//  Columns - Grid
+// -------------------------------------
+
+
+
+
+//  Gutter Variables
+// -------------------------------------
+
+$gutter--full: 25px;
+$gutter--wide: 20px;
+$gutter--contained: 15px;
+
+
+
+
+//  Grid
+// -------------------------------------
+
+
+// Global Column Styling
+.bk-column {
+    @include box-sizing(border-box);
+    @include flex-display;
+    @include flex-direction(column);
+    @include flex(0 0 auto);
+    max-width: 100%;
+    padding-left: $gutter--full;
+    padding-right: $gutter--full;
+    height: 100%;
+    z-index: 2;
+
+
+    // Removes left sided padding from first column in a row
+    &:first-child {
+        padding-left: 0;
+    }
+
+
+    // Removes right sided padding from first column in a row
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+
+.column {
+
+
+    // Full Width
+    &--100 {
+        @include flex-basis(100%);
+    }
+
+
+    // 75% Width
+    &--75 {
+        @include flex-basis(75%);
+    }
+
+
+    // 66.66% Width
+    &--67 {
+        @include flex-basis(66.66666667%);
+    }
+
+
+    // 50% Width
+    &--50 {
+        @include flex-basis(50%);
+    }
+
+
+    // 33.33% Width Width
+    &--33 {
+        @include flex-basis(33.33333333%);
+    }
+
+
+    // 25% Width
+    &--25 {
+        @include flex-basis(25%);
+    }
+}
+

@@ -1,0 +1,21 @@
+// -------------------------
+// WIDGETS: Slideshow
+// -------------------------
+
+
+// Slideshow Images
+// ----------------
+
+.responsiveslideshow {
+
+    // Figure
+    .figure {
+        background-color: darken($color__body--background, 5%);
+    }
+
+
+    // Pagination Selected Item
+    .selected .button {
+        background-color: $color__primary;
+    }
+}

@@ -1,0 +1,9 @@
+// ------------------------------
+// WIDGETS: Divider
+// ------------------------------
+
+
+hr.rule {
+    background-color: contrast($color__body--background, lighten($color__body--background,30%), darken($color__body--background,30%));
+}
+

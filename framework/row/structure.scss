@@ -1,0 +1,53 @@
+
+// -------------------------------------
+//  Row - Structure
+// -------------------------------------
+
+
+
+
+//  Grid
+// -------------------------------------
+
+.bk-row .container {
+    @include box-sizing(border-box);
+    @include flex-display;
+    @include flex(0 1 auto);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    margin: 0 auto;
+
+
+    // Reverses row contents
+    &--reverse {
+        @include flex-direction(row-reverse);
+    }
+}
+
+
+
+//  Height & Width
+// -------------------------------------
+
+// Height
+$height--full: 100vh;
+$height--default: auto;
+$height--medium: 700px;
+$height--small: 400px;
+
+
+// Width
+$width--full: 100%;
+$width--wide: 80%;
+$width--contained: 1100px;
+
+
+.bk-row,
+.container {
+    height: $height--full;
+}
+
+
+.container {
+    width: $width--full;
+}

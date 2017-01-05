@@ -1,0 +1,135 @@
+
+// -------------------------------------
+//  Row - Background
+// -------------------------------------
+
+
+
+
+//  Background
+// -------------------------------------
+
+.bk-row {
+    background: $row__background-colour;
+}
+
+
+
+//  Background Positioning
+// -------------------------------------
+
+
+.bk-row {
+    background-position: center;
+}
+
+
+
+//  Background Size
+// -------------------------------------
+
+
+// Cover Background
+.bg--cover {
+    background-size: cover;
+}
+
+
+// Contain Background
+.bg--contain {
+    background-size: contain;
+}
+
+
+
+//  Background Effects
+// -------------------------------------
+
+
+.animation--parralax {
+
+}
+
+
+.animation--fade-in {
+
+}
+
+
+.animation--fade-out {
+
+}
+
+
+.animation--slide {
+
+}
+
+
+.animation--zoom {
+
+}
+
+
+
+//  Background Filters
+// -------------------------------------
+
+
+// Blur
+.filter--blur {
+    filter: blur($row__background--blur);
+}
+
+
+// Exclusion
+.filter--exclusion {
+    background-blend-mode: exclusion;
+}
+
+
+// Grayscale
+.filter--grayscale {
+    filter: grayscale($row__background--grayscale);
+}
+
+
+// Luminosity
+.filter--luminosity {
+    background-blend-mode: luminosity;
+}
+
+
+// Multiply
+.filter--multiply {
+    background-blend-mode: multiply;
+}
+
+
+// Overlay
+.filter--overlay {
+    background-blend-mode: overlay;
+}
+
+
+// Soft Light
+.filter--soft-light {
+    background-blend-mode: soft-light;
+}
+
+
+
+//  Background Overlay
+// -------------------------------------
+
+
+.row__overlay:after {
+    background: $row__overlay--colour;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}

@@ -1,0 +1,25 @@
+// ---------------------
+// WIDGETS: Feature
+// ---------------------
+
+
+// Feature Background Image
+.feature__background-image {
+    min-height: 250px;
+}
+
+// Feature Content Wrap
+.feature__content-wrap {
+	padding: 30px;
+}
+
+// Feature Button
+.feature__button {
+	padding: 9px 12px;
+    text-decoration: none;
+
+    &:hover {
+    	text-decoration: none;
+    }
+}
+

@@ -5,11 +5,13 @@
 
 
 
+
 // Imports: Global
 // -----------------------------
 
 @import "framework/global/resets";
 @import "framework/global/mixins";
+
 
 
 
@@ -20,11 +22,13 @@
 
 
 
+
 // Imports: Row
 // -----------------------------
 
 @import "framework/columns/grid";
 @import "framework/columns/alignment";
+
 
 
 
@@ -50,3 +54,11 @@
 @import 'framework/widgets/widgets';
 @import 'framework/widgets/yelp';
 @import 'framework/widgets/youtube';
+
+
+
+
+// Imports: Row Layout
+// -----------------------------
+
+@import 'rows/image-and-text/image-and-text-1';

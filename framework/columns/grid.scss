@@ -6,12 +6,11 @@
 
 
 
-//  Gutter Variables
+//  Defaults - Variables
 // -------------------------------------
 
-$gutter--full: 25px;
-$gutter--wide: 20px;
-$gutter--contained: 15px;
+$column--gutter: 15px;
+$column--offset-value: 5%;
 
 
 
@@ -21,67 +20,97 @@ $gutter--contained: 15px;
 
 
 // Global Column Styling
-.bk-column {
+.row__column {
     @include box-sizing(border-box);
     @include flex-display;
     @include flex-direction(column);
     @include flex(0 0 auto);
     max-width: 100%;
-    padding-left: $gutter--full;
-    padding-right: $gutter--full;
+    padding-left: $column--gutter;
+    padding-right: $column--gutter;
     height: 100%;
     z-index: 2;
-
-
-    // Removes left sided padding from first column in a row
-    &:first-child {
-        padding-left: 0;
-    }
-
-
-    // Removes right sided padding from first column in a row
-    &:last-child {
-        padding-right: 0;
-    }
 }
 
 
-.column {
+// Column Sizing
+.row__column {
 
 
     // Full Width
-    &--100 {
+    &--full {
         @include flex-basis(100%);
     }
 
 
     // 75% Width
-    &--75 {
+    &--three-quarters {
         @include flex-basis(75%);
+
+
+        &.row__column--offset {
+            @include flex-basis(75% + $column--offset-value);
+        }
     }
 
 
     // 66.66% Width
-    &--67 {
+    &--two-thirds {
         @include flex-basis(66.66666667%);
+
+
+        &.row__column--offset {
+            @include flex-basis(66.66666667% + $column--offset-value);
+        }
     }
 
 
     // 50% Width
-    &--50 {
+    &--half {
         @include flex-basis(50%);
+
+
+        &.row__column--offset {
+            @include flex-basis(50% + $column--offset-value);
+        }
     }
 
 
     // 33.33% Width Width
-    &--33 {
+    &--one-third {
         @include flex-basis(33.33333333%);
+
+
+        &.row__column--offset {
+            @include flex-basis(33.33333333% + $column--offset-value);
+        }
     }
 
 
     // 25% Width
-    &--25 {
+    &--one-quarter {
         @include flex-basis(25%);
+
+
+        &.row__column--offset {
+            @include flex-basis(25% + $column--offset-value);
+        }
     }
 }
 
+
+// Column Offsets
+.row__column--offset {
+
+
+    &-left {
+        margin-left: -$column--offset-value;
+        padding-right: $column--offset-value;
+    }
+
+
+    &-right {
+        margin-right: -$column--offset-value;
+        padding-left: $column--offset-value;
+    }
+}

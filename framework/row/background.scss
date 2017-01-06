@@ -9,9 +9,12 @@
 //  Background
 // -------------------------------------
 
+
+// Row background Colour
 .bk-row {
     background: $row__background-colour;
 }
+
 
 
 
@@ -19,9 +22,11 @@
 // -------------------------------------
 
 
+// Default Background Image Positioning
 .bk-row {
     background-position: center;
 }
+
 
 
 
@@ -29,16 +34,17 @@
 // -------------------------------------
 
 
-// Cover Background
+// Cover Background Image
 .bg--cover {
     background-size: cover;
 }
 
 
-// Contain Background
+// Contain Background Image
 .bg--contain {
     background-size: contain;
 }
+
 
 
 
@@ -69,6 +75,7 @@
 .animation--zoom {
 
 }
+
 
 
 
@@ -119,10 +126,12 @@
 
 
 
+
 //  Background Overlay
 // -------------------------------------
 
 
+// Row Overlay Colour (Solid, Gradient, Opacity)
 .row__overlay:after {
     background: $row__overlay--colour;
     content: "";

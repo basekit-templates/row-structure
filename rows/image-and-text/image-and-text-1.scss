@@ -1,0 +1,72 @@
+
+// -------------------------------------
+// Image & Text Row: Design One
+// -------------------------------------
+
+
+
+
+// Row Structure Variables
+// -----------------------------
+
+
+// Row
+$row--padding: 0;
+
+
+// Widget
+$widget--padding: 40px;
+
+
+
+
+// Row Styling
+// -----------------------------
+
+
+// Row Height
+.row,
+.row__container {
+    height: $row--height-full;
+}
+
+
+// Row Padding
+.row {
+    padding: $row--padding;
+}
+
+
+// Row Container Width
+.row__container {
+    width: $row--width-full;
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+// Image Widget
+.widget-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+
+    // Hide Inline Image by Default
+    img {
+        display: none;
+    }
+}
+
+
+// Content Widget
+[data-widget-type="content"] {
+    @include box-shadow(0px 0px 45px 0px rgba(0,0,0,0.1));
+    padding: $widget--padding;
+}

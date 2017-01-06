@@ -1,28 +1,31 @@
 
+// ----------------------------------------------
+//  Columns - Vertical & Hortizontal Alignment
+// ----------------------------------------------
+
+
+
+
+//  Top Alignment
 // -------------------------------------
-//  Columns - Alignment
-// -------------------------------------
 
-
-
-
-//  Top
-// -------------------------------------
 
 .align--top {
 
+    // Top Left
     &-left {
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-
+    // Top Center
     &-center {
         align-items: center;
         justify-content: flex-start;
     }
 
 
+    // Top Right
     &-right {
         align-items: flex-end;
         justify-content: flex-start;
@@ -31,23 +34,28 @@
 
 
 
-//  Middle
+
+//  Middle Alignment
 // -------------------------------------
+
 
 .align--middle {
 
+    // Middle Left
     &-left {
         align-items: flex-start;
         justify-content: center;
     }
 
 
+    // Middle Center
     &-center {
         align-items: center;
         justify-content: center;
     }
 
 
+    // Middle Right
     &-right {
         align-items: flex-end;
         justify-content: center;
@@ -56,23 +64,28 @@
 
 
 
-//  Bottom
+
+//  Bottom Alignment
 // -------------------------------------
+
 
 .align--bottom {
 
+    // Bottom Left
     &-left {
         align-items: flex-start;
         justify-content: flex-end;
     }
 
 
+    // Bottom Center
     &-center {
         align-items: center;
         justify-content: flex-end;
     }
 
 
+    // Bottom Right
     &-right {
         align-items: flex-end;
         justify-content: flex-end;

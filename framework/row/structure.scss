@@ -6,10 +6,34 @@
 
 
 
-//  Grid
+//  Row Variables
 // -------------------------------------
 
-.bk-row .container {
+
+// Height
+$row--height-full: 100vh;
+$row--height-default: auto;
+$row--height-medium: 700px;
+$row--height-small: 400px;
+
+
+// Width
+$row--width-full: 100%;
+$row--width-wide: 80%;
+$row--width-contained: 1100px;
+
+
+// Spacing
+$row--padding: 30px;
+
+
+
+
+//  Grid (Flex)
+// -------------------------------------
+
+
+.row .row__container {
     @include box-sizing(border-box);
     @include flex-display;
     @include flex(0 1 auto);
@@ -18,7 +42,7 @@
     margin: 0 auto;
 
 
-    // Reverses row contents
+    // Reverses Row Content (Invert)
     &--reverse {
         @include flex-direction(row-reverse);
     }
@@ -26,28 +50,19 @@
 
 
 
-//  Height & Width
+
+//  Height & Width Defaults
 // -------------------------------------
 
-// Height
-$height--full: 100vh;
-$height--default: auto;
-$height--medium: 700px;
-$height--small: 400px;
 
-
-// Width
-$width--full: 100%;
-$width--wide: 80%;
-$width--contained: 1100px;
-
-
-.bk-row,
-.container {
-    height: $height--full;
+// Row / Container Height
+.row,
+.row__container {
+    height: $row--height-default;
 }
 
 
-.container {
-    width: $width--full;
+// Container Width
+.row__container {
+    width: $row--width-full;
 }

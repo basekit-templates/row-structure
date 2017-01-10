@@ -1,50 +1,67 @@
+
 // -------------------------
-// WIDGETS: Buttons
+// Widgets: Buttons
 // -------------------------
 
 
 
-// ------------------
-//  Table of Contents
-// ------------------
 
-// 1. Standard Button
-// 2. Paypal Button
-// 3. Dropbox Button
-// 4. Tweet Button
-// 5. Click to Call Button
-
-
-
-// ---------------------
-// 1. Main Button
-// ---------------------
+//  Button: Global
+// -----------------------------
 
 
 // Standard
 button,
 .button {
     display: inline-block;
+    user-select: none;
 
-    // Button Styles
-    padding: 4px 12px;
-    border: 0;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 
+    // Variables
+    background-color: map-get($color-light, color__button--background);
+    border: $style__button--border;
+    @include border-radius: $style__button--border-radius;
+    @include box-shadow: $style__button--box-shadow;
+    color: map-get($color-light, color__button--text);
+    font-family: $font__button--font-family;
+    font-size: $font__button--font-size;
+    font-weight: $font__button--font-weight;
+    letter-spacing: $font__button--letter-spacing;
+    line-height: $font__button--line-height;
+    outline: $style__button--outline;
+    padding: $style__button--padding;
+    position: $style__button--position;
+    text-transform: $font__button--text-transform;
+    @include transition($style__button--transition);
+
+
+    // Optional elements for extra button styling
+    &:before,
+    &:after {
+        content: "";
+        position: relative;
+    }
+
+
+    // Hover State
     &:hover {
         text-decoration: none;
     }
 
+
+    // Focus State
     &:focus {
         outline: none;
     }
 
+
+    // Italic Text
     &.italic {
         font-style: italic;
     }
 
+
+    // Bold Text
     &.bold {
         font-weight: bold;
     }
@@ -64,58 +81,57 @@ button,
 
 
 
-// ---------------------
-// 2. #PayPal Button
-// ---------------------
-
-.paypalbuynow form { background-color: transparent; }
+//  Button: Paypal
+// -----------------------------
 
 
-
-
-// ---------------------
-// 3. #Dropbox Button
-// ---------------------
-
-.dropbox-button__button,
-.dropbox-button__label {
-    display: inline-block; // Displays button & label inline
+.paypalbuynow form {
+    background-color: transparent;
 }
 
 
 
 
-// ---------------------
-// 4. #Tweet Button
-// ---------------------
+//  Button: Dropbox
+// -----------------------------
+
+// Displays button & label inline
+.dropbox-button__button,
+.dropbox-button__label {
+    display: inline-block;
+}
 
 
 
 
-// ------------------------
-// 5. #Click to Call Button
-// ------------------------
+//  Button: Tweet
+// -----------------------------
+
+
+
+
+//  Button: Click To Call
+// -----------------------------
 
 .clicktocall__phone-number-link {
     @media only screen and (max-width: 480px), only screen and (max-width:700px) and (orientation:landscape) {
 
+        border: $style__button--border;
         display: inline-block;
-
-        // Button Styles
-        padding: 9px 12px;
+        padding: $style__button--padding;
+        user-select: none;
         text-decoration: none;
-        border: 0;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
 
+
+        // Hover State
         &:hover {
             text-decoration: none;
         }
 
+
+        // Focus State
         &:focus {
             outline: none;
         }
     }
 }
-

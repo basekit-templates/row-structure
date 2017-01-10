@@ -1,0 +1,84 @@
+{
+    "colors": {
+        "$color--lightest": "#ffffff",
+        "$color--light": "#d2d2d2",
+        "$color--accent": "#241aec",
+        "$color--dark": "#110c76",
+        "$color--darkest": "#0c0857"
+    },
+    "color-light": {
+        "color__h1--text": "$color--darkest",
+        "color__h2--text": "$color--darkest",
+        "color__h3--text": "$color--darkest",
+        "color__h4--text": "$color--darkest",
+        "color__h5--text": "$color--darkest",
+        "color__p--text": "$color--dark",
+        "color__companyname--text": "$color--darkest",
+        "color__link--text": "$color--accent",
+
+        "color__body--background": "$color--lightest",
+        "color__container--background": "$color--lightest",
+
+        "color__navigation--text": "$color--dark",
+        "color__navigation--text--selected": "$color--darkest",
+
+        "color__form-legend--text": "$color--darkest",
+        "color__form-label--text": "$color--dark",
+        "color__form--background": "$color--light",
+
+        "color__button--background": "$color--accent",
+        "color__button--background--hover": "darken($color--accent, 10%)",
+        "color__button--text": "$color--lightest",
+        "color__button--text--hover": "darken($color--lightest, 5%)"
+    },
+    "color-accent": {
+        "color__h1--text": "$color--lightest",
+        "color__h2--text": "$color--lightest",
+        "color__h3--text": "$color--lightest",
+        "color__h4--text": "$color--lightest",
+        "color__h5--text": "$color--lightest",
+        "color__p--text": "$color--light",
+        "color__companyname--text": "$color--lightest",
+        "color__link--text": "$color--accent",
+
+        "color__body--background": "$color--darkest",
+        "color__container--background": "$color--darkest",
+
+        "color__navigation--text": "$color--light",
+        "color__navigation--text--selected": "$color--lightest",
+
+        "color__form-legend--text": "$color--lightest",
+        "color__form-label--text": "$color--light",
+        "color__form--background": "$color--dark",
+
+        "color__button--background": "$color--accent",
+        "color__button--background--hover": "darken($color--accent, 10%)",
+        "color__button--text": "$color--lightest",
+        "color__button--text--hover": "darken($color--lightest, 5%)"
+    },
+    "color-dark": {
+        "color__h1--text": "$color--lightest",
+        "color__h2--text": "$color--lightest",
+        "color__h3--text": "$color--lightest",
+        "color__h4--text": "$color--lightest",
+        "color__h5--text": "$color--lightest",
+        "color__p--text": "$color--light",
+        "color__companyname--text": "$color--lightest",
+        "color__link--text": "$color--accent",
+
+        "color__body--background": "$color--darkest",
+        "color__container--background": "$color--darkest",
+
+        "color__navigation--text": "$color--light",
+        "color__navigation--text--selected": "$color--lightest",
+
+        "color__form-legend--text": "$color--lightest",
+        "color__form-label--text": "$color--light",
+        "color__form--background": "$color--dark",
+
+        "color__button--background": "$color--accent",
+        "color__button--background--hover": "darken($color--accent, 10%)",
+        "color__button--text": "$color--lightest",
+        "color__button--text--hover": "darken($color--lightest, 5%)"
+    }
+}

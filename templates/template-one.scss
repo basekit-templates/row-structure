@@ -6,6 +6,22 @@
 
 
 
+// Row Variables
+// -----------------------------
+
+
+
+
+
+// Column Variables
+// -----------------------------
+
+$column--offset-value: 5%;
+$column--gutter: 0;
+
+
+
+
 // Font Variables
 // -----------------------------
 
@@ -20,63 +36,45 @@ $font--secondary: PT Serif;
 // -----------------------------
 
 
-$colour--lightest: #ffffff;
-$colour--light: #d2d2d2;
-$colour--accent: #241aec;
-$colour--dark: #110c76;
-$colour--darkest: #0c0857;
+//@import "color-variables.json";
 
 
 
 
-// Row Variables
+// Widget Styling
 // -----------------------------
 
-$row__background-colour: $colour--lightest;
-$row__overlay--colour: $colour--dark;
+
+// Templates Styles
+[data-widget-type="content"] {
+    background-color: map-get($color-light, color__container--background);
 
 
+    h2 {
+        color: map-get($color-light, color__h2--text);
+    }
 
 
-// Column Variables
-// -----------------------------
+    p {
+        color: map-get($color-light, color__p--text);
+    }
+}
 
-$column--offset-value: 5%;
-$column--gutter: 0;
-
-
-
-
-// Widget Variables
-// -----------------------------
 
 
 // Buttons
-.light {
-    $button--background-color: $color--accent;
-    $button--border-color: transparent;
-    $button--text-color: $color--light;
-}
-
-
-.accent {
-    $button--background-color: $color--accent;
-    $button--border-color: transparent;
-    $button--text-color: $color--light;
-}
-
-
-.dark {
-    $button--background-color: $color--accent;
-    $button--border-color: transparent;
-    $button--text-color: $color--light;
-}
-
-
 .button {
+    background-color: map-get($color-light, color__button--background);
+    color: map-get($color-light, color__button--text);
     @include border-radius(100px);
-    @include box-shadow(0 0 40px $colour--darkest);
+    //@include box-shadow(0 0 40px $color--darkest);
     @include transition(all 0.35s ease);
+
+
+    &:hover {
+        background-color: map-get($color-light, color__button--background--hover);
+        color: map-get($color-light, color__button--text);
+    }
 }
 
 

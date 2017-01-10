@@ -11,7 +11,7 @@
 
 @import "framework/global/resets";
 @import "framework/global/mixins";
-
+@import "templates/color-variables.json";
 
 
 
@@ -62,3 +62,11 @@
 // -----------------------------
 
 @import 'rows/image-and-text/image-and-text-1';
+
+
+
+
+// Imports: Template
+// -----------------------------
+
+@import "templates/template-one";

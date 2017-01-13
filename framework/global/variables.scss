@@ -1,8 +1,11 @@
 
+// -------------------------
+//  Variables: Fonts
+// -------------------------
 
 
 
-//  Variables: Global Fonts
+//  Font Properties
 // -----------------------------
 
 
@@ -46,11 +49,98 @@ $font__p--line-height: 24px !default;
 $font__p--letter-spacing: 0 !default;
 
 
-// Colours
+
+
+//  Colour Properties
+// -----------------------------
+
+
+// Headings
 $color__h1--text: $color--darkest !default;
 $color__h2--text: $color--darkest !default;
 $color__h3--text: $color--darkest !default;
 $color__h4--text: $color--darkest !default;
 
+
+// Body Text
 $color__p--text: $color--dark !default;
 $color__link--text: $color--accent !default;
+
+
+
+
+// -----------------------------
+//  Variables: Site Backgrounds
+// -----------------------------
+
+
+// Body
+$color__body--background: $color--lightest !default;
+$color__body--border: transparent !default;
+
+
+// Container
+$color__container--background: $color--lightest !default;
+$color__container--border: transparent !default;
+
+
+
+
+// -------------------------
+//  Variables: Buttons
+// -------------------------
+
+
+
+
+//  Font Properties
+// -----------------------------
+
+
+$font__button--font-family: !default;
+$font__button--font-size: !default;
+$font__button--font-weight: !default;
+$font__button--letter-spacing: !default;
+$font__button--line-height: !default;
+$font__button--text-transform: !default;
+
+
+
+
+//  Colour Properties
+// -----------------------------
+
+
+$color__button--background: !default;
+$color__button--border: !default;
+$color__button--text: !default;
+
+
+
+
+// -------------------------
+//  Variables: Divider
+// -------------------------
+
+
+$color__divider--background: !default;
+$color__divider--border: !default;
+$style__divider--thickness: 1px !default;
+
+
+
+
+// -------------------------
+//  Variables: Feature
+// -------------------------
+
+
+
+
+
+
+
+
+
+
+

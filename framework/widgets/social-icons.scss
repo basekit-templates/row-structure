@@ -1,10 +1,15 @@
-// ----------------------
-// WIDGETS: Social Links
-// ----------------------
+
+// -------------------------
+// Widgets: Social Icons
+// -------------------------
 
 
 // Social List
-.social-list { margin: 0; }
+.social-list {
+    margin: 0;
+    padding: 0;
+}
+
 
 // Social Item
 .social-item {
@@ -12,6 +17,35 @@
     margin-right: 10px;
 }
 
-// Social Link
-.social-link { -webkit-font-smoothing: antialiased; }
 
+.social-name {
+    font-family: $font__social--font-family;
+}
+
+
+// Social Link
+.social-link {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+
+
+    // Variables
+    background-color: $color__social-icons--background;
+    // border: $style__social-icons--border;
+    // @include border-radius($style__social-icons--border-radius);
+    // @include box-shadow($style__social-icons--box-shadow);
+    color: $color__social-icons--text;
+    font-family: $font__social-icons--font-family;
+    font-size: $font__social-icons--font-size;
+    font-weight: $font__social-icons--font-weight;
+    line-height: $font__social-icons--line-height;
+    letter-spacing: $font__social-icons--letter-spacing;
+    // outline: $style__social-icons--outline;
+    text-transform: $font__social-icons--text-transform;
+    @include transition($style__social-icons--transition);
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}

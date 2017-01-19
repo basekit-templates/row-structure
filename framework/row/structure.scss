@@ -24,7 +24,10 @@ $row--width-contained: 1100px;
 
 
 // Spacing
-$row--padding: 30px;
+$row--padding-large: 60px;
+$row--padding-medium: 30px;
+$row--padding-small: 15px;
+$row--padding-none: 0;
 
 
 
@@ -59,6 +62,11 @@ $row--padding: 30px;
 .row,
 .row__container {
     height: $row--height-default;
+}
+
+
+.row {
+    position: relative;
 }
 
 

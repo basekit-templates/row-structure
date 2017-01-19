@@ -6,18 +6,28 @@
 
 
 
+// Colour Variables
+// -----------------------------
+
+
+// Colour Swatch
+$color--lightest: #ffffff;
+$color--light: #d6d6d6;
+$color--accent: #bd0202;
+$color--dark: #828282;
+$color--darkest: #000000;
+
+
+
+
 // Row Variables
 // -----------------------------
 
 
 
 
-
 // Column Variables
 // -----------------------------
-
-$column--offset-value: 5%;
-$column--gutter: 0;
 
 
 
@@ -26,8 +36,13 @@ $column--gutter: 0;
 // -----------------------------
 
 
-$font--primary: Gibson;
-$font--secondary: PT Serif;
+$font__primary: Gibson;
+$font__secondary: PT Serif;
+
+
+$font__navigation--font-family: $font__primary;
+$font__social--font-family: $font__primary;
+$font__button--font-family: $font__secondary;
 
 
 
@@ -43,36 +58,32 @@ $font--secondary: PT Serif;
 
 
 // Templates Styles
-[data-widget-type="content"] {
-    background-color: map-get($color-light, color__container--background);
-
-
-    h2 {
-        color: map-get($color-light, color__h2--text);
-    }
-
-
-    p {
-        color: map-get($color-light, color__p--text);
-    }
-}
-
 
 
 // Buttons
-.button {
-    background-color: map-get($color-light, color__button--background);
-    color: map-get($color-light, color__button--text);
-    @include border-radius(100px);
-    //@include box-shadow(0 0 40px $color--darkest);
-    @include transition(all 0.35s ease);
+// $color__button--background:
+// $style__button--border;
+// $color__button--text;
+// $font__button--font-family;
+// $font__button--font-size;
+// $font__button--font-weight;
+// $font__button--letter-spacing;
+// $font__button--line-height;
+// $style__button--outline;
+// $style__button--padding;
+// $font__button--text-transform;
+// $style__button--transition:
 
 
-    &:hover {
-        background-color: map-get($color-light, color__button--background--hover);
-        color: map-get($color-light, color__button--text);
-    }
-}
+// Click to Call
+$color__telephone--text: $color--lightest;
+$font__telephone--font-family: $font__secondary;
+$font__telephone--font-size: 18px !important;
+$font__telephone--font-weight: 600;
+$font__telephone--line-height: 28px;
+$font__telephone--text-transform: uppercase;
+$style__telephone--transition: all, 0.5s, ease;
+
 
 
 // Content
@@ -100,6 +111,16 @@ $font--secondary: PT Serif;
 
 
 // Navigation
+$color__navigation-item--background: $color--darkest;
+$style__navigation-item--border: transparent;
+$color__navigation--text: $color--lightest;
+$font__navigation--font-family: $font__primary;
+$font__navigation--font-size: 14px;
+$font__navigation--font-weight: 400;
+$font__navigation--line-height: 24px;
+$font__navigation--letter-spacing: 1px;
+$font__navigation--text-transform: uppercase;
+$style__navigation-item--transition: all, 0.5s, ease;
 
 
 // Profile Data
@@ -109,6 +130,16 @@ $font--secondary: PT Serif;
 
 
 // Social Icons
+$color__social-icons--background: transparent;
+$style__social-icons--border: transparent;
+$color__social-icons--text: $color--lightest;
+$font__social-icons--font-family: $font__primary;
+$font__social-icons--font-size: 15px;
+$font__social-icons--font-weight: 500;
+$font__social-icons--line-height: 24px;
+$font__social-icons--letter-spacing: 1px;
+$font__social-icons--text-transform: uppercase;
+$style__social-icons--transition: all, 0.5s, ease;
 
 
 // Twitter Feed

@@ -18,17 +18,17 @@ button,
 
 
     // Variables
-    background-color: map-get($color-light, color__button--background);
-    border: $style__button--border;
-    @include border-radius: $style__button--border-radius;
-    @include box-shadow: $style__button--box-shadow;
-    color: map-get($color-light, color__button--text);
+    background-color: color-tone(color-accent, color__button--background);
+    border: color-tone(color-accent, color__button--border);
+    @include border-radius($style__button--border-radius);
+    @include box-shadow($style__button--box-shadow);
+    color: color-tone(color-accent, color__button--text);
     font-family: $font__button--font-family;
     font-size: $font__button--font-size;
     font-weight: $font__button--font-weight;
     letter-spacing: $font__button--letter-spacing;
     line-height: $font__button--line-height;
-    outline: $style__button--outline;
+    outline: color-tone(color-accent, color__button--outline);
     padding: $style__button--padding;
     position: $style__button--position;
     text-transform: $font__button--text-transform;
@@ -45,6 +45,9 @@ button,
 
     // Hover State
     &:hover {
+        background-color: color-tone(color-accent, color__button--background--hover);
+        border: 1px solid color-tone(color-accent, color__button--border--hover);
+        color: color-tone(color-accent, color__button--text--hover);
         text-decoration: none;
     }
 
@@ -104,34 +107,45 @@ button,
 
 
 
-//  Button: Tweet
-// -----------------------------
-
-
-
-
 //  Button: Click To Call
 // -----------------------------
 
 .clicktocall__phone-number-link {
-    @media only screen and (max-width: 480px), only screen and (max-width:700px) and (orientation:landscape) {
 
-        border: $style__button--border;
-        display: inline-block;
-        padding: $style__button--padding;
-        user-select: none;
+    display: inline-block;
+    user-select: none;
+    text-decoration: none;
+
+
+    // Variables
+    //background-color: $color__button--background;
+    border: $style__telephone--border;
+    @include border-radius($style__telephone--border-radius);
+    @include box-shadow($style__telephone--box-shadow);
+    color: $color__telephone--text;
+    font-family: $font__telephone--font-family;
+    font-size: $font__telephone--font-size;
+    font-weight: $font__telephone--font-weight;
+    letter-spacing: $font__telephone--letter-spacing;
+    line-height: $font__telephone--line-height;
+    outline: $style__telephone--outline;
+    padding: $style__telephone--padding;
+    position: $style__telephone--position;
+    text-transform: $font__telephone--text-transform;
+    @include transition($style__telephone--transition);
+
+
+    // Hover State
+    &:hover {
+        background-color: $color__button--background--hover;
+        border: $style__button--border--hover;
+        color: $color__button--text--hover;
         text-decoration: none;
+    }
 
 
-        // Hover State
-        &:hover {
-            text-decoration: none;
-        }
-
-
-        // Focus State
-        &:focus {
-            outline: none;
-        }
+    // Focus State
+    &:focus {
+        outline: none;
     }
 }

@@ -1,0 +1,18 @@
+
+// -----------------------------
+// Framework: Colour Function
+// -----------------------------
+
+
+// // Colour Swatch
+// $color--lightest: #ffffff;
+// $color--light: #d6d6d6;
+// $color--accent: #bd0202;
+// $color--dark: #828282;
+// $color--darkest: #000000;
+
+
+// SASS Function
+@function color-tone($color-tone, $color__widget-variable) {
+    @return map-get(map-get($color-tones, $color-tone), $color__widget-variable);
+}

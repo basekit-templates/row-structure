@@ -1,0 +1,84 @@
+
+// -------------------------
+//  Variables: Navigation
+// -------------------------
+
+
+
+
+//  Font Properties
+// -----------------------------
+
+
+$font__navigation--font-family: Helvetica !default;
+$font__navigation--font-size: 16px !default;
+$font__navigation--font-weight: 400 !default;
+$font__navigation--letter-spacing: 0 !default;
+$font__navigation--line-height: 1 !default;
+$font__navigation--text-transform: none !default;
+
+
+
+//  Colour Properties
+// -----------------------------
+
+
+// @import "../../templates/template-one-colors";
+
+
+// // Colour Mapping
+// $color-tones: (
+//     color-light: (
+//         color__navigation-item--background: $color--light,
+//         color__navigation-item--background--hover: $color--light,
+//         color__navigation-item--border: $color--accent,
+//         color__navigation-item--border--hover: $color--accent,
+//         color__navigation--outline: $color--accent,
+//         color__navigation--text: $color--darkest,
+//         color__navigation--text--hover: $color--darkest
+//     ),
+//     color-accent: (
+//         color__navigation-item--background: $color--accent,
+//         color__navigation-item--background--hover: $color--dark,
+//         color__navigation-item--border: $color--accent,
+//         color__navigation-item--border--hover: $color--accent,
+//         color__navigation--outline: $color--accent,
+//         color__navigation--text: $color--lightest,
+//         color__navigation--text--hover: $color--lightest
+//     ),
+//     color-dark: (
+//         color__navigation-item--background: $color--dark,
+//         color__navigation-item--background--hover: $color--dark,
+//         color__navigation-item--border: $color--accent,
+//         color__navigation-item--border--hover: $color--accent,
+//         color__navigation--outline: $color--accent,
+//         color__navigation--text: $color--lightest,
+//         color__navigation--text--hover: $color--lightest
+//     )
+// );
+
+
+// @import "../global/colors";
+
+
+$color__navigation-item--background: $color--light !default;
+$color__navigation-item--background--hover: $color--light !default;
+$color__navigation-item--border: $color--accent !default;
+$color__navigation-item--border--hover: $color--accent !default;
+$color__navigation--outline: $color--accent !default;
+$color__navigation--text: $color--darkest !default;
+$color__navigation--text--hover: $color--darkest !default;
+
+
+
+
+//  Style Properties
+// -----------------------------
+
+
+$style__navigation-item--border: none !default;
+$style__navigation-item--border-radius: 0 !default;
+$style__navigation-item--box-shadow: none !default;
+$style__navigation-item--outline: none !default;
+$style__navigation-item--padding: 5px 10px !default;
+$style__navigation-item--transition: none !default;

@@ -28,6 +28,7 @@ $column--offset-value: 5%;
     max-width: 100%;
     padding-left: $column--gutter;
     padding-right: $column--gutter;
+    position: relative;
     height: 100%;
     z-index: 2;
 }
@@ -95,6 +96,22 @@ $column--offset-value: 5%;
         &.row__column--offset {
             @include flex-basis(25% + $column--offset-value);
         }
+    }
+
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+
+    &:last-child {
+        padding-right: 0;
+    }
+
+
+    // No width grow to fit available space
+    &--grow {
+        @include flex-grow(1);
     }
 }
 

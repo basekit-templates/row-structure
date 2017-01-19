@@ -1,11 +1,16 @@
+
 // -------------------------
-// WIDGETS: Image Gallery
+// Widgets: Gallery
 // -------------------------
 
 
 
-// Element Resets
-// --------------
+// Set Gallery Structures?
+// -------------------------
+
+.gallery__item {
+    width: $gallery__item-width;
+}
 
 
 .gallery__figure {

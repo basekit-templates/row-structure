@@ -44,6 +44,7 @@
     // Middle Left
     &-left {
         align-items: flex-start;
+        align-self: center;
         justify-content: center;
     }
 
@@ -51,6 +52,7 @@
     // Middle Center
     &-center {
         align-items: center;
+        align-self: center;
         justify-content: center;
     }
 
@@ -58,6 +60,7 @@
     // Middle Right
     &-right {
         align-items: flex-end;
+        align-self: center;
         justify-content: center;
     }
 }

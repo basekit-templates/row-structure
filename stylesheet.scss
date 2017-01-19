@@ -9,17 +9,10 @@
 // Imports: Global
 // -----------------------------
 
+
 @import "framework/global/resets";
 @import "framework/global/mixins";
-@import "templates/color-variables.json";
-
-
-
-
-// Imports: Row
-// -----------------------------
-
-@import "framework/row/structure";
+// @import "framework/global/colors";
 
 
 
@@ -31,38 +24,47 @@
 @import "framework/columns/alignment";
 
 
-
+@import "templates/template-one";
 
 // Imports: Widgets
 // -----------------------------
 
+@import 'framework/widgets/buttons-variables';
 @import 'framework/widgets/buttons';
-@import 'framework/widgets/company-name';
-@import 'framework/widgets/content';
-@import 'framework/widgets/divider';
-@import 'framework/widgets/feature';
-@import 'framework/widgets/fonecta-widgets';
-@import 'framework/widgets/gallery';
-@import 'framework/widgets/google-map';
-@import 'framework/widgets/image';
-@import 'framework/widgets/linkedin';
+
+// @import 'framework/widgets/company-name';
+// @import 'framework/widgets/content';
+// @import 'framework/widgets/divider';
+// @import 'framework/widgets/feature';
+// @import 'framework/widgets/fonecta-widgets';
+// @import 'framework/widgets/gallery';
+// @import 'framework/widgets/google-map';
+// @import 'framework/widgets/image';
+// @import 'framework/widgets/linkedin';
 @import 'framework/widgets/logo';
+
+@import 'framework/widgets/navigation-variables';
 @import 'framework/widgets/navigation';
-@import 'framework/widgets/profile';
-@import 'framework/widgets/slideshow';
+
+// @import 'framework/widgets/profile';
+// @import 'framework/widgets/slideshow';
 @import 'framework/widgets/social-icons';
-@import 'framework/widgets/twitter-feed';
-@import 'framework/widgets/widgets';
-@import 'framework/widgets/yelp';
-@import 'framework/widgets/youtube';
+// @import 'framework/widgets/twitter-feed';
+// @import 'framework/widgets/widgets';
+// @import 'framework/widgets/yelp';
+// @import 'framework/widgets/youtube';
 
 
 
 
-// Imports: Row Layout
+// Imports: Row
 // -----------------------------
 
-@import 'rows/image-and-text/image-and-text-1';
+@import "framework/row/background";
+@import "framework/row/structure";
+@import "rows/navigation/nav-01/nav-01";
+@import "rows/hero/hero-01/hero-01";
+@import "rows/content/content-01";
 
 
 

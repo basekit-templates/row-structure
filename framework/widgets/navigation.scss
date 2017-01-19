@@ -4,6 +4,7 @@
 
 
 
+
 // Navigation Text
 // ---------------
 
@@ -12,10 +13,31 @@
     padding: 14px;
     text-decoration: none;
 
+
+    // Variables
+    background-color: $color__navigation-item--background;
+    border: $style__navigation-item--border;
+    @include border-radius($style__navigation-item--border-radius);
+    @include box-shadow($style__navigation-item--box-shadow);
+    color: $color__navigation--text;
+    font-family: $font__navigation--font-family;
+    font-size: $font__navigation--font-size;
+    font-weight: $font__navigation--font-weight;
+    line-height: $font__navigation--line-height;
+    letter-spacing: $font__navigation--letter-spacing;
+    outline: $style__navigation-item--outline;
+    text-transform: $font__navigation--text-transform;
+    @include transition($style__navigation-item--transition);
+
+
     &:hover {
+        // background-color: $color__navigation-item--text--hover;
+        // border: $color__navigation-item--border--hover;
+        // color: $color__navigation--text--hover;
         cursor: pointer;
     }
 }
+
 
 
 
@@ -28,14 +50,19 @@
     @include clearfix;
 }
 
+
 // Navigation List
 .navigation-list {
+    // background: $color__navigation--background;
+    // border: $color__navigation--border;
+    list-style: none;
+    margin-left: 0;
+    // outline: $color__navigation--outline;
+    padding: 0;
     width: 100%;
     z-index: 9999;
-    padding: 0;
-    margin-left: 0;
-    list-style: none;
 }
+
 
 // Navigation List Item
 .navigation-item {

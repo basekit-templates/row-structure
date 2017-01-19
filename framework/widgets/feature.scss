@@ -12,6 +12,7 @@
     font-weight: $font__feature-headline--font-weight;
     letter-spacing: $font__feature-headline--letter-spacing;
     line-height: $font__feature-headline--line-height;
+    text-transform: $font__feature-headline--text-transform;
 
 
     // Possible notches?
@@ -30,6 +31,7 @@
     font-weight: $font__feature-strapline--font-weight;
     letter-spacing: $font__feature-strapline--letter-spacing;
     line-height: $font__feature-strapline--line-height;
+    text-transform: $font__feature-strapline--text-transform;
 
 
     // Possible notches?
@@ -51,7 +53,7 @@
 .feature__content-wrap {
     background: $color__feature-content--background;
     border: $color__feature-content--border;
-    border: $color__feature-content--outline;
+    outline: $color__feature-content--outline;
 	padding: $style__feature-content--padding;
 }
 

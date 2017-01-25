@@ -9,9 +9,16 @@
 //  Variable Defaults
 // -------------------------------------
 
+
+// Colour Variables
 $color__row--background: transparent !default;
+$color__row--overlay: transparent !default;
+
+
+// Style Variables
 $style__row--border: none !default;
-$row__overlay--colour: transparent !default;
+$style__row--blur: 0 !default;
+$style__row--grayscale: 0 !default;
 
 
 
@@ -20,10 +27,23 @@ $row__overlay--colour: transparent !default;
 // -------------------------------------
 
 
-// Row background Colour
-.bk-row {
+// Row Background Colour
+.row {
     background: $color__row--background;
     border-color: $style__row--border;
+
+
+    // Row Overlay Colour (Solid, Gradient, Opacity)
+    &:after {
+        background: $color__row--overlay;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
 }
 
 
@@ -33,8 +53,8 @@ $row__overlay--colour: transparent !default;
 // -------------------------------------
 
 
-// Default Background Image Positioning
-.bk-row {
+// Default Background Image Settings
+.row {
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -64,29 +84,29 @@ $row__overlay--colour: transparent !default;
 // -------------------------------------
 
 
-// .animation--parralax {
+.animation--parralax {
 
-// }
-
-
-// .animation--fade-in {
-
-// }
+}
 
 
-// .animation--fade-out {
+.animation--fade-in {
 
-// }
-
-
-// .animation--slide {
-
-// }
+}
 
 
-// .animation--zoom {
+.animation--fade-out {
 
-// }
+}
+
+
+.animation--slide {
+
+}
+
+
+.animation--zoom {
+
+}
 
 
 
@@ -95,62 +115,44 @@ $row__overlay--colour: transparent !default;
 // -------------------------------------
 
 
-// // Blur
-// .filter--blur {
-//     filter: blur($row__background--blur);
-// }
-
-
-// // Exclusion
-// .filter--exclusion {
-//     background-blend-mode: exclusion;
-// }
-
-
-// // Grayscale
-// .filter--grayscale {
-//     filter: grayscale($row__background--grayscale);
-// }
-
-
-// // Luminosity
-// .filter--luminosity {
-//     background-blend-mode: luminosity;
-// }
-
-
-// // Multiply
-// .filter--multiply {
-//     background-blend-mode: multiply;
-// }
-
-
-// // Overlay
-// .filter--overlay {
-//     background-blend-mode: overlay;
-// }
-
-
-// // Soft Light
-// .filter--soft-light {
-//     background-blend-mode: soft-light;
-// }
-
-
-
-
-//  Background Overlay
-// -------------------------------------
-
-
-// Row Overlay Colour (Solid, Gradient, Opacity)
-.row__overlay:after {
-    background: $row__overlay--colour;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+// Blur
+.filter--blur {
+    filter: blur($style__row--blur);
 }
+
+
+// Exclusion
+.filter--exclusion {
+    background-blend-mode: exclusion;
+}
+
+
+// Grayscale
+.filter--grayscale {
+    filter: grayscale($style__row--grayscale);
+}
+
+
+// Luminosity
+.filter--luminosity {
+    background-blend-mode: luminosity;
+}
+
+
+// Multiply
+.filter--multiply {
+    background-blend-mode: multiply;
+}
+
+
+// Overlay
+.filter--overlay {
+    background-blend-mode: overlay;
+}
+
+
+// Soft Light
+.filter--soft-light {
+    background-blend-mode: soft-light;
+}
+

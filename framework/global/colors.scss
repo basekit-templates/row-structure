@@ -4,15 +4,61 @@
 // -----------------------------
 
 
-// // Colour Swatch
-// $color--lightest: #ffffff;
-// $color--light: #d6d6d6;
-// $color--accent: #bd0202;
-// $color--dark: #828282;
-// $color--darkest: #000000;
+// Colour Swatch
+$color--lightest: #ffffff;
+$color--light: #d6d6d6;
+$color--accent: #bd0202;
+$color--dark: #828282;
+$color--darkest: #000000;
 
 
-// SASS Function
-@function color-tone($color-tone, $color__widget-variable) {
-    @return map-get(map-get($color-tones, $color-tone), $color__widget-variable);
-}
+
+
+
+
+
+
+
+
+
+// Colour Switching - Light / Dark / Accent
+
+
+// // SASS Function
+// @function color-tone($color-tone, $color__widget-variable) {
+//     @return map-get(map-get($color-tones, $color-tone), $color__widget-variable);
+// }
+
+// // Colour Mapping
+// $color-tones: (
+//     color-light: (
+//          color__navigation-item--background: $color--light,
+//          color__navigation-item--background--hover: $color--light,
+//          color__navigation-item--border: $color--accent,
+//          color__navigation-item--border--hover: $color--accent,
+//          color__navigation--outline: $color--accent,
+//          color__navigation--text: $color--darkest,
+//          color__navigation--text--hover: $color--darkest
+//     ),
+//     color-accent: (
+//          color__navigation-item--background: $color--accent,
+//          color__navigation-item--background--hover: $color--dark,
+//          color__navigation-item--border: $color--accent,
+//          color__navigation-item--border--hover: $color--accent,
+//          color__navigation--outline: $color--accent,
+//          color__navigation--text: $color--lightest,
+//          color__navigation--text--hover: $color--lightest
+//     ),
+//     color-dark: (
+//          color__navigation-item--background: $color--dark,
+//          color__navigation-item--background--hover: $color--dark,
+//          color__navigation-item--border: $color--accent,
+//          color__navigation-item--border--hover: $color--accent,
+//          color__navigation--outline: $color--accent,
+//          color__navigation--text: $color--lightest,
+//          color__navigation--text--hover: $color--lightest
+//     )
+// );
+
+
+// map-get($color-darkest, color__feature-headline--text);

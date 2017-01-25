@@ -9,8 +9,8 @@
 //  Defaults - Variables
 // -------------------------------------
 
-$column--gutter: 15px;
-$column--offset-value: 5%;
+$column--gutter: 20px !default;
+$column--offset-value: 5% !default;
 
 
 
@@ -36,6 +36,18 @@ $column--offset-value: 5%;
 
 // Column Sizing
 .row__column {
+
+
+    // Remove first column padding
+    &:first-child {
+        padding-left: 0;
+    }
+
+
+    // Remove last column padding
+    &:last-child {
+        padding-right: 0;
+    }
 
 
     // Full Width
@@ -96,16 +108,6 @@ $column--offset-value: 5%;
         &.row__column--offset {
             @include flex-basis(25% + $column--offset-value);
         }
-    }
-
-
-    &:first-child {
-        padding-left: 0;
-    }
-
-
-    &:last-child {
-        padding-right: 0;
     }
 
 

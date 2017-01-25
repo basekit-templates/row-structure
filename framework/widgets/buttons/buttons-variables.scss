@@ -31,43 +31,16 @@ $font__telephone--text-transform: none !default;
 //  Colour Properties
 // -----------------------------
 
-
-// @import "../../templates/template-one-colors";
-
-
-// // Colour Mapping
-// $color-tones: (
-//     color-light: (
-//         color__button--background: $color--light,
-//         color__button--background--hover: $color--light,
-//         color__button--border: $color--accent,
-//         color__button--border--hover: $color--accent,
-//         color__button--outline: $color--accent,
-//         color__button--text: $color--darkest,
-//         color__button--text--hover: $color--darkest
-//     ),
-//     color-accent: (
-//         color__button--background: $color--accent,
-//         color__button--background--hover: $color--accent,
-//         color__button--border: $color--accent,
-//         color__button--border--hover: $color--accent,
-//         color__button--outline: $color--accent,
-//         color__button--text: $color--lightest,
-//         color__button--text--hover: $color--lightest
-//     ),
-//     color-dark: (
-//         color__button--background: $color--dark,
-//         color__button--background--hover: $color--dark,
-//         color__button--border: $color--dark,
-//         color__button--border--hover: $color--dark,
-//         color__button--outline: $color--dark,
-//         color__button--text: $color--lightest,
-//         color__button--text--hover: $color--lightest
-//     )
-// );
+$color__button--background: $color--accent !default;
+$color__button--background--hover: $color--accent !default;
+$color__button--text: $color--darkest !default;
+$color__button--text--hover: $color--darkest !default;
 
 
-// @import "../global/colors";
+
+$color__telephone--background: $color--darkest !default;
+$color__telephone--text: $color--darkest !default;
+$color__telephone--text--hover: $color--darkest !default;
 
 
 

@@ -31,9 +31,9 @@
 
 
     &:hover {
-        // background-color: $color__navigation-item--text--hover;
-        // border: $color__navigation-item--border--hover;
-        // color: $color__navigation--text--hover;
+        background-color: $color__navigation-item--background--hover;
+        border: $style__navigation-item--border--hover;
+        color: $color__navigation--text--hover;
         cursor: pointer;
     }
 }
@@ -53,7 +53,7 @@
 
 // Navigation List
 .navigation-list {
-    // background: $color__navigation--background;
+    background: $color__navigation--background;
     // border: $color__navigation--border;
     list-style: none;
     margin-left: 0;

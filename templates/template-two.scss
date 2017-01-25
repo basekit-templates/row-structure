@@ -1,0 +1,236 @@
+
+// -------------------------------------
+// Template - Styling
+// -------------------------------------
+
+
+
+
+// Colour Variables
+// -----------------------------
+
+
+// Colour Swatch
+$color--lightest: #ffffff;
+$color--light: #f2f2f2;
+$color--accent: #d61e1e;
+$color--dark: #afafaf;
+$color--darkest: #2b2f3a;
+
+
+
+
+// Row Variables
+// -----------------------------
+
+
+
+
+// Column Variables
+// -----------------------------
+
+
+
+
+// Font Variables
+// -----------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+
+$font__primary: 'Poppins';
+$font__secondary: 'Poppins';
+$font__icon: 'Font Awesome';
+
+
+// Colour
+$color__h1--text: $color--accent;
+$color__h2--text: $color--accent;
+$color__h3--text: $color--accent;
+$color__h4--text: $color--accent;
+$color__p--text: $color--dark;
+
+
+// Heading One
+$font__h1--font-family: $font__primary;
+$font__h1--font-size: 50px;
+$font__h1--font-weight: 700;
+$font__h1--letter-spacing: 1px;
+$font__h1--line-height: 74px;
+
+
+// Heading Two
+$font__h2--font-family: $font__primary;
+$font__h2--font-size: 34px;
+$font__h2--font-weight: 700;
+$font__h2--letter-spacing: 1px;
+$font__h2--line-height: 36px;
+
+
+// Heading Three
+$font__h3--font-family: $font__primary;
+$font__h3--font-size: 30px;
+$font__h3--font-weight: 700;
+$font__h3--letter-spacing: 1px;
+$font__h3--line-height: 42px;
+
+
+// Heading Four
+$font__h4--font-family: $font__primary;
+$font__h4--font-weight: 700;
+$font__h4--letter-spacing: 1px;
+
+
+// Body Text
+$font__p--font-family: $font__secondary;
+$font__p--font-size: 16px;
+$font__p--font-weight: 400;
+$font__p--line-height: 30px;
+$font__p--letter-spacing: 1px;
+
+
+// Body Text
+$color__p--text: $color--dark;
+$color__link--text: $color--darkest;
+
+
+
+
+// Row Styling
+// -----------------------------
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+// Templates Styles
+
+
+// Buttons
+// $color__button--background: $color--accent;
+// $color__button--background--hover: darken($color--accent, 10%);
+// $color__button--text: $color--lightest;
+// $color__button--text--hover: $color--lightest;
+
+// $font__button--font-size: 16px;
+// $font__button--font-weight: 400;
+// $font__button--letter-spacing: 1px;
+
+// $style__button--box-shadow: 8px 8px 0 0 $color--light;
+
+
+// Click to Call
+$color__telephone--background: transparent;
+$color__telephone--text: $color--dark;
+$color__telephone--text--hover: $color--darkest;
+
+$font__telephone--font-family: $font__primary;
+$font__telephone--font-size: 20px !important;
+$font__telephone--font-weight: 500;
+$font__telephone--line-height: 26px;
+$font__telephone--text-transform: uppercase;
+
+$style__telephone--transition: all, 0.5s, ease;
+
+
+
+// Content
+
+
+// Divider
+
+
+// Feature
+
+
+// Form
+$color__form-fieldset--background: $color--lightest;
+$color__form-fieldset--border: 1px solid $color--light;
+$style__form-fieldset--box-shadow: 8px 8px 0 0 $color--light;
+
+
+$color__form-label--text: $color--dark;
+$color__form-legend--background: $color--darkest;
+$color__form-legend--text: $color--lightest;
+$color__form-input--background: transparent;
+$style__form-input--box-shadow: 8px 8px 0 0 $color--light;
+$color__form-button--background: $color--accent;
+$color__form-button--background--hover: $color--accent;
+
+$font__form-label--font-family: $font__secondary;
+$font__form-label--font-size: 15px;
+$font__form-label--font-weight: 400;
+
+$font__form-legend--font-family: $font__primary;
+$font__form-legend--font-size: 18px;
+
+$style__form-input--border: 1px solid $color--light;
+$style__form-fieldset--padding: 30px;
+
+
+// Gallery
+
+
+// Google Map
+
+
+// Image
+
+
+// Linkedin
+
+
+// Logo
+
+
+// Navigation
+$color__navigation--background: $color--accent;
+$color__navigation-item--background--hover: $color--accent;
+$color__navigation--text: $color--lightest;
+$color__navigation--text--hover: $color--lightest;
+
+$font__navigation--font-family: $font__secondary;
+$font__navigation--font-size: 16px;
+$font__navigation--font-weight: 400;
+$font__navigation--line-height: 26px;
+$font__navigation--letter-spacing: 1px;
+$font__navigation--text-transform: uppercase;
+
+$style__navigation-item--border: transparent;
+$style__navigation-item--transition: all, 0.5s, ease;
+
+
+// Profile Data
+
+
+// Slideshow
+
+
+// Social Icons
+$color__social-icons--background: $color--accent;
+$color__social-icons--background--hover: darken($color--accent, 10%);
+
+$color__social-icons--text: $color--lightest;
+
+$font__social-icons--font-size: 20px;
+$font__social-icons--line-height: 20px;
+
+$style__social-icons--transition: all, 0.5s, ease;
+
+
+// Twitter Feed
+
+
+// Widgets
+
+
+// Yelp
+
+
+// Youtube
+
+
+
+

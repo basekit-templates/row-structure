@@ -1,0 +1,228 @@
+
+// -----------------------------
+// Framework: Typography
+// -----------------------------
+
+
+
+
+//  Font Variables
+// -----------------------------
+
+
+// Font Family Defaults
+$font__primary: 'Helvetica' !default;
+$font__secondary: 'Georgia' !default;
+$font__icon: 'Font Awesome';
+
+
+
+// Heading One
+$color__h1--text: $color--darkest !default;
+$font__h1--font-family: $font__primary !default;
+$font__h1--font-size: 42px !default;
+$font__h1--line-height: 42px !default;
+$font__h1--font-weight: normal !default;
+$font__h1--letter-spacing: 0 !default;
+
+
+h1,
+.heading--1 {
+    color: $color__h1--text;
+    font-family: $font__h1--font-family;
+    font-weight: $font__h1--font-weight;
+    letter-spacing: $font__h1--letter-spacing;
+    line-height: $font__h1--line-height;
+}
+
+
+
+// Heading Two
+$color_h2--text: $color--accent !default;
+$font__h2--font-family: $font__primary !default;
+$font__h2--font-size: 36px !default;
+$font__h2--font-weight: normal !default;
+$font__h2--line-height: 36px !default;
+$font__h2--letter-spacing: 0 !default;
+
+
+h2,
+.heading--2 {
+    color: $color__h2--text;
+    font-family: $font__h2--font-family;
+    font-size: $font__h2--font-size;
+    font-weight: $font__h2--font-weight;
+    letter-spacing: $font__h2--letter-spacing;
+    line-height: $font__h2--line-height;
+}
+
+
+
+// Heading Three
+$color__h3--text: $color--darkest !default;
+$font__h3--font-family: $font__primary !default;
+$font__h3--font-size: 28px !default;
+$font__h3--font-weight: normal !default;
+$font__h3--line-height: 28px !default;
+$font__h3--letter-spacing: 0 !default;
+
+
+h3,
+.heading--3 {
+    color: $color__h3--text;
+    font-family: $font__h3--font-family;
+    font-weight: $font__h3--font-weight;
+    letter-spacing: $font__h3--letter-spacing;
+    line-height: $font__h3--line-height;
+}
+
+
+
+// Heading Four
+$color__h4--text: $color--darkest !default;
+$font__h4--font-family: $font__primary !default;
+$font__h4--font-size: 20px !default;
+$font__h4--font-weight: normal !default;
+$font__h4--line-height: 20px !default;
+$font__h4--letter-spacing: 0 !default;
+
+
+h4,
+.heading--4 {
+    color: $color__h4--text;
+    font-family: $font__h4--font-family;
+    font-weight: $font__h4--font-weight;
+    letter-spacing: $font__h4--letter-spacing;
+    line-height: $font__h4--line-height;
+}
+
+
+
+// Paragraph & Links
+$color__link--text: $color--accent !default;
+$color__p--text: $color--dark !default;
+$font__p--font-family: $font__secondary !default;
+$font__p--font-size: 16px !default;
+$font__p--font-weight: normal !default;
+$font__p--line-height: 24px !default;
+$font__p--letter-spacing: 0 !default;
+
+
+p,
+.paragraph,
+a {
+    font-family: $font__p--font-family;
+    font-size: $font__p--font-size;
+    font-weight: $font__p--font-weight;
+    letter-spacing: $font__p--letter-spacing;
+    line-height: $font__p--line-height;
+}
+
+
+// Paragraph Colour
+p,
+.paragraph {
+    color: $color__p--text;
+}
+
+
+// Link Colour
+a,
+.link {
+    color: $color__link--text;
+}
+
+
+
+
+//  Font Defaults
+// -----------------------------
+
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a {
+    margin-top: 0;
+     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Type Spacing
+p,
+.paragraph,
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0;
+
+
+    &+ p {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+//  Text Alignment
+// -----------------------------
+
+
+// Left Alignment
+.text__align-left {
+    text-align: left;
+}
+
+
+// Center Alignment
+.text__align-center {
+    text-align: center;
+}
+
+
+// Right Alignment
+.text__align-right {
+    text-align: right;
+}
+
+
+
+
+//  Font Icons
+// -----------------------------
+
+
+.icon:before {
+    font-family: 'FontAwesome', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Facebook Icon
+.icon--facebook:before {
+    content: "\f09a";
+}
+
+
+// Twitter Icon
+.icon--twitter:before {
+    content: "\f099";
+}
+
+
+// Pinterest Icon
+.icon--instagram:before {
+    content: "\f16d";
+}

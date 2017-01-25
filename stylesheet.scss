@@ -12,7 +12,8 @@
 
 @import "framework/global/resets";
 @import "framework/global/mixins";
-// @import "framework/global/colors";
+@import "framework/global/colors";
+@import "framework/global/typography";
 
 
 
@@ -20,51 +21,18 @@
 // Imports: Column
 // -----------------------------
 
+
 @import "framework/columns/grid";
 @import "framework/columns/alignment";
 
 
-@import "templates/template-one";
 
-// Imports: Widgets
+// Imports: Row Framework
 // -----------------------------
 
-@import 'framework/widgets/buttons-variables';
-@import 'framework/widgets/buttons';
-
-// @import 'framework/widgets/company-name';
-// @import 'framework/widgets/content';
-// @import 'framework/widgets/divider';
-// @import 'framework/widgets/feature';
-// @import 'framework/widgets/fonecta-widgets';
-// @import 'framework/widgets/gallery';
-// @import 'framework/widgets/google-map';
-// @import 'framework/widgets/image';
-// @import 'framework/widgets/linkedin';
-@import 'framework/widgets/logo';
-
-@import 'framework/widgets/navigation-variables';
-@import 'framework/widgets/navigation';
-
-// @import 'framework/widgets/profile';
-// @import 'framework/widgets/slideshow';
-@import 'framework/widgets/social-icons';
-// @import 'framework/widgets/twitter-feed';
-// @import 'framework/widgets/widgets';
-// @import 'framework/widgets/yelp';
-// @import 'framework/widgets/youtube';
-
-
-
-
-// Imports: Row
-// -----------------------------
 
 @import "framework/row/background";
 @import "framework/row/structure";
-@import "rows/navigation/nav-01/nav-01";
-@import "rows/hero/hero-01/hero-01";
-@import "rows/content/content-01";
 
 
 
@@ -72,4 +40,55 @@
 // Imports: Template
 // -----------------------------
 
-@import "templates/template-one";
+
+@import "templates/template-two";
+
+
+
+
+// Imports: Rows
+// -----------------------------
+
+
+@import "rows/navigation/nav-01";
+@import "rows/hero/hero-01";
+@import "rows/content/content-01";
+@import "rows/images/image-01";
+@import "rows/contact/contact-01";
+@import "rows/footer1/footer-01";
+
+
+
+
+// Imports: Widgets
+// -----------------------------
+
+
+@import 'framework/widgets/buttons/buttons';
+@import 'framework/widgets/companyname';
+//@import 'framework/widgets/content/content';
+//@import 'framework/widgets/divider/divider';
+//@import 'framework/widgets/feature/feature';
+//@import 'framework/widgets/forms/fonecta-widgets';
+@import "framework/widgets/forms/forms";
+
+//@import 'framework/widgets/gallery/gallery';
+//@import 'framework/widgets/map/google-map';
+//@import 'framework/widgets/images/image';
+//@import 'framework/widgets/linkedin/linkedin';
+
+@import 'framework/widgets/logo';
+
+@import 'framework/widgets/navigation-variables';
+@import 'framework/widgets/navigation';
+
+// @import 'framework/widgets/profile';
+// @import 'framework/widgets/slideshow';
+
+@import 'framework/widgets/social-icons-variables';
+@import 'framework/widgets/social-icons';
+
+// @import 'framework/widgets/twitter-feed';
+@import 'framework/widgets/widgets';
+// @import 'framework/widgets/yelp';
+// @import 'framework/widgets/youtube';

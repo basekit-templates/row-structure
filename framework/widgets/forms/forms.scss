@@ -1,0 +1,103 @@
+
+// -------------------------
+// Widgets: Forms
+// -------------------------
+
+
+
+
+//  Default Variables
+// -----------------------------
+
+
+@import 'form-variables';
+
+
+
+
+//  Forms: Global
+// -----------------------------
+
+
+fieldset {
+    background: $color__form-fieldset--background;
+    border: $color__form-fieldset--border;
+    @include box-shadow($style__form-fieldset--box-shadow);
+    margin: 0;
+    padding: $style__form-fieldset--padding;
+}
+
+
+legend {
+    background-color: $color__form-legend--background;
+    color: $color__form-legend--text;
+    font-family: $font__form-legend--font-family;
+    font-size: $font__form-legend--font-size;
+    font-weight: $font__form-legend--font-weight;
+    letter-spacing: $font__form-legend--letter-spacing;
+    line-height: $font__form-legend--line-height;
+    text-transform: $font__form-legend--text-transform;
+}
+
+
+label {
+    color: $color__form-label--text;
+    font-family: $font__form-label--font-family;
+    font-size: $font__form-label--font-size;
+    font-weight: $font__form-label--font-weight;
+    letter-spacing: $font__form-label--letter-spacing;
+    line-height: $font__form-label--line-height;
+    text-transform: $font__form-label--text-transform;
+}
+
+
+::-webkit-input-placeholder {
+    color: $color__form--text;
+}
+
+::-moz-placeholder {
+    color: $color__form--text;
+}
+
+:-ms-input-placeholder {
+    color: $color__form--text;
+}
+
+:-moz-placeholder {
+    color: $color__form--text;
+}
+
+
+input,
+textarea,
+select {
+    background: $color__form-input--background;
+    border: $style__form-input--border;
+    @include box-shadow($style__form-input--box-shadow);
+    color: $color__form--text;
+    font-family: $font__form--font-family;
+    font-size: $font__form--font-size;
+    font-weight: $font__form--font-weight;
+    letter-spacing: $font__form--letter-spacing;
+    line-height: $font__form--line-height;
+    text-transform: $font__form--text-transform;
+}
+
+
+.contactform,
+.advancedcontactform {
+
+
+    button {
+        background-color: $color__form-button--background;
+        border: $style__form-button--border;
+        color: $color__form-button--text;
+        font-family: $font__form-button--font-family;
+        font-size: $font__form-button--font-size;
+        font-weight: $font__form-button--font-weight;
+        letter-spacing: $font__form-button--letter-spacing;
+        line-height: $font__form-button--line-height;
+        outline: $style__form-button--outline;
+        text-transform: $font__form-button--text-transform;
+    }
+}

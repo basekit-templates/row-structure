@@ -1,0 +1,74 @@
+
+// -------------------------
+//  Variables: Forms
+// -------------------------
+
+
+
+
+//  Font Properties
+// -----------------------------
+
+
+$font__form--font-family: $font__secondary !default;
+$font__form--font-size: 16px !default;
+$font__form--font-weight: 400 !default;
+$font__form--letter-spacing: 0 !default;
+$font__form--line-height: 24px !default;
+$font__form--text-transform: none !default;
+
+
+$font__form-label--font-family: $font__primary !default;
+$font__form-label--font-size: 16px !default;
+$font__form-label--font-weight: normal !default;
+$font__form-label--letter-spacing: 0 !default;
+$font__form-label--line-height: 24px !default;
+$font__form-label--text-transform: none !default;
+
+
+$font__form-legend--font-family: $font__primary !default;
+$font__form-legend--font-size: 16px !default;
+$font__form-legend--font-weight: normal !default;
+$font__form-legend--letter-spacing: 0 !default;
+$font__form-legend--line-height: 24px !default;
+$font__form-legend--text-transform: none !default;
+
+
+$font__form-button--font-family: $font__secondary !default;
+$font__form-button--font-size: 16px !default;
+$font__form-button--font-weight: normal !default;
+$font__form-button--letter-spacing: 0 !default;
+$font__form-button--line-height: 24px !default;
+$font__form-button--text-transform: none !default;
+
+
+
+
+//  Colour Properties
+// -----------------------------
+
+
+$color__form-fieldset--background: transparent !default;
+$color__form-fieldset--border: none !default;
+$color__form-legend--background: transparent !default;
+$color__form-legend--text: $color--darkest !default;
+$color__form-label--text: $color--dark !default;
+$color__form--text: $color--dark !default;
+$color__form-input--background: $color--lightest !default;
+$color__form-input--border: transparent !default;
+$color__form-button--background: $color--accent !default;
+$color__form-button--text: $color--lightest !default;
+
+
+
+
+//  Style Properties
+// -----------------------------
+
+
+$style__form-button--border: $style__button--border !default;
+$style__form-fieldset--box-shadow: none !default;
+$style__form-button--outline: $style__button--outline !default;
+$style__form-fieldset--padding: 0 !default;
+$style__form-input--border: none !default;
+$style__form-input--box-shadow: none !default;

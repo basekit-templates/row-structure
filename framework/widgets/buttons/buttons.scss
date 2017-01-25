@@ -6,6 +6,15 @@
 
 
 
+//  Default Variables
+// -----------------------------
+
+
+@import 'buttons-variables';
+
+
+
+
 //  Button: Global
 // -----------------------------
 
@@ -18,17 +27,17 @@ button,
 
 
     // Variables
-    background-color: color-tone(color-accent, color__button--background);
-    border: color-tone(color-accent, color__button--border);
+    background-color: $color__button--background;
+    border: $style__button--border--hover;
     @include border-radius($style__button--border-radius);
     @include box-shadow($style__button--box-shadow);
-    color: color-tone(color-accent, color__button--text);
+    color: $color__button--text;
     font-family: $font__button--font-family;
     font-size: $font__button--font-size;
     font-weight: $font__button--font-weight;
     letter-spacing: $font__button--letter-spacing;
     line-height: $font__button--line-height;
-    outline: color-tone(color-accent, color__button--outline);
+    outline: $style__button--outline;
     padding: $style__button--padding;
     position: $style__button--position;
     text-transform: $font__button--text-transform;
@@ -45,9 +54,10 @@ button,
 
     // Hover State
     &:hover {
-        background-color: color-tone(color-accent, color__button--background--hover);
-        border: 1px solid color-tone(color-accent, color__button--border--hover);
-        color: color-tone(color-accent, color__button--text--hover);
+        background-color: $color__button--background--hover;
+        border: $style__button--border--hover;
+        color: $color__button--text--hover;
+        cursor: pointer;
         text-decoration: none;
     }
 
@@ -118,7 +128,7 @@ button,
 
 
     // Variables
-    //background-color: $color__button--background;
+    background-color: $color__telephone--background;
     border: $style__telephone--border;
     @include border-radius($style__telephone--border-radius);
     @include box-shadow($style__telephone--box-shadow);

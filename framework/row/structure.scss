@@ -11,23 +11,23 @@
 
 
 // Height
-$row--height-full: 100vh;
-$row--height-default: auto;
-$row--height-medium: 700px;
-$row--height-small: 400px;
+$row__height--full: 100vh;
+$row__height--medium: 70vh;
+$row__height--small: 35vh;
+$row__height--default: auto;
 
 
 // Width
-$row--width-full: 100%;
-$row--width-wide: 80%;
-$row--width-contained: 1100px;
+$row__width--full: 100%;
+$row__width--wide: 80%;
+$row__width--contained: 1100px;
 
 
 // Spacing
-$row--padding-large: 60px;
-$row--padding-medium: 30px;
-$row--padding-small: 15px;
-$row--padding-none: 0;
+$row__padding--large: 60px;
+$row__padding--medium: 30px;
+$row__padding--small: 15px;
+$row__padding--none: 0;
 
 
 
@@ -61,7 +61,7 @@ $row--padding-none: 0;
 // Row / Container Height
 .row,
 .row__container {
-    height: $row--height-default;
+    min-height: $row__height--default;
 }
 
 
@@ -72,5 +72,5 @@ $row--padding-none: 0;
 
 // Container Width
 .row__container {
-    width: $row--width-full;
+    width: $row__width--full;
 }

@@ -8,9 +8,12 @@
 //  Font Properties
 // -----------------------------
 
+$font__primary: Helvetica;
+$font__secondary: Georgia;
+
 
 // Heading One
-$font__h1--font-family: $font--primary;
+$font__h1--font-family: $font__primary;
 $font__h1--font-size: 42px;
 $font__h1--line-height: 42px;
 $font__h1--font-weight: normal;
@@ -18,7 +21,7 @@ $font__h1--letter-spacing: 0;
 
 
 // Heading Two
-$font__h2--font-family: $font--primary;
+$font__h2--font-family: $font__primary;
 $font__h2--font-size: 36px;
 $font__h2--font-weight: normal;
 $font__h2--line-height: 36px;
@@ -26,7 +29,7 @@ $font__h2--letter-spacing: 0;
 
 
 // Heading Three
-$font__h3--font-family: $font--primary;
+$font__h3--font-family: $font__primary;
 $font__h3--font-size: 28px;
 $font__h3--font-weight: normal;
 $font__h3--line-height: 28px;
@@ -34,7 +37,7 @@ $font__h3--letter-spacing: 0;
 
 
 // Heading Four
-$font__h4--font-family: $font--primary;
+$font__h4--font-family: $font__primary;
 $font__h4--font-size: 20px;
 $font__h4--font-weight: normal;
 $font__h4--line-height: 20px;
@@ -42,7 +45,7 @@ $font__h4--letter-spacing: 0;
 
 
 // Paragraph
-$font__p--font-family: $font--secondary;
+$font__p--font-family: $font__secondary;
 $font__p--font-size: 16px;
 $font__p--font-weight: normal;
 $font__p--line-height: 24px;
@@ -55,15 +58,15 @@ $font__p--letter-spacing: 0;
 
 
 // Headings
-$color__h1--text: $color--darkest;
-$color__h2--text: $color--darkest;
-$color__h3--text: $color--darkest;
-$color__h4--text: $color--darkest;
+$color__h1--text: $color--darkest !default;
+$color__h2--text: $color--darkest !default;
+$color__h3--text: $color--darkest !default;
+$color__h4--text: $color--darkest !default;
 
 
 // Body Text
-$color__p--text: $color--dark;
-$color__link--text: $color--accent;
+$color__p--text: $color--dark !default;
+$color__link--text: $color--accent !default;
 
 
 
@@ -74,152 +77,152 @@ $color__link--text: $color--accent;
 
 
 // Body
-$color__body--background: $color--lightest;
-$color__body--border: transparent;
+$color__body--background: $color--lightest !default;
+$color__body--border: transparent !default
 
 
 // Container
-$color__container--background: $color--lightest;
-$color__container--border: transparent;
+$color__container--background: $color--lightest !default;
+$color__container--border: transparent !default;
 
 
 
 
-// -------------------------
-//  Variables: Buttons
-// -------------------------
+// // -------------------------
+// //  Variables: Buttons
+// // -------------------------
 
 
 
-//  Font Properties
-// -----------------------------
+// //  Font Properties
+// // -----------------------------
 
 
-$font__button--font-family: ;
-$font__button--font-size: ;
-$font__button--font-weight: ;
-$font__button--letter-spacing: ;
-$font__button--line-height: ;
-$font__button--text-transform: ;
-
-
-
-//  Colour Properties
-// -----------------------------
-
-
-$color__button--background: ;
-$color__button--border: ;
-$color__button--text: ;
+// $font__button--font-family: ;
+// $font__button--font-size: ;
+// $font__button--font-weight: ;
+// $font__button--letter-spacing: ;
+// $font__button--line-height: ;
+// $font__button--text-transform: ;
 
 
 
-
-// -------------------------
-//  Variables: Divider
-// -------------------------
+// //  Colour Properties
+// // -----------------------------
 
 
-$color__divider--background: ;
-$color__divider--border: ;
-$style__divider--thickness: 1px ;
+// $color__button--background: ;
+// $color__button--border: ;
+// $color__button--text: ;
 
 
 
 
-// -------------------------
-//  Variables: Feature
-// -------------------------
+// // -------------------------
+// //  Variables: Divider
+// // -------------------------
 
 
-
-//  Font Properties
-// -----------------------------
-
-
-// Headline
-$font__feature-headline--font-family: ;
-$font__feature-headline--font-size: ;
-$font__feature-headline--font-weight: ;
-$font__feature-headline--letter-spacing: ;
-$font__feature-headline--line-height: ;
-$font__feature-headline--text-transform: ;
-
-
-// Strapline
-$font__feature-strapline--font-family: ;
-$font__feature-strapline--font-size: ;
-$font__feature-strapline--font-weight: ;
-$font__feature-strapline--letter-spacing: ;
-$font__feature-strapline--line-height: ;
-$font__feature-strapline--text-transform: ;
-
-
-// Button
-$font__feature-button--font-family: ;
-$font__feature-button--font-size: ;
-$font__feature-button--font-weight: ;
-$font__feature-button--letter-spacing: ;
-$font__feature-button--line-height: ;
-$font__feature-button--text-transform: ;
-
-
-
-//  Colour Properties
-// -----------------------------
-
-
-// Headline
-$color__feature-headline--background: ;
-$color__feature-headline--text: ;
-
-
-// Strapline
-$color__feature-strapline--background: ;
-$color__feature-strapline--text: ;
-
-
-// Content Wrapper
-$color__feature-content--background: ;
-$color__feature-content--border: ;
-$color__feature-content--outline: ;
-
-
-// Button
-$color__feature-button--background: ;
-$color__feature-button--border: ;
-$color__feature-button--outline: ;
-$color__feature-button--text: ;
-
-
-
-//  Style Properties
-// -----------------------------
-
-
-// Content Wrapper
-$style__feature-content--padding: ;
-
-
-// Button
-$style__feature-button--outline: ;
-$style__feature-button--padding: ;
-$style__feature-button--position: ;
-$style__feature-button--transition: ;
+// $color__divider--background: ;
+// $color__divider--border: ;
+// $style__divider--thickness: 1px ;
 
 
 
 
-// -------------------------
-//  Variables: Gallery
-// -------------------------
+// // -------------------------
+// //  Variables: Feature
+// // -------------------------
+
+
+
+// //  Font Properties
+// // -----------------------------
+
+
+// // Headline
+// $font__feature-headline--font-family: ;
+// $font__feature-headline--font-size: ;
+// $font__feature-headline--font-weight: ;
+// $font__feature-headline--letter-spacing: ;
+// $font__feature-headline--line-height: ;
+// $font__feature-headline--text-transform: ;
+
+
+// // Strapline
+// $font__feature-strapline--font-family: ;
+// $font__feature-strapline--font-size: ;
+// $font__feature-strapline--font-weight: ;
+// $font__feature-strapline--letter-spacing: ;
+// $font__feature-strapline--line-height: ;
+// $font__feature-strapline--text-transform: ;
+
+
+// // Button
+// $font__feature-button--font-family: ;
+// $font__feature-button--font-size: ;
+// $font__feature-button--font-weight: ;
+// $font__feature-button--letter-spacing: ;
+// $font__feature-button--line-height: ;
+// $font__feature-button--text-transform: ;
+
+
+
+// //  Colour Properties
+// // -----------------------------
+
+
+// // Headline
+// $color__feature-headline--background: ;
+// $color__feature-headline--text: ;
+
+
+// // Strapline
+// $color__feature-strapline--background: ;
+// $color__feature-strapline--text: ;
+
+
+// // Content Wrapper
+// $color__feature-content--background: ;
+// $color__feature-content--border: ;
+// $color__feature-content--outline: ;
+
+
+// // Button
+// $color__feature-button--background: ;
+// $color__feature-button--border: ;
+// $color__feature-button--outline: ;
+// $color__feature-button--text: ;
+
+
+
+// //  Style Properties
+// // -----------------------------
+
+
+// // Content Wrapper
+// $style__feature-content--padding: ;
+
+
+// // Button
+// $style__feature-button--outline: ;
+// $style__feature-button--padding: ;
+// $style__feature-button--position: ;
+// $style__feature-button--transition: ;
 
 
 
 
-// -------------------------
-//  Variables: Image
-// -------------------------
+// // -------------------------
+// //  Variables: Gallery
+// // -------------------------
+
+
+
+
+// // -------------------------
+// //  Variables: Image
+// // -------------------------
 
 
 

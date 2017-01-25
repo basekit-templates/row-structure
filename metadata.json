@@ -1,5 +1,6 @@
 {
     "name":"Row structure",
     "preprocessor": "sass",
+    "pageTypes": ["theme-1", "theme-2"],
     "widgetVersion": 2
 }

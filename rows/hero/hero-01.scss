@@ -1,6 +1,6 @@
 
 // -------------------------------------
-// Content: Design One
+// Header: Design One
 // -------------------------------------
 
 
@@ -10,27 +10,27 @@
 
 
 .theme-1 {
-    .row__content--01 {
-        background: $color--darkest;
+    .row__hero--01 {
 
 
         // Row Height
         &.row,
         .row__container {
-            min-height: $row__height--default;
+            min-height: $row__height--medium;
         }
 
 
         // Row Padding
         &.row {
+            //background: $color__row--background;
             background-size: cover;
-            padding: $row__padding--large;
+            padding: $row__padding--none;
         }
 
 
         // Row Container Width
         .row__container {
-            width: $row__width--contained;
+            width: $row__width--full;
         }
 
 
@@ -42,32 +42,37 @@
 
 
 .theme-2 {
-    .row__content--01 {
-        background: $color--lightest;
+    .row__hero--01 {
 
 
         // Row Height
         &.row,
         .row__container {
-            min-height: $row__height--default;
+            min-height: $row__height--medium;
         }
 
 
         // Row Padding
         &.row {
-            padding: $row__padding--large;
+            background-size: cover;
+            padding: $row__padding--none;
         }
 
 
         // Row Container Width
         .row__container {
-            width: $row__width--contained;
+            width: $row__width--full;
+        }
+
+
+        &.row__overlay:after {
+            background: rgba(0,0,0, 0.25);
         }
     }
 }
 
 
 
-
 // Widget Styling
 // -----------------------------
+

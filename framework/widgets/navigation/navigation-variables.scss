@@ -60,7 +60,7 @@ $font__navigation--text-transform: none !default;
 
 // @import "../global/colors";
 
-
+$color__navigation--background: transparent !default;
 $color__navigation-item--background: $color--light !default;
 $color__navigation-item--background--hover: $color--light !default;
 $color__navigation-item--border: $color--accent !default;
@@ -77,6 +77,7 @@ $color__navigation--text--hover: $color--darkest !default;
 
 
 $style__navigation-item--border: none !default;
+$style__navigation-item--border--hover: none !default;
 $style__navigation-item--border-radius: 0 !default;
 $style__navigation-item--box-shadow: none !default;
 $style__navigation-item--outline: none !default;

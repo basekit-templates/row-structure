@@ -1,0 +1,91 @@
+
+// -------------------------------------
+// Footer: Design One
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.theme-1 {
+    .row__footer--01 {
+        background: $color--darkest;
+
+
+        // Row Height
+        &.row,
+        .row__container {
+            height: $row__height--default;
+        }
+
+
+        // Row Padding
+        &.row {
+            padding: $row__padding--medium  $row__padding--large;
+        }
+
+
+        // Row Container Width
+        .row__container {
+            width: $row__width--full;
+        }
+
+        .logo-image {
+            max-width: 125px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.theme-2 {
+    .row__footer--01 {
+        background: $color--darkest;
+
+
+        // Row Height
+        &.row,
+        .row__container {
+            height: $row__height--default;
+        }
+
+
+        // Row Padding
+        &.row {
+            padding: $row__padding--medium  $row__padding--large;
+        }
+
+
+        // Row Container Width
+        .row__container {
+            width: $row__width--full;
+        }
+
+
+        .logo-image {
+            max-width: 125px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+// Navigation
+.navigation-toggle {
+    display: none;
+    visibility: hidden;
+}

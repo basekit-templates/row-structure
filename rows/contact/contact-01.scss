@@ -1,6 +1,6 @@
 
 // -------------------------------------
-// Content: Design One
+// Contact: Design One
 // -------------------------------------
 
 
@@ -10,14 +10,14 @@
 
 
 .theme-1 {
-    .row__content--01 {
+    .row__contact--01 {
         background: $color--darkest;
 
 
         // Row Height
         &.row,
         .row__container {
-            min-height: $row__height--default;
+            height: $row__height--default;
         }
 
 
@@ -32,24 +32,19 @@
         .row__container {
             width: $row__width--contained;
         }
-
-
-        &.row__overlay:after {
-            background: rgba(0,0,0, 0.65);
-        }
     }
 }
 
 
 .theme-2 {
-    .row__content--01 {
+    .row__contact--01 {
         background: $color--lightest;
 
 
         // Row Height
         &.row,
         .row__container {
-            min-height: $row__height--default;
+            height: $row__height--default;
         }
 
 
@@ -71,3 +66,51 @@
 
 // Widget Styling
 // -----------------------------
+
+
+.row__contact--01 {
+    [data-widget-type="content"] h2 {
+        line-height: 44px;
+    }
+}
+
+
+[data-widget-type="contactform"] {
+    width: 100%;
+}
+
+
+.contactform {
+
+
+    &__legend {
+        padding: 8px 10px 6px;
+    }
+
+
+    &__label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+
+    &__input,
+    &__textarea {
+        display: block;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 100%;
+    }
+
+
+    &__textarea {
+        min-height: 125px;
+    }
+
+
+    .button {
+        padding: 12px 24px;
+    }
+}
+
+

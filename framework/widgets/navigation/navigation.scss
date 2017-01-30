@@ -1,6 +1,16 @@
-// -------------------------
-// WIDGETS: Navigation
-// -------------------------
+
+// -------------------------------------
+// Widgets: Companyname
+// -------------------------------------
+
+
+
+
+//  Default Variables
+// -----------------------------
+
+
+@import 'navigation-variables';
 
 
 
@@ -53,7 +63,7 @@
 
 // Navigation List
 .navigation-list {
-    background: $color__navigation--background;
+    background: $color__navigation-list--background;
     // border: $color__navigation--border;
     list-style: none;
     margin-left: 0;

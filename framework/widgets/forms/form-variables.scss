@@ -10,7 +10,7 @@
 // -----------------------------
 
 
-$font__form--font-family: $font__secondary !default;
+$font__form--font-family: $font__body !default;
 $font__form--font-size: 16px !default;
 $font__form--font-weight: 400 !default;
 $font__form--letter-spacing: 0 !default;
@@ -18,7 +18,7 @@ $font__form--line-height: 24px !default;
 $font__form--text-transform: none !default;
 
 
-$font__form-label--font-family: $font__primary !default;
+$font__form-label--font-family: $font__heading !default;
 $font__form-label--font-size: 16px !default;
 $font__form-label--font-weight: normal !default;
 $font__form-label--letter-spacing: 0 !default;
@@ -26,7 +26,7 @@ $font__form-label--line-height: 24px !default;
 $font__form-label--text-transform: none !default;
 
 
-$font__form-legend--font-family: $font__primary !default;
+$font__form-legend--font-family: $font__heading !default;
 $font__form-legend--font-size: 16px !default;
 $font__form-legend--font-weight: normal !default;
 $font__form-legend--letter-spacing: 0 !default;
@@ -34,7 +34,7 @@ $font__form-legend--line-height: 24px !default;
 $font__form-legend--text-transform: none !default;
 
 
-$font__form-button--font-family: $font__secondary !default;
+$font__form-button--font-family: $font__body !default;
 $font__form-button--font-size: 16px !default;
 $font__form-button--font-weight: normal !default;
 $font__form-button--letter-spacing: 0 !default;

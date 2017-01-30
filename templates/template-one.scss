@@ -4,7 +4,7 @@
 // -------------------------------------
 
 
-
+.theme-1 {
 
 // Colour Variables
 // -----------------------------
@@ -38,8 +38,8 @@ $color--darkest: #000000;
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
 
 
-$font__primary: Playfair Display;
-$font__secondary: Gibson;
+$font__heading: Playfair Display;
+$font__body: Gibson;
 
 
 // Colour
@@ -51,14 +51,14 @@ $color__p--text: $color--light;
 
 
 // Heading Two
-$font__h2--font-family: $font__primary;
+$font__h2--font-family: $font__heading;
 $font__h2--font-size: 28px;
 $font__h2--font-weight: 600;
 $font__h2--line-height: 36px;
 
 
 // Body Text
-$font__p--font-family: $font__secondary;
+$font__p--font-family: $font__body;
 $font__p--font-size: 18px;
 $font__p--font-weight: 400;
 $font__p--line-height: 30px;
@@ -100,7 +100,7 @@ $style__button--border--hover: 1px solid $color--lightest;
 $color__telephone--text: $color--lightest;
 $color__telephone--text--hover: $color--lightest;
 
-$font__telephone--font-family: $font__primary;
+$font__telephone--font-family: $font__heading;
 $font__telephone--font-size: 20px !important;
 $font__telephone--font-weight: 500;
 $font__telephone--line-height: 26px;
@@ -126,7 +126,7 @@ $color__form-button--background: transparent;
 $color__form-button--background--hover: transparent;
 
 $font__form-label--text-transform: uppercase;
-$font__form-label--font-family: $font__secondary;
+$font__form-label--font-family: $font__body;
 $font__form-label--font-size: 12px;
 $font__form-label--font-weight: 400;
 $font__form-label--letter-spacing: 2px;
@@ -152,8 +152,9 @@ $style__form-input--border: 1px solid $color--lightest;
 // Navigation
 $color__navigation-item--background: transparent;
 $color__navigation--text: $color--lightest;
+$color__navigation--text--hover: $color--lightest;
 
-$font__navigation--font-family: $font__secondary;
+$font__navigation--font-family: $font__body;
 $font__navigation--font-size: 14px;
 $font__navigation--font-weight: 500;
 $font__navigation--line-height: 20px;
@@ -176,7 +177,6 @@ $color__social-icons--text: $color--lightest;
 $font__social-icons--font-size: 20px;
 $font__social-icons--line-height: 20px;
 
-$style__social-icons--display: none;
 $style__social-icons--transition: all, 0.5s, ease;
 
 
@@ -190,6 +190,9 @@ $style__social-icons--transition: all, 0.5s, ease;
 
 
 // Youtube
+
+
+}
 
 
 

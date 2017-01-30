@@ -7,6 +7,10 @@
 // Widget Positioning
 .widget {
 	position: relative;
+
+    &+ .widget {
+        margin-top: 20px;
+    }
 }
 
 

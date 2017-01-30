@@ -1,0 +1,40 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+
+<div class="bk-row  row  row__hero--02">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--half  align--middle-left">
+
+            <div class="widget widget__image"  style="background-image:url(http://rhysjp.co.uk/dex/brunch.jpg)">
+            </div>
+        </div>
+
+        <div class="row__column  row__column--half  align--middle-center  vertical-alignment--space-between">
+
+             {{widget('companyname', 'header-companyname', {"business": "FitGoal"})|raw}}
+
+            <div class="widget  compound-widget">
+                {{widget('content', 'header-content', {
+                    content: '<h1>Connecting the worlds athletes.</h1>
+                    <h4>Track &amp; analyse performance</h4>'
+                })|raw}}
+
+                {{widget('button', 'header-button', {
+                    'text': 'Read More',
+                    'align': 'widget-align-center'
+                })|raw}}
+            </div>
+
+            {{widget('content', 'header-content-two', {
+                content: '<a>Explore FitGoal</a>'
+            })|raw}}
+
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}

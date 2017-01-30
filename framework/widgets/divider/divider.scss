@@ -4,7 +4,23 @@
 // -------------------------
 
 
+
+
+//  Default Variables
+// -----------------------------
+
+
+@import 'buttons-variables';
+
+
+
+
+//  Divider: Global
+// -----------------------------
+
+
 hr.rule {
+    background-color: $color__hr--background;
     border: none;
     display: inline-block;
 	height: 2px;

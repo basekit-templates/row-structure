@@ -2,5 +2,68 @@
     "name":"Row structure",
     "preprocessor": "sass",
     "pageTypes": ["theme-1", "theme-2"],
-    "widgetVersion": 2
+    "widgetVersion": 2,
+    "styles": {
+        "font-family": {
+            "font__heading": "Helvetica",
+            "font__body": "Georgia"
+        },
+        "typography": {
+            "font__h1--font-family": "$font__heading",
+            "font__h1--font-size": "42px",
+            "font__h1--line-height": "42px",
+            "font__h1--font-weight": "normal",
+            "font__h1--letter-spacing": "0",
+            "color__h1--text": "$color--darkest",
+            "font__h2--font-family": "$font__heading",
+            "font__h2--font-size": "36px",
+            "font__h2--line-height": "36px",
+            "font__h2--font-weight": "normal",
+            "font__h2--letter-spacing": "0",
+            "color__h2--text": "$color--darkest",
+            "font__h3--font-family": "$font__heading",
+            "font__h3--font-size": "28px",
+            "font__h3--font-weight": "normal",
+            "font__h3--line-height": "28px",
+            "font__h3--letter-spacing": "0",
+            "color__h3--text": "$color--darkest",
+            "font__h4--font-family": "$font__heading",
+            "font__h4--font-size": "20px",
+            "font__h4--font-weight": "normal",
+            "font__h4--line-height": "20px",
+            "font__h4--letter-spacing": "0",
+            "color__h4--text": "$color--darkest",
+            "font__p--font-family": "$font__body",
+            "font__p--font-size": "16px",
+            "font__p--font-weight": "normal",
+            "font__p--line-height": "24px",
+            "font__p--letter-spacing": "0",
+            "color__p--text": "$color--dark"
+        },
+        "site": {
+            "color__link--text": "$color--accent",
+            "font__companyname--font-family": "$color--primary",
+            "font__companyname--font-size": "20px",
+            "font__companyname--line-height": "20px",
+            "font__companyname--font-weight": "normal",
+            "font__companyname--letter-spacing": "0",
+            "color__companyname--text": "$color--darkest"
+        },
+         "socialicons": {
+            "color__socialicons--icon--background": "#464646",
+            "color__socialicons--icon": "#ffffff"
+        },
+        "navigation": {
+            "font__navigation--font-family": "$font__body",
+            "font__navigation--font-size": "16px",
+            "font__navigation--font-weight": "normal",
+            "font__navigation--line-height": "24px",
+            "font__navigation--letter-spacing": "0",
+            "color__navigation--background": "transparent",
+            "color__navigation-list--background": "transparent",
+            "color__navigation--text": "$color--dark",
+            "color__navigation--text--hover": "$color--darkest",
+            "color__navigation--text--selected": "$color--darkest"
+        }
+    }
 }

@@ -6,7 +6,8 @@
 
 // Headline
 .feature__headline {
-    color: map-get($color-darkest, color__feature-headline--text);
+    background: $color__feature--background;
+    color: $color__feature-headline--text;
     font-family: $font__feature-headline--font-family;
     font-size: $font__feature-headline--font-size;
     font-weight: $font__feature-headline--font-weight;
@@ -15,17 +16,17 @@
     text-transform: $font__feature-headline--text-transform;
 
 
-    // Possible notches?
-    &:after {
-        content: "";
-        position: relative;
-    }
+    // // Possible notches?
+    // &:after {
+    //     content: "";
+    //     position: relative;
+    // }
 }
 
 
 // Strapline
 .feature__strapline {
-    color: map-get($color--darkest, color__feature-strapline--text);
+    color: $color__feature-strapline--text;
     font-family: $font__feature-strapline--font-family;
     font-size: $font__feature-strapline--font-size;
     font-weight: $font__feature-strapline--font-weight;
@@ -34,11 +35,11 @@
     text-transform: $font__feature-strapline--text-transform;
 
 
-    // Possible notches?
-    &:after {
-        content: "";
-        position: relative;
-    }
+    // // Possible notches?
+    // &:after {
+    //     content: "";
+    //     position: relative;
+    // }
 }
 
 
@@ -51,8 +52,8 @@
 // Content Wrap
 .feature__content-wrap {
     background: $color__feature-content--background;
-    border: $color__feature-content--border;
-    outline: $color__feature-content--outline;
+    border: $style__feature-content--border;
+    outline: $style__feature-content--outline;
 	padding: $style__feature-content--padding;
 }
 
@@ -63,11 +64,11 @@
 
 
     // Variables
-    background-color: map-get($color-light, color__feature-button--background);
+    background-color: $color__feature-button--background;
     border: $style__feature-button--border;
     @include border-radius: $style__feature-button--border-radius;
     @include box-shadow: $style__feature-button--box-shadow;
-    color: map-get($color-light, color__button--text);
+    color: $color__feature-button--text;
     font-family: $font__feature-button--font-family;
     font-size: $font__feature-button--font-size;
     font-weight: $font__feature-button--font-weight;

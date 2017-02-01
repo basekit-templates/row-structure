@@ -1,0 +1,82 @@
+
+// -------------------------
+//  Variables: Image
+// -------------------------
+
+
+
+
+//  Font Properties
+// -----------------------------
+
+
+// Title
+$font__image-title--font-family: $font__heading !default;
+$font__image-title--font-size: 20px !default;
+$font__image-title--font-weight: normal !default;
+$font__image-title--letter-spacing: 0 !default;
+$font__image-title--line-height: 20px !default;
+$font__image-title--text-transform: none !default;
+
+
+// Description
+$font__image-description--font-family: $font__body !default;
+$font__image-description--font-size: 16px !default
+$font__image-description--font-weight: normal !default;
+$font__image-description--letter-spacing: 0 !default;
+$font__image-description--line-height: 24px !default;
+$font__image-description--text-transform: none !default;
+
+
+
+
+//  Colour Properties
+// -----------------------------
+
+
+// Caption
+$color__image-caption--background: transparent !default;
+
+
+// Title
+$color__image-title--background: transparent !default;
+$color__image-title--text: $color--darkest !default;
+
+
+// Description
+$color__image-description--background: transparent !default;
+$color__image-description--text: $color--dark !default;
+
+
+
+
+//  Style Properties
+// -----------------------------
+
+
+// Caption
+$style__image-caption--background: transparent !default;
+$style__image-caption-box-shadow: none !default;
+$style__image-caption--border: none !default;
+$style__image-caption--outline: none !default;
+$style__image-caption--padding: 0 !default;
+
+
+// Title & Description
+$style__image-title--display: block !default;
+
+
+// Title
+$style__image-title--border: none !default;
+$style__image-title--box-shadow: none !default;
+$style__image-title--padding: 0 !default;
+$style__image-title--text-shadow: none !default;
+
+
+// Description
+$style__image-description--border: none !default;
+$style__image-description--box-shadow: none !default;
+$style__image-description--padding: 0 !default;
+$style__image-description--text-shadow: none !default;
+
+

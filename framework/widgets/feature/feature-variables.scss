@@ -68,7 +68,21 @@ $color__feature-content--background: transparent !default;
 // -----------------------------
 
 
-//Button
+// Headline
+$style__feature-headline--box-shadow: none !default;
+$style__feature-headline--border: none !default;
+$style__feature-headline--padding: 0 !default;
+$style__feature-headline--text-shadow: none !default;
+
+
+// Strapline
+$style__feature-strapline--box-shadow: none !default;
+$style__feature-strapline--padding: 0 !default;
+$style__feature-strapline--border: none !default;
+$style__feature-strapline--text-shadow: none !default;
+
+
+// Button
 $style__feature-button--border: none !default;
 $style__feature-button--border-radius: 0 !default;
 $style__feature-button--box-shadow: none !default;
@@ -80,5 +94,7 @@ $style__feature-button--transition: none !default;
 
 // Content Wrapper
 $style__feature-content--border: none !default;
+$style__feature-content-box-shadow: none !default;
+$style__feature-content--background 0 !default;
 $style__feature-content--outline: none !default;
 $style__feature-content--padding: 0 !default;

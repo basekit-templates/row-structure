@@ -57,12 +57,12 @@
     @include transition($style__social-icons--transition);
 
 
-    &:after {
-        content:""
-    }
-
-
     &:hover {
+        background-color: $color__social-icons--background--hover;
+        border: $style__social-icons--border--hover;
+        @include border-radius($style__social-icons--border-radius--hover);
+        @include box-shadow($style__social-icons--box-shadow--hover);
+        color: $color__social-icons--text--hover;
         cursor: pointer;
     }
 }

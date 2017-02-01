@@ -30,27 +30,37 @@ fieldset {
 
 legend {
     background-color: $color__form-legend--background;
+    border: $style__form-legend--border;
+    @include box-shadow: $style__form-legend--box-shadow;
     color: $color__form-legend--text;
     font-family: $font__form-legend--font-family;
     font-size: $font__form-legend--font-size;
     font-weight: $font__form-legend--font-weight;
     letter-spacing: $font__form-legend--letter-spacing;
     line-height: $font__form-legend--line-height;
+    padding: $style__form-legend--padding;
+    text-shadow: $style__form-legend--text-shadow;
     text-transform: $font__form-legend--text-transform;
 }
 
 
 label {
+    background-color: $color__form-label--background;
+    border: $style__form-label--border;
+    @include box-shadow: $style__form-label--box-shadow;
     color: $color__form-label--text;
     font-family: $font__form-label--font-family;
     font-size: $font__form-label--font-size;
     font-weight: $font__form-label--font-weight;
     letter-spacing: $font__form-label--letter-spacing;
     line-height: $font__form-label--line-height;
+    padding: $style__form-label--padding;
+    text-shadow: $style__form-label--text-shadow;
     text-transform: $font__form-label--text-transform;
 }
 
 
+// Placeholder Text 
 ::-webkit-input-placeholder {
     color: $color__form--text;
 }
@@ -80,6 +90,7 @@ select {
     font-weight: $font__form--font-weight;
     letter-spacing: $font__form--letter-spacing;
     line-height: $font__form--line-height;
+    outline :$style__form-input--outline;
     text-transform: $font__form--text-transform;
 }
 
@@ -91,6 +102,8 @@ select {
     button {
         background-color: $color__form-button--background;
         border: $style__form-button--border;
+        @include border-radius($style__form-button--border-radius);
+        @include box-shadow($style__form-button--box-shadow);
         color: $color__form-button--text;
         font-family: $font__form-button--font-family;
         font-size: $font__form-button--font-size;

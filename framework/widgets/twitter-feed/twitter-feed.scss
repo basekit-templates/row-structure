@@ -5,14 +5,30 @@
 
 
 .tweet-list {
-    margin: 0;
     list-style: none;
+    margin: 0;
+
+
+    // Variables
+    background: $color__twitter-list--background;
+    @include border-radius: $style__twitter-list--background;
+    @include box-shadow: $style__twitter-list-box-shadow;
+    border: $style__twitter-list--border;
+    outline: $style__twitter-list--outline;
+    padding: $style__twitter-list--padding;
 }
 
 
 // Tweet List Items
 .tweet-item {
-	margin-bottom:  20px;
+    background: $color__twitter-item--background;
+    @include border-radius: $style__twitter-item--background;
+    @include box-shadow: $style__twitter-item-box-shadow;
+    border: $style__twitter-item--border;
+    display: $style__twitter-item--block;
+    margin-bottom: $style__twitter-item--margin;
+    outline: $style__twitter-item--outline;
+    padding: $style__twitter-item--padding;
 
 
 	&:last-child {
@@ -23,7 +39,12 @@
 
 // Avatar
 .avatar-link {
-    display: block;
+    background: $color__twitter-avatar--background;
+    @include border-radius: $style__twitter-avatar--background;
+    @include box-shadow: $style__twitter-avatar-box-shadow;
+    border: $style__twitter-avatar--border;
+    display: $style__twitter-avatar--block;
+    outline: $style__twitter-avatar--outline;
 }
 
 

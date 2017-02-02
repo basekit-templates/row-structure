@@ -28,8 +28,8 @@
 // Caption Wrapper
 .imagewidget__caption {
     background: $color__image-caption--background;
-    @include border-radius: $style__image-caption--background;
-    @include box-shadow: $style__image-caption-box-shadow;
+    @include border-radius($style__image-caption--background);
+    @include box-shadow($style__image-caption-box-shadow);
     border: $style__image-caption--border;
     outline: $style__image-caption--outline;
     padding: $style__image-caption--padding;
@@ -47,7 +47,7 @@
 .imagewidget__image-title {
     background: $color__image-title--background;
     border: $style__image-title--border;
-    @include box-shadow: $style__image-title--box-shadow;
+    @include box-shadow($style__image-title--box-shadow);
     color: $color__image-title--text;
     font-family: $font__image-title--font-family;
     font-size: $font__image-title--font-size;
@@ -64,7 +64,7 @@
 .imagewidget__image-description {
     background: $color__image-description--background;
     border: $style__image-description--border;
-    @include box-shadow: $style__image-description--box-shadow;
+    @include box-shadow($style__image-description--box-shadow);
     color: $color__image-description--text;
     font-family: $font__image-description--font-family;
     font-size: $font__image-description--font-size;

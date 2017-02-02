@@ -13,7 +13,7 @@
 @import "framework/global/resets";
 @import "framework/global/mixins";
 @import "framework/global/colors";
-// @import "framework/global/typography";
+@import "framework/global/typography";
 
 
 
@@ -41,9 +41,9 @@
 // -----------------------------
 
 @import "framework/global/typography-variables";
-// @import "templates/template-one";
+@import "templates/template-one";
 // @import "templates/template-two";
-@import "templates/hero-examples";
+// @import "templates/hero-examples";
 @import "framework/global/typography";
 
 

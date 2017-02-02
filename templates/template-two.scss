@@ -167,7 +167,6 @@ $color__form-label--text: $color--dark;
 $color__form-legend--background: $color--darkest;
 $color__form-legend--text: $color--lightest;
 $color__form-input--background: transparent;
-$style__form-input--box-shadow: 8px 8px 0 0 $color--light;
 $color__form-button--background: $color--accent;
 $color__form-button--background--hover: $color--accent;
 
@@ -179,6 +178,7 @@ $font__form-legend--font-family: $font__heading;
 $font__form-legend--font-size: 18px;
 
 $style__form-input--border: 1px solid $color--light;
+$style__form-input--box-shadow: 8px 8px 0 0 $color--light;
 $style__form-fieldset--padding: 30px;
 
 

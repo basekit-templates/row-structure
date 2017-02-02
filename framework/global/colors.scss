@@ -5,14 +5,159 @@
 
 
 // Colour Swatch
-$color--lightest: #ffffff;
-$color--light: #d6d6d6;
-$color--accent: #bd0202;
-$color--dark: #828282;
-$color--darkest: #000000;
+// $color--lightest: #ffffff !default;
+// $color--light: #d6d6d6 !default;
+// $color--accent: #bd0202 !default;
+// $color--dark: #828282 !default;
+// $color--darkest: #000000 !default;
 
 
 
+.light {
+
+    background-color: $color--lightest !important;
+
+    $color__h1--text: $color--darkest;
+    $color___h2--text: $color--darkest !default;
+    $color__h3--text: $color--darkest;
+    $color__h4--text: $color--darkest;
+    $color_p--text: $color--dark;
+    $color__link--text: $color--accent;
+    $color__companyname--text: $color--darkest;
+
+
+    $color__social-icons--icon--background: transparent;
+    $color__social-icons--icon--background--hover: transparent;
+    $color__social-icons--text: $color--darkest;
+    $color__social-icons--text--hover: $color--darkest;
+
+
+    $color__navigation--background: transparent;
+    $color__navigation-list--background: transparent;
+    $color__navigation-item--background: transparent;
+    $color__navigation-item--background--hover: transparent;
+    $color__navigation--text: $color--darkest;
+    $color__navigation--text--hover: $color--darkest;
+    $color__navigation--text--selected: $color--darkest;
+
+
+    $color__telephone--background: transparent;
+    $color__telephone--background--hover: transparent;
+    $color__telephone--text: $color--darkest;
+    $color__telephone--text--hover: $color--darkest;
+
+
+    $color__form-fieldset--background: transparent;
+    $color__form-fieldset--border: none;
+    $color__form-legend--background: transparent;
+    $color__form-legend--text: $color--darkest;
+    $color__form-label--background: transparent;
+    $color__form-label--text: $color--dark;
+    $color__form-label--text: $color--dark;
+    $color__form-input--background: $color--lightest;
+    $color__form-input--border: transparent;
+    $color__form--text: $color--dark;
+    $color__form-button--background: $color--accent;
+    $color__form-button--text: $color--lightest;
+}
+
+
+.accent {
+
+    background-color: $color--accent !important;
+
+    $color__h1--text: $color--lightest;
+    $color__h2--text: $color--lightest;
+    $color__h3--text: $color--lightest;
+    $color__h4--text: $color--lightest;
+    $color_p--text: $color--light;
+    $color__link--text: $color--accent;
+    $color__companyname--text: $color--lightest;
+
+
+    $color__social-icons--icon--background: transparent;
+    $color__social-icons--icon--background--hover: transparent;
+    $color__social-icons--text: $color--lightest;
+    $color__social-icons--text--hover: $color--lightest;
+
+
+    $color__navigation--background: transparent;
+    $color__navigation-list--background: transparent;
+    $color__navigation-item--background: transparent;
+    $color__navigation-item--background--hover: transparent;
+    $color__navigation--text: $color--lightest;
+    $color__navigation--text--hover: $color--lightest;
+    $color__navigation--text--selected: $color--lightest;
+
+
+    $color__telephone--background: transparent;
+    $color__telephone--background--hover: transparent;
+    $color__telephone--text: $color--lightest;
+    $color__telephone--text--hover: $color--lightest;
+
+
+    $color__form-fieldset--background: transparent;
+    $color__form-fieldset--border: none;
+    $color__form-legend--background: transparent;
+    $color__form-legend--text: $color--lightest;
+    $color__form-label--background: transparent;
+    $color__form-label--text: $color--light;
+    $color__form-label--text: $color--light;
+    $color__form-input--background: $color--darkest;
+    $color__form-input--border: transparent;
+    $color__form--text: $color--light;
+    $color__form-button--background: $color--accent;
+    $color__form-button--text: $color--lightest;
+}
+
+
+.dark {
+
+    background-color: $color--darkest !important;
+
+    $color__h1--text: $color--lightest;
+    $color__h2--text: pink;
+    $color__h3--text: $color--lightest;
+    $color__h4--text: $color--lightest;
+    $color__p--text: $color--light;
+    $color__link--text: $color--accent;
+    $color__companyname--text: $color--lightest;
+
+
+    $color__social-icons--icon--background: transparent;
+    $color__social-icons--icon--background--hover: transparent;
+    $color__social-icons--text: $color--lightest;
+    $color__social-icons--text--hover: $color--lightest;
+
+
+    $color__navigation--background: transparent;
+    $color__navigation-list--background: transparent;
+    $color__navigation-item--background: transparent;
+    $color__navigation-item--background--hover: transparent;
+    $color__navigation--text: $color--lightest;
+    $color__navigation--text--hover: $color--lightest;
+    $color__navigation--text--selected: $color--lightest;
+
+
+    $color__telephone--background: transparent;
+    $color__telephone--background--hover: transparent;
+    $color__telephone--text: $color--lightest;
+    $color__telephone--text--hover: $color--lightest;
+
+
+    $color__form-fieldset--background: transparent;
+    $color__form-fieldset--border: none;
+    $color__form-legend--background: transparent;
+    $color__form-legend--text: $color--lightest;
+    $color__form-label--background: transparent;
+    $color__form-label--text: $color--light;
+    $color__form-label--text: $color--light;
+    $color__form-input--background: $color--darkest;
+    $color__form-input--border: transparent;
+    $color__form--text: $color--light;
+    $color__form-button--background: $color--accent;
+    $color__form-button--text: $color--lightest;
+}
 
 
 

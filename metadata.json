@@ -8,6 +8,13 @@
             "font__heading": "Helvetica",
             "font__body": "Georgia"
         },
+        "colours": {
+            "color--lightest": "#ffffff",
+            "color--light": "#d6d6d6",
+            "color--accent": "#bd0202",
+            "color--dark": "#828282",
+            "color--darkest": "#000000"
+        },
         "typography": {
             "font__h1--font-family": "$font__heading",
             "font__h1--font-size": "42px",
@@ -20,7 +27,7 @@
             "font__h2--line-height": "36px",
             "font__h2--font-weight": "normal",
             "font__h2--letter-spacing": "0",
-            "color__h2--text": "$color--darkest",
+            "color__h1--text": "$color--darkest",
             "font__h3--font-family": "$font__heading",
             "font__h3--font-size": "28px",
             "font__h3--font-weight": "normal",
@@ -50,20 +57,22 @@
             "color__companyname--text": "$color--darkest"
         },
          "socialicons": {
-            "color__socialicons--icon--background": "#464646",
-            "color__socialicons--icon": "#ffffff"
+            "color__social-icons--background": "transparent",
+            "color__social-icons--background--hover": "transparent",
+            "color__social-icons--text": "#ffffff",
+            "color__social-icons--text--hover": "#ffffff"
         },
         "navigation": {
-            "font__navigation--font-family": "$font__body",
-            "font__navigation--font-size": "16px",
-            "font__navigation--font-weight": "normal",
-            "font__navigation--line-height": "24px",
-            "font__navigation--letter-spacing": "0",
-            "color__navigation--background": "transparent",
-            "color__navigation-list--background": "transparent",
-            "color__navigation--text": "$color--dark",
-            "color__navigation--text--hover": "$color--darkest",
-            "color__navigation--text--selected": "$color--darkest"
+            "font__navigation--font-family": "$font__body !default",
+            "font__navigation--font-size": "16px !default",
+            "font__navigation--font-weight": "normal !default",
+            "font__navigation--line-height": "24px !default",
+            "font__navigation--letter-spacing": "0 !default",
+            "color__navigation--background": "transparent !default",
+            "color__navigation-list--background": "transparent !default",
+            "color__navigation--text": "$color--dark !default",
+            "color__navigation--text--hover": "$color--darkest !default",
+            "color__navigation--text--selected": "$color--darkest !default"
         }
     }
 }

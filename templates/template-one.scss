@@ -4,7 +4,7 @@
 // -------------------------------------
 
 
-.theme-1 {
+
 
 // Colour Variables
 // -----------------------------
@@ -38,16 +38,8 @@ $color--darkest: #000000;
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
 
 
-$font__heading: Playfair Display;
-$font__body: Gibson;
-
-
-// Colour
-$color__h1--text: $color--lightest;
-$color__h2--text: $color--lightest;
-$color__h3--text: $color--lightest;
-$color__h4--text: $color--lightest;
-$color__p--text: $color--light;
+$font__heading: 'Playfair Display';
+$font__body: 'Gibson';
 
 
 // Heading Two
@@ -65,11 +57,6 @@ $font__p--line-height: 30px;
 $font__p--letter-spacing: 0;
 
 
-// Body Text
-$color__p--text: $color--lightest;
-$color__link--text: $color--accent;
-
-
 
 
 // Row Styling
@@ -81,15 +68,65 @@ $color__link--text: $color--accent;
 // -----------------------------
 
 
-// Templates Styles
+// Colour
+.dark {
+    $color__h1--text: $color--lightest;
+    $color__h2--text: blue;
+    $color__h3--text: $color--lightest;
+    $color__h4--text: $color--lightest;
+    $color__p--text: $color--light;
+
+
+    $color__button--background: transparent;
+    $color__button--background--hover: transparent;
+    $color__button--text: $color--lightest;
+    $color__button--text--hover: $color--lightest;
+
+
+    $color__telephone--text: $color--lightest;
+    $color__telephone--text--hover: $color--lightest;
+
+
+    $color__form-label--text: $color--lightest;
+    $color__form-input--background: transparent;
+    $color__form-button--background: transparent;
+    $color__form-button--background--hover: transparent;
+
+
+    $color__navigation-item--background: transparent;
+    $color__navigation--text: $color--lightest;
+    $color__navigation--text--hover: $color--lightest;
+
+    $color__social-icons--background: transparent;
+    $color__social-icons--text: $color--lightest;
+}
+
+
+.accent {
+    $color__h1--text: $color--lightest;
+    $color__h2--text: $color--lightest;
+    $color__h3--text: $color--lightest;
+    $color__h4--text: $color--lightest;
+    $color__p--text: $color--light;
+}
+
+
+.light {
+    $color__h1--text: $color--darkest;
+    $color__h2--text: $color--darkest;
+    $color__h3--text: $color--darkest;
+    $color__h4--text: $color--darkest;
+    $color__p--text: $color--dark;
+
+    $color__button--background: transparent;
+    $color__button--background--hover: transparent;
+    $color__button--text: $color--darkest;
+    $color__button--text--hover: $color--darkest;
+}
+
 
 
 // Buttons
-$color__button--background: transparent;
-$color__button--background--hover: transparent;
-$color__button--text: $color--lightest;
-$color__button--text--hover: $color--lightest;
-
 $font__button--font-size: 16px;
 
 $style__button--border: 1px solid $color--lightest;
@@ -97,9 +134,6 @@ $style__button--border--hover: 1px solid $color--lightest;
 
 
 // Click to Call
-$color__telephone--text: $color--lightest;
-$color__telephone--text--hover: $color--lightest;
-
 $font__telephone--font-family: $font__heading;
 $font__telephone--font-size: 20px !important;
 $font__telephone--font-weight: 500;
@@ -120,11 +154,6 @@ $style__telephone--transition: all, 0.5s, ease;
 
 
 // Form
-$color__form-label--text: $color--lightest;
-$color__form-input--background: transparent;
-$color__form-button--background: transparent;
-$color__form-button--background--hover: transparent;
-
 $font__form-label--text-transform: uppercase;
 $font__form-label--font-family: $font__body;
 $font__form-label--font-size: 12px;
@@ -150,10 +179,6 @@ $style__form-input--border: 1px solid $color--lightest;
 
 
 // Navigation
-$color__navigation-item--background: transparent;
-$color__navigation--text: $color--lightest;
-$color__navigation--text--hover: $color--lightest;
-
 $font__navigation--font-family: $font__body;
 $font__navigation--font-size: 14px;
 $font__navigation--font-weight: 500;
@@ -172,8 +197,6 @@ $style__navigation-item--transition: all, 0.5s, ease;
 
 
 // Social Icons
-$color__social-icons--text: $color--lightest;
-
 $font__social-icons--font-size: 20px;
 $font__social-icons--line-height: 20px;
 
@@ -190,10 +213,3 @@ $style__social-icons--transition: all, 0.5s, ease;
 
 
 // Youtube
-
-
-}
-
-
-
-

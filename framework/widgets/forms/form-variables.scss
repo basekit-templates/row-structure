@@ -71,11 +71,14 @@ $color__form-label--text: $color--dark !default;
 // Input
 $color__form-input--background: $color--lightest !default;
 $color__form-input--border: transparent !default;
+$color__form--text: $color--dark !default;
 
 
 // Button
 $color__form-button--background: $color--accent !default;
+$color__form-button--background--hover: $color--accent !default;
 $color__form-button--text: $color--lightest !default;
+$color__form-button--text--hover: $color--lightest !default;
 
 
 

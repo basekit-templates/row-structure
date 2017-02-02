@@ -31,7 +31,7 @@ fieldset {
 legend {
     background-color: $color__form-legend--background;
     border: $style__form-legend--border;
-    @include box-shadow: $style__form-legend--box-shadow;
+    @include box-shadow($style__form-legend--box-shadow);
     color: $color__form-legend--text;
     font-family: $font__form-legend--font-family;
     font-size: $font__form-legend--font-size;
@@ -47,7 +47,7 @@ legend {
 label {
     background-color: $color__form-label--background;
     border: $style__form-label--border;
-    @include box-shadow: $style__form-label--box-shadow;
+    @include box-shadow($style__form-label--box-shadow);
     color: $color__form-label--text;
     font-family: $font__form-label--font-family;
     font-size: $font__form-label--font-size;
@@ -60,7 +60,7 @@ label {
 }
 
 
-// Placeholder Text 
+// Placeholder Text
 ::-webkit-input-placeholder {
     color: $color__form--text;
 }
@@ -112,5 +112,11 @@ select {
         line-height: $font__form-button--line-height;
         outline: $style__form-button--outline;
         text-transform: $font__form-button--text-transform;
+
+
+        &:hover {
+            background-color: $color__form-button--background--hover;
+             color: $color__form-button--text--hover;
+        }
     }
 }

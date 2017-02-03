@@ -21,58 +21,66 @@
             "font__h1--line-height": "42px",
             "font__h1--font-weight": "normal",
             "font__h1--letter-spacing": "0",
-            "color__h1--text": "$color--darkest",
+            "color__h1--text": "18",
             "font__h2--font-family": "$font__heading",
             "font__h2--font-size": "36px",
             "font__h2--line-height": "36px",
             "font__h2--font-weight": "normal",
             "font__h2--letter-spacing": "0",
-            "color__h1--text": "$color--darkest",
+            "color__h2--text": "19",
             "font__h3--font-family": "$font__heading",
             "font__h3--font-size": "28px",
             "font__h3--font-weight": "normal",
             "font__h3--line-height": "28px",
             "font__h3--letter-spacing": "0",
-            "color__h3--text": "$color--darkest",
+            "color__h3--text": "20",
             "font__h4--font-family": "$font__heading",
             "font__h4--font-size": "20px",
             "font__h4--font-weight": "normal",
             "font__h4--line-height": "20px",
             "font__h4--letter-spacing": "0",
-            "color__h4--text": "$color--darkest",
+            "color__h4--text": "21",
             "font__p--font-family": "$font__body",
             "font__p--font-size": "16px",
             "font__p--font-weight": "normal",
             "font__p--line-height": "24px",
             "font__p--letter-spacing": "0",
-            "color__p--text": "$color--dark"
+            "color__p--text": "22"
         },
         "site": {
-            "color__link--text": "$color--accent",
             "font__companyname--font-family": "$color--primary",
             "font__companyname--font-size": "20px",
             "font__companyname--line-height": "20px",
             "font__companyname--font-weight": "normal",
-            "font__companyname--letter-spacing": "0",
-            "color__companyname--text": "$color--darkest"
+            "font__companyname--letter-spacing": "0"
         },
-         "socialicons": {
-            "color__social-icons--background": "transparent",
-            "color__social-icons--background--hover": "transparent",
-            "color__social-icons--text": "#ffffff",
-            "color__social-icons--text--hover": "#ffffff"
+        "socialicons": {
+            "color__social-icons--background": "1",
+            "color__social-icons--background--hover": "2",
+            "color__social-icons--text": "3",
+            "color__social-icons--text--hover": "4"
         },
         "navigation": {
-            "font__navigation--font-family": "$font__body !default",
-            "font__navigation--font-size": "16px !default",
-            "font__navigation--font-weight": "normal !default",
-            "font__navigation--line-height": "24px !default",
-            "font__navigation--letter-spacing": "0 !default",
-            "color__navigation--background": "transparent !default",
-            "color__navigation-list--background": "transparent !default",
-            "color__navigation--text": "$color--dark !default",
-            "color__navigation--text--hover": "$color--darkest !default",
-            "color__navigation--text--selected": "$color--darkest !default"
+            "color__navigation-list--background": "5",
+            "color__navigation-item--background": "6",
+            "color__navigation-item--background--hover": "7",
+            "color__navigation--text": "8",
+            "color__navigation--text--hover": "9",
+            "font__navigation--font-family": "$font__body",
+            "font__navigation--font-size": "16px",
+            "font__navigation--font-weight": "normal",
+            "font__navigation--line-height": "24px",
+            "font__navigation--letter-spacing": "0"
+        },
+        "button": {
+            "color__button--background": "10",
+            "color__button--background--hover": "11",
+            "color__button--text": "12",
+            "color__button--text--hover": "13",
+            "color__telephone--background": "14",
+            "color__telephone--background--hover": "15",
+            "color__telephone--text": "16",
+            "color__telephone--text--hover": "17"
         }
     }
 }

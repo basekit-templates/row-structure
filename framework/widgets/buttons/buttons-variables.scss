@@ -31,17 +31,49 @@ $font__telephone--text-transform: none !default;
 //  Colour Properties
 // -----------------------------
 
-$color__button--background: $color--accent !default;
-$color__button--background--hover: $color--accent !default;
-$color__button--text: $color--darkest !default;
-$color__button--text--hover: $color--darkest !default;
 
 
 
-$color__telephone--background: transparent !default;
-$color__telephone--background--hover: transparent !default
-$color__telephone--text: $color--darkest !default;
-$color__telephone--text--hover: $color--darkest !default;
+// Colour Variant Defaults
+$colors: (
+    color-light: (
+        $color__button--background: $color--accent,
+        $color__button--background--hover: $color--accent,
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--text: $color--darkest,
+        $color__telephone--text--hover: $color--darkest
+
+    ),
+    color-accent: (
+        $color__button--background: $color--lightest,
+        $color__button--background--hover: $color--lightest,
+        $color__button--text: $color--accent,
+        $color__button--text--hover: $color--accent,
+
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--text: $color--lightest,
+        $color__telephone--text--hover: $color--lightest
+    ),
+    color-dark: (
+        $color__button--background: $color--accent,
+        $color__button--background--hover: $color--accent,
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--text: $color--lightest,
+        $color__telephone--text--hover: $color--lightest
+    )
+);
+
+
+@import '../../global/color-function';
 
 
 

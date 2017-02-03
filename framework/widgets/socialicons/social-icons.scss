@@ -40,11 +40,9 @@
 
 
     // Variables
-    background-color: $color__social-icons--background;
     border: $style__social-icons--border;
     @include border-radius($style__social-icons--border-radius);
     @include box-shadow($style__social-icons--box-shadow);
-    color: $color__social-icons--text;
     display: $style__social-icons--display;
     font-family: $font__social-icons--font-family;
     font-size: $font__social-icons--font-size;
@@ -57,13 +55,53 @@
     @include transition($style__social-icons--transition);
 
 
+    // Light
+    .light & {
+        background: color(color-light, $color__social-icons--background);
+        color: color(color-light, $color__social-icons--text);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__social-icons--background);
+        color: color(color-accent, $color__social-icons--text);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__social-icons--background);
+        color: color(color-dark, $color__social-icons--text);
+    }
+
+
     &:hover {
-        background-color: $color__social-icons--background--hover;
         border: $style__social-icons--border--hover;
         @include border-radius($style__social-icons--border-radius--hover);
         @include box-shadow($style__social-icons--box-shadow--hover);
-        color: $color__social-icons--text--hover;
         cursor: pointer;
+
+
+        // Light
+        .light & {
+            background: color(color-light, $color__social-icons--background--hover);
+            color: color(color-light, $color__social-icons--text--hover);
+        }
+
+
+        // Accent
+        .accent & {
+            background: color(color-accent, $color__social-icons--background--hover);
+            color: color(color-accent, $color__social-icons--text--hover);
+        }
+
+
+        // Dark
+        .dark & {
+            background: color(color-dark, $color__social-icons--background--hover);
+            color: color(color-dark, $color__social-icons--text--hover);
+        }
     }
 }
 

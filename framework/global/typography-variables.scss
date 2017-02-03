@@ -59,3 +59,41 @@ $font__icon: 'Font Awesome';
 // $font__p--font-weight: normal !default;
 // $font__p--line-height: 24px !default;
 // $font__p--letter-spacing: 0 !default;
+
+
+//  Colour Properties
+// -----------------------------
+
+
+
+
+// Colour Variant Defaults
+$colors: (
+    color-light: (
+        $color__h1--text: $color--darkest,
+        $color__h2--text: $color--darkest,
+        $color__h3--text: $color--darkest,
+        $color__h4--text: $color--darkest,
+        $color__link--text: $color--accent,
+        $color__p--text: $color--dark
+    ),
+    color-accent: (
+        $color__h1--text: $color--accent,
+        $color__h2--text: $color--accent,
+        $color__h3--text: $color--accent,
+        $color__h4--text: $color--accent,
+        $color__link--text: $color--accent,
+        $color__p--text: $color--light
+    ),
+    color-dark: (
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: $color--lightest,
+        $color__link--text: $color--accent,
+        $color__p--text: $color--light
+    )
+);
+
+
+@import 'color-function';

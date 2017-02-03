@@ -27,6 +27,12 @@
 // -----------------
 
 
+// Navigation Body
+.navigation-body {
+    @include clearfix;
+}
+
+
 // Dropdown Menu
 .navigation-list--children {
     background-color: $color__body--background;

@@ -27,11 +27,9 @@ button,
 
 
     // Variables
-    background-color: $color__button--background;
     border: $style__button--border--hover;
     @include border-radius($style__button--border-radius);
     @include box-shadow($style__button--box-shadow);
-    color: $color__button--text;
     font-family: $font__button--font-family;
     font-size: $font__button--font-size;
     font-weight: $font__button--font-weight;
@@ -44,6 +42,27 @@ button,
     @include transition($style__button--transition);
 
 
+    // Light
+    .light & {
+        background: color(color-light, $color__button--background);
+        color: color(color-light, $color__button--text);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__button--background);
+        color: color(color-accent, $color__button--text);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__button--background);
+        color: color(color-dark, $color__button--text);
+    }
+
+
     // Optional elements for extra button styling
     &:before,
     &:after {
@@ -54,11 +73,30 @@ button,
 
     // Hover State
     &:hover {
-        background-color: $color__button--background--hover;
         border: $style__button--border--hover;
-        color: $color__button--text--hover;
         cursor: pointer;
         text-decoration: none;
+
+
+        // Light
+        .light & {
+            background: color(color-light, $color__button--background--hover);
+            color: color(color-light, $color__button--text--hover);
+        }
+
+
+        // Accent
+        .accent & {
+            background: color(color-accent, $color__button--background--hover);
+            color: color(color-accent, $color__button--text--hover);
+        }
+
+
+        // Dark
+        .dark & {
+            background: color(color-dark, $color__button--background--hover);
+            color: color(color-dark, $color__button--text--hover);
+        }
     }
 
 
@@ -120,7 +158,7 @@ button,
 //  Button: Click To Call
 // -----------------------------
 
-.clicktocall__phone-number-link {
+.phone-number-link {
 
     display: inline-block;
     user-select: none;
@@ -128,11 +166,9 @@ button,
 
 
     // Variables
-    background-color: $color__telephone--background;
     border: $style__telephone--border;
     @include border-radius($style__telephone--border-radius);
     @include box-shadow($style__telephone--box-shadow);
-    color: $color__telephone--text;
     font-family: $font__telephone--font-family;
     font-size: $font__telephone--font-size;
     font-weight: $font__telephone--font-weight;
@@ -145,12 +181,52 @@ button,
     @include transition($style__telephone--transition);
 
 
+    // Light
+    .light & {
+        background: color(color-light, $color__telephone--background);
+        color: color(color-light, $color__telephone--text);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__telephone--background);
+        color: color(color-accent, $color__telephone--text);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__telephone--background);
+        color: color(color-dark, $color__telephone--text);
+    }
+
+
     // Hover State
     &:hover {
-        background-color: $color__telephone--background--hover;
-        border: $style__telephone--border--hover;
-        color: $color__telephone--text--hover;
+        border: $style__telephone--border--hover;;
         text-decoration: none;
+
+
+         // Light
+        .light & {
+            background: color(color-light, $color__telephone--background--hover);
+            color: color(color-light, $color__telephone--text--hover);
+        }
+
+
+        // Accent
+        .accent & {
+            background: color(color-accent, $color__telephone--background--hover);
+            color: color(color-accent, $color__telephone--text--hover);
+        }
+
+
+        // Dark
+        .dark & {
+            background: color(color-dark, $color__telephone--background--hover);
+            color: color(color-dark, $color__telephone--text--hover);
+        }
     }
 
 

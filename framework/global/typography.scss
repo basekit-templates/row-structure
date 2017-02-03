@@ -24,39 +24,108 @@ h1,
     font-weight: $font__h1--font-weight;
     letter-spacing: $font__h1--letter-spacing;
     line-height: $font__h1--line-height;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h1--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h1--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h1--text);
+    }
 }
 
 
 h2,
 .heading--2 {
-    color: $color__h2--text;
     font-family: $font__h2--font-family;
     font-size: $font__h2--font-size;
     font-weight: $font__h2--font-weight;
     letter-spacing: $font__h2--letter-spacing;
     line-height: $font__h2--line-height;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h2--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h2--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h2--text);
+    }
 }
 
 
 h3,
 .heading--3 {
-    color: $color__h3--text;
     font-family: $font__h3--font-family;
     font-size: $font__h3--font-size;
     font-weight: $font__h3--font-weight;
     letter-spacing: $font__h3--letter-spacing;
     line-height: $font__h3--line-height;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h3--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h3--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h3--text);
+    }
 }
 
 
 h4,
 .heading--4 {
-    color: $color__h4--text;
     font-family: $font__h4--font-family;
     font-size: $font__h4--font-size;
     font-weight: $font__h4--font-weight;
     letter-spacing: $font__h4--letter-spacing;
     line-height: $font__h4--line-height;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h4--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h4--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h4--text);
+    }
 }
 
 
@@ -74,14 +143,48 @@ a {
 // Paragraph Colour
 p,
 .paragraph {
-    color: $color__p--text;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__p--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__p--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__p--text);
+    }
 }
 
 
 // Link Colour
 a,
 .link {
-    color: $color__link--text;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__link--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__link--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__link--text);
+    }
 }
 
 

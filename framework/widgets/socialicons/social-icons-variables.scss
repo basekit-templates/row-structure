@@ -24,10 +24,30 @@ $font__social-icons--text-transform: none !default;
 // -----------------------------
 
 
-// $color__social-icons--background: transparent !default;
-// $color__social-icons--background--hover: transparent !default;
-// $color__social-icons--text: $color--darkest !default;
-// $color__social-icons--text--hover: $color--darkest !default;
+// Colour Variant Defaults
+$colors: (
+    color-light: (
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--darkest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--darkest
+    ),
+    color-accent: (
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--lightest
+    ),
+    color-dark: (
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--lightest
+    )
+);
+
+
+@import '../../global/color-function';
 
 
 

@@ -15,62 +15,35 @@
 
 
 
-// Navigation Text
-// ---------------
-
-.navigation-item .item-name {
-    display: block;
-    padding: 14px;
-    text-decoration: none;
-
-
-    // Variables
-    background-color: $color__navigation-item--background;
-    border: $style__navigation-item--border;
-    @include border-radius($style__navigation-item--border-radius);
-    @include box-shadow($style__navigation-item--box-shadow);
-    color: $color__navigation--text;
-    font-family: $font__navigation--font-family;
-    font-size: $font__navigation--font-size;
-    font-weight: $font__navigation--font-weight;
-    line-height: $font__navigation--line-height;
-    letter-spacing: $font__navigation--letter-spacing;
-    outline: $style__navigation-item--outline;
-    text-transform: $font__navigation--text-transform;
-    @include transition($style__navigation-item--transition);
-
-
-    &:hover {
-        background-color: $color__navigation-item--background--hover;
-        border: $style__navigation-item--border--hover;
-        color: $color__navigation--text--hover;
-        cursor: pointer;
-    }
-}
-
-
-
-
-// Navigation Layout
-// -----------------
-
-
-// Navigation Body
-.navigation-body {
-    @include clearfix;
-}
-
-
 // Navigation List
 .navigation-list {
-    background: $color__navigation-list--background;
-    // border: $color__navigation--border;
+    border: $style__navigation-list--border;
+    @include border-radius($style__navigation-list--border-radius);
+    @include box-shadow($style__navigation-list--box-shadow);
     list-style: none;
     margin-left: 0;
-    // outline: $color__navigation--outline;
+    outline: $style__navigation-list--outline;
     padding: 0;
     width: 100%;
     z-index: 9999;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__navigation-list--background);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__navigation-list--background);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__navigation-list--background);
+    }
 }
 
 
@@ -80,6 +53,81 @@
     display: inline-block;
 }
 
+
+// Navigation Text
+.navigation-item .item-name {
+    display: block;
+    text-decoration: none;
+
+
+    // Variables
+    border: $style__navigation-item--border;
+    @include border-radius($style__navigation-item--border-radius);
+    @include box-shadow($style__navigation-item--box-shadow);
+    font-family: $font__navigation--font-family;
+    font-size: $font__navigation--font-size;
+    font-weight: $font__navigation--font-weight;
+    line-height: $font__navigation--line-height;
+    letter-spacing: $font__navigation--letter-spacing;
+    outline: $style__navigation-item--outline;
+    padding: $style__navigation-item--padding;
+    text-transform: $font__navigation--text-transform;
+    @include transition($style__navigation-item--transition);
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__navigation-item--background);
+        color: color(color-light, $color__navigation--text);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__navigation-item--background);
+        color: color(color-accent, $color__navigation--text);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__navigation-item--background);
+        color: color(color-dark, $color__navigation--text);
+    }
+
+
+    &:hover {
+        cursor: pointer;
+
+
+        // Variables
+        border: $style__navigation-item--border--hover;
+        outline: $style__navigation-item--outline--hover;
+
+
+        // Light
+        .light & {
+            background: color(color-light, $color__navigation-item--background--hover);
+            color: color(color-light, $color__navigation--text--hover);
+        }
+
+
+        // Accent
+        .accent & {
+            background: color(color-accent, $color__navigation-item--background--hover);
+            color: color(color-accent, $color__navigation--text--hover);
+        }
+
+
+        // Dark
+        .dark & {
+            background: color(color-dark, $color__navigation-item--background--hover);
+            color: color(color-dark, $color__navigation--text--hover);
+        }
+    }
+}
+
+
 // Dropdown Menu
 .navigation-list--children {
     display: none;
@@ -88,18 +136,21 @@
     top: 100%;
     min-width: 100%;
 
+
     .item-name {
         overflow: hidden;
         text-overflow: ellipsis;
     }
 }
 
+
 // Display Dropdown Menu
 .navigation-item:hover .navigation-list--children {
     display: block;
 }
 
+
+// Dropdown List Item
 .navigation-item--child {
     display: list-item;
 }
-

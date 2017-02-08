@@ -10,6 +10,28 @@
 // -------------------------------------
 
 
+// Border
+@mixin border($style, $color, $sides) {
+    @if ($style != "") {
+
+        @if ($sides == "") {
+            border: $style $color;
+
+        } @else {
+            @each $side in $sides {
+               @if ($side == 'top' or
+                    $side == 'right' or
+                    $side == 'bottom' or
+                    $side == 'left') {
+
+                    border-#{$side}: $style $color;
+                }
+            }
+        }
+    }
+}
+
+
 // Border Radius
 @mixin border-radius ($values) {
     -webkit-border-radius: $values;

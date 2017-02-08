@@ -20,43 +20,114 @@
 
 
 fieldset {
-    background: $color__form-fieldset--background;
-    border: $color__form-fieldset--border;
-    @include box-shadow($style__form-fieldset--box-shadow);
     margin: 0;
     padding: $style__form-fieldset--padding;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__form-fieldset--background);
+        border: $style__form-fieldset--border  color(color-light, $color__form-fieldset--border);
+        @include box-shadow($style__form-fieldset--box-shadow  color(color-light, $color__form-fieldset--box-shadow));
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__form-fieldset--background);
+        border: $style__form-fieldset--border  color(color-light, $color__form-fieldset--border);
+        @include box-shadow($style__form-fieldset--box-shadow  color(color-accent, $color__form-fieldset--box-shadow));
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__form-fieldset--background);
+        border: $style__form-fieldset--border  color(color-light, $color__form-fieldset--border);
+        @include box-shadow($style__form-fieldset--box-shadow  color(color-dark, $color__form-fieldset--box-shadow));
+    }
 }
 
 
 legend {
-    background-color: $color__form-legend--background;
-    border: $style__form-legend--border;
-    @include box-shadow($style__form-legend--box-shadow);
-    color: $color__form-legend--text;
     font-family: $font__form-legend--font-family;
     font-size: $font__form-legend--font-size;
     font-weight: $font__form-legend--font-weight;
     letter-spacing: $font__form-legend--letter-spacing;
     line-height: $font__form-legend--line-height;
     padding: $style__form-legend--padding;
-    text-shadow: $style__form-legend--text-shadow;
     text-transform: $font__form-legend--text-transform;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__form-legend--background);
+        @include box-shadow($style__form-legend--box-shadow  color(color-light, $color__form-legend--box-shadow));
+        border: $style__form-legend--border  color(color-light, $color__form-legend--border);
+        color: color(color-light, $color__form-legend--text);
+        text-shadow: $style__form-legend--text-shadow  color(color-light, $color__form-legend--text-shadow);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__form-legend--background);
+        @include box-shadow($style__form-legend--box-shadow  color(color-accent, $color__form-legend--box-shadow));
+        border: $style__form-legend--border  color(color-accent, $color__form-legend--border);
+        color: color(color-accent, $color__form-legend--text);
+        text-shadow: $style__form-legend--text-shadow  color(color-accent, $color__form-legend--text-shadow);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__form-legend--background);
+        @include box-shadow($style__form-legend--box-shadow  color(color-dark, $color__form-legend--box-shadow));
+        border: $style__form-legend--border  color(color-dark, $color__form-legend--border);
+        color: color(color-dark, $color__form-legend--text);
+        text-shadow: $style__form-legend--text-shadow  color(color-dark, $color__form-legend--text-shadow);
+    }
 }
 
 
 label {
-    background-color: $color__form-label--background;
-    border: $style__form-label--border;
-    @include box-shadow($style__form-label--box-shadow);
-    color: $color__form-label--text;
     font-family: $font__form-label--font-family;
     font-size: $font__form-label--font-size;
     font-weight: $font__form-label--font-weight;
     letter-spacing: $font__form-label--letter-spacing;
     line-height: $font__form-label--line-height;
     padding: $style__form-label--padding;
-    text-shadow: $style__form-label--text-shadow;
     text-transform: $font__form-label--text-transform;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__form-label--background);
+        border: $style__form-label--border  color(color-light, $color__form-label--border);
+        @include box-shadow($style__form-label--box-shadow  color(color-light, $color__form-label--box-shadow));
+        color: color(color-light, $color__form-label--text);
+        text-shadow: $style__form-label--text-shadow  color(color-light, $color__form-label--text-shadow);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__form-label--background);
+        border: $style__form-label--border  color(color-accent, $color__form-label--border);
+        @include box-shadow($style__form-label--box-shadow  color(color-accent, $color__form-label--box-shadow));
+        color: color(color-accent, $color__form-label--text);
+        text-shadow: $style__form-label--text-shadow  color(color-accent, $color__form-label--text-shadow);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__form-label--background);
+        border: $style__form-label--border  color(color-dark, $color__form-label--border);
+        @include box-shadow($style__form-label--box-shadow  color(color-dark, $color__form-label--box-shadow));
+        color: color(color-dark, $color__form-label--text);
+        text-shadow: $style__form-label--text-shadow  color(color-dark, $color__form-label--text-shadow);
+    }
 }
 
 
@@ -81,42 +152,149 @@ label {
 input,
 textarea,
 select {
-    background: $color__form-input--background;
-    border: $style__form-input--border;
-    @include box-shadow($style__form-input--box-shadow);
-    color: $color__form--text;
     font-family: $font__form--font-family;
     font-size: $font__form--font-size;
     font-weight: $font__form--font-weight;
     letter-spacing: $font__form--letter-spacing;
     line-height: $font__form--line-height;
-    outline :$style__form-input--outline;
     text-transform: $font__form--text-transform;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__form-input--background);
+        border: $style__form-input--border color(color-light, $color__form-input--border);
+        @include box-shadow($style__form-input--box-shadow color(color-light, $color__form-input--box-shadow));
+        color: color(color-light, $color__form--text);
+        outline : $style__form-input--outline  color(color-light, $color__form-input--outline);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__form-input--background);
+        border: $style__form-input--border color(color-accent, $color__form-input--border);
+        @include box-shadow($style__form-input--box-shadow color(color-accent, $color__form-input--box-shadow));
+        color: color(color-accent, $color__form--text);
+        outline : $style__form-input--outline  color(color-accent, $color__form-input--outline);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__form-input--background);
+        border: $style__form-input--border color(color-dark, $color__form-input--border);
+        @include box-shadow($style__form-input--box-shadow color(color-dark, $color__form-input--box-shadow));
+        color: color(color-dark, $color__form--text);
+        outline : $style__form-input--outline  color(color-dark, $color__form-input--outline);
+    }
+
+
+    &:hover {
+
+
+        // Light
+        .light & {
+            background: color(color-light, $color__form-input--background--hover);
+            border: $style__form-input--border color(color-light, $color__form-input--border--hover);
+            @include box-shadow($style__form-input--box-shadow color(color-light, $color__form-input--box-shadow--hover));
+            color: color(color-light, $color__form--text--hover);
+            outline : $style__form-input--outline  color(color-light, $color__form-input--outline--hover);
+        }
+
+
+        // Accent
+        .accent & {
+            background: color(color-accent, $color__form-input--background);
+            border: $style__form-input--border color(color-accent, $color__form-input--border);
+            @include box-shadow($style__form-input--box-shadow color(color-accent, $color__form-input--box-shadow));
+            color: color(color-accent, $color__form--text);
+            outline : $style__form-input--outline  color(color-accent, $color__form-input--outline);
+        }
+
+
+        // dark
+        .dark & {
+            background: color(color-dark, $color__form-input--background);
+            border: $style__form-input--border color(color-dark, $color__form-input--border);
+            @include box-shadow($style__form-input--box-shadow color(color-dark, $color__form-input--box-shadow));
+            color: color(color-dark, $color__form--text);
+            outline : $style__form-input--outline  color(color-dark, $color__form-input--outline);
+        }
+    }
 }
 
 
-.contactform,
-.advancedcontactform {
+.button--submit {
+    @include border-radius($style__form-button--border-radius);
+    font-family: $font__form-button--font-family;
+    font-size: $font__form-button--font-size;
+    font-weight: $font__form-button--font-weight;
+    letter-spacing: $font__form-button--letter-spacing;
+    line-height: $font__form-button--line-height;
+    text-transform: $font__form-button--text-transform;
 
 
-    button {
-        background-color: $color__form-button--background;
-        border: $style__form-button--border;
-        @include border-radius($style__form-button--border-radius);
-        @include box-shadow($style__form-button--box-shadow);
-        color: $color__form-button--text;
-        font-family: $font__form-button--font-family;
-        font-size: $font__form-button--font-size;
-        font-weight: $font__form-button--font-weight;
-        letter-spacing: $font__form-button--letter-spacing;
-        line-height: $font__form-button--line-height;
-        outline: $style__form-button--outline;
-        text-transform: $font__form-button--text-transform;
+    // Light
+    .light & {
+        background: color(color-light, $color__form-button--background);
+        border: $style__form-button--border  color(color-light, $color__form-button--border);
+        @include box-shadow($style__form-button--box-shadow  color(color-light, $color__form-button--box-shadow));
+        color: color(color-light, $color__form-button--text);
+        outline: $style__form-button--outline  color(color-light, $color__form-button--outline);
+    }
 
 
-        &:hover {
-            background-color: $color__form-button--background--hover;
-             color: $color__form-button--text--hover;
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__form-button--background);
+        border: $style__form-button--border  color(color-accent, $color__form-button--border);
+        @include box-shadow($style__form-button--box-shadow  color(color-accent, $color__form-button--box-shadow));
+        color: color(color-accent, $color__form-button--text);
+        outline: $style__form-button--outline  color(color-accent, $color__form-button--outline);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__form-button--background);
+        border: $style__form-button--border  color(color-dark, $color__form-button--border);
+        @include box-shadow($style__form-button--box-shadow  color(color-dark, $color__form-button--box-shadow));
+        color: color(color-dark, $color__form-button--text);
+        outline: $style__form-button--outline  color(color-dark, $color__form-button--outline);
+    }
+
+
+    &:hover {
+
+
+        // Light
+        .light & {
+            background: color(color-light, $color__form-button--background--hover);
+            border: $style__form-button--border  color(color-light, $color__form-button--border--hover);
+            @include box-shadow($style__form-button--box-shadow  color(color-light, $color__form-button--box-shadow--hover));
+            color: color(color-light, $color__form-button--text--hover);
+            outline: $style__form-button--outline  color(color-light, $color__form-button--outline--hover);
+        }
+
+
+        // Accent
+        .accent & {
+            background: color(color-accent, $color__form-button--background--hover);
+            border: $style__form-button--border  color(color-accent, $color__form-button--border--hover);
+            @include box-shadow($style__form-button--box-shadow  color(color-accent, $color__form-button--box-shadow--hover));
+            color: color(color-accent, $color__form-button--text--hover);
+            outline: $style__form-button--outline  color(color-accent, $color__form-button--outline--hover);
+        }
+
+
+        // Dark
+        .dark & {
+            background: color(color-dark, $color__form-button--background--hover);
+            border: $style__form-button--border  color(color-dark, $color__form-button--border--hover);
+            @include box-shadow($style__form-button--box-shadow  color(color-dark, $color__form-button--box-shadow--hover));
+            color: color(color-dark, $color__form-button--text--hover);
+            outline: $style__form-button--outline  color(color-dark, $color__form-button--outline--hover);
         }
     }
 }

@@ -18,16 +18,102 @@ $color--dark: #758085;
 $color--darkest: #324048;
 
 
+// Widget Colours
+$colors: (
+    color-light: (
 
 
-// Row Variables
-// -----------------------------
+        // Companyname
+        $color__companyname--border: $color--accent,
+        $color__companyname--text: $color--darkest,
 
 
+        // Typography
+        $color__h1--text: $color--darkest,
+        $color__h2--text: $color--darkest,
+        $color__h3--text: $color--darkest,
+        $color__h4--text: fade-out($color--darkest, .4),
+        $color__p--text: fade-out($color--darkest, .4),
+        $color__link--text: $color--darkest,
 
 
-// Column Variables
-// -----------------------------
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: darken($color--accent, 5%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+        // Scroll
+        $color__scroll--text: $color__p--text,
+        $color__scroll--icon: $color--accent,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--darkest, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light
+    ),
+    color-accent: (
+
+
+        // Companyname
+        $color__companyname--border: $color--accent,
+        $color__companyname--text: $color--lightest,
+
+
+        // Typography
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: fade-out($color--lightest, .2),
+        $color__p--text: $color--light,
+        $color__link--text: $color--lightest,
+
+
+        // Buttons
+        $color__button--background: $color--lightest,
+        $color__button--background--hover: darken($color--lightest, 5%),
+        $color__button--text: $color--accent,
+        $color__button--text--hover: $color--accent,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent
+    ),
+    color-dark: (
+
+
+        // Companyname
+        $color__companyname--border: $color--accent,
+        $color__companyname--text: $color--lightest,
+
+
+        // Typography
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: fade-out($color--lightest, .2),
+        $color__p--text: $color--light,
+        $color__link--text: $color--accent,
+
+
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: darken($color--accent, 5%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent
+    )
+);
+
+
 
 
 
@@ -36,17 +122,12 @@ $color--darkest: #324048;
 // -----------------------------
 
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
 $font__heading: 'Gibson';
 $font__body: 'Gibson';
-$font__icon: 'Font Awesome';
-
-
-// Colour
-$color__h1--text: $color--darkest;
-$color__h2--text: $color--darkest;
-$color__h3--text: $color--darkest;
-$color__h4--text: $color--darkest;
-$color__p--text: $color--dark;
+$font__icon: 'Material Icons';
 
 
 // Heading One
@@ -59,10 +140,10 @@ $font__h1--line-height: 60px;
 
 // Heading Two
 $font__h2--font-family: $font__heading;
-$font__h2--font-size: 34px;
+$font__h2--font-size: 46px;
 $font__h2--font-weight: 500;
-$font__h2--letter-spacing: 1px;
-$font__h2--line-height: 36px;
+$font__h2--letter-spacing: 0;
+$font__h2--line-height: 46px;
 
 
 // Heading Three
@@ -78,45 +159,21 @@ $font__h4--font-family: $font__heading;
 $font__h4--font-size: 20px;
 $font__h4--font-weight: 500;
 $font__h4--letter-spacing: 0;
-$color__h4--text: $color--dark;
+$font__h4--line-height: 1.6;
 
 
 // Body Text
 $font__p--font-family: $font__body;
-$font__p--font-size: 16px;
+$font__p--font-size: 17px;
 $font__p--font-weight: 400;
 $font__p--line-height: 30px;
 $font__p--letter-spacing: 1px;
 
 
-// Body Text
-$color__p--text: $color--dark;
-$color__link--text: $color--darkest;
-
-
-
-
-// Row Styling
-// -----------------------------
-
-
-
-// Widget Styling
-// -----------------------------
-
-
-// Templates Styles
-
-
 // Buttons
-$color__button--background: $color--accent;
-$color__button--background--hover: darken($color--accent, 5%);
-$color__button--text: $color--lightest;
-$color__button--text--hover: $color--lightest;
-
 $font__button--font-family: $font__body;
-$font__button--font-size: 16px;
-$font__button--font-weight: 400;
+$font__button--font-size: 18px;
+$font__button--font-weight: 300;
 $font__button--letter-spacing: 1px;
 
 
@@ -124,67 +181,29 @@ $font__button--letter-spacing: 1px;
 $font__companyname--font-family: $font__heading;
 $font__companyname--font-size: 24px;
 $font__companyname--line-height: 30px;
-$font__companyname--font-weight: 500;
-$font__companyname--letter-spacing: 0;
-
-$color__companyname--text: $color--darkest;
-
-
-// Click to Call
-
-
-// Content
-
-
-// Divider
-
-
-// Feature
-
-
-// Form
+$font__companyname--font-weight: 600;
+$font__companyname--letter-spacing: 1px;
 
 
 // Gallery
-
-
-// Google Map
-
-
-// Image
-
-
-// Linkedin
-
-
-// Logo
-
-
-// Navigation
-
-
-
-// Profile Data
-
-
-// Slideshow
-
-
-// Social Icons
-
-
-
-// Twitter Feed
-
-
-// Widgets
-
-
-// Yelp
-
-
-// Youtube
+$font__gallery-title--font-size: 22px;
+$font__gallery-title--line-height: 30px;
+$font__gallery-description--font-size: 17px;
+$font__gallery-description--line-height: 24px;
 
 
 
 
+// Style Variables
+// -----------------------------
+
+
+// Companyname
+$style__companyname--border: 2px solid;
+$style__companyname--border-direction: bottom;
+$style__companyname--padding: 0 0 6px 0;
+
+
+// Button
+$style__button--border-radius: 4px;
+$style__button--padding: 16px 35px;

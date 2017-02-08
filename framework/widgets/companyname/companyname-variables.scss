@@ -4,10 +4,19 @@
 // -------------------------
 
 
+
+
+//  Font Properties
+// -----------------------------
+
+
 $font__companyname--font-family: $font__heading !default;
 $font__companyname--font-size: 20px !default;
 $font__companyname--line-height: 26px !default;
 $font__companyname--font-weight: 400 !default;
 $font__companyname--letter-spacing: 0 !default;
 
-$color__companyname--text: $color--darkest !default;
+
+$style__companyname--border: none !default;
+$style__companyname--border-direction: none !default;
+$style__companyname--padding: 0 !default;

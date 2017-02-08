@@ -27,15 +27,12 @@ button,
 
 
     // Variables
-    border: $style__button--border--hover;
     @include border-radius($style__button--border-radius);
-    @include box-shadow($style__button--box-shadow);
     font-family: $font__button--font-family;
     font-size: $font__button--font-size;
     font-weight: $font__button--font-weight;
     letter-spacing: $font__button--letter-spacing;
     line-height: $font__button--line-height;
-    outline: $style__button--outline;
     padding: $style__button--padding;
     position: $style__button--position;
     text-transform: $font__button--text-transform;
@@ -45,21 +42,30 @@ button,
     // Light
     .light & {
         background: color(color-light, $color__button--background);
+        border: $style__button--border  color(color-light, $color__button--border);
+        @include box-shadow($style__button--box-shadow  color(color-light, $color__button--box-shadow));
         color: color(color-light, $color__button--text);
+        outline: $style__button--outline  color(color-light, $color__button--outline);
     }
 
 
     // Accent
     .accent & {
         background: color(color-accent, $color__button--background);
+        border: $style__button--border  color(color-accent, $color__button--border);
+        @include box-shadow($style__button--box-shadow  color(color-accent, $color__button--box-shadow));
         color: color(color-accent, $color__button--text);
+        outline: $style__button--outline  color(color-accent, $color__button--outline);
     }
 
 
     // Dark
     .dark & {
         background: color(color-dark, $color__button--background);
+        border: $style__button--border  color(color-dark, $color__button--border);
+        @include box-shadow($style__button--box-shadow  color(color-dark, $color__button--box-shadow));
         color: color(color-dark, $color__button--text);
+        outline: $style__button--outline  color(color-dark, $color__button--outline);
     }
 
 
@@ -73,7 +79,6 @@ button,
 
     // Hover State
     &:hover {
-        border: $style__button--border--hover;
         cursor: pointer;
         text-decoration: none;
 
@@ -81,21 +86,30 @@ button,
         // Light
         .light & {
             background: color(color-light, $color__button--background--hover);
+            border: $style__button--border--hover  color(color-light, $color__button--border--hover);
+            @include box-shadow($style__button--box-shadow--hover  color(color-light, $color__button--box-shadow--hover));
             color: color(color-light, $color__button--text--hover);
+            outline: $style__button--outline--hover  color(color-light, $color__button--outline--hover);
         }
 
 
         // Accent
         .accent & {
             background: color(color-accent, $color__button--background--hover);
+            border: $style__button--border--hover  color(color-accent, $color__button--border--hover);
+            @include box-shadow($style__button--box-shadow--hover  color(color-accent, $color__button--box-shadow--hover));
             color: color(color-accent, $color__button--text--hover);
+            outline: $style__button--outline--hover  color(color-accent, $color__button--outline--hover);
         }
 
 
         // Dark
         .dark & {
             background: color(color-dark, $color__button--background--hover);
+            border: $style__button--border--hover  color(color-dark, $color__button--border--hover);
+            @include box-shadow($style__button--box-shadow--hover  color(color-dark, $color__button--box-shadow--hover));
             color: color(color-dark, $color__button--text--hover);
+            outline: $style__button--outline--hover  color(color-dark, $color__button--outline--hover);
         }
     }
 
@@ -159,22 +173,18 @@ button,
 // -----------------------------
 
 .phone-number-link {
-
     display: inline-block;
     user-select: none;
     text-decoration: none;
 
 
     // Variables
-    border: $style__telephone--border;
     @include border-radius($style__telephone--border-radius);
-    @include box-shadow($style__telephone--box-shadow);
     font-family: $font__telephone--font-family;
     font-size: $font__telephone--font-size;
     font-weight: $font__telephone--font-weight;
     letter-spacing: $font__telephone--letter-spacing;
     line-height: $font__telephone--line-height;
-    outline: $style__telephone--outline;
     padding: $style__telephone--padding;
     position: $style__telephone--position;
     text-transform: $font__telephone--text-transform;
@@ -184,48 +194,65 @@ button,
     // Light
     .light & {
         background: color(color-light, $color__telephone--background);
+        border: $style__telephone--border  color(color-light, $color__telephone--border);
+        @include box-shadow($style__telephone--box-shadow color(color-light, $color__telephone--box-shadow));
         color: color(color-light, $color__telephone--text);
+        outline: $style__telephone--outline  color(color-light, $color__telephone--outline);
     }
 
 
     // Accent
     .accent & {
         background: color(color-accent, $color__telephone--background);
+        border: $style__telephone--border  color(color-accent, $color__telephone--border);
+        @include box-shadow($style__telephone--box-shadow  color(color-accent, $color__telephone--box-shadow));
         color: color(color-accent, $color__telephone--text);
+        outline: $style__telephone--outline  color(color-accent, $color__telephone--outline);
     }
 
 
     // Dark
     .dark & {
         background: color(color-dark, $color__telephone--background);
+        border: $style__telephone--border  color(color-dark, $color__telephone--border);
+        @include box-shadow($style__telephone--box-shadow  color(color-dark, $color__telephone--box-shadow));
         color: color(color-dark, $color__telephone--text);
+        outline: $style__telephone--outline  color(color-dark, $color__telephone--outline);
     }
 
 
     // Hover State
     &:hover {
-        border: $style__telephone--border--hover;;
         text-decoration: none;
 
 
          // Light
         .light & {
             background: color(color-light, $color__telephone--background--hover);
+            border: $style__telephone--border--hover  color(color-light, $color__telephone--border--hover);
+            @include box-shadow($style__telephone--box-shadow--hover  color(color-light, $color__telephone--box-shadow--hover));
             color: color(color-light, $color__telephone--text--hover);
+            outline: $style__telephone--outline--hover  color(color-light, $color__telephone--outline--hover);
         }
 
 
         // Accent
         .accent & {
             background: color(color-accent, $color__telephone--background--hover);
+            border: $style__telephone--border--hover  color(color-accent, $color__telephone--border--hover);
+            @include box-shadow($style__telephone--box-shadow--hover  color(color-accent, $color__telephone--box-shadow--hover));
             color: color(color-accent, $color__telephone--text--hover);
+            outline: $style__telephone--outline--hover  color(color-accent, $color__telephone--outline--hover);
         }
 
 
         // Dark
         .dark & {
             background: color(color-dark, $color__telephone--background--hover);
+            border: $style__telephone--border--hover  color(color-dark, $color__telephone--border--hover);
+            @include box-shadow($style__telephone--box-shadow--hover  color(color-dark, $color__telephone--box-shadow--hover));
             color: color(color-dark, $color__telephone--text--hover);
+            outline: $style__telephone--outline--hover  color(color-dark, $color__telephone--outline--hover);
         }
     }
 

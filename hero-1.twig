@@ -2,33 +2,130 @@
 {% block content %}
 
 
-<div class="bk-row  row  row__hero--02">
+<div class="bk-row  row  row__hero--02  light">
     <div class="bk-row__container  row__container">
 
         <div class="row__column  row__column--half  align--middle-left">
 
-            <div class="widget widget__image"  style="background-image:url(http://rhysjp.co.uk/dex/brunch.jpg)">
+            <div class="widget widget__image"  style="background-image:url(https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/hero-image.jpg)">
             </div>
         </div>
 
         <div class="row__column  row__column--half  align--middle-center  vertical-alignment--space-between">
 
-             {{widget('companyname', 'header-companyname', {"business": "FitGoal"})|raw}}
+             {{widget('companyname', 'header-companyname', {"business": "South Bristol Sports Centre"})|raw}}
 
             <div class="widget  compound-widget">
                 {{widget('content', 'header-content', {
-                    content: '<h1>Connecting the worlds athletes.</h1>
-                    <h4>Track &amp; analyse performance</h4>'
+                    content: '<h1>Extensive Indoor and Outdoor Sports and Social Facilities</h1>
+                    <h4>Call now to look around the facilities and make a reservation</h4>'
                 })|raw}}
 
                 {{widget('button', 'header-button', {
-                    'text': 'Read More',
+                    'text': '0117 903 8681',
                     'align': 'widget-align-center'
                 })|raw}}
             </div>
 
             {{widget('content', 'header-content-two', {
-                content: '<a>Explore FitGoal</a>'
+                content: '<a class="scroll-to">See More</a>'
+            })|raw}}
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="bk-row  row  row__content--02  dark">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--half  align--top-center">
+
+            {{widget('content', 'content-heading', {
+                content: '<h2>Function and celebratory events.</h2>'
+            })|raw}}
+
+        </div>
+
+        <div class="row__column  row__column--half  align--bottom-center">
+
+            {{widget('content', 'content-paragraph', {
+                content: '<p>Our flexible function rooms are ideal for Wedding Receptions, Parties, Christenings, Celebrations, Corporate Events and Meetings.</p>
+                <p>Call our new events line for more information. 0117 244 8555 or email functions@southbristolsportscentre.co.uk</p>'
+            })|raw}}
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="bk-row  row  row__gallery--01  light">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--full">
+
+            {{widget('gallery', 'image-gallery', {
+            'showTitle': true,
+            'showDescription': true,
+            'images':[
+                {
+                  'url':'https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/gallery-image1.jpg',
+                  'title':'Gym',
+                  'description': 'Outstanding gym facilities and professionally trained on-site health experts.'
+                },
+                {
+                  'url':'https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/gallery-image2.jpg',
+                  'title':'3G and Grass Pitches',
+                  'description': 'Available for one-off or block bookings!'
+                },
+                {
+                  'url':'https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/gallery-image3.jpg',
+                  'title':'Squash Courts',
+                  'description': 'Two squash courts available for hire. Table tennis now available.'
+                },
+                {
+                  'url':'https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/gallery-image4.jpg',
+                  'title':'Sports Bar',
+                  'description': 'The ideal venue to relax with friends whilst watching all the latest sporting action on our multi room widescreen plasma TVs.'
+                },
+                {
+                  'url':'https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/gallery-image5.jpg',
+                  'title':'Skittle Alley',
+                  'description': 'Home to a number of local teams, but also available for hire for parties and corporate events.'
+                },
+                {
+                  'url':'https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/gallery-image6.jpg',
+                  'title':'Treatment Rooms',
+                  'description': 'Our resident specialists, Top To Toe Physiotherapy, offer a wide range of treatment options to suite each individuals needs.'
+                }
+            ]
+            })|raw}}
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="bk-row  row  row__content--03  accent">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--full  align--middle-center">
+
+            {{widget('content', 'content-heading-2', {
+                content: '<h2>Gym Offer!</h2>'
+            })|raw}}
+
+            {{widget('content', 'content-paragraph-2', {
+                content: '<p style="text-align: center;">Sign up to the gym today and you could get a membership for as little as £17.50 per month Its a new year and maybe time for a new you so its time to hit that reset button and start your fitness journey.</p>'
+            })|raw}}
+
+            {{widget('button', 'header-button', {
+                'text': 'Read more',
+                'align': 'widget-align-center'
             })|raw}}
 
         </div>

@@ -11,6 +11,52 @@
     -webkit-hyphens: none;
     -moz-hyphens: none;
     hyphens: none;
+    max-width: 680px;
+}
+
+
+// Scroll To Widget
+.scroll-to {
+
+
+    .light & {
+        color: color(color-light, $color__scroll--text);
+    }
+
+
+    .accent & {
+        color: color(color-accent, $color__scroll--text);
+    }
+
+
+    .dark & {
+        color: color(color-dark, $color__scroll--text);
+    }
+
+
+    &:after {
+        content: "\e313";
+        display: block;
+        font-family: $font__icon;
+        line-height: 1;
+        position: relative;
+        text-align: center;
+
+
+        .light & {
+            color: color(color-light, $color__scroll--icon);
+        }
+
+
+        .accent & {
+            color: color(color-accent, $color__scroll--icon);
+        }
+
+
+        .dark & {
+            color: color(color-dark, $color__scroll--icon);
+        }
+    }
 }
 
 

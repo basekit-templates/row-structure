@@ -4,100 +4,333 @@
 // -----------------------------
 
 
-// Colour Swatch
-$transparent: transparent !default;
-$color--lightest: #ffffff !default;
-$color--light: #d6d6d6 !default;
-$color--accent: #bd0202 !default;
-$color--dark: #828282 !default;
-$color--darkest: #000000 !default;
 
 
-// $color__social-icons--background: red !default;
-// $color__social-icons--text: white !default;
-// $color__social-icons--background--hover: blue !default;
-// $color__social-icons--text--hover: yellow !default;
+//  Colour Properties
+// -----------------------------
 
 
-// Colour Mapping
-// $colors: (
-//     color-light: (
+$colors: (
+    color-light: (
 
 
-//         // Row Background
-//         color__row--background: $color--lightest,
+        // Companyname
+        $color__companyname--border: $transparent,
+        $color__companyname--text: $color--darkest,
 
 
-//         // // Social Icons
-//         // $color__social-icons--background: $color--dark,
-//         // $color__social-icons--text: $color--lightest,
-//         // $color__social-icons--background--hover: $color--darkest,
-//         // $color__social-icons--text--hover: $color--lightest,
+        // Divider
+        $color__hr--background: $color--dark,
+
+        $color__content-notch--background: $transparent,
 
 
-//         // Navigation
-//         color__navigation--background: $transparent,
-//         color__navigation-list--background: $transparent,
-//         color__navigation-item--background: $transparent,
-//         color__navigation-item--background--hover: $transparent,
-//         color__navigation--text: $color--dark,
-//         color__navigation--text--hover: $color--darkest,
+        // Typography
+        $color__h1--text: $color--darkest,
+        $color__h2--text: $color--darkest,
+        $color__h3--text: $color--darkest,
+        $color__h4--text: $color--darkest,
+        $color__link--text: $color--accent,
+        $color__p--text: $color--dark,
 
 
-//         // Click To Call
-//         color__telephone--background: red,
-//         color__telephone--background--hover: $transparent,
-//         color__telephone--text: $color--accent,
-//         color__telephone--text--hover: $color--darkest
-//     ),
-//     color-accent: (
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--darkest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--darkest,
 
 
-//         // Row Background
-//         color__row--background: $color--accent,
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: $color--accent,
+        $color__button--border: $transparent,
+        $color__button--border--hover: $transparent,
+        $color__button--box-shadow: $transparent,
+        $color__button--box-shadow--hover: $transparent,
+        $color__button--outline: $transparent,
+        $color__button--outline--hover: $transparent,
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--border: $transparent,
+        $color__telephone--border--hover: $transparent,
+        $color__telephone--box-shadow: $transparent,
+        $color__telephone--box-shadow--hover: $transparent,
+        $color__telephone--outline: $transparent,
+        $color__telephone--outline--hover: $transparent,
+        $color__telephone--text: $color--darkest,
+        $color__telephone--text--hover: $color--darkest,
 
 
-//         // // Social Icons
-//         // color__social-icons--background: $color--accent,
-//         // color__social-icons--text: $color--lightest,
-//         // color__social-icons--text--hover: $color--lightest,
-//         // color__social-icons--background--hover: darken($color--accent, 10%),
+        // Scroll
+        $color__scroll--text: $color--dark,
+        $color__scroll--icon: $color--dark,
 
 
-//         // Navigation
-//         color__navigation--background: $transparent,
-//         color__navigation-list--background: $transparent,
-//         color__navigation-item--background: $transparent,
-//         color__navigation-item--background--hover: $transparent,
-//         color__navigation--text: $color--lightest,
-//         color__navigation--text--hover: darken($color--lightest, 10%)
-//     ),
-//     color-dark: (
+        // Navigation
+        $color__navigation-list--background: $transparent,
+        $color__navigation-item--background: $transparent,
+        $color__navigation-item--background--hover: $transparent,
+        $color__navigation--text: $color--darkest,
+        $color__navigation--text--hover: $color--darkest,
 
 
-//         // Row Background
-//         color__row--background: $color--darkest,
+        // Forms
+        $color__form-fieldset--background: $transparent,
+        $color__form-fieldset--border: $transparent,
+        $color__form-fieldset--box-shadow: none,
+
+        $color__form-legend--background: $transparent,
+        $color__form-legend--border: $transparent,
+        $color__form-legend--box-shadow: none,
+        $color__form-legend--text: $color--lightest,
+        $color__form-legend--text-shadow: none,
+
+        $color__form-label--background: $transparent,
+        $color__form-label--border: $transparent,
+        $color__form-label--box-shadow: none,
+        $color__form-label--text: $color--dark,
+        $color__form-label--text-shadow: none,
+
+        $color__form-input--background: $color--accent,
+        $color__form-input--box-shadow: none,
+        $color__form-input--outline: $transparent,
+        $color__form-input--background--hover: $color--dark,
+        $color__form-input--border--hover: $transparent,
+        $color__form-input--box-shadow--hover: none,
+        $color__form-input--outline--hover: $transparent,
+        $color__form--text: $color--dark,
+        $color__form--text--hover: $color--lightest,
+
+        $color__form-button--background: $color--accent,
+        $color__form-button--background--hover: $color--accent,
+        $color__form-button--border: $transparent,
+        $color__form-button--border--hover: $transparent,
+        $color__form-button--box-shadow: none,
+        $color__form-button--box-shadow--hover: none,
+        $color__form-button--outline: $transparent,
+        $color__form-button--outline--hover: $transparent,
+        $color__form-button--text: $color--lightest,
+        $color__form-button--text--hover: $color--lightest,
 
 
-//         // // Social Icons
-//         // color__social-icons--background: $color--light,
-//         // color__social-icons--text: $color--darkest,
-//         // color__social-icons--text--hover: $color--darkest,
-//         // color__social-icons--background--hover: $color--lightest,
+        // Gallery
+        $color__gallery-caption--background: $transparent,
+
+        $color__gallery-title--background: $transparent,
+        $color__gallery-title--border: $transparent,
+        $color__gallery-title--box-shadow: none,
+        $color__gallery-title--text: $color--darkest,
+        $color__gallery-title--text-shadow: none,
+
+        $color__gallery-description--background: $transparent,
+        $color__gallery-description--border: $transparent,
+        $color__gallery-description--box-shadow: none,
+        $color__gallery-description--text: $color--dark,
+        $color__gallery-description--text-shadow: none
+    ),
+    color-accent: (
 
 
-//         // Navigation
-//         color__navigation--background: $transparent,
-//         color__navigation-list--background: $transparent,
-//         color__navigation-item--background: $transparent,
-//         color__navigation-item--background--hover: $transparent,
-//         color__navigation--text: $color--light,
-//         color__navigation--text--hover: $color--lightest
-//     )
-// );
+        // Companyname
+        $color__companyname--border: $transparent,
+        $color__companyname--text: $color--accent,
 
 
-// // SASS Function
-// @function color($color, $widget__variable) {
-//     @return map-get(map-get($colors, $color), $widget__variable);
-// }
+        // Divider
+        $color__hr--background: $color--accent,
+        $color__content-notch--background: $transparent,
+
+
+        // Typography
+        $color__h1--text: $color--accent,
+        $color__h2--text: $color--accent,
+        $color__h3--text: $color--accent,
+        $color__h4--text: $color--accent,
+        $color__link--text: $color--accent,
+        $color__p--text: $color--light,
+
+        // Buttons
+        $color__button--background: $color--lightest,
+        $color__button--background--hover: $color--lightest,
+        $color__button--border: $transparent,
+        $color__button--border--hover: $transparent,
+
+        $color__button--text: $color--accent,
+        $color__button--text--hover: $color--accent,
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--text: $color--lightest,
+        $color__telephone--text--hover: $color--lightest,
+
+
+        // Scroll
+        $color__scroll--text: $color--light,
+        $color__scroll--icon: $color--light,
+
+
+        // Navigation
+        $color__navigation-list--background: $transparent,
+        $color__navigation-item--background: $transparent,
+        $color__navigation-item--background--hover: $transparent,
+        $color__navigation--text: $color--accent,
+        $color__navigation--text--hover: $color--accent,
+
+
+        // Forms
+        $color__form-fieldset--background: $transparent,
+        $color__form-fieldset--border: $transparent,
+        $color__form-fieldset--box-shadow, none,
+        $color__form-legend--background: $transparent,
+        $color__form-legend--border: $transparent,
+        $color__form-legend--box-shadow: none,
+        $color__form-legend--text: $color--lightest,
+        $color__form-legend--text-shadow: none,
+        $color__form-label--background: $transparent,
+        $color__form-label--border: $transparent,
+        $color__form-label--box-shadow: none,
+        $color__form-label--text: $color--light,
+        $color__form-label--text-shadow: none,
+        $color__form-input--background: $color--dark,
+        $color__form-input--border: $transparent,
+        $color__form-input--box-shadow: none,
+        $color__form-input--outline: $transparent,
+        $color__form--text: $color--lightest,
+        $color__form-input--background--hover: $color--dark,
+        $color__form-input--border--hover: $transparent,
+        $color__form-input--box-shadow--hover: none,
+        $color__form-input--outline--hover: $transparent,
+        $color__form--text--hover: $color--lightest,
+        $color__form-button--background: $color--accent,
+        $color__form-button--background--hover: $color--accent,
+        $color__form-button--border: $transparent,
+        $color__form-button--border--hover: $transparent,
+        $color__form-button--box-shadow: none,
+        $color__form-button--box-shadow--hover: none,
+        $color__form-button--outline: $transparent,
+        $color__form-button--outline--hover: $transparent,
+        $color__form-button--text: $color--lightest,
+        $color__form-button--text--hover: $color--lightest,
+
+
+        // Gallery
+        $color__gallery-caption--background: $transparent,
+
+        $color__gallery-title--background: $transparent,
+        $color__gallery-title--border: $transparent,
+        $color__gallery-title--box-shadow: none,
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-title--text-shadow: none,
+
+        $color__gallery-description--background: $transparent,
+        $color__gallery-description--border: $transparent,
+        $color__gallery-description--box-shadow: none,
+        $color__gallery-description--text: $color--light,
+        $color__gallery-description--text-shadow: none
+    ),
+    color-dark: (
+
+
+        // Companyname
+        $color__companyname--border: $transparent,
+        $color__companyname--text: $color--lightest,
+
+
+        // Divider
+        $color__hr--background: $color--light,
+        $color__content-notch--background: $transparent,
+
+
+        // Typography
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: $color--lightest,
+        $color__link--text: $color--accent,
+        $color__p--text: $color--light,
+
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: $color--accent,
+        $color__button--border: $transparent,
+        $color__button--border--hover: $transparent,
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--text: $color--lightest,
+        $color__telephone--text--hover: $color--lightest,
+
+
+        // Scroll
+        $color__scroll--text: $color--light,
+        $color__scroll--icon: $color--light,
+
+
+        // Navigation
+        $color__navigation-list--background: $transparent,
+        $color__navigation-item--background: $transparent,
+        $color__navigation-item--background--hover: $transparent,
+        $color__navigation--text: $color--lightest,
+        $color__navigation--text--hover: $color--lightest,
+
+
+        // Forms
+        $color__form-fieldset--background: $transparent,
+        $color__form-fieldset--border: $transparent,
+        $color__form-fieldset--box-shadow, none,
+        $color__form-legend--background: $transparent,
+        $color__form-legend--border: $transparent,
+        $color__form-legend--box-shadow: none,
+        $color__form-legend--text: $color--lightest,
+        $color__form-legend--text-shadow: none,
+        $color__form-label--background: $transparent,
+        $color__form-label--border: $transparent,
+        $color__form-label--box-shadow: none,
+        $color__form-label--text: $color--light,
+        $color__form-label--text-shadow: none,
+        $color__form-input--background: $color--dark,
+        $color__form-input--box-shadow: none,
+        $color__form-input--outline: $transparent,
+        $color__form--text: $color--lightest,
+        $color__form-input--background--hover: $color--dark,
+        $color__form-input--border--hover: $transparent,
+        $color__form-input--box-shadow--hover: none,
+        $color__form-input--outline--hover: $transparent,
+        $color__form--text--hover: $color--lightest,
+        $color__form-button--background: $color--accent,
+        $color__form-button--background--hover: $color--accent,
+        $color__form-button--border: $transparent,
+        $color__form-button--border--hover: $transparent,
+        $color__form-button--box-shadow: none,
+        $color__form-button--box-shadow--hover: none,
+        $color__form-button--outline: $transparent,
+        $color__form-button--outline--hover: $transparent,
+        $color__form-button--text: $color--lightest,
+        $color__form-button--text--hover: $color--lightest,
+
+
+        // Gallery
+        $color__gallery-caption--background: $transparent,
+
+        $color__gallery-title--background: $transparent,
+        $color__gallery-title--border: $transparent,
+        $color__gallery-title--box-shadow: none,
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-title--text-shadow: none,
+
+        $color__gallery-description--background: $transparent,
+        $color__gallery-description--border: $transparent,
+        $color__gallery-description--box-shadow: none,
+        $color__gallery-description--text: $color--light,
+        $color__gallery-description--text-shadow: none
+    )
+) !default;
+
+
+// SASS Colour Function
+@function color($color, $widget__variable) {
+    @return map-get(map-get($colors, $color), $widget__variable);
+}

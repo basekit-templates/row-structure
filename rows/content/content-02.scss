@@ -1,0 +1,69 @@
+
+// -------------------------------------
+// Content: Design Two
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__content--02 {
+
+
+    // Row Height
+    &.row {
+        min-height: $row__height--medium;
+    }
+
+
+    // Row Padding
+    &.row {
+        padding: $row__padding--large;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
+    }
+
+
+    &.row__overlay:after {
+        background: rgba(0,0,0, 0.65);
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+.row__content--02 {
+
+
+    &.light .row__column:last-child .widget:before {
+        background-color: color(color-light, $color__content-notch--background);
+    }
+
+
+    &.accent .row__column:last-child .widget:before {
+        background-color: color(color-accent, $color__content-notch--background);
+    }
+
+
+    &.dark .row__column:last-child .widget:before {
+        background-color: color(color-dark, $color__content-notch--background);
+    }
+
+    .row__column:last-child .widget:before {
+        content: "";
+        display: block;
+        height: 2px;
+        margin-bottom: 25px;;
+        position: relative;
+        width: 50px;
+    }
+}

@@ -10,7 +10,7 @@
 // -----------------------------
 
 
-$font__button--font-family: Helvetica !default;
+$font__button--font-family: $font__body !default;
 $font__button--font-size: 16px !default;
 $font__button--font-weight: 400 !default;
 $font__button--letter-spacing: 0 !default;
@@ -18,62 +18,12 @@ $font__button--line-height: 1 !default;
 $font__button--text-transform: none !default;
 
 
-$font__telephone--font-family: Helvetica !default;
+$font__telephone--font-family: $font__body !default;
 $font__telephone--font-size: 16px !default;
 $font__telephone--font-weight: 400 !default;
 $font__telephone--letter-spacing: 0 !default;
 $font__telephone--line-height: 1 !default;
 $font__telephone--text-transform: none !default;
-
-
-
-
-//  Colour Properties
-// -----------------------------
-
-
-
-
-// Colour Variant Defaults
-$colors: (
-    color-light: (
-        $color__button--background: $color--accent,
-        $color__button--background--hover: $color--accent,
-        $color__button--text: $color--lightest,
-        $color__button--text--hover: $color--lightest,
-
-        $color__telephone--background: $transparent,
-        $color__telephone--background--hover: $transparent,
-        $color__telephone--text: $color--darkest,
-        $color__telephone--text--hover: $color--darkest
-
-    ),
-    color-accent: (
-        $color__button--background: $color--lightest,
-        $color__button--background--hover: $color--lightest,
-        $color__button--text: $color--accent,
-        $color__button--text--hover: $color--accent,
-
-        $color__telephone--background: $transparent,
-        $color__telephone--background--hover: $transparent,
-        $color__telephone--text: $color--lightest,
-        $color__telephone--text--hover: $color--lightest
-    ),
-    color-dark: (
-        $color__button--background: $color--accent,
-        $color__button--background--hover: $color--accent,
-        $color__button--text: $color--lightest,
-        $color__button--text--hover: $color--lightest,
-
-        $color__telephone--background: $transparent,
-        $color__telephone--background--hover: $transparent,
-        $color__telephone--text: $color--lightest,
-        $color__telephone--text--hover: $color--lightest
-    )
-);
-
-
-@import '../../global/color-function';
 
 
 
@@ -86,7 +36,9 @@ $style__button--border: none !default;
 $style__button--border--hover: none !default;
 $style__button--border-radius: 0 !default;
 $style__button--box-shadow: none !default;
+$style__button--box-shadow--hover: none !default;
 $style__button--outline: none !default;
+$style__button--outline--hover: none !default;
 $style__button--padding: 8px 16px !default;
 $style__button--position: relative !default;
 $style__button--transition: none !default;
@@ -96,7 +48,9 @@ $style__telephone--border: none !default;
 $style__telephone--border--hover: none !default;
 $style__telephone--border-radius: 0 !default;
 $style__telephone--box-shadow: none !default;
+$style__telephone--box-shadow--hover: none !default;
 $style__telephone--outline: none !default;
+$style__telephone--outline--hover: none !default;
 $style__telephone--padding: 8px 16px !default;
 $style__telephone--position: relative !default;
 $style__telephone--transition: none !default;

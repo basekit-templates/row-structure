@@ -6,14 +6,18 @@
 
 
 
-//  Font Variables
+//  Default Variables
 // -----------------------------
 
 
-// // Font Family Defaults
-// $font__primary: 'Helvetica';
-// $font__secondary: 'Georgia';
-// $font__icon: 'Font Awesome';
+@import 'typography-variables';
+
+
+
+
+//  Font Variables
+// -----------------------------
+
 
 
 h1,
@@ -266,7 +270,7 @@ h4 {
 
 
 .icon:before {
-    font-family: 'FontAwesome', sans-serif;
+    font-family: $font__icon;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

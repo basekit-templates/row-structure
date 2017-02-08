@@ -52,6 +52,24 @@ $row__padding--none: 0;
 }
 
 
+.row {
+    @include align-items(center);
+    @include box-sizing(border-box);
+    @include flex-display;
+    @include flex(0 1 auto);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    margin: 0 auto;
+    min-height: $row__height--default;
+
+
+    // Reverses Row Content (Invert)
+    &--reverse {
+        @include flex-direction(row-reverse);
+    }
+}
+
+
 
 
 //  Height & Width Defaults
@@ -59,8 +77,8 @@ $row__padding--none: 0;
 
 
 // Row / Container Height
-.row,
-.row__container {
+.row {
+// .row__container {
     min-height: $row__height--default;
 }
 
@@ -72,5 +90,5 @@ $row__padding--none: 0;
 
 // Container Width
 .row__container {
-    width: $row__width--full;
+    max-width: $row__width--full;
 }

@@ -1,4 +1,0 @@
-// SASS Colour Function
-@function color($color, $widget__variable) {
-    @return map-get(map-get($colors, $color), $widget__variable);
-}

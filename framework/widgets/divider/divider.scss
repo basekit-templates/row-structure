@@ -10,7 +10,7 @@
 // -----------------------------
 
 
-@import 'buttons-variables';
+// @import 'divider-variables';
 
 
 
@@ -20,9 +20,26 @@
 
 
 hr.rule {
-    background-color: $color__hr--background;
     border: none;
     display: inline-block;
 	height: 2px;
     width: 100%;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__hr--background);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-light, $color__hr--background);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-light, $color__hr--background);
+    }
 }

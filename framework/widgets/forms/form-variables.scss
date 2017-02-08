@@ -48,41 +48,6 @@ $font__form-button--text-transform: none !default;
 
 
 
-//  Colour Properties
-// -----------------------------
-
-
-// Fieldset
-$color__form-fieldset--background: transparent !default;
-$color__form-fieldset--border: none !default;
-
-
-// Legend
-$color__form-legend--background: transparent !default;
-$color__form-legend--text: $color--darkest !default;
-
-
-// Label
-$color__form-label--background: transparent !default;
-$color__form-label--text: $color--dark !default;
-$color__form-label--text: $color--dark !default;
-
-
-// Input
-$color__form-input--background: $color--lightest !default;
-$color__form-input--border: transparent !default;
-$color__form--text: $color--dark !default;
-
-
-// Button
-$color__form-button--background: $color--accent !default;
-$color__form-button--background--hover: $color--accent !default;
-$color__form-button--text: $color--lightest !default;
-$color__form-button--text--hover: $color--lightest !default;
-
-
-
-
 //  Style Properties
 // -----------------------------
 
@@ -102,12 +67,13 @@ $style__form-label--text-shadow: none !default;
 
 
 // Fieldset
+$style__form-fieldset--border: none !default;
 $style__form-fieldset--box-shadow: none !default;
 $style__form-fieldset--padding: 0 !default;
 
 
 // Input
-$style__form-input--border: none !default;
+$style__form-input--border: none $color__form-input--border !default;
 $style__form-input--box-shadow: none !default;
 $style__form-input--outline: none !default;
 

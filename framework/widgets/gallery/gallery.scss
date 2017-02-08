@@ -5,11 +5,22 @@
 
 
 
-// Set Gallery Structures?
+
+//  Default Variables
+// -----------------------------
+
+
+@import 'gallery-variables';
+
+
+
+
+// Gallery
 // -------------------------
 
+
 .gallery__item {
-    width: $gallery__item-width;
+    //width: $style__gallery-item--width;
 }
 
 
@@ -17,8 +28,120 @@
 	margin: 0;
 }
 
+
 .gallery-list {
     margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+
+.gallery__caption {
+
+
+    .light & {
+        background: color(color-light, $color__gallery-caption--background);
+    }
+
+
+    .accent & {
+        background: color(color-accent, $color__gallery-caption--background);
+    }
+
+
+    .dark & {
+        background: color(color-dark, $color__gallery-caption--background);
+    }
+}
+
+
+// Type Spacing
+.image-title {
+    margin-bottom: 0;
+
+
+    &+ .image-description {
+        margin-top: 8px;
+    }
+}
+
+
+.image-title {
+    font-family: $font__gallery-title--font-family;
+    font-size: $font__gallery-title--font-size;
+    font-weight: $font__gallery-title--font-weight;
+    letter-spacing: $font__gallery-title--letter-spacing;
+    line-height: $font__gallery-title--line-height;
+    padding: $style__gallery-title--padding;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__gallery-title--background);
+        border: $style__gallery-title--border  color(color-light, $color__gallery-title--border);
+        @include box-shadow($style__gallery-title--box-shadow  color(color-light, $color__gallery-title--box-shadow));
+        color: color(color-light, $color__gallery-title--text);
+        text-shadow: $style__gallery-title--text-shadow  color(color-light, $color__gallery-title--text-shadow);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__gallery-title--background);
+        border: $style__gallery-title--border  color(color-light, $color__gallery-title--border);
+        @include box-shadow($style__gallery-title--box-shadow  color(color-light, $color__gallery-title--box-shadow));
+        color: color(color-accent, $color__gallery-title--text);
+        text-shadow: $style__gallery-title--text-shadow  color(color-light, $color__gallery-title--text-shadow);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__gallery-title--background);
+        border: $style__gallery-title--border  color(color-light, $color__gallery-title--border);
+        @include box-shadow($style__gallery-title--box-shadow  color(color-light, $color__gallery-title--box-shadow));
+        color: color(color-dark, $color__gallery-title--text);
+        text-shadow: $style__gallery-title--text-shadow  color(color-light, $color__gallery-title--text-shadow);
+    }
+}
+
+
+.image-description {
+    font-family: $font__gallery-description--font-family;
+    font-size: $font__gallery-description--font-size;
+    font-weight: $font__gallery-description--font-weight;
+    letter-spacing: $font__gallery-description--letter-spacing;
+    line-height: $font__gallery-description--line-height;
+    padding: $style__gallery-description--padding;
+
+
+    // Light
+    .light & {
+        background: color(color-light, $color__gallery-description--background);
+        border: $style__gallery-description--border  color(color-light, $color__gallery-description--border);
+        @include box-shadow($style__gallery-description--box-shadow  color(color-light, $color__gallery-description--box-shadow));
+        color: color(color-light, $color__gallery-description--text);
+        text-shadow: $style__gallery-description--text-shadow  color(color-light, $color__gallery-description--text-shadow);
+    }
+
+
+    // Accent
+    .accent & {
+        background: color(color-accent, $color__gallery-description--background);
+        border: $style__gallery-description--border  color(color-light, $color__gallery-description--border);
+        @include box-shadow($style__gallery-description--box-shadow  color(color-light, $color__gallery-description--box-shadow));
+        color: color(color-accent, $color__gallery-description--text);
+        text-shadow: $style__gallery-description--text-shadow  color(color-light, $color__gallery-description--text-shadow);
+    }
+
+
+    // Dark
+    .dark & {
+        background: color(color-dark, $color__gallery-description--background);
+        border: $style__gallery-description--border  color(color-light, $color__gallery-description--border);
+        @include box-shadow($style__gallery-description--box-shadow  color(color-light, $color__gallery-description--box-shadow));
+        color: color(color-dark, $color__gallery-description--text);
+        text-shadow: $style__gallery-description--text-shadow  color(color-light, $color__gallery-description--text-shadow);
+    }
 }
 

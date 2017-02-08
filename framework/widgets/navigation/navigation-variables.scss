@@ -20,42 +20,6 @@ $font__navigation--text-transform: none !default;
 
 
 
-//  Colour Properties
-// -----------------------------
-
-
-// Colour Variant Defaults
-$colors: (
-    color-light: (
-        $color__navigation-list--background: $transparent,
-        $color__navigation-item--background: $transparent,
-        $color__navigation-item--background--hover: $transparent,
-        $color__navigation--text: $color--darkest,
-        $color__navigation--text--hover: $color--darkest
-    ),
-    color-accent: (
-        $color__navigation-list--background: $transparent,
-        $color__navigation-item--background: $transparent,
-        $color__navigation-item--background--hover: $transparent,
-        $color__navigation--text: $color--accent,
-        $color__navigation--text--hover: $color--accent
-    ),
-    color-dark: (
-        $color__navigation-list--background: $transparent,
-        $color__navigation-item--background: $transparent,
-        $color__navigation-item--background--hover: $transparent,
-        $color__navigation--text: $color--lightest,
-        $color__navigation--text--hover: $color--lightest
-    )
-);
-
-
-// SASS Colour Function
-@import '../../global/color-function';
-
-
-
-
 //  Style Properties
 // -----------------------------
 

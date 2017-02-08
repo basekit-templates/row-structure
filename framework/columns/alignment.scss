@@ -16,12 +16,14 @@
     // Top Left
     &-left {
         align-items: flex-start;
+        align-self: flex-start;
         justify-content: flex-start;
     }
 
     // Top Center
     &-center {
         align-items: center;
+        align-self: flex-start;
         justify-content: flex-start;
     }
 
@@ -29,6 +31,7 @@
     // Top Right
     &-right {
         align-items: flex-end;
+        align-self: flex-start;
         justify-content: flex-start;
     }
 }
@@ -80,6 +83,7 @@
     // Bottom Left
     &-left {
         align-items: flex-start;
+        align-self: flex-end;
         justify-content: flex-end;
     }
 
@@ -87,6 +91,7 @@
     // Bottom Center
     &-center {
         align-items: center;
+        align-self: flex-end;
         justify-content: flex-end;
     }
 
@@ -94,6 +99,7 @@
     // Bottom Right
     &-right {
         align-items: flex-end;
+        align-self: flex-end;
         justify-content: flex-end;
     }
 }

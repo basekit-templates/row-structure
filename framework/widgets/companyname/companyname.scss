@@ -20,11 +20,35 @@
 
 
 .company-link {
-    color: $color__companyname--text;
+    text-decoration: none;
+
+
+    // Variables
     font-family: $font__companyname--font-family;
     font-size: $font__companyname--font-size;
     font-weight: $font__companyname--font-weight;
     letter-spacing: $font__companyname--letter-spacing;
     line-height: $font__companyname--line-height;
-    text-decoration: none;
+    padding: $style__companyname--padding;
+
+
+    // Light
+    .light & {
+        @include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
+        color: color(color-light, $color__companyname--text);
+    }
+
+
+    // Dark
+    .dark & {
+        @include border($style__companyname--border, color(color-accent, $color__companyname--border), $style__companyname--border-direction);
+        color: color(color-accent, $color__companyname--text);
+    }
+
+
+    // Accent
+    .accent & {
+        @include border($style__companyname--border, color(color-dark, $color__companyname--border), $style__companyname--border-direction);
+        color: color(color-dark, $color__companyname--text);
+    }
 }

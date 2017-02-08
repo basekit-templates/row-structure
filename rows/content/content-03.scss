@@ -1,0 +1,40 @@
+
+// -------------------------------------
+// Content: Design Three
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__content--03 {
+
+
+    // Row Height
+    &.row {
+        min-height: $row__height--small;
+    }
+
+
+    // Row Padding
+    &.row {
+        padding: $row__padding--large;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+.row__content--03 {
+}

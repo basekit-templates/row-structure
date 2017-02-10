@@ -35,12 +35,13 @@
 
 
     &:after {
-        content: "\e313";
+        content: "\203A";
         display: block;
         font-family: $font__icon;
         line-height: 1;
         position: relative;
         text-align: center;
+        @include transform(rotate(90deg));
 
 
         .light & {

@@ -51,7 +51,7 @@
         "companyname": {
             "color__companyname--border": "color__companyname--border",
             "color__companyname--text": "color__companyname--text",
-            "font__companyname--font-family": "$color--primary",
+            "font__companyname--font-family": "$font_heading",
             "font__companyname--font-size": "20px",
             "font__companyname--line-height": "20px",
             "font__companyname--font-weight": "normal",
@@ -64,7 +64,10 @@
         "socialicons": {
             "color__social-icons--background": "color__social-icons--background",
             "color__social-icons--background--hover": "color__social-icons--background--hover",
+            "color__social-icons--icon": "color__social-icons--icon",
+            "color__social-icons--icon--hover": "color__social-icons--icon--hover",
             "color__social-icons--text": "color__social-icons--text",
+            "color__social-icon--text": "color__social-icon--text",
             "color__social-icons--text--hover": "color__social-icons--text--hover"
         },
         "navigation": {
@@ -129,11 +132,11 @@
             "color__form-input--box-shadow": "color__form-input--box-shadow",
             "color__form-input--outline": "color__form-input--outline",
             "color__form--text": "color__form--text",
+            "color__form--text--hover": "color__form--text--hover",
             "color__form-input--background--hover": "color__form-input--background--hover",
             "color__form-input--border--hover": "color__form-input--border--hover",
             "color__form-input--box-shadow--hover": "color__form-input--box-shadow--hover",
             "color__form-input--outline--hover": "color__form-input--outline--hover",
-            "color__form--text--hover": "color__form--text--hover",
             "color__form-button--background": "color__form-button--background",
             "color__form-button--background--hover": "color__form-button--background--hover",
             "color__form-button--border": "color__form-button--border",

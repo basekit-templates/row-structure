@@ -1,0 +1,94 @@
+
+// -------------------------------------
+// Contact: Design Two
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__contact--02 {
+    background: $color--lightest;
+
+
+    // Row Height
+    &.row {
+        height: $row__height--default;
+    }
+
+
+    // Row Padding
+    &.row {
+        padding: $row__padding--large;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+.row__contact--02 {
+
+    [data-widget-type="contactform"] {
+        width: 100%;
+    }
+
+
+    .contactform {
+
+
+        &__legend {
+            margin-bottom: 15px;
+        }
+
+
+        &__label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+        &__input,
+        &__textarea {
+            display: block;
+            margin-bottom: 30px;
+            padding: 10px;
+            width: 100%;
+        }
+
+
+        &__textarea {
+            min-height: 125px;
+        }
+    }
+
+
+
+
+
+    [data-widget-type="content"] {
+        ul {
+            list-style: none;
+            margin: 25px 0 0;
+            padding: 0;
+        }
+
+
+        li {
+            margin-top: 15px;
+        }
+    }
+}
+
+

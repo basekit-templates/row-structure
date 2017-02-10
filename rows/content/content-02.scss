@@ -14,7 +14,7 @@
 
     // Row Height
     &.row {
-        min-height: $row__height--medium;
+        min-height: $row__height--small;
     }
 
 
@@ -45,20 +45,22 @@
 
 
     &.light .row__column:last-child .widget:before {
-        background-color: color(color-light, $color__content-notch--background);
+        background: color(color-light, $color__content-notch--background);
     }
 
 
     &.accent .row__column:last-child .widget:before {
-        background-color: color(color-accent, $color__content-notch--background);
+        background: color(color-accent, $color__content-notch--background);
     }
 
 
     &.dark .row__column:last-child .widget:before {
-        background-color: color(color-dark, $color__content-notch--background);
+        background: color(color-dark, $color__content-notch--background);
     }
 
+
     .row__column:last-child .widget:before {
+        background: red;
         content: "";
         display: block;
         height: 2px;

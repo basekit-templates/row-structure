@@ -20,11 +20,6 @@
                     content: '<h1>Extensive Indoor and Outdoor Sports and Social Facilities</h1>
                     <h4>Call now to look around the facilities and make a reservation</h4>'
                 })|raw}}
-
-                {{widget('button', 'header-button', {
-                    'text': '0117 903 8681',
-                    'align': 'widget-align-center'
-                })|raw}}
             </div>
 
             {{widget('content', 'header-content-two', {
@@ -109,7 +104,6 @@
 </div>
 
 
-
 <div class="bk-row  row  row__content--03  accent">
     <div class="bk-row__container  row__container">
 
@@ -128,6 +122,87 @@
                 'align': 'widget-align-center'
             })|raw}}
 
+
+            {{widget('clicktocall', 'clicktocalldefault', {})|raw}}
+        </div>
+
+    </div>
+</div>
+
+
+<div class="bk-row  row  row__contact--03  light">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--two-thirds  align--top-left">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.7404351248542!2d-2.561610584233014!3d51.42619457962189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718faece37c0b3%3A0xcedbc1322d99e607!2sSouth+Bristol+Sports+Centre!5e0!3m2!1sen!2suk!4v1486641693508" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+
+        <div class="row__column  row__column--one-third  align--middle-left">
+
+            {{widget('content', 'content-address', {
+                content: '
+                <h3>How To Find Us</h3>'
+            })|raw}}
+
+            {{widget('companyaddress', 'address', {})|raw}}
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="bk-row  row  row__contact--02  dark  bg--cover  filter--multiply"  style="background-image:url(https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/hero-image.jpg);background-repeat: no-repeat;">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--two-thirds  align--top-left">
+
+            {{widget('contactform', 'contact', {
+                'text': 'Submit your question',
+                'formTitle': 'Do You Have a Question?',
+                'email': 'profile'
+            })|raw}}
+
+        </div>
+
+        <div class="row__column  row__column--one-third  align--top-left">
+
+            {{widget('content', 'content-openinghours', {
+                content: '
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>Monday - Friday - 6.30am - 11pm</li>
+                    <li>Saturday - 8.30am - 11pm</li>
+                    <li>Sunday - 10am - 7pm</li>
+                </ul>'
+            })|raw}}
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="bk-row  row  row__footer--01  dark">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--half  align--middle-left">
+            {{widget('content', 'content-copyright', {
+                content: '<p>Copyright 2017 South Bristol Sports Limited</p>'
+            })|raw}}
+        </div>
+
+
+        <div class="row__column  row__column--half  align--middle-right">
+
+            {{widget('socialicons', 'socialnetworks', {
+                'facebook': 'https://www.facebook.com/mycompanyname',
+                'twitter': 'https://twitter.com/mycompanyname',
+                'instagram': 'https://www.instagram.com/mycompanyname'
+            })|raw}}
         </div>
 
     </div>

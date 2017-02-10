@@ -10,41 +10,12 @@
 // -----------------------------
 
 
-$font__social-icons--font-family: Font Awesome !default;
+$font__social-icons--font-family: FontAwesome !default;
 $font__social-icons--font-size: 16px !default;
 $font__social-icons--font-weight: 400 !default;
 $font__social-icons--letter-spacing: 0 !default;
 $font__social-icons--line-height: 1 !default;
 $font__social-icons--text-transform: none !default;
-
-
-
-
-//  Colour Properties
-// -----------------------------
-
-
-// Colour Variant Defaults
-$colors: (
-    color-light: (
-        $color__social-icons--background: gainsboro,
-        $color__social-icons--text: $color--darkest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--darkest
-    ),
-    color-accent: (
-        $color__social-icons--background: green,
-        $color__social-icons--text: $color--lightest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--lightest
-    ),
-    color-dark: (
-        $color__social-icons--background: grey,
-        $color__social-icons--text: $color--lightest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--lightest
-    )
-) !default;
 
 
 

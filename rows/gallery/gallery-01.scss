@@ -56,7 +56,6 @@
 
 
         &:hover .gallery__caption {
-            height: auto;
             opacity: 1;
             visibility: visible;
         }
@@ -68,7 +67,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         display: block;
-        height: 400px;
+        padding-bottom: 100%;
         width: 100%;
     }
 
@@ -84,7 +83,6 @@
         @include flex-display;
         @include align-items(center);
         @include justify-content(center);
-        height: 0;
         position: absolute;
         text-align: center;
         visibility: hidden;

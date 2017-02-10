@@ -39,15 +39,15 @@
     }
 
 
-    // Dark
-    .dark & {
+    // Accent
+    .accent & {
         @include border($style__companyname--border, color(color-accent, $color__companyname--border), $style__companyname--border-direction);
         color: color(color-accent, $color__companyname--text);
     }
 
 
-    // Accent
-    .accent & {
+    // Dark
+    .dark & {
         @include border($style__companyname--border, color(color-dark, $color__companyname--border), $style__companyname--border-direction);
         color: color(color-dark, $color__companyname--text);
     }

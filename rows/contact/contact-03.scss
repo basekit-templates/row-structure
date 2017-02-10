@@ -1,0 +1,50 @@
+
+// -------------------------------------
+// Contact: Design Three
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__contact--03 {
+    background: $color--lightest;
+
+
+    // Row Height
+    &.row {
+        height: $row__height--default;
+    }
+
+
+    // Row Padding
+    &.row {
+        padding: $row__padding--none;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--full;
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+.row__contact--03 {
+
+    [data-widget-type="content"] {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

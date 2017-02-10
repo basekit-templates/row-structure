@@ -195,7 +195,7 @@ button,
     .light & {
         background: color(color-light, $color__telephone--background);
         border: $style__telephone--border  color(color-light, $color__telephone--border);
-        @include box-shadow($style__telephone--box-shadow color(color-light, $color__telephone--box-shadow));
+        @include box-shadow($style__telephone--box-shadow  color(color-light, $color__telephone--box-shadow));
         color: color(color-light, $color__telephone--text);
         outline: $style__telephone--outline  color(color-light, $color__telephone--outline);
     }

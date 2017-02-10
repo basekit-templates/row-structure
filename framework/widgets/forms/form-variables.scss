@@ -39,11 +39,11 @@ $font__form-legend--text-transform: none !default;
 
 // Button
 $font__form-button--font-family: $font__body !default;
-$font__form-button--font-size: 16px !default;
-$font__form-button--font-weight: normal !default;
-$font__form-button--letter-spacing: 0 !default;
-$font__form-button--line-height: 24px !default;
-$font__form-button--text-transform: none !default;
+$font__form-button--font-size: $font__button--font-size !default;
+$font__form-button--font-weight: $font__button--font-weight !default;
+$font__form-button--letter-spacing: $font__button--letter-spacing !default;
+$font__form-button--line-height: $font__button--line-height !default;
+$font__form-button--text-transform: $font__button--text-transform !default;
 
 
 

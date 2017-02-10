@@ -21,6 +21,15 @@
 
 .gallery__item {
     //width: $style__gallery-item--width;
+
+    &:hover {
+
+
+        .gallery__caption {
+            transition: $style__gallery-caption--transition;
+        }
+
+    }
 }
 
 
@@ -37,7 +46,7 @@
 
 
 .gallery__caption {
-
+    @include transition($style__gallery-caption--transition);
 
     .light & {
         background: color(color-light, $color__gallery-caption--background);

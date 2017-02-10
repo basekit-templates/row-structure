@@ -21,8 +21,7 @@ $colors: (
 
         // Divider
         $color__hr--background: $color--dark,
-
-        $color__content-notch--background: $transparent,
+        $color__content-notch--background: $color--accent,
 
 
         // Typography
@@ -52,6 +51,8 @@ $colors: (
         $color__button--outline--hover: $transparent,
         $color__button--text: $color--lightest,
         $color__button--text--hover: $color--lightest,
+
+
         $color__telephone--background: $transparent,
         $color__telephone--background--hover: $transparent,
         $color__telephone--border: $transparent,
@@ -141,7 +142,7 @@ $colors: (
 
         // Divider
         $color__hr--background: $color--accent,
-        $color__content-notch--background: $transparent,
+        $color__content-notch--background: $color--lightest,
 
 
         // Typography
@@ -151,6 +152,14 @@ $colors: (
         $color__h4--text: $color--accent,
         $color__link--text: $color--accent,
         $color__p--text: $color--light,
+
+
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--lightest,
+
 
         // Buttons
         $color__button--background: $color--lightest,
@@ -240,7 +249,7 @@ $colors: (
 
         // Divider
         $color__hr--background: $color--light,
-        $color__content-notch--background: $transparent,
+        $color__content-notch--background: $color--accent,
 
 
         // Typography
@@ -250,6 +259,17 @@ $colors: (
         $color__h4--text: $color--lightest,
         $color__link--text: $color--accent,
         $color__p--text: $color--light,
+
+
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--icon: $color--lightest,
+        $color__social-icons--text: $color--lightest,
+        $color__social-icon--text: $color--lightest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--icon--hover: $color--lightest,
+        $color__social-icons--text--hover: $color--lightest,
+
 
         // Buttons
         $color__button--background: $color--accent,

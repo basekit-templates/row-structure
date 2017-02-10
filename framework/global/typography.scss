@@ -146,7 +146,8 @@ a {
 
 // Paragraph Colour
 p,
-.paragraph {
+.paragraph,
+li {
 
 
     // Light
@@ -207,7 +208,9 @@ h5,
 h6,
 p,
 li,
-a {
+a,
+legend,
+label {
     margin-top: 0;
      text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

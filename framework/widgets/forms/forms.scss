@@ -19,15 +19,14 @@
 // -----------------------------
 
 
-fieldset {
-    margin: 0;
+form {
     padding: $style__form-fieldset--padding;
 
 
     // Light
     .light & {
         background: color(color-light, $color__form-fieldset--background);
-        border: $style__form-fieldset--border  color(color-light, $color__form-fieldset--border);
+        @include border($style__form-fieldset--border, color(color-light, $color__form-fieldset--border), $style__form-fieldset--border-direction);
         @include box-shadow($style__form-fieldset--box-shadow  color(color-light, $color__form-fieldset--box-shadow));
     }
 
@@ -35,7 +34,7 @@ fieldset {
     // Accent
     .accent & {
         background: color(color-accent, $color__form-fieldset--background);
-        border: $style__form-fieldset--border  color(color-light, $color__form-fieldset--border);
+        @include border($style__form-fieldset--border, color(color-light, $color__form-fieldset--border), $style__form-fieldset--border-direction);
         @include box-shadow($style__form-fieldset--box-shadow  color(color-accent, $color__form-fieldset--box-shadow));
     }
 
@@ -43,9 +42,14 @@ fieldset {
     // Dark
     .dark & {
         background: color(color-dark, $color__form-fieldset--background);
-        border: $style__form-fieldset--border  color(color-light, $color__form-fieldset--border);
+        @include border($style__form-fieldset--border, color(color-light, $color__form-fieldset--border), $style__form-fieldset--border-direction);
         @include box-shadow($style__form-fieldset--box-shadow  color(color-dark, $color__form-fieldset--box-shadow));
     }
+}
+
+
+fieldset {
+    margin: 0;
 }
 
 
@@ -63,7 +67,7 @@ legend {
     .light & {
         background: color(color-light, $color__form-legend--background);
         @include box-shadow($style__form-legend--box-shadow  color(color-light, $color__form-legend--box-shadow));
-        border: $style__form-legend--border  color(color-light, $color__form-legend--border);
+        @include border($style__form-legend--border, color(color-light, $color__form-legend--border), $style__form-legend--border-direction);
         color: color(color-light, $color__form-legend--text);
         text-shadow: $style__form-legend--text-shadow  color(color-light, $color__form-legend--text-shadow);
     }
@@ -73,7 +77,7 @@ legend {
     .accent & {
         background: color(color-accent, $color__form-legend--background);
         @include box-shadow($style__form-legend--box-shadow  color(color-accent, $color__form-legend--box-shadow));
-        border: $style__form-legend--border  color(color-accent, $color__form-legend--border);
+        @include border($style__form-legend--border, color(color-light, $color__form-legend--border), $style__form-legend--border-direction);
         color: color(color-accent, $color__form-legend--text);
         text-shadow: $style__form-legend--text-shadow  color(color-accent, $color__form-legend--text-shadow);
     }
@@ -83,7 +87,7 @@ legend {
     .dark & {
         background: color(color-dark, $color__form-legend--background);
         @include box-shadow($style__form-legend--box-shadow  color(color-dark, $color__form-legend--box-shadow));
-        border: $style__form-legend--border  color(color-dark, $color__form-legend--border);
+        @include border($style__form-legend--border, color(color-light, $color__form-legend--border), $style__form-legend--border-direction);
         color: color(color-dark, $color__form-legend--text);
         text-shadow: $style__form-legend--text-shadow  color(color-dark, $color__form-legend--text-shadow);
     }
@@ -103,7 +107,7 @@ label {
     // Light
     .light & {
         background: color(color-light, $color__form-label--background);
-        border: $style__form-label--border  color(color-light, $color__form-label--border);
+        @include border($style__form-label--border, color(color-light, $color__form-label--border), $style__form-label--border-direction);
         @include box-shadow($style__form-label--box-shadow  color(color-light, $color__form-label--box-shadow));
         color: color(color-light, $color__form-label--text);
         text-shadow: $style__form-label--text-shadow  color(color-light, $color__form-label--text-shadow);
@@ -113,7 +117,7 @@ label {
     // Accent
     .accent & {
         background: color(color-accent, $color__form-label--background);
-        border: $style__form-label--border  color(color-accent, $color__form-label--border);
+        @include border($style__form-label--border, color(color-accent, $color__form-label--border), $style__form-label--border-direction);
         @include box-shadow($style__form-label--box-shadow  color(color-accent, $color__form-label--box-shadow));
         color: color(color-accent, $color__form-label--text);
         text-shadow: $style__form-label--text-shadow  color(color-accent, $color__form-label--text-shadow);
@@ -123,7 +127,7 @@ label {
     // Dark
     .dark & {
         background: color(color-dark, $color__form-label--background);
-        border: $style__form-label--border  color(color-dark, $color__form-label--border);
+        @include border($style__form-label--border, color(color-dark, $color__form-label--border), $style__form-label--border-direction);
         @include box-shadow($style__form-label--box-shadow  color(color-dark, $color__form-label--box-shadow));
         color: color(color-dark, $color__form-label--text);
         text-shadow: $style__form-label--text-shadow  color(color-dark, $color__form-label--text-shadow);
@@ -157,13 +161,14 @@ select {
     font-weight: $font__form--font-weight;
     letter-spacing: $font__form--letter-spacing;
     line-height: $font__form--line-height;
+    padding: $style__form-input--padding;
     text-transform: $font__form--text-transform;
 
 
     // Light
     .light & {
         background: color(color-light, $color__form-input--background);
-        border: $style__form-input--border color(color-light, $color__form-input--border);
+        @include border($style__form-input--border, color(color-light, $color__form-input--border), $style__form-input--border-direction);
         @include box-shadow($style__form-input--box-shadow color(color-light, $color__form-input--box-shadow));
         color: color(color-light, $color__form--text);
         outline : $style__form-input--outline  color(color-light, $color__form-input--outline);
@@ -173,7 +178,7 @@ select {
     // Accent
     .accent & {
         background: color(color-accent, $color__form-input--background);
-        border: $style__form-input--border color(color-accent, $color__form-input--border);
+        @include border($style__form-input--border, color(color-accent, $color__form-input--border), $style__form-input--border-direction);
         @include box-shadow($style__form-input--box-shadow color(color-accent, $color__form-input--box-shadow));
         color: color(color-accent, $color__form--text);
         outline : $style__form-input--outline  color(color-accent, $color__form-input--outline);
@@ -183,7 +188,7 @@ select {
     // Dark
     .dark & {
         background: color(color-dark, $color__form-input--background);
-        border: $style__form-input--border color(color-dark, $color__form-input--border);
+        @include border($style__form-input--border, color(color-dark, $color__form-input--border), $style__form-input--border-direction);
         @include box-shadow($style__form-input--box-shadow color(color-dark, $color__form-input--box-shadow));
         color: color(color-dark, $color__form--text);
         outline : $style__form-input--outline  color(color-dark, $color__form-input--outline);
@@ -196,7 +201,7 @@ select {
         // Light
         .light & {
             background: color(color-light, $color__form-input--background--hover);
-            border: $style__form-input--border color(color-light, $color__form-input--border--hover);
+            @include border($style__form-input--border--hover, color(color-light, $color__form-input--border--hover), $style__form-input--border-direction--hover);
             @include box-shadow($style__form-input--box-shadow color(color-light, $color__form-input--box-shadow--hover));
             color: color(color-light, $color__form--text--hover);
             outline : $style__form-input--outline  color(color-light, $color__form-input--outline--hover);
@@ -206,7 +211,7 @@ select {
         // Accent
         .accent & {
             background: color(color-accent, $color__form-input--background);
-            border: $style__form-input--border color(color-accent, $color__form-input--border);
+            @include border($style__form-input--border--hover, color(color-accent, $color__form-input--border--hover), $style__form-input--border-direction--hover);
             @include box-shadow($style__form-input--box-shadow color(color-accent, $color__form-input--box-shadow));
             color: color(color-accent, $color__form--text);
             outline : $style__form-input--outline  color(color-accent, $color__form-input--outline);
@@ -216,7 +221,7 @@ select {
         // dark
         .dark & {
             background: color(color-dark, $color__form-input--background);
-            border: $style__form-input--border color(color-dark, $color__form-input--border);
+            @include border($style__form-input--border--hover, color(color-dark, $color__form-input--border--hover), $style__form-input--border-direction--hover);
             @include box-shadow($style__form-input--box-shadow color(color-dark, $color__form-input--box-shadow));
             color: color(color-dark, $color__form--text);
             outline : $style__form-input--outline  color(color-dark, $color__form-input--outline);
@@ -238,7 +243,7 @@ select {
     // Light
     .light & {
         background: color(color-light, $color__form-button--background);
-        border: $style__form-button--border  color(color-light, $color__form-button--border);
+        @include border($style__form-button--border, color(color-light, $color__form-button--border), $style__form-button--border-direction);
         @include box-shadow($style__form-button--box-shadow  color(color-light, $color__form-button--box-shadow));
         color: color(color-light, $color__form-button--text);
         outline: $style__form-button--outline  color(color-light, $color__form-button--outline);
@@ -248,7 +253,7 @@ select {
     // Accent
     .accent & {
         background: color(color-accent, $color__form-button--background);
-        border: $style__form-button--border  color(color-accent, $color__form-button--border);
+        @include border($style__form-button--border, color(color-light, $color__form-button--border), $style__form-button--border-direction);
         @include box-shadow($style__form-button--box-shadow  color(color-accent, $color__form-button--box-shadow));
         color: color(color-accent, $color__form-button--text);
         outline: $style__form-button--outline  color(color-accent, $color__form-button--outline);
@@ -258,7 +263,7 @@ select {
     // Dark
     .dark & {
         background: color(color-dark, $color__form-button--background);
-        border: $style__form-button--border  color(color-dark, $color__form-button--border);
+        @include border($style__form-button--border, color(color-light, $color__form-button--border), $style__form-button--border-direction);
         @include box-shadow($style__form-button--box-shadow  color(color-dark, $color__form-button--box-shadow));
         color: color(color-dark, $color__form-button--text);
         outline: $style__form-button--outline  color(color-dark, $color__form-button--outline);
@@ -271,7 +276,7 @@ select {
         // Light
         .light & {
             background: color(color-light, $color__form-button--background--hover);
-            border: $style__form-button--border  color(color-light, $color__form-button--border--hover);
+            @include border($style__form-button--border--hover, color(color-light, $color__form-button--border--hover), $style__form-button--border-direction--hover);
             @include box-shadow($style__form-button--box-shadow  color(color-light, $color__form-button--box-shadow--hover));
             color: color(color-light, $color__form-button--text--hover);
             outline: $style__form-button--outline  color(color-light, $color__form-button--outline--hover);
@@ -281,7 +286,7 @@ select {
         // Accent
         .accent & {
             background: color(color-accent, $color__form-button--background--hover);
-            border: $style__form-button--border  color(color-accent, $color__form-button--border--hover);
+            @include border($style__form-button--border--hover, color(color-light, $color__form-button--border--hover), $style__form-button--border-direction--hover);
             @include box-shadow($style__form-button--box-shadow  color(color-accent, $color__form-button--box-shadow--hover));
             color: color(color-accent, $color__form-button--text--hover);
             outline: $style__form-button--outline  color(color-accent, $color__form-button--outline--hover);
@@ -291,7 +296,7 @@ select {
         // Dark
         .dark & {
             background: color(color-dark, $color__form-button--background--hover);
-            border: $style__form-button--border  color(color-dark, $color__form-button--border--hover);
+            @include border($style__form-button--border--hover, color(color-light, $color__form-button--border--hover), $style__form-button--border-direction--hover);
             @include box-shadow($style__form-button--box-shadow  color(color-dark, $color__form-button--box-shadow--hover));
             color: color(color-dark, $color__form-button--text--hover);
             outline: $style__form-button--outline  color(color-dark, $color__form-button--outline--hover);

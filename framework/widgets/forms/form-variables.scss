@@ -61,6 +61,7 @@ $style__form-legend--text-shadow: none !default;
 
 // Label
 $style__form-label--border: none !default;
+$style__form-label--border-direction: none !default;
 $style__form-label--box-shadow: none !default;
 $style__form-label--padding: 0 !default;
 $style__form-label--text-shadow: none !default;
@@ -68,14 +69,30 @@ $style__form-label--text-shadow: none !default;
 
 // Fieldset
 $style__form-fieldset--border: none !default;
+$style__form-fieldset--border-direction: none !default;
 $style__form-fieldset--box-shadow: none !default;
 $style__form-fieldset--padding: 0 !default;
 
 
 // Input
-$style__form-input--border: none $color__form-input--border !default;
+$style__form-input--border: none !default;
+$style__form-input--border-direction: none !default;
+$style__form-input--border--hover: none !default;
+$style__form-input--border-direction--hover: none !default;
+$style__form-input--padding: 0 !default;
 $style__form-input--box-shadow: none !default;
 $style__form-input--outline: none !default;
+
+$style__form-legend--border: none !default;
+$style__form-legend--border-direction: none !default;
+
+$style__form-label--border: none !default;
+$style__form-label--border-direction: none !default;
+
+$style__form-button--border: none !default;
+$style__form-button--border-direction: none !default;
+$style__form-button--border--hover: none !default;
+$style__form-button--border-direction--hover: none !default;
 
 
 // Button

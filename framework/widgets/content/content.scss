@@ -17,6 +17,7 @@
 
 // Scroll To Widget
 .scroll-to {
+    font-size: $font__scroll-to--font-size;
 
 
     .light & {
@@ -38,7 +39,8 @@
         content: "\203A";
         display: block;
         font-family: $font__icon;
-        line-height: 1;
+        font-size: 22px;
+        line-height: 0.5;
         position: relative;
         text-align: center;
         @include transform(rotate(90deg));

@@ -48,28 +48,14 @@
 // Template Styles
 // @import "templates/template-one";
 // @import "templates/template-two";
-@import "templates/hero-examples";
+@import "templates/template-dom";
+//@import "templates/template-marta";
+// @import "templates/template-vinny";
 
 
-// Typography Defaults - Needs to be after template to inherit styles
+// Defaults - Needs to be after template to inherit styles
 @import "framework/global/typography";
-
-
-.row {
-    &.light {
-        background: $color--lightest;
-    }
-
-
-    &.accent {
-        background: $color--accent;
-    }
-
-
-    &.dark {
-        background: $color--darkest;
-    }
-}
+@import "framework/row/row-colors";
 
 
 

@@ -49,8 +49,11 @@
     font-weight: $font__social-icons--font-weight;
     line-height: $font__social-icons--line-height;
     letter-spacing: $font__social-icons--letter-spacing;
+    height: $style__social-icons--height;
+    width: $style__social-icons--width;
     outline: $style__social-icons--outline;
     padding: $style__social-icons--padding;
+    text-align: center;
     text-transform: $font__social-icons--text-transform;
     @include transition($style__social-icons--transition);
 

@@ -1,0 +1,296 @@
+
+// -------------------------------------
+// Template - Styling (Dom)
+// -------------------------------------
+
+
+
+
+// Colour Variables
+// -----------------------------
+
+
+// Colour Swatch
+$color--lightest: #ffffff;
+$color--light: #EFF2F5;
+$color--accent: #EF3E4A;
+$color--dark: #758085;
+$color--darkest: #324048;
+
+
+// Widget Colours
+$colors: (
+    color-light: (
+
+
+        // Row
+        $row__background-color: $color--lightest,
+
+
+        // Companyname
+        $color__companyname--border: $color--accent,
+        $color__companyname--text: $color--darkest,
+
+
+        // Typography
+        $color__h1--text: $color--darkest,
+        $color__h2--text: $color--darkest,
+        $color__h3--text: $color--darkest,
+        $color__h4--text: fade-out($color--darkest, .4),
+        $color__p--text: fade-out($color--darkest, .4),
+        $color__link--text: $color--darkest,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent,
+
+
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: darken($color--accent, 5%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+
+        // Scroll
+        $color__scroll--text: fade-out($color--darkest, .2),
+        $color__scroll--icon: $color--accent,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--darkest, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light,
+
+
+        // Form
+        $color__form-label--text: fade-out($color--darkest, .4),
+        $color__form-input--border: fade-out($color--darkest, .65),
+        $color__form-input--border--hover: fade-out($color--darkest, .5),
+        $color__form--text: fade-out($color--darkest, .25),
+
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--darkest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--darkest
+    ),
+    color-accent: (
+
+
+        // Row
+        $row__background-color: $color--accent,
+
+
+        // Companyname
+        $color__companyname--border: $color--lightest,
+        $color__companyname--text: $color--lightest,
+
+
+        // Typography
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: fade-out($color--lightest, .2),
+        $color__p--text: $color--light,
+        $color__link--text: $color--lightest,
+
+
+        // Notch
+        $color__content-notch--background: $color--lightest,
+
+
+        // Buttons
+        $color__button--background: $color--lightest,
+        $color__button--background--hover: darken($color--lightest, 5%),
+        $color__button--text: $color--accent,
+        $color__button--text--hover: $color--accent,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--accent, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light,
+
+
+        // Form
+        $color__form-label--text: fade-out($color--lightest, .4),
+        $color__form-input--border: fade-out($color--lightest, .65),
+        $color__form-input--border--hover: fade-out($color--lightest, .5),
+        $color__form--text: fade-out($color--lightest, .25),
+
+
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--lightest
+    ),
+    color-dark: (
+
+
+        // Row
+        $row__background-color: $color--darkest,
+
+
+        // Companyname
+        $color__companyname--border: $color--accent,
+        $color__companyname--text: $color--lightest,
+
+
+        // Typography
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: fade-out($color--lightest, .2),
+        $color__p--text: $color--light,
+        $color__link--text: $color--accent,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent,
+
+
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: darken($color--accent, 5%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--lightest, .15),
+        $color__gallery-title--text: $color--darkest,
+        $color__gallery-description--text: $color--dark,
+
+
+        // Form
+        $color__form-legend--text: $color--lightest,
+        $color__form-label--text: fade-out($color--lightest, .4),
+        $color__form-input--border: fade-out($color--darkest, .65),
+        $color__form-input--border--hover: fade-out($color--darkest, .5),
+        $color__form--text: fade-out($color--darkest, .25),
+
+
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--text--hover: $color--lightest
+    )
+);
+
+
+
+
+
+
+// Font Variables
+// -----------------------------
+
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+$font__heading: 'museo-sans';
+$font__body: 'museo-sans';
+$font__icon: 'FontAwesome';
+
+
+// Heading One
+$font__h1--font-family: $font__heading;
+$font__h1--font-size: 50px;
+$font__h1--font-weight: 700;
+$font__h1--letter-spacing: 0;
+$font__h1--line-height: 60px;
+
+
+// Heading Two
+$font__h2--font-family: $font__heading;
+$font__h2--font-size: 46px;
+$font__h2--font-weight: 700;
+$font__h2--letter-spacing: 0;
+$font__h2--line-height: 46px;
+
+
+// Heading Three
+$font__h3--font-family: $font__heading;
+$font__h3--font-size: 32px;
+$font__h3--font-weight: 700;
+$font__h3--letter-spacing: 0;
+$font__h3--line-height: 38px;
+
+
+// Heading Four
+$font__h4--font-family: $font__heading;
+$font__h4--font-size: 20px;
+$font__h4--font-weight: 500;
+$font__h4--letter-spacing: 0;
+$font__h4--line-height: 1.6;
+
+
+// Body Text
+$font__p--font-family: $font__body;
+$font__p--font-size: 18px;
+$font__p--font-weight: 500;
+$font__p--line-height: 32px;
+$font__p--letter-spacing: 1px;
+
+
+// Buttons
+$font__button--font-family: $font__body;
+$font__button--font-size: 18px;
+$font__button--font-weight: 300;
+$font__button--letter-spacing: 1px;
+
+
+// Scroll To
+$font__scroll-to--font-size: 16px;
+
+
+// Company Name
+$font__companyname--font-family: $font__heading;
+$font__companyname--font-size: 24px;
+$font__companyname--line-height: 30px;
+$font__companyname--font-weight: 700;
+$font__companyname--letter-spacing: 1px;
+
+
+// Form
+$font__form-legend--font-family: $font__body;
+$font__form-legend--font-size: 32px;
+$font__form-legend--font-weight: 400;
+$font__form-legend--line-height: 38px;
+
+
+// Gallery
+$font__gallery-title--font-size: 22px;
+$font__gallery-title--line-height: 30px;
+$font__gallery-description--font-size: 17px;
+$font__gallery-description--line-height: 24px;
+
+
+
+
+// Style Variables
+// -----------------------------
+
+
+// Companyname
+$style__companyname--border: 2px solid;
+$style__companyname--border-direction: bottom;
+$style__companyname--padding: 0 0 6px 0;
+
+
+// Button
+$style__button--border-radius: 4px;
+$style__button--padding: 15px 30px;
+
+
+// Gallery
+
+
+// Form
+$style__form-input--border: 1px solid;
+$style__form-input--padding: 10px;
+

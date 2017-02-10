@@ -14,6 +14,10 @@ $colors: (
     color-light: (
 
 
+        // Row
+        $row__background-color: $color--lightest,
+
+
         // Companyname
         $color__companyname--border: $transparent,
         $color__companyname--text: $color--darkest,
@@ -135,6 +139,10 @@ $colors: (
     color-accent: (
 
 
+        // Row
+        $row__background-color: $color--lightest,
+
+
         // Companyname
         $color__companyname--border: $transparent,
         $color__companyname--text: $color--accent,
@@ -240,6 +248,10 @@ $colors: (
         $color__gallery-description--text-shadow: none
     ),
     color-dark: (
+
+
+        // Row
+        $row__background-color: $color--lightest,
 
 
         // Companyname

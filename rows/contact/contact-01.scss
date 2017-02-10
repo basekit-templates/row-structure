@@ -72,45 +72,42 @@
     [data-widget-type="content"] h2 {
         line-height: 44px;
     }
+
+    .contactform {
+
+
+        &__legend {
+            margin-bottom: 10px;
+        }
+
+
+        &__label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+
+        &__input,
+        &__textarea {
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+
+        &__textarea {
+            min-height: 125px;
+        }
+
+
+        .button {
+            padding: 12px 24px;
+        }
+    }
 }
 
 
 [data-widget-type="contactform"] {
     width: 100%;
 }
-
-
-.contactform {
-
-
-    &__legend {
-        margin-bottom: 10px;
-    }
-
-
-    &__label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-
-    &__input,
-    &__textarea {
-        display: block;
-        margin-bottom: 30px;
-        padding: 10px;
-        width: 100%;
-    }
-
-
-    &__textarea {
-        min-height: 125px;
-    }
-
-
-    .button {
-        padding: 12px 24px;
-    }
-}
-
 

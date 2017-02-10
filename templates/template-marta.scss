@@ -1,6 +1,6 @@
 
 // -------------------------------------
-// Template - Styling
+// Template - Styling (Marta)
 // -------------------------------------
 
 
@@ -12,15 +12,23 @@
 
 // Colour Swatch
 $color--lightest: #ffffff;
-$color--light: #EFF2F5;
-$color--accent: #EF3E4A;
-$color--dark: #758085;
-$color--darkest: #324048;
+$color--light: #ECE7DD;
+$color--accent: #FEB904;
+$color--dark: #0C495E;
+$color--darkest: #082D3A;
+
+
+// Custom Colours
+$color--accent--secondary: #38a8cd;
 
 
 // Widget Colours
 $colors: (
     color-light: (
+
+
+        // Row
+        $row__background-color: $color--light,
 
 
         // Companyname
@@ -34,12 +42,16 @@ $colors: (
         $color__h3--text: $color--darkest,
         $color__h4--text: fade-out($color--darkest, .4),
         $color__p--text: fade-out($color--darkest, .4),
-        $color__link--text: $color--darkest,
+        $color__link--text: $color--accent--secondary,
+
+
+        // Notch
+        $color__content-notch--background: $color--dark,
 
 
         // Buttons
-        $color__button--background: $color--accent,
-        $color__button--background--hover: darken($color--accent, 5%),
+        $color__button--background: $color--dark,
+        $color__button--background--hover: darken($color--dark, 5%),
         $color__button--text: $color--lightest,
         $color__button--text--hover: $color--lightest,
 
@@ -70,23 +82,31 @@ $colors: (
     color-accent: (
 
 
+        // Row
+        $row__background-color: $color--accent,
+
+
         // Companyname
         $color__companyname--border: $color--lightest,
         $color__companyname--text: $color--lightest,
 
 
         // Typography
-        $color__h1--text: $color--lightest,
-        $color__h2--text: $color--lightest,
-        $color__h3--text: $color--lightest,
-        $color__h4--text: fade-out($color--lightest, .2),
-        $color__p--text: $color--light,
+        $color__h1--text: $color--darkest,
+        $color__h2--text: $color--darkest,
+        $color__h3--text: $color--darkest,
+        $color__h4--text: fade-out($color--darkest, .2),
+        $color__p--text: fade-out($color--dark, .1),
         $color__link--text: $color--lightest,
 
 
+        // Notch
+        $color__content-notch--background: $color--darkest,
+
+
         // Buttons
-        $color__button--background: $color--lightest,
-        $color__button--background--hover: darken($color--lightest, 5%),
+        $color__button--background: $color--darkest,
+        $color__button--background--hover: darken($color--darkest, 5%),
         $color__button--text: $color--accent,
         $color__button--text--hover: $color--accent,
 
@@ -113,6 +133,10 @@ $colors: (
     color-dark: (
 
 
+        // Row
+        $row__background-color: $color--dark,
+
+
         // Companyname
         $color__companyname--border: $color--accent,
         $color__companyname--text: $color--lightest,
@@ -123,15 +147,19 @@ $colors: (
         $color__h2--text: $color--lightest,
         $color__h3--text: $color--lightest,
         $color__h4--text: fade-out($color--lightest, .2),
-        $color__p--text: $color--light,
+        $color__p--text: fade-out($color--lightest, .05),
         $color__link--text: $color--accent,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent,
 
 
         // Buttons
         $color__button--background: $color--accent,
         $color__button--background--hover: darken($color--accent, 5%),
-        $color__button--text: $color--lightest,
-        $color__button--text--hover: $color--lightest,
+        $color__button--text: $color--dark,
+        $color__button--text--hover: $color--dark,
 
 
         // Gallery
@@ -142,17 +170,18 @@ $colors: (
 
         // Form
         $color__form-legend--text: $color--lightest,
-        $color__form-label--text: fade-out($color--darkest, .4),
-        $color__form-input--border: fade-out($color--darkest, .65),
-        $color__form-input--border--hover: fade-out($color--darkest, .5),
-        $color__form--text: fade-out($color--darkest, .25),
+        $color__form-label--text: fade-out($color--light, .1),
+        $color__form-input--background: $transparent,
+        $color__form-input--border: $color--lightest,
+        $color__form-input--border--hover: $color--lightest,
+        $color__form--text: fade-out($color--lightest, .1),
 
 
         // Social Icons
-        $color__social-icons--background: $transparent,
-        $color__social-icons--text: $color--lightest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--lightest
+        $color__social-icons--background: $color--lightest,
+        $color__social-icons--text: $color--dark,
+        $color__social-icons--background--hover: $color--lightest,
+        $color__social-icons--text--hover: $color--dark
     )
 );
 
@@ -165,42 +194,44 @@ $colors: (
 // -----------------------------
 
 
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700|Josefin+Sans:700|Josefin+Slab:700');
 
 
-$font__heading: 'Gibson';
-$font__body: 'Gibson';
+$font__heading: 'Josefin Sans';
+$font__body: 'Cabin';
 $font__icon: 'FontAwesome';
 
 
 // Heading One
 $font__h1--font-family: $font__heading;
 $font__h1--font-size: 50px;
-$font__h1--font-weight: 500;
+$font__h1--font-weight: 700;
 $font__h1--letter-spacing: 0;
 $font__h1--line-height: 60px;
 
 
 // Heading Two
 $font__h2--font-family: $font__heading;
-$font__h2--font-size: 46px;
-$font__h2--font-weight: 500;
-$font__h2--letter-spacing: 0;
+$font__h2--font-size: 38px;
+$font__h2--font-weight: 700;
+$font__h2--letter-spacing: 1px;
 $font__h2--line-height: 46px;
+$font__h2--text-transform: uppercase;
 
 
 // Heading Three
 $font__h3--font-family: $font__heading;
-$font__h3--font-size: 32px;
-$font__h3--font-weight: 400;
-$font__h3--letter-spacing: 0;
+$font__h3--font-size: 30px;
+$font__h3--font-weight: 700;
+$font__h3--letter-spacing: 1px;
 $font__h3--line-height: 38px;
+$font__h2--text-transform: uppercase;
 
 
 // Heading Four
 $font__h4--font-family: $font__heading;
 $font__h4--font-size: 20px;
-$font__h4--font-weight: 500;
+$font__h4--font-weight: 700;
 $font__h4--letter-spacing: 0;
 $font__h4--line-height: 1.6;
 
@@ -216,23 +247,28 @@ $font__p--letter-spacing: 1px;
 // Buttons
 $font__button--font-family: $font__body;
 $font__button--font-size: 18px;
-$font__button--font-weight: 300;
+$font__button--font-weight: 700;
 $font__button--letter-spacing: 1px;
 
 
 // Company Name
-$font__companyname--font-family: $font__heading;
+$font__companyname--font-family: 'Josefin Slab';
 $font__companyname--font-size: 24px;
 $font__companyname--line-height: 30px;
-$font__companyname--font-weight: 600;
+$font__companyname--font-weight: 700;
 $font__companyname--letter-spacing: 1px;
 
 
 // Form
-$font__form-legend--font-family: $font__body;
+$font__form-legend--font-family: $font__heading;
 $font__form-legend--font-size: 32px;
 $font__form-legend--font-weight: 400;
 $font__form-legend--line-height: 38px;
+
+$font__form-label--font-family: $font__heading;
+$font__form-label--font-size: 18px;
+$font__form-label--font-weight: 400;
+$font__form-label--line-height: 26px;
 
 
 // Gallery
@@ -263,5 +299,11 @@ $style__button--padding: 16px 35px;
 
 
 // Form
-$style__form-input--border: 1px solid;
+$style__form-input--border: 2px solid;
+$style__form-input--border-direction: bottom;
+$style__form-input--padding: 10px 10px 10px 0;
 
+
+// Social Icons
+$style__social-icons--border-radius: 100px;
+$style__social-icons--border-radius--hover: 100px;

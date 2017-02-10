@@ -1,0 +1,311 @@
+
+// -------------------------------------
+// Template - Styling (Vinny)
+// -------------------------------------
+
+
+
+
+// Colour Variables
+// -----------------------------
+
+
+// Colour Swatch
+$color--lightest: #ffffff;
+$color--light: #EEEEEE;
+$color--accent: #FF3C00;
+$color--dark: #00FFF4;
+$color--darkest: #00D9D0;
+
+
+// Widget Colours
+$colors: (
+    color-light: (
+
+
+        // Row
+        $row__background-color: $color--lightest,
+
+
+        // Companyname
+        $color__companyname--text: $color--accent,
+
+
+        // Typography
+        $color__h1--text: $color--accent,
+        $color__h2--text: $color--accent,
+        $color__h3--text: $color--accent,
+        $color__h4--text: darken($color--light, 30%),
+        $color__p--text: darken($color--light, 25%),
+        $color__link--text: $color__p--text,
+
+
+        // Notch
+        $color__content-notch--background: $color--dark,
+
+
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: darken($color--accent, 10%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+
+        // Scroll
+        $color__scroll--text: darken($color--light, 20%),
+        $color__scroll--icon: $color--accent,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--darkest, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light,
+
+
+        // Form
+        $color__form-fieldset--background: $color--lightest,
+        $color__form-fieldset--box-shadow: darken($color--light, 10%),
+        $color__form-legend--text: $color--accent,
+        $color__form-label--text: darken($color--light, 40%),
+        $color__form-input--background: $color--light,
+        $color__form-input--border: $color--lightest,
+        $color__form-input--border--hover: $color--lightest,
+        $color__form--text: darken($color--light, 60%),
+
+
+        // Social Icons
+        $color__social-icons--background: $color--accent,
+        $color__social-icons--background--hover: darken($color--accent, 10%),
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--text--hover: $color--lightest
+    ),
+    color-accent: (
+
+
+        // Row
+        $row__background-color: $color--accent,
+
+
+        // Companyname
+        $color__companyname--text: $color--lightest,
+
+
+        // Typography
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: fade-out($color--lightest, .2),
+        $color__p--text: fade-out($color--lightest, .1),
+        $color__link--text: $color--lightest,
+
+
+        // Notch
+        $color__content-notch--background: $color--darkest,
+
+
+        // Buttons
+        $color__button--background: $color--darkest,
+        $color__button--background--hover: darken($color--darkest, 5%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--accent, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light,
+
+
+        // Form
+        $color__form-fieldset--background: $color--lightest,
+        $color__form-fieldset--box-shadow: darken($color--accent, 10%),
+        $color__form-legend--text: $color--accent,
+        $color__form-label--text: darken($color--light, 40%),
+        $color__form-input--background: $color--light,
+        $color__form-input--border: $color--lightest,
+        $color__form-input--border--hover: $color--lightest,
+        $color__form--text: darken($color--light, 60%),
+
+
+        // Social Icons
+        $color__social-icons--background: $color--lightest,
+        $color__social-icons--background--hover: darken($color--lightest, 10%),
+        $color__social-icons--text: $color--accent,
+        $color__social-icons--text--hover: $color--accent
+    ),
+    color-dark: (
+
+
+        // Row
+        $row__background-color: $color--light,
+
+
+        // Companyname
+        $color__companyname--text: $color--accent,
+
+
+        // Typography
+        $color__h1--text: $color--accent,
+        $color__h2--text: $color--accent,
+        $color__h3--text: $color--accent,
+        $color__h4--text: darken($color--light, 35%),
+        $color__p--text: darken($color--light, 30%),
+        $color__link--text: $color__p--text,
+
+
+        // Notch
+        $color__content-notch--background: $color--accent,
+
+
+        // Buttons
+        $color__button--background: $color--accent,
+        $color__button--background--hover: darken($color--accent, 10%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+
+        // Gallery
+        $color__gallery-caption--background: fade-out($color--lightest, .15),
+        $color__gallery-title--text: $color--darkest,
+        $color__gallery-description--text: $color--dark,
+
+
+        // Form
+        $color__form-fieldset--background: $color--lightest,
+        $color__form-fieldset--box-shadow: darken($color--light, 10%),
+        $color__form-legend--text: $color--accent,
+        $color__form-label--text: darken($color--light, 40%),
+        $color__form-input--background: $color--light,
+        $color__form-input--border: $color--lightest,
+        $color__form-input--border--hover: $color--lightest,
+        $color__form--text: darken($color--light, 60%),
+
+
+        // Social Icons
+        $color__social-icons--background: $color--accent,
+        $color__social-icons--background--hover: darken($color--accent, 10%),
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--text--hover: $color--lightest
+    )
+);
+
+
+
+
+
+
+// Font Variables
+// -----------------------------
+
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700|Josefin+Sans:700|Josefin+Slab:700');
+
+
+$font__heading: 'Oswald';
+$font__body: 'Poppins';
+$font__icon: 'FontAwesome';
+
+
+// Heading One
+$font__h1--font-family: $font__heading;
+$font__h1--font-size: 54px;
+$font__h1--font-weight: 700;
+$font__h1--letter-spacing: 1px;
+$font__h1--line-height: 68px;
+$font__h1--text-transform: uppercase;
+
+
+// Heading Two
+$font__h2--font-family: $font__heading;
+$font__h2--font-size: 46px;
+$font__h2--font-weight: 700;
+$font__h2--letter-spacing: 1px;
+$font__h2--line-height: 52px;
+$font__h2--text-transform: uppercase;
+
+
+// Heading Three
+$font__h3--font-family: $font__heading;
+$font__h3--font-size: 30px;
+$font__h3--font-weight: 700;
+$font__h3--letter-spacing: 1px;
+$font__h3--line-height: 38px;
+$font__h3--text-transform: uppercase;
+
+
+// Heading Four
+$font__h4--font-family: $font__body;
+$font__h4--font-size: 18px;
+$font__h4--font-weight: 500;
+$font__h4--letter-spacing: 0;
+$font__h4--line-height: 1.6;
+
+
+// Body Text
+$font__p--font-family: $font__body;
+$font__p--font-size: 18px;
+$font__p--font-weight: 400;
+$font__p--line-height: 32px;
+$font__p--letter-spacing: 1px;
+
+
+// Buttons
+$font__button--font-family: $font__heading;
+$font__button--font-size: 16px;
+$font__button--font-weight: 700;
+$font__button--letter-spacing: 1px;
+$font__button--text-transform: uppercase;
+
+
+// Company Name
+$font__companyname--font-family: $font__heading;
+$font__companyname--font-size: 24px;
+$font__companyname--line-height: 40px;
+$font__companyname--font-weight: 700;
+$font__companyname--letter-spacing: 1px;
+$font__companyname--text-transform: uppercase;
+
+
+// Form
+$font__form-legend--font-family: $font__heading;
+$font__form-legend--font-size: 32px;
+$font__form-legend--font-weight: 700;
+$font__form-legend--line-height: 38px;
+$font__form-legend--text-transform: uppercase;
+
+$font__form-label--font-family: $font__heading;
+$font__form-label--font-size: 18px;
+$font__form-label--font-weight: 400;
+$font__form-label--line-height: 26px;
+
+$font__form-button--font-family: $font__heading;
+
+
+// Gallery
+$font__gallery-title--font-size: 22px;
+$font__gallery-title--line-height: 30px;
+$font__gallery-description--font-size: 17px;
+$font__gallery-description--line-height: 24px;
+
+
+
+
+// Style Variables
+// -----------------------------
+
+
+// Companyname
+
+
+// Button
+$style__button--border-radius: 40px;
+$style__button--padding: 16px 25px;
+
+
+// Gallery
+
+
+// Form
+$style__form-fieldset--box-shadow: 0px 0px 30px 0px;
+$style__form-fieldset--padding: 30px 25px 20px;
+$style__form-input--padding: 10px;

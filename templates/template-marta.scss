@@ -14,6 +14,7 @@
 $color--lightest: #ffffff;
 $color--light: #ECE7DD;
 $color--accent: #FEB904;
+$color--accent-alt: #fa709a;
 $color--dark: #0C495E;
 $color--darkest: #082D3A;
 
@@ -46,7 +47,7 @@ $colors: (
 
 
         // Notch
-        $color__content-notch--background: $color--dark,
+        $color__content-notch--background: $color--accent,
 
 
         // Buttons
@@ -57,7 +58,7 @@ $colors: (
 
 
         // Scroll
-        $color__scroll--text: $color__p--text,
+        $color__scroll--text: $color--dark,
         $color__scroll--icon: $color--accent,
 
 
@@ -69,15 +70,17 @@ $colors: (
 
         // Form
         $color__form-label--text: fade-out($color--darkest, .4),
+        $color__form-input--background: $transparent,
         $color__form-input--border: fade-out($color--darkest, .65),
         $color__form-input--border--hover: fade-out($color--darkest, .5),
         $color__form--text: fade-out($color--darkest, .25),
 
+
         // Social Icons
-        $color__social-icons--background: $transparent,
-        $color__social-icons--text: $color--darkest,
+        $color__social-icons--background: $color--darkest,
+        $color__social-icons--text: $color--light,
         $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--darkest
+        $color__social-icons--text--hover: $color--lightest
     ),
     color-accent: (
 
@@ -88,7 +91,7 @@ $colors: (
 
         // Companyname
         $color__companyname--border: $color--lightest,
-        $color__companyname--text: $color--lightest,
+        $color__companyname--text: $color--darkest,
 
 
         // Typography
@@ -111,24 +114,30 @@ $colors: (
         $color__button--text--hover: $color--accent,
 
 
+        // Scroll
+        $color__scroll--text: $color--darkest,
+        $color__scroll--icon: $color--dark,
+
+
         // Gallery
         $color__gallery-caption--background: fade-out($color--accent, .15),
-        $color__gallery-title--text: $color--lightest,
-        $color__gallery-description--text: $color--light,
+        $color__gallery-title--text: $color--darkest,
+        $color__gallery-description--text: $color--dark,
 
 
         // Form
         $color__form-label--text: fade-out($color--lightest, .4),
+        $color__form-input--background: $transparent,
         $color__form-input--border: fade-out($color--lightest, .65),
         $color__form-input--border--hover: fade-out($color--lightest, .5),
         $color__form--text: fade-out($color--lightest, .25),
 
 
         // Social Icons
-        $color__social-icons--background: $transparent,
-        $color__social-icons--text: $color--lightest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--lightest
+        $color__social-icons--background: $color--lightest,
+        $color__social-icons--text: $color--accent,
+        $color__social-icons--background--hover: $color--lightest,
+        $color__social-icons--text--hover: $color--accent
     ),
     color-dark: (
 
@@ -160,6 +169,11 @@ $colors: (
         $color__button--background--hover: darken($color--accent, 5%),
         $color__button--text: $color--dark,
         $color__button--text--hover: $color--dark,
+
+
+        // Scroll
+        $color__scroll--text: $color--lightest,
+        $color__scroll--icon: $color--accent,
 
 
         // Gallery

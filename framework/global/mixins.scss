@@ -14,7 +14,7 @@
 @mixin border($style, $color, $sides) {
     @if ($style != "") {
 
-        @if ($sides == "") {
+        @if ($sides == "all") {
             border: $style $color;
 
         } @else {

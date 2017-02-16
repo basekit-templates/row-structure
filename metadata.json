@@ -13,6 +13,7 @@
             "color--lightest": "#ffffff",
             "color--light": "#d6d6d6",
             "color--accent": "#bd0202",
+            "color--accent-alt": "#095ce4",
             "color--dark": "#828282",
             "color--darkest": "#000000"
         },

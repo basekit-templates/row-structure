@@ -14,6 +14,7 @@
 $color--lightest: #ffffff;
 $color--light: #EEEEEE;
 $color--accent: #FF3C00;
+$color--accent-alt: #095ce4;
 $color--dark: #00FFF4;
 $color--darkest: #00D9D0;
 
@@ -41,7 +42,7 @@ $colors: (
 
 
         // Notch
-        $color__content-notch--background: $color--dark,
+        $color__content-notch--background: $color--accent,
 
 
         // Buttons
@@ -52,7 +53,7 @@ $colors: (
 
 
         // Scroll
-        $color__scroll--text: darken($color--light, 20%),
+        $color__scroll--text: darken($color--light, 50%),
         $color__scroll--icon: $color--accent,
 
 
@@ -164,10 +165,15 @@ $colors: (
         $color__button--text--hover: $color--lightest,
 
 
+        // Scroll
+        $color__scroll--text: darken($color--light, 50%),
+        $color__scroll--icon: $color--accent,
+
+
         // Gallery
         $color__gallery-caption--background: fade-out($color--lightest, .15),
-        $color__gallery-title--text: $color--darkest,
-        $color__gallery-description--text: $color--dark,
+        $color__gallery-title--text: $color--accent,
+        $color__gallery-description--text: darken($color--light, 40%),
 
 
         // Form

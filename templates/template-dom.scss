@@ -14,6 +14,7 @@
 $color--lightest: #ffffff;
 $color--light: #EFF2F5;
 $color--accent: #EF3E4A;
+$color--accent-alt: #3d3393;
 $color--dark: #758085;
 $color--darkest: #324048;
 
@@ -65,9 +66,10 @@ $colors: (
 
         // Form
         $color__form-label--text: fade-out($color--darkest, .4),
-        $color__form-input--border: fade-out($color--darkest, .65),
-        $color__form-input--border--hover: fade-out($color--darkest, .5),
+        $color__form-input--border: fade-out($color--dark, .65),
+        $color__form-input--border--hover: fade-out($color--dark, .75),
         $color__form--text: fade-out($color--darkest, .25),
+
 
         // Social Icons
         $color__social-icons--background: $transparent,
@@ -101,10 +103,10 @@ $colors: (
 
 
         // Buttons
-        $color__button--background: $color--lightest,
-        $color__button--background--hover: darken($color--lightest, 5%),
-        $color__button--text: $color--accent,
-        $color__button--text--hover: $color--accent,
+        $color__button--background: $color--darkest,
+        $color__button--background--hover: lighten($color--darkest, 5%),
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
 
 
         // Gallery
@@ -114,10 +116,12 @@ $colors: (
 
 
         // Form
+        $color__form-legend--text: $color--lightest,
         $color__form-label--text: fade-out($color--lightest, .4),
-        $color__form-input--border: fade-out($color--lightest, .65),
-        $color__form-input--border--hover: fade-out($color--lightest, .5),
-        $color__form--text: fade-out($color--lightest, .25),
+        $color__form-input--border: $transparent,
+        $color__form-input--border--hover: $transparent,
+        $color__form--text: $color--dark,
+        $color__form-button--background: $color--darkest,
 
 
         // Social Icons
@@ -158,6 +162,11 @@ $colors: (
         $color__button--text--hover: $color--lightest,
 
 
+        // Scroll
+        $color__scroll--text: fade-out($color--light, .2),
+        $color__scroll--icon: $color--accent,
+
+
         // Gallery
         $color__gallery-caption--background: fade-out($color--lightest, .15),
         $color__gallery-title--text: $color--darkest,
@@ -167,8 +176,8 @@ $colors: (
         // Form
         $color__form-legend--text: $color--lightest,
         $color__form-label--text: fade-out($color--lightest, .4),
-        $color__form-input--border: fade-out($color--darkest, .65),
-        $color__form-input--border--hover: fade-out($color--darkest, .5),
+        $color__form-input--border: $transparent,
+        $color__form-input--border--hover: $transparent,
         $color__form--text: fade-out($color--darkest, .25),
 
 
@@ -259,7 +268,7 @@ $font__companyname--letter-spacing: 1px;
 // Form
 $font__form-legend--font-family: $font__body;
 $font__form-legend--font-size: 32px;
-$font__form-legend--font-weight: 400;
+$font__form-legend--font-weight: 700;
 $font__form-legend--line-height: 38px;
 
 
@@ -292,5 +301,6 @@ $style__button--padding: 15px 30px;
 
 // Form
 $style__form-input--border: 1px solid;
+$style__form-input--border-direction: all;
 $style__form-input--padding: 10px;
 

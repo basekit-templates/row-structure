@@ -25,4 +25,9 @@
     &.dark {
         background-color: color(color-dark, $row__background-color);
     }
+
+
+    &.gradient {
+        background: linear-gradient(90deg, $color__accent, $color__accent-alt);
+    }
 }

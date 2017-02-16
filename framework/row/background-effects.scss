@@ -1,0 +1,277 @@
+
+// -------------------------------------
+//  Row - Filters
+// -------------------------------------
+
+
+
+
+//  Background Effects
+// -------------------------------------
+
+
+.animation--parralax {
+
+}
+
+
+.animation--fade-in {
+
+}
+
+
+.animation--fade-out {
+
+}
+
+
+.animation--slide {
+
+}
+
+
+.animation--zoom {
+
+}
+
+
+
+
+//  Background Filters
+// -------------------------------------
+
+
+// Default Styling
+.filter {
+
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+
+    h1 {
+        color: white;
+        font-size: 72px;
+        line-height: 1.1;
+    }
+
+
+    h4 {
+        color: fade-out(white, .75);
+        font-size: 24px;
+    }
+}
+
+
+.gradient {
+    h1 {
+        color: white;
+        font-size: 72px;
+        line-height: 1.1;
+    }
+
+
+    h4 {
+        color: fade-out(white, .25);
+        font-size: 24px;
+    }
+}
+
+
+// Blur
+.filter--blur {
+    filter: blur($style__row--blur);
+}
+
+
+// Exclusion
+.filter--exclusion {
+    background-blend-mode: exclusion;
+}
+
+
+// Grayscale
+.filter--grayscale {
+    filter: grayscale($style__row--grayscale);
+}
+
+
+// Luminosity
+.filter--luminosity {
+    background-blend-mode: luminosity;
+}
+
+
+// Multiply
+.filter--multiply {
+    background-blend-mode: multiply;
+}
+
+
+// Overlay
+.filter--overlay {
+    background-blend-mode: overlay;
+}
+
+
+// Soft Light
+.filter--soft-light {
+    background-blend-mode: soft-light;
+}
+
+
+
+
+//  Prepackaged Filters
+// -------------------------------------
+
+
+.filter__pre--multiply {
+
+
+    &:before {
+        background: url("https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg") no-repeat center;
+        background-size: cover;
+        -webkit-filter: grayscale(100%) contrast(1.2);
+        filter: grayscale(100%) contrast(1.2);
+        mix-blend-mode: multiply;
+    }
+
+
+    &:after {
+        // Optional - Tints Image Shadows Colour
+        //background: luma($color__accent);
+        mix-blend-mode: lighten;
+    }
+}
+
+
+.filter__pre--soft-light {
+    opacity: 0.85;
+
+
+    &:before {
+        background: url("https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg") no-repeat center;
+        background-size: cover;
+        -webkit-filter: grayscale(100%) contrast(8);
+        filter: grayscale(100%) contrast(8);
+        mix-blend-mode: soft-light;
+    }
+}
+
+
+
+.filter__pre--soft-light--contrast {
+    opacity: 0.85;
+
+
+    &:before {
+        background: url("https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg") no-repeat center;
+        background-size: cover;
+        -webkit-filter: grayscale(100%) contrast(1);
+        filter: grayscale(100%) contrast(1);
+        mix-blend-mode: soft-light;
+    }
+}
+
+
+.filter__pre--gradient {
+
+
+    &:before {
+        background: url("https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg") no-repeat center;
+        background-size: cover;
+        -webkit-filter: grayscale(100%) contrast(1.8);
+        filter: grayscale(100%) contrast(1.8);
+        mix-blend-mode: overlay;
+    }
+
+
+    &:after {
+        background: linear-gradient(90deg, $color__accent, $color__accent-alt);
+        //mix-blend-mode: lighten;
+        opacity: 0.75;
+    }
+}
+
+
+.filter__pre--skew {
+    background-color: white !important;
+
+
+    &:before {
+        background: url("https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg") no-repeat center;
+        background-size: cover;
+        // -webkit-filter: grayscale(100%) contrast(1);
+        // filter: grayscale(100%) contrast(1);
+        mix-blend-mode: multiply;
+    }
+
+
+    &:after {
+        background: linear-gradient(to top right, $color__accent 0%, $color__accent-alt 100%);
+        left: initial;
+        right: -50vw;
+        opacity: 0.95;
+        transform: skew(-40deg);
+        width: 100vw;
+    }
+}
+
+
+.gradient {
+    overflow: hidden;
+
+
+    &:before {
+        background: url("https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg") no-repeat center;
+        background-size: cover;
+        content: "";
+        mix-blend-mode: overlay;
+        opacity: 0.25;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.filter__pre--stripe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+
+    &:before {
+        background: linear-gradient(90deg, $color__accent, $color__accent-alt);
+        position: absolute;
+        height: 75vh;
+        bottom: 0;
+        left: -25vw;
+        right: initial;
+        top: -35vh;
+        transform: rotate(25deg);
+        width: 150vw;
+    }
+
+
+    &:after {
+        background: linear-gradient(90deg, $color__accent-alt, $color__accent);
+        position: absolute;
+        height: 75vh;
+        left: initial;
+        bottom: -25vh;
+        top: initial;
+        right: -35vw;
+        transform: rotate(-35deg);
+        width: 125vw;
+    }
+}
+

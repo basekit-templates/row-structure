@@ -46,8 +46,7 @@
 
 
 // Template Styles
-// @import "templates/template-one";
-// @import "templates/template-two";
+
 // @import "templates/template-dom";
 @import "templates/template-marta";
 // @import "templates/template-vinny";
@@ -56,7 +55,7 @@
 // Defaults - Needs to be after template to inherit styles
 @import "framework/global/typography";
 @import "framework/row/row-colors";
-@import "framework/row/background-effects";
+// @import "framework/row/background-effects";
 
 
 
@@ -108,15 +107,15 @@
 @import 'framework/widgets/buttons/buttons';
 @import 'framework/widgets/companyname/companyname';
 @import 'framework/widgets/content/content';
-// //@import 'framework/widgets/divider/divider';
-// //@import 'framework/widgets/feature/feature';
-// //@import 'framework/widgets/forms/fonecta-widgets';
+// @import 'framework/widgets/divider/divider';
+// @import 'framework/widgets/feature/feature';
+// @import 'framework/widgets/forms/fonecta-widgets';
 @import "framework/widgets/forms/forms";
 
 @import 'framework/widgets/gallery/gallery';
-// //@import 'framework/widgets/map/google-map';
+// @import 'framework/widgets/map/google-map';
 // @import 'framework/widgets/images/image';
-// //@import 'framework/widgets/linkedin/linkedin';
+// @import 'framework/widgets/linkedin/linkedin';
 
 // @import 'framework/widgets/logo/logo';
 

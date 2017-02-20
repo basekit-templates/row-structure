@@ -9,59 +9,30 @@
 // -----------------------------
 
 
-.theme-1 {
-    .row__image--01 {
-        //background: $color--darkest;
+.row__image--01 {
 
 
-        // Row Height
-        &.row,
-        .row__container {
-            min-height: $row__height--default;
-        }
-
-
-        // Row Padding
-        &.row {
-            padding: $row__padding--none;
-        }
-
-
-        // Row Container Width
-        .row__container {
-            width: $row__width--full;
-        }
-
-
-        &.row__overlay:after {
-            background: rgba(0,0,0, 0.65);
-        }
+    // Row Height
+    &.row,
+    .row__container {
+        min-height: $row__height--default;
     }
-}
 
 
-.theme-2 {
-    .row__image--01 {
-        background: $color--light;
+    // Row Padding
+    &.row {
+        padding: $row__padding--none;
+    }
 
 
-        // Row Height
-        &.row,
-        .row__container {
-            min-height: $row__height--small;
-        }
+    // Row Container Width
+    .row__container {
+        width: $row__width--full;
+    }
 
 
-        // Row Padding
-        &.row {
-            padding: $row__padding--none;
-        }
-
-
-        // Row Container Width
-        .row__container {
-            width: $row__width--full;
-        }
+    &.row__overlay:after {
+        background: rgba(0,0,0, 0.65);
     }
 }
 
@@ -70,6 +41,3 @@
 
 // Widget Styling
 // -----------------------------
-
-
-// Logo

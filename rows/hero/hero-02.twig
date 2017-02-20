@@ -1,0 +1,29 @@
+
+<div class="bk-row  row  row__hero--02  light">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--half  align--middle-left">
+
+            <div class="widget widget__image  color--gradient  filter--color-splash"  style="background-image:url(https://s3.amazonaws.com/basekit-video/basekit-design/sports-club/bristol-sports-hero.jpg)">
+            </div>
+        </div>
+
+        <div class="row__column  row__column--half  align--middle-center  vertical-alignment--space-between">
+
+             {{widget('companyname', 'header-companyname', {"business": "South Bristol Sports Centre"})|raw}}
+
+            <div class="widget  compound-widget">
+                {{widget('content', 'header-content', {
+                    content: '<h1>Extensive Indoor and Outdoor Sports and Social Facilities</h1>
+                    <h4>Call now to look around the facilities and make a reservation</h4>'
+                })|raw}}
+            </div>
+
+            {{widget('content', 'header-content-two', {
+                content: '<a class="scroll-to">See More</a>'
+            })|raw}}
+
+        </div>
+
+    </div>
+</div>

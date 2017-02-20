@@ -5,80 +5,30 @@
 
 
 
-// Row Styling
-// -----------------------------
-
-
-// @import "../../../templates/template-one-colors";
-
-
-// // Colour Mapping
-// $color-tones: (
-//     color-light: (
-//         color__row--background: $color--light,
-//     ),
-//     color-accent: (
-//         color__row--background: $color--accent,
-//     ),
-//     color-dark: (
-//         color__row--background: $color--darkest,
-//     )
-// );
-
-
-// @import "../../../framework/global/colors";
-
 
 // Row Styling
 // -----------------------------
 
-.theme-1 {
-    .row__nav--01 {
-        //background: $color--darkest;
 
-        // Row Height
-        &.row,
-        .row__container {
-            height: $row__height--default;
-        }
+.row__nav--01 {
 
 
-        // Row Padding
-        &.row {
-            padding: $row__padding--small  $row__padding--large;
-        }
-
-
-        // Row Container Width
-        .row__container {
-            width: $row__width--full;
-        }
+    // Row Height
+    &.row,
+    .row__container {
+        height: $row__height--default;
     }
-}
 
 
-.theme-2 {
-    .row__nav--01 {
-        background: $color--darkest;
+    // Row Padding
+    &.row {
+        padding: $row__padding--small  $row__padding--large;
+    }
 
 
-        // Row Height
-        &.row,
-        .row__container {
-            height: $row__height--default;
-        }
-
-
-        // Row Padding
-        &.row {
-            padding: $row__padding--small  $row__padding--large;
-        }
-
-
-        // Row Container Width
-        .row__container {
-            width: $row__width--full;
-        }
+    // Row Container Width
+    .row__container {
+        width: $row__width--full;
     }
 }
 

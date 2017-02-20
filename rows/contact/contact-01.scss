@@ -9,57 +9,28 @@
 // -----------------------------
 
 
-.theme-1 {
-    .row__contact--01 {
-        //background: $color--darkest;
+.row__contact--01 {
 
 
-        // Row Height
-        &.row,
-        .row__container {
-            height: $row__height--default;
-        }
+    // Row Height
+    &.row,
+    .row__container {
+        height: $row__height--default;
+    }
 
 
-        // Row Padding
-        &.row {
-            background-size: cover;
-            padding: $row__padding--large;
-        }
+    // Row Padding
+    &.row {
+        padding: $row__padding--large;
+    }
 
 
-        // Row Container Width
-        .row__container {
-            width: $row__width--contained;
-        }
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
     }
 }
 
-
-.theme-2 {
-    .row__contact--01 {
-        background: $color--lightest;
-
-
-        // Row Height
-        &.row,
-        .row__container {
-            height: $row__height--default;
-        }
-
-
-        // Row Padding
-        &.row {
-            padding: $row__padding--large;
-        }
-
-
-        // Row Container Width
-        .row__container {
-            width: $row__width--contained;
-        }
-    }
-}
 
 
 
@@ -69,8 +40,17 @@
 
 
 .row__contact--01 {
+
+
+    // Content
     [data-widget-type="content"] h2 {
         line-height: 44px;
+    }
+
+
+    // Contact Form
+    [data-widget-type="contactform"] {
+        width: 100%;
     }
 
     .contactform {
@@ -105,9 +85,3 @@
         }
     }
 }
-
-
-[data-widget-type="contactform"] {
-    width: 100%;
-}
-

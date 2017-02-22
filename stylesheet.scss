@@ -65,6 +65,7 @@
 
 // Navigations
 @import "rows/navigation/nav-01";
+@import "rows/navigation/nav-03";
 
 
 // Heros
@@ -84,6 +85,8 @@
 
 // Gallery
 @import "rows/gallery/gallery-01";
+@import "rows/gallery/gallery-02";
+@import "rows/gallery/gallery-03";
 
 
 // Contact
@@ -118,7 +121,7 @@
 
 // @import 'framework/widgets/logo/logo';
 
-//@import 'framework/widgets/navigation/navigation';
+@import 'framework/widgets/navigation/navigation';
 
 // @import 'framework/widgets/profile';
 // @import 'framework/widgets/slideshow';

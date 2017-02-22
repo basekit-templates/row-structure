@@ -1,15 +1,15 @@
 
-<div class="bk-row  row  row__nav--01  dark">
+<div class="bk-row  row  row__nav--03  dark">
     <div class="bk-row__container  row__container">
 
-        <div class="row__column  row__column--half  align--middle-left">
+        <div class="row__column  row__column--full  align--middle-center">
             {{widget('companyname', 'headercompanyname', {"business": "profile"})|raw}}
         </div>
 
-        <div class="row__column  row__column--half align--middle-right">
+        <div class="row__column  row__column--full align--middle-center">
             {{widget('extendednavigation', 'navigation', {
-              'align': 'right'
-            })|raw}}
+              'align': 'center'
+            })|raw}}        
         </div>
     </div>
 </div>
@@ -27,6 +27,5 @@
             $( ".bk-extendednavigation" ).toggleClass( "open" );
         });
     </script>
-
 
 {% endblock %}

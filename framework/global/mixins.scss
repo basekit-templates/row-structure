@@ -99,6 +99,11 @@
     transition: $values;
 }
 
+// Translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
 
 
 //  Flexbox

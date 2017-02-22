@@ -1,6 +1,6 @@
 
 // -------------------------------------
-// Navigation: Design One
+// Navigation: Design Three
 // -------------------------------------
 
 //  Media Queries
@@ -28,17 +28,32 @@ $break-large: 768px;
 // -----------------------------
 
 
-.row__nav--01 {
+.row__nav--03 {
+
     // Row Height
     &.row,
     .row__container {
         height: $row__height--default;
     }
 
+    .row__container {
+        @include respond-to(tablet) {
+            @include flex-direction(column-reverse);
+        }
+    }
+
+    .row__column:first-child {
+        padding: 40px;
+    }
+
+    .row__column:last-child {
+        padding: 0;
+    }
+
 
     // Row Padding
     &.row {
-        padding: $row__padding--small  $row__padding--large;
+        padding: 0;
     }
 
 
@@ -47,24 +62,6 @@ $break-large: 768px;
         width: $row__width--full;
     }
 
-    // Flexbox for tablet/mobile
-    .row__column--half {
-        @include respond-to(tablet) {
-            -webkit-flex-basis: 100%;
-            -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-            max-width: inherit;
-        }
-    }
-    .row__column:first-child {
-    padding-right: 50px;
-    }
-    .row__column:last-child {
-        padding: 0;
-        .widget {
-            width: 100%;
-        }
-    }
 }
 
 
@@ -72,7 +69,8 @@ $break-large: 768px;
 // Widget Styling
 // -----------------------------
 
-.row__nav--01 {
+.row__nav--03 {
+
     // Remove margin from ul nav list and widget
 
     .navigation-list {
@@ -136,12 +134,10 @@ $break-large: 768px;
         }
         .navigation-toggle {
             display: inline-block;
-            position: absolute;
+            position: relative;
             height: 44px;
-            width: 40px;
+            width: 100%;
             padding: 0 22px;
-            right: 0;
-            top: -37px;
             text-indent: 1000px;
             overflow: hidden;
             line-height: 0;
@@ -171,7 +167,7 @@ $break-large: 768px;
                 background: #2a313a;
             }
         }
-
+    
         // Toggle Button Open State
         .open {
             .navigation-toggle {

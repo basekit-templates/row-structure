@@ -19,6 +19,25 @@
 // -----------------------------
 
 
+[data-widget-type="image"] {
+
+
+    .light & {
+        background: color(color-light, $color__image--background);
+    }
+
+
+    .accent & {
+        background: color(color-accent, $color__image--background);
+    }
+
+
+    .dark & {
+        background: color(color-dark, $color__image--background);
+    }
+}
+
+
 // Image Figure
 .imagewidget__figure {
     margin: 0;

@@ -145,6 +145,12 @@ $colors: (
         $color__form-button--text--hover: $color--lightest,
 
 
+        // Image
+        $color__image--background: $color--dark,
+        $color__image-title--text: $color--dark,
+        $color__image-description--text: $color--dark,
+
+
         // Gallery
         $color__gallery-caption--background: $transparent,
 
@@ -294,6 +300,12 @@ $colors: (
         $color__form-button--text--hover: $color--lightest,
 
 
+        // Image
+        $color__image--background: $color--accent,
+        $color__image-title--text: $color--accent,
+        $color__image-description--text: $color--accent,
+
+
         // Gallery
         $color__gallery-caption--background: $transparent,
 
@@ -441,6 +453,12 @@ $colors: (
         $color__form-button--outline--hover: $transparent,
         $color__form-button--text: $color--lightest,
         $color__form-button--text--hover: $color--lightest,
+
+
+        // Image
+        $color__image--background: $color--light,
+        $color__image-title--text: $color--light,
+        $color__image-description--text: $color--light,
 
 
         // Gallery

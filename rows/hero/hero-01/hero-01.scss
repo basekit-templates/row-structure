@@ -9,70 +9,45 @@
 // -----------------------------
 
 
-.theme-1 {
-    .row__hero--01 {
+.row__hero--01 {
 
 
-        // Row Height
-        &.row,
-        .row__container {
-            min-height: $row__height--medium;
-        }
+    // Row Height
+    &.row,
+    .row__container {
+        min-height: $row__height--default;
+    }
 
 
-        // Row Padding
-        &.row {
-            //background: $color__row--background;
-            background-size: cover;
-            padding: $row__padding--none;
-        }
+    // Row Padding
+    &.row {
+        background-size: cover;
+        padding: $row__padding--none;
+    }
 
 
-        // Row Container Width
-        .row__container {
-            width: $row__width--full;
-        }
-
-
-        &.row__overlay:after {
-            background: rgba(0,0,0, 0.65);
-        }
+    // Row Container Width
+    .row__container {
+        width: $row__width--full;
     }
 }
 
-
-.theme-2 {
-    .row__hero--01 {
-
-
-        // Row Height
-        &.row,
-        .row__container {
-            min-height: $row__height--medium;
-        }
-
-
-        // Row Padding
-        &.row {
-            background-size: cover;
-            padding: $row__padding--none;
-        }
-
-
-        // Row Container Width
-        .row__container {
-            width: $row__width--full;
-        }
-
-
-        &.row__overlay:after {
-            background: rgba(0,0,0, 0.25);
-        }
-    }
-}
 
 
 
 // Widget Styling
 // -----------------------------
 
+
+.row__hero--01 {
+
+
+    [data-widget-type="image"] {
+        margin: 0 0 60px 100px;
+    }
+
+
+    .imagewidget__image {
+        padding: 80px 0 80px 120px;
+    }
+}

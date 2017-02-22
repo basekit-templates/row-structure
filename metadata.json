@@ -172,6 +172,11 @@
             "color__form-button--text": "color__form-button--text",
             "color__form-button--text--hover": "color__form-button--text--hover"
         },
+        "image": {
+            "color__image--background": "color__image--background",
+            "color__image-title--text": "color__image-title--text",
+            "color__image-description--text": "color__image-description--text"
+        },
         "gallery": {
             "color__gallery-caption--background": "color__gallery-caption--background",
             "color__gallery-title--background": "color__gallery-title--background",

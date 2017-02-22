@@ -58,6 +58,7 @@ $column--offset-value: 5% !default;
     // Full Width
     &--full {
         @include flex-basis(100%);
+        padding: 0;
     }
 
 

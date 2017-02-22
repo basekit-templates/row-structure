@@ -11,23 +11,44 @@
 
 .row {
 
+
     // Light
     &.light {
-        background-color: color(color-light, $row__background-color);
+        background-color: color(color-light, $color__row--background);
     }
 
 
     &.accent {
-        background-color: color(color-accent, $row__background-color);
+        background-color: color(color-accent, $color__row--background);
     }
 
 
     &.dark {
-        background-color: color(color-dark, $row__background-color);
+        background-color: color(color-dark, $color__row--background);
     }
 
 
     &.gradient {
         background: linear-gradient(90deg, $color__accent, $color__accent-alt);
+    }
+
+
+    &__hero {
+
+
+        // Light
+        &.light {
+            background-color: color(color-light, $color__hero--background);
+        }
+
+
+        &.accent {
+            background-color: color(color-accent, $color__hero--background);
+        }
+
+
+        &.dark {
+            background-color: color(color-dark, $color__hero--background);
+        }
     }
 }

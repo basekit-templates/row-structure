@@ -15,42 +15,72 @@
 
 
 
+//  Navigation: Global
+// -----------------------------
+
+
+// Top Level Navigation
+[data-widget-type="extendednavigation"] {
+    margin-top: 0 !important;
+
+
+    .light & {
+        background: color(color-light, $color__navigation--background);
+    }
+
+
+    .accent & {
+        background: color(color-accent, $color__navigation--background);
+    }
+
+
+    .dark & {
+        background: color(color-dark, $color__navigation--background);
+    }
+}
+
+
 // Navigation List
 .navigation-list {
-    border: $style__navigation-list--border;
     @include border-radius($style__navigation-list--border-radius);
-    @include box-shadow($style__navigation-list--box-shadow);
     list-style: none;
     margin-left: 0;
-    outline: $style__navigation-list--outline;
-    padding: 0;
+    padding: $style__navigation-list--padding;
     width: 100%;
-    z-index: 9999;
 
 
     // Light
     .light & {
         background: color(color-light, $color__navigation-list--background);
+        @include border($style__navigation-list--border, color(color-light, $color__navigation-list--border), $style__navigation-list--border-direction);
+        @include box-shadow($style__navigation-list--box-shadow color(color-light, $color__navigation-list--box-shadow));
+        outline : $style__navigation-list--outline  color(color-light, $color__navigation-list--outline);
     }
 
 
     // Accent
     .accent & {
         background: color(color-accent, $color__navigation-list--background);
+        @include border($style__navigation-list--border, color(color-accent, $color__navigation-list--border), $style__navigation-list--border-direction);
+        @include box-shadow($style__navigation-list--box-shadow color(color-accent, $color__navigation-list--box-shadow));
+        outline : $style__navigation-list--outline  color(color-accent, $color__navigation-list--outline);
     }
 
 
     // Dark
     .dark & {
         background: color(color-dark, $color__navigation-list--background);
+        @include border($style__navigation-list--border, color(color-dark, $color__navigation-list--border), $style__navigation-list--border-direction);
+        @include box-shadow($style__navigation-list--box-shadow color(color-dark, $color__navigation-list--box-shadow));
+        outline : $style__navigation-list--outline  color(color-dark, $color__navigation-list--outline);
     }
 }
 
 
 // Navigation List Item
 .navigation-item {
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 
@@ -61,15 +91,12 @@
 
 
     // Variables
-    border: $style__navigation-item--border;
     @include border-radius($style__navigation-item--border-radius);
-    @include box-shadow($style__navigation-item--box-shadow);
     font-family: $font__navigation--font-family;
     font-size: $font__navigation--font-size;
     font-weight: $font__navigation--font-weight;
     line-height: $font__navigation--line-height;
     letter-spacing: $font__navigation--letter-spacing;
-    outline: $style__navigation-item--outline;
     padding: $style__navigation-item--padding;
     text-transform: $font__navigation--text-transform;
     @include transition($style__navigation-item--transition);
@@ -78,21 +105,30 @@
     // Light
     .light & {
         background: color(color-light, $color__navigation-item--background);
+        @include border($style__navigation-item--border, color(color-light, $color__navigation-item--border), $style__navigation-item--border-direction);
+        @include box-shadow($style__navigation-item--box-shadow color(color-light, $color__navigation-item--box-shadow));
         color: color(color-light, $color__navigation--text);
+        outline : $style__navigation-item--outline  color(color-light, $color__navigation-item--outline);
     }
 
 
     // Accent
     .accent & {
         background: color(color-accent, $color__navigation-item--background);
+        @include border($style__navigation-item--border, color(color-accent, $color__navigation-item--border), $style__navigation-item--border-direction);
+        @include box-shadow($style__navigation-item--box-shadow color(color-accent, $color__navigation-item--box-shadow));
         color: color(color-accent, $color__navigation--text);
+        outline : $style__navigation-item--outline  color(color-accent, $color__navigation-item--outline);
     }
 
 
     // Dark
     .dark & {
         background: color(color-dark, $color__navigation-item--background);
+        @include border($style__navigation-item--border, color(color-dark, $color__navigation-item--border), $style__navigation-item--border-direction);
+        @include box-shadow($style__navigation-item--box-shadow color(color-dark, $color__navigation-item--box-shadow));
         color: color(color-dark, $color__navigation--text);
+        outline : $style__navigation-item--outline  color(color-dark, $color__navigation-item--outline);
     }
 
 
@@ -100,29 +136,33 @@
         cursor: pointer;
 
 
-        // Variables
-        border: $style__navigation-item--border--hover;
-        outline: $style__navigation-item--outline--hover;
-
-
         // Light
         .light & {
             background: color(color-light, $color__navigation-item--background--hover);
+            @include border($style__navigation-item--border--hover, color(color-light, $color__navigation-item--border--hover), $style__navigation-item--border-direction--hover);
+            @include box-shadow($style__navigation-item--box-shadow--hover color(color-light, $color__navigation-item--box-shadow--hover));
             color: color(color-light, $color__navigation--text--hover);
+            outline : $style__navigation-item--outline--hover  color(color-light, $color__navigation-item--outline--hover);
         }
 
 
         // Accent
         .accent & {
             background: color(color-accent, $color__navigation-item--background--hover);
+            @include border($style__navigation-item--border--hover, color(color-accent, $color__navigation-item--border--hover), $style__navigation-item--border-direction--hover);
+            @include box-shadow($style__navigation-item--box-shadow--hover color(color-accent, $color__navigation-item--box-shadow--hover));
             color: color(color-accent, $color__navigation--text--hover);
+            outline : $style__navigation-item--outline--hover  color(color-accent, $color__navigation-item--outline--hover);
         }
 
 
         // Dark
         .dark & {
             background: color(color-dark, $color__navigation-item--background--hover);
+            @include border($style__navigation-item--border--hover, color(color-dark, $color__navigation-item--border--hover), $style__navigation-item--border-direction--hover);
+            @include box-shadow($style__navigation-item--box-shadow--hover color(color-dark, $color__navigation-item--box-shadow--hover));
             color: color(color-dark, $color__navigation--text--hover);
+            outline : $style__navigation-item--outline--hover  color(color-dark, $color__navigation-item--outline--hover);
         }
     }
 }
@@ -144,6 +184,27 @@
 }
 
 
+
+// Folder Icon
+.item-name--parent:after {
+
+
+    .light & {
+        @include border($style__navigation-folder--border, color(color-light, $color__navigation-folder--border), $style__navigation-item--folder--border-direction);
+    }
+
+
+    .accent & {
+        @include border($style__navigation-folder--border, color(color-accent, $color__navigation-folder--border), $style__navigation-item--folder--border-direction);
+    }
+
+
+    .dark & {
+        @include border($style__navigation-folder--border, color(color-dark, $color__navigation-folder--border), $style__navigation-item--folder--border-direction);
+    }
+}
+
+
 // Display Dropdown Menu
 .navigation-item:hover .navigation-list--children {
     display: block;
@@ -153,4 +214,104 @@
 // Dropdown List Item
 .navigation-item--child {
     display: list-item;
+}
+
+
+// Navigation Toggle
+.navigation-toggle {
+
+
+    .light & {
+        background: color(color-light, $color__navigation-toggle--background);
+        @include border($style__navigation-toggle--border, color(color-dark, $color__navigation-toggle--border), $style__navigation-toggle--border-direction);
+        color: color(color-light, $color__navigation-toggle--text);
+    }
+
+
+    .accent & {
+        background: color(color-accent, $color__navigation-toggle--background);
+        @include border($style__navigation-toggle--border, color(color-dark, $color__navigation-toggle--border), $style__navigation-toggle--border-direction);
+        color: color(color-accent, $color__navigation-toggle--text);
+    }
+
+
+    .dark & {
+        background: color(color-dark, $color__navigation-toggle--background);
+        @include border($style__navigation-toggle--border, color(color-dark, $color__navigation-toggle--border), $style__navigation-toggle--border-direction);
+        color: color(color-dark, $color__navigation-toggle--text);
+    }
+}
+
+
+// Toggle
+.navigation-toggle:before,
+.navigation-toggle:after {
+
+
+    .light & {
+        // background: color(color-light, $color__navigation-toggle-icon--background);
+    }
+
+
+    .accent & {
+        // background: color(color-accent, $color__navigation-toggle-icon--background);
+    }
+
+
+    .dark & {
+        // background: color(color-dark, $color__navigation-toggle-icon--background);
+    }
+}
+
+
+
+// Alternate Toggle
+.light {
+    .navigation-icon--container {
+
+
+        // Exit Icon
+        label:before,
+        input:checked + label:before,
+        label:after,
+        input:checked + label:after,
+        label .navigation-icon:before,
+        label .navigation-icon:after {
+            background: color(color-light, $color__navigation-toggle-icon--background);
+        }
+    }
+}
+
+
+.accent {
+    .navigation-icon--container {
+
+
+        // Exit Icon
+        label:before,
+        input:checked + label:before,
+        label:after,
+        input:checked + label:after,
+        label .navigation-icon:before,
+        label .navigation-icon:after {
+            background: color(color-accent, $color__navigation-toggle-icon--background);
+        }
+    }
+}
+
+
+.dark {
+    .navigation-icon--container {
+
+
+        // Exit Icon
+        label:before,
+        input:checked + label:before,
+        label:after,
+        input:checked + label:after,
+        label .navigation-icon:before,
+        label .navigation-icon:after {
+            background: color(color-dark, $color__navigation-toggle-icon--background);
+        }
+    }
 }

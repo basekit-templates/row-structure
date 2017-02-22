@@ -14,9 +14,9 @@
 $color--lightest: #ffffff;
 $color--light: #EEEEEE;
 $color--accent: #FF3C00;
-$color--accent-alt: #095ce4;
-$color--dark: #00FFF4;
-$color--darkest: #00D9D0;
+$color--accent-alt: #0070ff;
+$color--dark: #808080;
+$color--darkest: #2b2b2b;
 
 
 // Widget Colours
@@ -26,6 +26,7 @@ $colors: (
 
         // Row
         $row__background-color: $color--lightest,
+        $row__hero--background-color: $color--light,
 
 
         // Companyname
@@ -40,6 +41,12 @@ $colors: (
         $color__p--text: darken($color--light, 25%),
         $color__link--text: $color__p--text,
 
+
+        // Navigation
+        $color__navigation--background: $color--lightest,
+        $color__navigation--text: $color--darkest,
+        $color__navigation-toggle--background: darken($color--accent, 20%),
+        $color__navigation-toggle-icon--background: $color--lightest,
 
         // Notch
         $color__content-notch--background: $color--accent,
@@ -78,7 +85,7 @@ $colors: (
         $color__social-icons--background: $color--accent,
         $color__social-icons--background--hover: darken($color--accent, 10%),
         $color__social-icons--text: $color--lightest,
-        $color__social-icons--text--hover: $color--lightest
+        $color__social-icons--text--hover: $color--lightest,
     ),
     color-accent: (
 
@@ -98,6 +105,13 @@ $colors: (
         $color__h4--text: fade-out($color--lightest, .2),
         $color__p--text: fade-out($color--lightest, .1),
         $color__link--text: $color--lightest,
+
+
+        // Navigation
+        $color__navigation--background: $color--lightest,
+        $color__navigation--text: $color--darkest,
+        $color__navigation-toggle--background: darken($color--accent, 20%),
+        $color__navigation-toggle-icon--background: $color--lightest,
 
 
         // Notch
@@ -138,7 +152,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--light,
+        $row__background-color: $color--dark,
+        $row__hero--background-color: $color--darkest,
 
 
         // Companyname

@@ -1,0 +1,26 @@
+
+<div class="bk-row  row  row__nav--01  dark">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--one-quarter  align--middle-left">
+            {{widget('socialicons', 'socialnetworks', {
+                'facebook': 'https://www.facebook.com/mycompanyname',
+                'twitter': 'https://twitter.com/mycompanyname',
+                'instagram': 'https://www.instagram.com/mycompanyname'
+            })|raw}}
+        </div>
+
+        <div class="row__column  row__column--half  align--middle-center">
+            {{widget('extendednavigation', 'navigation', {})|raw}}
+        </div>
+
+        <div class="row__column  row__column--one-quarter  align--middle-right">
+            {{widget('clicktocall', 'clicktocall', {
+                'phoneText': '01234 123456',
+                 'fontSize': 16,
+                'align': 'widget-align-right'
+            })|raw}}
+        </div>
+
+    </div>
+</div>

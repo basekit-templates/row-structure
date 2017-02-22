@@ -44,6 +44,12 @@ $style__row--grayscale: 0 !default;
         bottom: 0;
         z-index: 1;
     }
+
+
+    // Hero Background Colour
+    &__hero {
+        background: $color__hero--background;
+    }
 }
 
 

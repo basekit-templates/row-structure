@@ -1,0 +1,13 @@
+
+{{widget('extendednavigation', 'navigation', {})|raw}}
+
+<div class="navigation-icon--container">
+    <input id="click" name="exit" type="checkbox" />
+    <label for="click"><span class="navigation-icon"></span></label>
+</div>
+
+<script>
+    $(document).on("click", ".navigation-icon--container input", function() {
+        $( "body" ).toggleClass( "navigation-open" );
+    });
+</script>

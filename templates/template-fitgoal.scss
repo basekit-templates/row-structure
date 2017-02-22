@@ -25,7 +25,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--lightest,
+        $color__row--background: $color--lightest,
+        $color__hero--background: $color--light,
 
 
         // Companyname
@@ -39,7 +40,12 @@ $colors: (
         $color__h3--text: $color--darkest,
         $color__h4--text: fade-out($color--darkest, .4),
         $color__p--text: fade-out($color--darkest, .4),
-        $color__link--text: $color--darkest,
+        $color__link--text: $color--dark,
+
+
+        // Navigation
+        $color__navigation--background: $color--darkest,
+        $color__navigation-toggle-icon--background: $color--dark,
 
 
         // Notch
@@ -81,7 +87,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--accent,
+        $color__row--background: $color--accent,
+        $color__hero--background: $color--accent,
 
 
         // Companyname
@@ -96,6 +103,11 @@ $colors: (
         $color__h4--text: fade-out($color--lightest, .2),
         $color__p--text: $color--light,
         $color__link--text: $color--lightest,
+
+
+        // Navigation
+        $color__navigation--background: $color--accent,
+        $color__navigation-toggle-icon--background: $color--light,
 
 
         // Notch
@@ -134,7 +146,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--darkest,
+        $color__row--background: $color--darkest,
+        $color__hero--background: $color--darkest,
 
 
         // Companyname
@@ -148,7 +161,12 @@ $colors: (
         $color__h3--text: $color--lightest,
         $color__h4--text: fade-out($color--lightest, .2),
         $color__p--text: $color--light,
-        $color__link--text: $color--accent,
+        $color__link--text: $color--light,
+
+
+        // Navigation
+        $color__navigation--background: $color--lightest,
+        $color__navigation-toggle-icon--background: $color--light,
 
 
         // Notch

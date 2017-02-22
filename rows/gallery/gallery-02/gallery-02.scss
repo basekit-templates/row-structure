@@ -1,0 +1,118 @@
+
+// -------------------------------------
+// Gallery: Design Two
+// -------------------------------------
+
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__gallery--02 {
+
+
+    // Row Height
+    &.row {
+        min-height: $row__height--default;
+    }
+
+
+    // Row Padding
+    &.row {
+        padding: $row__padding--large;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+.row__gallery--02 {
+
+    .gallery {
+
+        // Gallery image spacing
+        &__gallery-item {
+            padding: 10px 10px 0;
+            width: 33.33%;
+
+            &:hover .gallery__caption {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+
+
+        // Removes background image
+        &__image-link {
+            background-image: none!important;
+        }
+
+
+        // Inline image styling
+        &__image {
+            width: 100%;
+
+
+            &:hover,
+            &:focus {
+
+            }
+        }
+
+
+        &__figure {
+            margin: 0;
+        }
+
+
+        &__caption {
+            margin: 10px 0;
+        }
+
+
+        // Image title and description styling
+        &__image-title,
+        &__image-description {
+            line-height: 26px;
+        }
+
+
+        .gallery__caption {
+            @include flex-display;
+            @include align-items(center);
+            @include justify-content(center);
+            position: absolute;
+            text-align: center;
+            visibility: hidden;
+            top: 0;
+            left: 10px;
+            right: 10px;
+            bottom: 0;
+        }
+
+
+        .gallery__caption-link {
+            max-width: 75%;
+            text-decoration: none;
+        }
+
+
+        .image-title,
+        .image-description {
+            display: block;
+            text-decoration: none;
+        }
+    }
+}

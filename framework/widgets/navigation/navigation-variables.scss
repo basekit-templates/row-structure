@@ -23,17 +23,32 @@ $font__navigation--text-transform: none !default;
 //  Style Properties
 // -----------------------------
 
+
 $style__navigation-list--border: none !default;
+$style__navigation-list--border-direction: none !default;
 $style__navigation-list--border-radius: 0 !default;
 $style__navigation-list--box-shadow: none !default;
 $style__navigation-list--outline: none !default;
+$style__navigation-list--padding: 0 !default;
 
 
 $style__navigation-item--border: none !default;
+$style__navigation-item--border-direction: none !default;
 $style__navigation-item--border--hover: none !default;
+$style__navigation-item--border-direction--hover: none !default;
 $style__navigation-item--border-radius: 0 !default;
 $style__navigation-item--box-shadow: none !default;
+$style__navigation-item--box-shadow--hover: none !default;
 $style__navigation-item--outline: none !default;
 $style__navigation-item--outline--hover: none !default;
 $style__navigation-item--padding: 5px 10px !default;
 $style__navigation-item--transition: none !default;
+
+
+$style__navigation-folder--border: none !default;
+$style__navigation-item--folder--border-direction: none !default;
+
+$style__navigation-toggle--border: none !default;
+$style__navigation-toggle--border-direction: none !default;
+$style__navigation-toggle--border--hover: none !default;
+$style__navigation-toggle--border-direction--hover: none !default;

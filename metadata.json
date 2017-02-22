@@ -18,7 +18,8 @@
             "color--darkest": "#000000"
         },
         "row": {
-            "row__background-color": "row__background-color"
+            "color__row--background": "color__row--background",
+            "color__hero--background": "color__hero--background"
         },
         "typography": {
             "font__h1--font-family": "$font__heading",
@@ -65,25 +66,27 @@
             "font__companyname--font-weight": "normal",
             "font__companyname--letter-spacing": "0"
         },
-        "divider": {
-            "color__hr--background": "color__hr--background",
-            "color__content-notch--background": "color__content-notch--background"
-        },
-        "socialicons": {
-            "color__social-icons--background": "color__social-icons--background",
-            "color__social-icons--background--hover": "color__social-icons--background--hover",
-            "color__social-icons--icon": "color__social-icons--icon",
-            "color__social-icons--icon--hover": "color__social-icons--icon--hover",
-            "color__social-icons--text": "color__social-icons--text",
-            "color__social-icon--text": "color__social-icon--text",
-            "color__social-icons--text--hover": "color__social-icons--text--hover"
-        },
         "navigation": {
+            "color__navigation--background": "color__navigation--background",
             "color__navigation-list--background": "color__navigation-list--background",
+            "color__navigation-list--border": "color__navigation-list--border",
+            "color__navigation-list--box-shadow": "color__navigation-list--box-shadow",
+            "color__navigation-list--outline": "color__navigation-list--outline",
             "color__navigation-item--background": "color__navigation-item--background",
             "color__navigation-item--background--hover": "color__navigation-item--background--hover",
+            "color__navigation-item--border": "color__navigation-item--border",
+            "color__navigation-item--border--hover": "color__navigation-item--border--hover",
+            "color__navigation-item--box-shadow": "color__navigation-item--box-shadow",
+            "color__navigation-item--box-shadow--hover": "color__navigation-item--box-shadow--hover",
+            "color__navigation-item--outline": "color__navigation-item--outline",
+            "color__navigation-item--outline--hover": "color__navigation-item--outline--hover",
             "color__navigation--text": "color__navigation--text",
             "color__navigation--text--hover": "color__navigation--text--hover",
+            "color__navigation-folder--border": "color__navigation-folder--border",
+            "color__navigation-toggle--background": "color__navigation-toggle--background",
+            "color__navigation-toggle--border": "color__navigation-toggle--border",
+            "color__navigation-toggle--text": "color__navigation-toggle--text",
+            "color__navigation-toggle-icon--background": "color__navigation-toggle-icon--background",
             "font__navigation--font-family": "$font__body",
             "font__navigation--font-size": "16px",
             "font__navigation--font-weight": "normal",
@@ -116,6 +119,19 @@
             "font__button--font-weight": "normal",
             "font__button--letter-spacing": "0",
             "font__button--line-height": "24px"
+        },
+        "socialicons": {
+            "color__social-icons--background": "color__social-icons--background",
+            "color__social-icons--background--hover": "color__social-icons--background--hover",
+            "color__social-icons--icon": "color__social-icons--icon",
+            "color__social-icons--icon--hover": "color__social-icons--icon--hover",
+            "color__social-icons--text": "color__social-icons--text",
+            "color__social-icon--text": "color__social-icon--text",
+            "color__social-icons--text--hover": "color__social-icons--text--hover"
+        },
+        "divider": {
+            "color__hr--background": "color__hr--background",
+            "color__content-notch--background": "color__content-notch--background"
         },
         "scroll": {
             "color__scroll--text": "color__scroll--text",

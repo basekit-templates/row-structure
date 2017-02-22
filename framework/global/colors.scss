@@ -15,17 +15,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--lightest,
-
-
-        // Companyname
-        $color__companyname--border: $transparent,
-        $color__companyname--text: $color--darkest,
-
-
-        // Divider
-        $color__hr--background: $color--dark,
-        $color__content-notch--background: $color--accent,
+        $color__row--background: $color--lightest,
+        $color__hero--background: $color--lightest,
 
 
         // Typography
@@ -37,11 +28,37 @@ $colors: (
         $color__p--text: $color--dark,
 
 
-        // Social Icons
-        $color__social-icons--background: $transparent,
-        $color__social-icons--text: $color--darkest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--darkest,
+        // Companyname
+        $color__companyname--border: $transparent,
+        $color__companyname--text: $color--darkest,
+
+
+        // Navigation
+        $color__navigation--background: $transparent,
+
+        $color__navigation-list--background: $transparent,
+        $color__navigation-list--border: $transparent,
+        $color__navigation-list--box-shadow: none,
+        $color__navigation-list--outline: $transparent,
+
+        $color__navigation-item--background: $transparent,
+        $color__navigation-item--background--hover: $transparent,
+        $color__navigation-item--border: $transparent,
+        $color__navigation-item--border--hover: $transparent,
+        $color__navigation-item--box-shadow: none,
+        $color__navigation-item--box-shadow--hover: none,
+        $color__navigation-item--outline: $transparent,
+        $color__navigation-item--outline--hover: $transparent,
+
+        $color__navigation--text: $color--darkest,
+        $color__navigation--text--hover: $color--darkest,
+
+        $color__navigation-folder--border: $color--light,
+
+        $color__navigation-toggle--background: $transparent,
+        $color__navigation-toggle--border: $transparent,
+        $color__navigation-toggle--text: $color--dark,
+        $color__navigation-toggle-icon--background: $color--darkest,
 
 
         // Buttons
@@ -56,7 +73,6 @@ $colors: (
         $color__button--text: $color--lightest,
         $color__button--text--hover: $color--lightest,
 
-
         $color__telephone--background: $transparent,
         $color__telephone--background--hover: $transparent,
         $color__telephone--border: $transparent,
@@ -69,17 +85,24 @@ $colors: (
         $color__telephone--text--hover: $color--darkest,
 
 
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--icon: $color--accent,
+        $color__social-icons--icon--hover: darken($color--accent, 10%),
+        $color__social-icons--text: $color--darkest,
+        $color__social-icons--text--hover: $color--darkest,
+        $color__social-icon--text: $color--lightest,
+
+
+        // Divider
+        $color__hr--background: $color--dark,
+        $color__content-notch--background: $color--accent,
+
+
         // Scroll
         $color__scroll--text: $color--dark,
         $color__scroll--icon: $color--dark,
-
-
-        // Navigation
-        $color__navigation-list--background: $transparent,
-        $color__navigation-item--background: $transparent,
-        $color__navigation-item--background--hover: $transparent,
-        $color__navigation--text: $color--darkest,
-        $color__navigation--text--hover: $color--darkest,
 
 
         // Forms
@@ -100,11 +123,12 @@ $colors: (
         $color__form-label--text-shadow: none,
 
         $color__form-input--background: $color--accent,
-        $color__form-input--box-shadow: none,
-        $color__form-input--outline: $transparent,
         $color__form-input--background--hover: $color--dark,
+        $color__form-input--border: $transparent,
         $color__form-input--border--hover: $transparent,
+        $color__form-input--box-shadow: none,
         $color__form-input--box-shadow--hover: none,
+        $color__form-input--outline: $transparent,
         $color__form-input--outline--hover: $transparent,
         $color__form--text: $color--dark,
         $color__form--text--hover: $color--lightest,
@@ -140,17 +164,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--lightest,
-
-
-        // Companyname
-        $color__companyname--border: $transparent,
-        $color__companyname--text: $color--accent,
-
-
-        // Divider
-        $color__hr--background: $color--accent,
-        $color__content-notch--background: $color--lightest,
+        $color__row--background: $color--accent,
+        $color__hero--background: $color--accent,
 
 
         // Typography
@@ -162,11 +177,37 @@ $colors: (
         $color__p--text: $color--light,
 
 
-        // Social Icons
-        $color__social-icons--background: $transparent,
-        $color__social-icons--text: $color--lightest,
-        $color__social-icons--background--hover: $transparent,
-        $color__social-icons--text--hover: $color--lightest,
+        // Companyname
+        $color__companyname--border: $transparent,
+        $color__companyname--text: $color--accent,
+
+
+        // Navigation
+        $color__navigation--background: $transparent,
+
+        $color__navigation-list--background: $transparent,
+        $color__navigation-list--border: $transparent,
+        $color__navigation-list--box-shadow: none,
+        $color__navigation-list--outline: $transparent,
+
+        $color__navigation-item--background: $transparent,
+        $color__navigation-item--background--hover: $transparent,
+        $color__navigation-item--border: $transparent,
+        $color__navigation-item--border--hover: $transparent,
+        $color__navigation-item--box-shadow: none,
+        $color__navigation-item--box-shadow--hover: none,
+        $color__navigation-item--outline: $transparent,
+        $color__navigation-item--outline--hover: $transparent,
+
+        $color__navigation--text: $color--lightest,
+        $color__navigation--text--hover: $color--lightest,
+
+        $color__navigation-folder--border: $color--light,
+
+        $color__navigation-toggle--background: $transparent,
+        $color__navigation-toggle--border: $transparent,
+        $color__navigation-toggle--text: $color--lightest,
+        $color__navigation-toggle-icon--background: $color--lightest,
 
 
         // Buttons
@@ -174,13 +215,38 @@ $colors: (
         $color__button--background--hover: $color--lightest,
         $color__button--border: $transparent,
         $color__button--border--hover: $transparent,
+        $color__button--box-shadow: $transparent,
+        $color__button--box-shadow--hover: $transparent,
+        $color__button--outline: $transparent,
+        $color__button--outline--hover: $transparent,
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
 
-        $color__button--text: $color--accent,
-        $color__button--text--hover: $color--accent,
         $color__telephone--background: $transparent,
         $color__telephone--background--hover: $transparent,
+        $color__telephone--border: $transparent,
+        $color__telephone--border--hover: $transparent,
+        $color__telephone--box-shadow: $transparent,
+        $color__telephone--box-shadow--hover: $transparent,
+        $color__telephone--outline: $transparent,
+        $color__telephone--outline--hover: $transparent,
         $color__telephone--text: $color--lightest,
         $color__telephone--text--hover: $color--lightest,
+
+
+        // Social Icons
+        $color__social-icons--background: $transparent,
+        $color__social-icons--background--hover: $transparent,
+        $color__social-icons--icon: $color--lightest,
+        $color__social-icons--icon--hover: darken($color--lightest, 10%),
+        $color__social-icons--text: $color--lightest,
+        $color__social-icons--text--hover: $color--lightest,
+        $color__social-icon--text: $color--lightest,
+
+
+        // Divider
+        $color__hr--background: $color--accent,
+        $color__content-notch--background: $color--lightest,
 
 
         // Scroll
@@ -188,38 +254,34 @@ $colors: (
         $color__scroll--icon: $color--light,
 
 
-        // Navigation
-        $color__navigation-list--background: $transparent,
-        $color__navigation-item--background: $transparent,
-        $color__navigation-item--background--hover: $transparent,
-        $color__navigation--text: $color--accent,
-        $color__navigation--text--hover: $color--accent,
-
-
         // Forms
         $color__form-fieldset--background: $transparent,
         $color__form-fieldset--border: $transparent,
         $color__form-fieldset--box-shadow, none,
+
         $color__form-legend--background: $transparent,
         $color__form-legend--border: $transparent,
         $color__form-legend--box-shadow: none,
         $color__form-legend--text: $color--lightest,
         $color__form-legend--text-shadow: none,
+
         $color__form-label--background: $transparent,
         $color__form-label--border: $transparent,
         $color__form-label--box-shadow: none,
         $color__form-label--text: $color--light,
         $color__form-label--text-shadow: none,
+
         $color__form-input--background: $color--dark,
-        $color__form-input--border: $transparent,
-        $color__form-input--box-shadow: none,
-        $color__form-input--outline: $transparent,
-        $color__form--text: $color--lightest,
         $color__form-input--background--hover: $color--dark,
+        $color__form-input--border: $transparent,
         $color__form-input--border--hover: $transparent,
+        $color__form-input--box-shadow: none,
         $color__form-input--box-shadow--hover: none,
+        $color__form-input--outline: $transparent,
         $color__form-input--outline--hover: $transparent,
+        $color__form--text: $color--lightest,
         $color__form--text--hover: $color--lightest,
+
         $color__form-button--background: $color--accent,
         $color__form-button--background--hover: $color--accent,
         $color__form-button--border: $transparent,
@@ -251,17 +313,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--lightest,
-
-
-        // Companyname
-        $color__companyname--border: $transparent,
-        $color__companyname--text: $color--lightest,
-
-
-        // Divider
-        $color__hr--background: $color--light,
-        $color__content-notch--background: $color--accent,
+        $color__row--background: $color--darkest,
+        $color__hero--background: $color--darkest,
 
 
         // Typography
@@ -271,6 +324,63 @@ $colors: (
         $color__h4--text: $color--lightest,
         $color__link--text: $color--accent,
         $color__p--text: $color--light,
+
+
+        // Companyname
+        $color__companyname--border: $transparent,
+        $color__companyname--text: $color--lightest,
+
+
+        // Navigation
+        $color__navigation--background: $transparent,
+
+        $color__navigation-list--background: $transparent,
+        $color__navigation-list--border: $transparent,
+        $color__navigation-list--box-shadow: none,
+        $color__navigation-list--outline: $transparent,
+
+        $color__navigation-item--background: $transparent,
+        $color__navigation-item--background--hover: $transparent,
+        $color__navigation-item--border: $transparent,
+        $color__navigation-item--border--hover: $transparent,
+        $color__navigation-item--box-shadow: none,
+        $color__navigation-item--box-shadow--hover: none,
+        $color__navigation-item--outline: $transparent,
+        $color__navigation-item--outline--hover: $transparent,
+
+        $color__navigation--text: $color--lightest,
+        $color__navigation--text--hover: $color--lightest,
+
+        $color__navigation-folder--border: $color--light,
+
+        $color__navigation-toggle--background: $transparent,
+        $color__navigation-toggle--border: $transparent,
+        $color__navigation-toggle--text: $color--lightest,
+        $color__navigation-toggle-icon--background: $color--lightest,
+
+
+        // Buttons
+        $color__button--background: $color--lightest,
+        $color__button--background--hover: $color--lightest,
+        $color__button--border: $transparent,
+        $color__button--border--hover: $transparent,
+        $color__button--box-shadow: $transparent,
+        $color__button--box-shadow--hover: $transparent,
+        $color__button--outline: $transparent,
+        $color__button--outline--hover: $transparent,
+        $color__button--text: $color--lightest,
+        $color__button--text--hover: $color--lightest,
+
+        $color__telephone--background: $transparent,
+        $color__telephone--background--hover: $transparent,
+        $color__telephone--border: $transparent,
+        $color__telephone--border--hover: $transparent,
+        $color__telephone--box-shadow: $transparent,
+        $color__telephone--box-shadow--hover: $transparent,
+        $color__telephone--outline: $transparent,
+        $color__telephone--outline--hover: $transparent,
+        $color__telephone--text: $color--lightest,
+        $color__telephone--text--hover: $color--lightest,
 
 
         // Social Icons
@@ -283,17 +393,9 @@ $colors: (
         $color__social-icons--text--hover: $color--lightest,
 
 
-        // Buttons
-        $color__button--background: $color--accent,
-        $color__button--background--hover: $color--accent,
-        $color__button--border: $transparent,
-        $color__button--border--hover: $transparent,
-        $color__button--text: $color--lightest,
-        $color__button--text--hover: $color--lightest,
-        $color__telephone--background: $transparent,
-        $color__telephone--background--hover: $transparent,
-        $color__telephone--text: $color--lightest,
-        $color__telephone--text--hover: $color--lightest,
+        // Divider
+        $color__hr--background: $color--light,
+        $color__content-notch--background: $color--accent,
 
 
         // Scroll
@@ -301,37 +403,34 @@ $colors: (
         $color__scroll--icon: $color--light,
 
 
-        // Navigation
-        $color__navigation-list--background: $transparent,
-        $color__navigation-item--background: $transparent,
-        $color__navigation-item--background--hover: $transparent,
-        $color__navigation--text: $color--lightest,
-        $color__navigation--text--hover: $color--lightest,
-
-
         // Forms
         $color__form-fieldset--background: $transparent,
         $color__form-fieldset--border: $transparent,
         $color__form-fieldset--box-shadow, none,
+
         $color__form-legend--background: $transparent,
         $color__form-legend--border: $transparent,
         $color__form-legend--box-shadow: none,
         $color__form-legend--text: $color--lightest,
         $color__form-legend--text-shadow: none,
+
         $color__form-label--background: $transparent,
         $color__form-label--border: $transparent,
         $color__form-label--box-shadow: none,
         $color__form-label--text: $color--light,
         $color__form-label--text-shadow: none,
+
         $color__form-input--background: $color--dark,
-        $color__form-input--box-shadow: none,
-        $color__form-input--outline: $transparent,
-        $color__form--text: $color--lightest,
         $color__form-input--background--hover: $color--dark,
+        $color__form-input--border: $transparent,
         $color__form-input--border--hover: $transparent,
+        $color__form-input--box-shadow: none,
         $color__form-input--box-shadow--hover: none,
+        $color__form-input--outline: $transparent,
         $color__form-input--outline--hover: $transparent,
+        $color__form--text: $color--lightest,
         $color__form--text--hover: $color--lightest,
+
         $color__form-button--background: $color--accent,
         $color__form-button--background--hover: $color--accent,
         $color__form-button--border: $transparent,

@@ -6,6 +6,18 @@
 
 
 
+// Imports: Demo UI
+// -----------------------------
+
+#tdk-toolbar {
+    display: none!important;
+}
+
+@import "misc/demo-ui";
+
+
+
+
 // Imports: Global
 // -----------------------------
 
@@ -46,11 +58,10 @@
 
 
 // Template Styles
-// @import "templates/template-one";
-// @import "templates/template-two";
-// @import "templates/template-dom";
-@import "templates/template-marta";
-// @import "templates/template-vinny";
+@import "templates/template-fitgoal";
+// @import "templates/template-chay";
+// @import "templates/template-juiced";
+// @import "templates/template-playground";
 
 
 // Defaults - Needs to be after template to inherit styles
@@ -66,36 +77,39 @@
 
 
 // Navigations
-@import "rows/navigation/nav-01";
+@import "rows/navigation/navigation-01/navigation-01";
 
 
 // Heros
-@import "rows/hero/hero-01";
-@import "rows/hero/hero-02";
+@import "rows/hero/hero-01/hero-01";
+@import "rows/hero/hero-02/hero-02";
+@import "rows/hero/hero-03/hero-03";
 
 
 // Content
-@import "rows/content/content-01";
-@import "rows/content/content-02";
-@import "rows/content/content-03";
+@import "rows/content/content-01/content-01";
+@import "rows/content/content-02/content-02";
+@import "rows/content/content-03/content-03";
 
 
 // Image
-@import "rows/images/image-01";
+@import "rows/images/image-01/image-01";
 
 
 // Gallery
-@import "rows/gallery/gallery-01";
+@import "rows/gallery/gallery-01/gallery-01";
+@import "rows/gallery/gallery-02/gallery-02";
+@import "rows/gallery/gallery-03/gallery-03";
 
 
 // Contact
-@import "rows/contact/contact-01";
-@import "rows/contact/contact-02";
-@import "rows/contact/contact-03";
+@import "rows/contact/contact-01/contact-01";
+@import "rows/contact/contact-02/contact-02";
+@import "rows/contact/contact-03/contact-03";
 
 
 // Footer
-@import "rows/footer/footer-01";
+@import "rows/footer/footer-01/footer-01";
 
 
 
@@ -120,9 +134,9 @@
 
 // @import 'framework/widgets/logo/logo';
 
-//@import 'framework/widgets/navigation/navigation';
+@import 'framework/widgets/navigation/navigation';
 
-// @import 'framework/widgets/profile';
+@import 'framework/widgets/profile/profile';
 // @import 'framework/widgets/slideshow';
 
 @import 'framework/widgets/socialicons/social-icons';

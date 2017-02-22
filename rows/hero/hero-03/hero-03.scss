@@ -1,0 +1,65 @@
+
+// -------------------------------------
+// Header: Design Three
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__hero--03 {
+
+
+    // Row Height
+    &.row,
+    .row__container {
+        min-height: $row__height--full;
+    }
+
+
+    // Row Padding
+    &.row {
+        background-size: cover;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        padding: $row__padding--medium;
+        width: $row__width--full;
+    }
+
+
+    .row__column {
+        padding: 0;
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+.row__hero--03 {
+
+
+    .row__column {
+        z-index: initial;
+    }
+
+
+    // Navigation
+    .widget--compound__navigation {
+        @include box-sizing(border-box);
+        @include flex-display;
+        @include justify-content(space-between);
+        width: 100%;
+    }
+
+
+    @import "rows/navigation/navigation-02/navigation-02";
+}

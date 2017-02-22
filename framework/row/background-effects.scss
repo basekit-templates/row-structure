@@ -54,35 +54,8 @@
         bottom: 0;
         right: 0;
     }
-
-
-    h1 {
-        color: white;
-        font-size: 72px;
-        line-height: 1.1;
-    }
-
-
-    h4 {
-        color: fade-out(white, .75);
-        font-size: 24px;
-    }
 }
 
-
-.gradient {
-    h1 {
-        color: white;
-        font-size: 72px;
-        line-height: 1.1;
-    }
-
-
-    h4 {
-        color: fade-out(white, .25);
-        font-size: 24px;
-    }
-}
 
 
 // Blur
@@ -154,7 +127,6 @@
 
 
 .filter__pre--soft-light {
-    opacity: 0.85;
 
 
     &:before {
@@ -163,9 +135,9 @@
         -webkit-filter: grayscale(100%) contrast(8);
         filter: grayscale(100%) contrast(8);
         mix-blend-mode: soft-light;
+        opacity: 0.4;
     }
 }
-
 
 
 .filter__pre--soft-light--contrast {

@@ -1,0 +1,135 @@
+
+// -------------------------------------
+// Gallery: Design Three
+// -------------------------------------
+
+
+
+//  Media Queries
+// -------------------------------------
+
+$break-small: 480px;
+$break-large: 768px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}
+
+
+
+
+// Row Styling
+// -----------------------------
+
+
+.row__gallery--03 {
+
+
+    // Row Height
+    &.row {
+        min-height: $row__height--default;
+    }
+
+
+    // Row Padding
+    &.row {
+        padding: $row__padding--large;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
+    }
+}
+
+
+
+
+// Widget Styling
+// -----------------------------
+
+.row__gallery--03 {
+
+    .gallery__gallery-list {
+        @include box-sizing(border-box);
+        @include flex-display;
+        @include flex(0 0 auto);
+        @include flex-wrap(wrap);
+        max-width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .gallery__gallery-item {
+        @include flex-basis(33.33333333%);
+        padding: 30px 50px;
+
+        @include respond-to(tablet) {
+            @include flex-basis(50%);
+            padding: 30px 40px;
+        }
+
+        @include respond-to(mobile) {
+            @include flex-basis(100%);
+        }
+    }
+
+
+    .gallery__image-link {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        padding-bottom: 100%;
+        width: 100%;
+        @include border-radius(500px);
+    }
+
+
+    .gallery__image {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    .gallery__caption {
+        background: transparent !important;
+        @include flex-display;
+        @include align-items(center);
+        @include justify-content(center);
+
+        margin-top: 30px;
+        text-align: center;
+       
+    }
+
+
+    .gallery__caption-link {
+        text-decoration: none;
+    }
+
+
+    .image-title,
+    .image-description {
+        display: block;
+        text-decoration: none;
+    }
+
+    &.light .image-title {
+        color: #212121;
+    }
+
+    &.light .image-description {
+        color: #808080;
+    }
+}

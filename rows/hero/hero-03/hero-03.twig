@@ -1,0 +1,46 @@
+
+<div class="bk-row  row  row__hero  row__hero--03  filter  filter__pre--soft-light  accent">
+    <div class="bk-row__container  row__container">
+
+        <div class="row__column  row__column--full  align--top-center  horizontal-alignment--space-between">
+
+            <div class="widget  widget--compound  widget--compound__navigation">
+                {{widget('companyname', 'header-companyname', {"business": "Studio"})|raw}}
+
+                {{widget('extendednavigation', 'navigation', {})|raw}}
+
+                <div class="navigation-icon--container">
+                    <input id="click" name="exit" type="checkbox" />
+                    <label for="click"><span class="navigation-icon"></span></label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row__column  row__column--full  align--middle-left  vertical-alignment--space-between">
+
+            <div class="widget  compound-widget">
+                {{widget('content', 'header-content', {
+                    content: '<h1>Modern work space for your business.</h1>'
+                })|raw}}
+            </div>
+
+            {{widget('profile', 'profilearea', {
+                'profileType':'email'
+            })|raw}}
+
+        </div>
+
+    </div>
+
+    {% block scripts %}
+
+        <script>
+            $(document).on("click", ".navigation-icon--container input", function() {
+                $( "body" ).toggleClass( "navigation-open" );
+            });
+        </script>
+
+    {% endblock %}
+
+</div>

@@ -1,0 +1,29 @@
+
+// -------------------------------------
+// Row: Demo UI
+// -------------------------------------
+
+
+
+
+// Demo UI - Row Selector
+// -----------------------------
+
+
+.row-select {
+    position: relative;
+}
+
+
+.layout-selector {
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 3;
+
+
+    fieldset {
+        padding: 0;
+    }
+}

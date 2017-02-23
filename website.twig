@@ -21,7 +21,7 @@
 {% include "rows/contact/contact-03.twig" %}
 
 <!-- Footer - 01 -->
-{% include "rows/footer/footer-01.twig" %}
+{% include "rows/footer/footer-02/footer-02.twig" %}
 
 
 {% endblock %}
@@ -54,6 +54,10 @@
 
         $('.row__footer--01').click( function(){
           $('.row__footer--01').toggleClasses(['light', 'accent', 'dark']);
+        });
+
+        $('.row__footer--02').click( function(){
+          $('.row__footer--02').toggleClasses(['light', 'accent', 'dark']);
         });
     </script>
 {% endblock %}

@@ -28,6 +28,9 @@
     // Row Container Width
     .row__container {
         width: $row__width--wide;
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+        }
     }
 }
 
@@ -45,6 +48,14 @@
         &__gallery-item {
             padding: 10px 10px 0;
             width: 33.33%;
+
+            @media only screen and (max-width: 1024px) {
+                width: 50%;
+            }
+
+            @include respond-to(mobile) {
+                width: 100%;
+            }
 
             &:hover .gallery__caption {
                 opacity: 1;

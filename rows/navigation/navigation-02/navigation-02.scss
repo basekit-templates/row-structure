@@ -1,13 +1,31 @@
 
 // -----------------------------
-//  Navigation
+//  Navigation: Design Two
 // -----------------------------
 
 
 
-//  Navigation Positioning
+//  Global: Navigation
 // --------------------------
 
+
+[data-widget-type="extendednavigation"] {
+
+
+    .light & {
+        background: color(color-light, $color__navigation--background);
+    }
+
+
+    .accent & {
+        background: color(color-accent, $color__navigation--background);
+    }
+
+
+    .dark & {
+        background: color(color-dark, $color__navigation--background);
+    }
+}
 
 
 // Positions navigation to the right of the feature and vertically center to the page

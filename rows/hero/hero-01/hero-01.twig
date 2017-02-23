@@ -1,20 +1,20 @@
 
-<div class="bk-row  row  row__hero  row__hero--01  row__overlay  bg--cover  light">
+<div class="bk-row  row  row__hero  row__hero--01  light">
     <div class="bk-row__container  row__container">
 
-        <div class="row__column  row__column--full  align--middle-center">
 
-            <div class="widget  widget--compound  widget--compound__navigation">
+        <div class="row__column  row__column--full  align--top-middle">
+            <div class="widget  compound-widget">
                 {{widget('companyname', 'header-companyname', {"business": "Studio"})|raw}}
                 {{widget('extendednavigation', 'navigation', {})|raw}}
             </div>
-
         </div>
 
 
-        <div class="row__column  row__column--full  align--middle-center">
+        <div class="row__column  row__column--full ">
             {{widget('image', 'hero-image', {
-                'src': asset("templates/bristol-sports.jpg")
+                'src': asset("templates/bristol-sports.jpg"),
+                'description': 'Extensive Indoor and Outdoor Sports and Social Facilities. Call now to look around the facilities and make a reservation'
             })|raw}}
         </div>
 

@@ -64,10 +64,6 @@
 
 // Image Title
 .imagewidget__image-title {
-    background: $color__image-title--background;
-    border: $style__image-title--border;
-    @include box-shadow($style__image-title--box-shadow);
-    color: $color__image-title--text;
     font-family: $font__image-title--font-family;
     font-size: $font__image-title--font-size;
     font-weight: $font__image-title--font-weight;
@@ -81,10 +77,6 @@
 
 // Image Description
 .imagewidget__image-description {
-    background: $color__image-description--background;
-    border: $style__image-description--border;
-    @include box-shadow($style__image-description--box-shadow);
-    color: $color__image-description--text;
     font-family: $font__image-description--font-family;
     font-size: $font__image-description--font-size;
     font-weight: $font__image-description--font-weight;
@@ -93,6 +85,24 @@
     padding: $style__image-description--padding;
     text-shadow: $style__image-description--text-shadow;
     text-transform: $font__image-description--text-transform;
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__image-description--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__image-description--text);
+    }
+
+
+    // Dark
+    .dark3 & {
+        color: color(color-dark, $color__image-description--text);
+    }
 }
 
 

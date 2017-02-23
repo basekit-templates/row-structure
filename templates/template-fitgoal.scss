@@ -44,7 +44,7 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--background: $color--darkest,
+        $color__navigation--text: $color--dark,
         $color__navigation-toggle-icon--background: $color--dark,
 
 
@@ -53,8 +53,6 @@ $colors: (
 
 
         // Buttons
-        $color__button--background: $color--accent,
-        $color__button--background--hover: darken($color--accent, 5%),
         $color__button--text: $color--lightest,
         $color__button--text--hover: $color--lightest,
 
@@ -65,9 +63,9 @@ $colors: (
 
 
         // Image
-        $color__image--background: $color--accent,
+        $color__image--background: $color--light,
         $color__image-title--text: $color--accent,
-        $color__image-description--text: $color--accent,
+        $color__image-description--text: $color--darkest,
 
 
         // Gallery
@@ -112,7 +110,7 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--background: $color--accent,
+        $color__navigation--text: $color--light,
         $color__navigation-toggle-icon--background: $color--light,
 
 
@@ -129,8 +127,8 @@ $colors: (
 
         // Image
         $color__image--background: $color--accent,
-        $color__image-title--text: $color--accent,
-        $color__image-description--text: $color--accent,
+        $color__image-title--text: $color--lightest,
+        $color__image-description--text: $color--lightest,
 
 
         // Gallery
@@ -177,7 +175,7 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--background: $color--lightest,
+        $color__navigation--text: $color--light,
         $color__navigation-toggle-icon--background: $color--light,
 
 
@@ -198,9 +196,9 @@ $colors: (
 
 
         // Image
-        $color__image--background: $color--accent,
-        $color__image-title--text: $color--accent,
-        $color__image-description--text: $color--accent,
+        $color__image--background: $color--darkest,
+        $color__image-title--text: $color--lightest,
+        $color__image-description--text: $color--lightest,
 
 
         // Gallery
@@ -252,18 +250,18 @@ $font__h1--line-height: 60px;
 
 // Heading Two
 $font__h2--font-family: $font__heading;
-$font__h2--font-size: 46px;
+$font__h2--font-size: 38px;
 $font__h2--font-weight: 700;
 $font__h2--letter-spacing: 0;
-$font__h2--line-height: 46px;
+$font__h2--line-height: 48px;
 
 
 // Heading Three
 $font__h3--font-family: $font__heading;
-$font__h3--font-size: 32px;
+$font__h3--font-size: 28px;
 $font__h3--font-weight: 700;
 $font__h3--letter-spacing: 0;
-$font__h3--line-height: 38px;
+$font__h3--line-height: 36px;
 
 
 // Heading Four
@@ -280,6 +278,13 @@ $font__p--font-size: 18px;
 $font__p--font-weight: 500;
 $font__p--line-height: 32px;
 $font__p--letter-spacing: 1px;
+
+
+// Navgation
+$font__navigation--font-family: $font__body;
+$font__navigation--font-size: 16px;
+$font__navigation--font-weight: 500;
+$font__navigation--letter-spacing: 0;
 
 
 // Buttons
@@ -303,9 +308,9 @@ $font__companyname--letter-spacing: 1px;
 
 // Form
 $font__form-legend--font-family: $font__body;
-$font__form-legend--font-size: 32px;
+$font__form-legend--font-size: 28px;
 $font__form-legend--font-weight: 700;
-$font__form-legend--line-height: 38px;
+$font__form-legend--line-height: 36px;
 
 
 // Gallery

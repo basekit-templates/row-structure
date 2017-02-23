@@ -28,11 +28,6 @@
     .row__container {
         width: $row__width--contained;
     }
-
-
-    &.row__overlay:after {
-        background: rgba(0,0,0, 0.65);
-    }
 }
 
 

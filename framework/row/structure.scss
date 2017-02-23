@@ -30,6 +30,13 @@ $row__padding--small: 15px;
 $row__padding--none: 0;
 
 
+@include respond-to(tablet) {
+    $row__padding--large: 30px;
+    $row__padding--medium: 15px;
+    $row__padding--small: 15px;
+}
+
+
 
 
 //  Grid (Flex)

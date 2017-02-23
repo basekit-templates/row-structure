@@ -60,7 +60,7 @@
 
 
         .company-link {
-            @include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
+            //@include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
             color: color(color-light, $color__companyname--text);
         }
 
@@ -76,7 +76,7 @@
 
 
         .company-link {
-            @include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
+            //@include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
             color: color(color-light, $color__companyname--text);
         }
 
@@ -92,7 +92,7 @@
 
 
         .company-link {
-            @include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
+            //@include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
             color: color(color-light, $color__companyname--text);
         }
 

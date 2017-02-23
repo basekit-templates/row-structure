@@ -89,7 +89,7 @@ $colors: (
 
 
         // Social Icons
-        $color__social-icons--background: $color--darkest,
+        $color__social-icons--background: $transparent,
         $color__social-icons--text: $color--light,
         $color__social-icons--background--hover: $transparent,
         $color__social-icons--text--hover: $color--lightest
@@ -339,5 +339,6 @@ $style__form-input--padding: 10px 10px 10px 0;
 
 
 // Social Icons
-$style__social-icons--border-radius: 100px;
-$style__social-icons--border-radius--hover: 100px;
+$style__form-input--border: 2px solid;
+$style__form-input--border-direction: all;
+$style__social-icons--box-shadow: inset 0 0 0 3px;

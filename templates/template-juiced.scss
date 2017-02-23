@@ -25,12 +25,13 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--lightest,
-        $row__hero--background-color: $color--light,
+        $color__row--background: $color--lightest,
+        $color__hero--background: $color--lightest,
 
 
         // Companyname
         $color__companyname--text: $color--accent,
+        $color__companyname--border: $color--accent,
 
 
         // Typography
@@ -39,14 +40,14 @@ $colors: (
         $color__h3--text: $color--accent,
         $color__h4--text: darken($color--light, 30%),
         $color__p--text: darken($color--light, 25%),
-        $color__link--text: $color__p--text,
+        $color__link--text: $color--dark,
 
 
         // Navigation
-        $color__navigation--background: $color--lightest,
-        $color__navigation--text: $color--darkest,
-        $color__navigation-toggle--background: darken($color--accent, 20%),
-        $color__navigation-toggle-icon--background: $color--lightest,
+        $color__navigation--text: $color--dark,
+        $color__navigation-toggle--background: darken($color--light, 20%),
+        $color__navigation-toggle-icon--background: $color--dark,
+
 
         // Notch
         $color__content-notch--background: $color--accent,
@@ -85,17 +86,19 @@ $colors: (
         $color__social-icons--background: $color--accent,
         $color__social-icons--background--hover: darken($color--accent, 10%),
         $color__social-icons--text: $color--lightest,
-        $color__social-icons--text--hover: $color--lightest,
+        $color__social-icons--text--hover: $color--lightest
     ),
     color-accent: (
 
 
         // Row
-        $row__background-color: $color--accent,
+        $color__row--background: $color--accent,
+        $color__hero--background: $color--accent,
 
 
         // Companyname
         $color__companyname--text: $color--lightest,
+        $color__companyname--border: $color--lightest,
 
 
         // Typography
@@ -108,14 +111,13 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--background: $color--lightest,
-        $color__navigation--text: $color--darkest,
+        $color__navigation--text: $color--lightest,
         $color__navigation-toggle--background: darken($color--accent, 20%),
         $color__navigation-toggle-icon--background: $color--lightest,
 
 
         // Notch
-        $color__content-notch--background: $color--darkest,
+        $color__content-notch--background: $color--light,
 
 
         // Buttons
@@ -152,21 +154,28 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--dark,
-        $row__hero--background-color: $color--darkest,
+        $color__row--background: $color--light,
+        $color__hero--background: $color--darkest,
 
 
         // Companyname
-        $color__companyname--text: $color--accent,
+        $color__companyname--text: $color--lightest,
+        $color__companyname--border: $color--lightest,
 
 
         // Typography
-        $color__h1--text: $color--accent,
-        $color__h2--text: $color--accent,
-        $color__h3--text: $color--accent,
-        $color__h4--text: darken($color--light, 35%),
-        $color__p--text: darken($color--light, 30%),
-        $color__link--text: $color__p--text,
+        $color__h1--text: $color--lightest,
+        $color__h2--text: $color--lightest,
+        $color__h3--text: $color--lightest,
+        $color__h4--text: darken($color--light, 25%),
+        $color__p--text: darken($color--light, 25%),
+        $color__link--text: $color--light,
+
+
+        // Navigation
+        $color__navigation--text: $color--light,
+        $color__navigation-toggle--background: lighten($color--darkest, 20%),
+        $color__navigation-toggle-icon--background: $color--light,
 
 
         // Notch
@@ -181,7 +190,7 @@ $colors: (
 
 
         // Scroll
-        $color__scroll--text: darken($color--light, 50%),
+        $color__scroll--text: darken($color--light, 25%),
         $color__scroll--icon: $color--accent,
 
 
@@ -316,6 +325,8 @@ $font__gallery-description--line-height: 24px;
 
 
 // Companyname
+$style__companyname--border: 2px solid;
+$style__companyname--border-direction: bottom;
 
 
 // Button

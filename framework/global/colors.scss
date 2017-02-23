@@ -88,6 +88,8 @@ $colors: (
         // Social Icons
         $color__social-icons--background: $transparent,
         $color__social-icons--background--hover: $transparent,
+        $color__social-icons--border: $transparent,
+        $color__social-icons--box-shadow: none,
         $color__social-icons--icon: $color--accent,
         $color__social-icons--icon--hover: darken($color--accent, 10%),
         $color__social-icons--text: $color--darkest,

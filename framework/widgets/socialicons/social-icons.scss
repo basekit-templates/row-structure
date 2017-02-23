@@ -61,7 +61,10 @@
     // Light
     .light & {
         background: color(color-light, $color__social-icons--background);
+        border: $style__social-icons--border  color(color-light, $color__social-icons--border);
+        @include box-shadow($style__social-icons--box-shadow  color(color-light, $color__social-icons--box-shadow));
         color: color(color-light, $color__social-icons--text);
+        outline: $style__social-icons--outline  color(color-light, $color__social-icons--outline);
     }
 
 

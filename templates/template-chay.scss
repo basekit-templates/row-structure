@@ -29,7 +29,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--light,
+        $color__row--background: $color--light,
+        $color__hero--background: $color--light,
 
 
         // Companyname
@@ -44,6 +45,11 @@ $colors: (
         $color__h4--text: fade-out($color--darkest, .4),
         $color__p--text: fade-out($color--darkest, .4),
         $color__link--text: $color--accent--secondary,
+
+
+        // Navigation
+        $color__navigation--text: $color--light,
+        $color__navigation-toggle-icon--background: $color--dark,
 
 
         // Notch
@@ -62,6 +68,12 @@ $colors: (
         $color__scroll--icon: $color--accent,
 
 
+        // Image
+        $color__image--background: $color--light,
+        $color__image-title--text: $color--accent,
+        $color__image-description--text: $color--darkest,
+
+
         // Gallery
         $color__gallery-caption--background: fade-out($color--darkest, .15),
         $color__gallery-title--text: $color--lightest,
@@ -69,6 +81,7 @@ $colors: (
 
 
         // Form
+        $color__form-legend--text: $color--darkest,
         $color__form-label--text: fade-out($color--darkest, .4),
         $color__form-input--background: $transparent,
         $color__form-input--border: fade-out($color--darkest, .65),
@@ -86,11 +99,12 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--accent,
+        $color__row--background: $color--accent,
+        $color__hero--background: $color--accent,
 
 
         // Companyname
-        $color__companyname--border: $color--lightest,
+        $color__companyname--border: fade-out($color--dark, .4),
         $color__companyname--text: $color--darkest,
 
 
@@ -100,7 +114,12 @@ $colors: (
         $color__h3--text: $color--darkest,
         $color__h4--text: fade-out($color--darkest, .2),
         $color__p--text: fade-out($color--dark, .1),
-        $color__link--text: $color--lightest,
+        $color__link--text: $color--dark,
+
+
+        // Navigation
+        $color__navigation--text: $color--lightest,
+        $color__navigation-toggle-icon--background: $color--dark,
 
 
         // Notch
@@ -119,18 +138,25 @@ $colors: (
         $color__scroll--icon: $color--dark,
 
 
+        // Image
+        $color__image--background: $color--darkest,
+        $color__image-title--text: $color--lightest,
+        $color__image-description--text: $color--lightest,
+
+
         // Gallery
-        $color__gallery-caption--background: fade-out($color--accent, .15),
-        $color__gallery-title--text: $color--darkest,
-        $color__gallery-description--text: $color--dark,
+        $color__gallery-caption--background: fade-out($color--darkest, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light,
 
 
         // Form
-        $color__form-label--text: fade-out($color--lightest, .4),
+        $color__form-legend--text: $color--darkest,
+        $color__form-label--text: fade-out($color--darkest, .4),
         $color__form-input--background: $transparent,
-        $color__form-input--border: fade-out($color--lightest, .65),
-        $color__form-input--border--hover: fade-out($color--lightest, .5),
-        $color__form--text: fade-out($color--lightest, .25),
+        $color__form-input--border: fade-out($color--darkest, .65),
+        $color__form-input--border--hover: fade-out($color--darkest, .5),
+        $color__form--text: fade-out($color--darkest, .25),
 
 
         // Social Icons
@@ -143,7 +169,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--dark,
+        $color__row--background: $color--dark,
+        $color__hero--background: $color--dark,
 
 
         // Companyname
@@ -158,6 +185,11 @@ $colors: (
         $color__h4--text: fade-out($color--lightest, .2),
         $color__p--text: fade-out($color--lightest, .05),
         $color__link--text: $color--accent,
+
+
+        // Navigation
+        $color__navigation--text: $color--dark,
+        $color__navigation-toggle-icon--background: $color--light,
 
 
         // Notch
@@ -256,6 +288,14 @@ $font__p--font-size: 18px;
 $font__p--font-weight: 400;
 $font__p--line-height: 32px;
 $font__p--letter-spacing: 1px;
+
+
+// Navgation
+$font__navigation--font-family: $font__body;
+$font__navigation--font-size: 19px;
+$font__navigation--font-weight: 500;
+$font__p--line-height: 32px;
+$font__navigation--letter-spacing: 0;
 
 
 // Buttons

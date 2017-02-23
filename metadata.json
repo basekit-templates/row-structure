@@ -123,8 +123,11 @@
         "socialicons": {
             "color__social-icons--background": "color__social-icons--background",
             "color__social-icons--background--hover": "color__social-icons--background--hover",
+            "color__social-icons--border": "color__social-icons--border",
+            "color__social-icons--box-shadow": "color__social-icons--box-shadow",
             "color__social-icons--icon": "color__social-icons--icon",
             "color__social-icons--icon--hover": "color__social-icons--icon--hover",
+            "color__social-icons--outline": "color__social-icons--outline",
             "color__social-icons--text": "color__social-icons--text",
             "color__social-icon--text": "color__social-icon--text",
             "color__social-icons--text--hover": "color__social-icons--text--hover"

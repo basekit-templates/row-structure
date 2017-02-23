@@ -26,7 +26,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--lightest,
+        $color__row--background: $color--lightest,
+        $color__hero--background: $color--lightest,
 
 
         // Companyname
@@ -41,6 +42,11 @@ $colors: (
         $color__h4--text: fade-out($color--darkest, .4),
         $color__p--text: fade-out($color--darkest, .4),
         $color__link--text: $color--accent,
+
+
+        // Navigation
+        $color__navigation--text: $color--dark,
+        $color__navigation-toggle-icon--background: $color--dark,
 
 
         // Notch
@@ -60,6 +66,12 @@ $colors: (
         // Scroll
         $color__scroll--text: $color--dark,
         $color__scroll--icon: $color--accent,
+
+
+        // Image
+        $color__image--background: $color--light,
+        $color__image-title--text: $color--accent,
+        $color__image-description--text: $color--darkest,
 
 
         // Gallery
@@ -86,7 +98,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--accent,
+        $color__row--background: $color--accent,
+        $color__hero--background: $color--accent,
 
 
         // Companyname
@@ -143,7 +156,8 @@ $colors: (
 
 
         // Row
-        $row__background-color: $color--dark,
+        $color__row--background: $color--darkest,
+        $color__hero--background: $color--darkest,
 
 
         // Companyname
@@ -218,15 +232,16 @@ $font__icon: 'FontAwesome';
 
 // Heading One
 $font__h1--font-family: $font__heading;
-$font__h1--font-size: 50px;
+$font__h1--font-size: 44px;
 $font__h1--font-weight: 400;
 $font__h1--letter-spacing: 0;
-$font__h1--line-height: 60px;
+$font__h1--line-height: 52px;
+$font__h1--text-transform: uppercase;
 
 
 // Heading Two
 $font__h2--font-family: $font__heading;
-$font__h2--font-size: 38px;
+$font__h2--font-size: 36px;
 $font__h2--font-weight: 400;
 $font__h2--letter-spacing: 1px;
 $font__h2--line-height: 46px;

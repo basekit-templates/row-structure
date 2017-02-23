@@ -135,24 +135,6 @@ label {
 }
 
 
-// Placeholder Text
-::-webkit-input-placeholder {
-    color: $color__form--text;
-}
-
-::-moz-placeholder {
-    color: $color__form--text;
-}
-
-:-ms-input-placeholder {
-    color: $color__form--text;
-}
-
-:-moz-placeholder {
-    color: $color__form--text;
-}
-
-
 input,
 textarea,
 select {
@@ -227,6 +209,26 @@ select {
             outline : $style__form-input--outline  color(color-dark, $color__form-input--outline);
         }
     }
+}
+
+
+::-webkit-input-placeholder {
+    color: $transparent;
+}
+
+
+::-moz-placeholder {
+    color: $transparent;
+}
+
+
+:-ms-input-placeholder {
+    color: $transparent;
+}
+
+
+:-moz-placeholder {
+    color: $transparent;
 }
 
 

@@ -43,6 +43,11 @@ $column--offset-value: 5% !default;
 .row__column {
 
 
+    @include respond-to(mobile) {
+        @include flex-basis(100%!important);
+    }
+
+
     // Remove first column padding
     &:first-child {
         padding-left: 0;

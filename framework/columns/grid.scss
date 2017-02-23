@@ -45,12 +45,19 @@ $column--offset-value: 5% !default;
 
     @include respond-to(mobile) {
         @include flex-basis(100%!important);
+        padding: 30px 0 0!important;
     }
 
 
     // Remove first column padding
     &:first-child {
         padding-left: 0;
+
+
+        @include respond-to(mobile) {
+            @include flex-basis(100%!important);
+            padding-top: 0!important;
+        }
     }
 
 

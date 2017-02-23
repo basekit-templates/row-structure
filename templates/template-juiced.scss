@@ -44,7 +44,7 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--text: $color--dark,
+        $color__navigation--text: $color--lightest,
         $color__navigation-toggle--background: darken($color--light, 20%),
         $color__navigation-toggle-icon--background: $color--dark,
 
@@ -154,7 +154,7 @@ $colors: (
 
 
         // Row
-        $color__row--background: $color--light,
+        $color__row--background: $color--darkest,
         $color__hero--background: $color--darkest,
 
 
@@ -173,7 +173,7 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--text: $color--light,
+        $color__navigation--text: $color--darkest,
         $color__navigation-toggle--background: lighten($color--darkest, 20%),
         $color__navigation-toggle-icon--background: $color--light,
 
@@ -202,7 +202,7 @@ $colors: (
 
         // Form
         $color__form-fieldset--background: $color--lightest,
-        $color__form-fieldset--box-shadow: darken($color--light, 10%),
+        $color__form-fieldset--box-shadow: darken($color--darkest, 15%),
         $color__form-legend--text: $color--accent,
         $color__form-label--text: darken($color--light, 40%),
         $color__form-input--background: $color--light,
@@ -279,6 +279,13 @@ $font__p--line-height: 32px;
 $font__p--letter-spacing: 1px;
 
 
+// Navgation
+$font__navigation--font-family: $font__body;
+$font__navigation--font-size: 16px;
+$font__navigation--font-weight: 500;
+$font__navigation--letter-spacing: 0;
+
+
 // Buttons
 $font__button--font-family: $font__heading;
 $font__button--font-size: 16px;
@@ -332,9 +339,6 @@ $style__companyname--border-direction: bottom;
 // Button
 $style__button--border-radius: 40px;
 $style__button--padding: 16px 25px;
-
-
-// Gallery
 
 
 // Form

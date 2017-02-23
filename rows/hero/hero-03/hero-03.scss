@@ -27,7 +27,7 @@
 
     // Row Container Width
     .row__container {
-        padding: $row__padding--medium;
+        padding: $row__padding--large;
         width: $row__width--full;
     }
 
@@ -62,4 +62,9 @@
 
 
     @import "rows/navigation/navigation-02/navigation-02";
+
+
+    .compound-widget {
+        max-width: 400px;
+    }
 }

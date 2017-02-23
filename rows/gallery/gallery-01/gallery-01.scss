@@ -54,6 +54,13 @@
         @include flex-basis(33.33333333%);
         position: relative;
 
+        @include respond-to(tablet) {
+            @include flex-basis(50%);
+        }
+
+        @media only screen and (max-width: 480px) {
+            @include flex-basis(100%);
+        }
 
         &:hover .gallery__caption {
             opacity: 1;

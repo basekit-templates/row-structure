@@ -34,6 +34,51 @@
 
 
 
+// Colour Application
+// -----------------------------
+
+
+.row__gallery--03 {
+    
+    &.light {
+
+        .gallery__image-title {
+            color: $color--darkest;
+        }
+
+        .gallery__image-description {
+            color: $color--dark;
+        }
+    }
+
+
+    &.accent {
+
+        .gallery__image-title {
+            color: $color--lightest;
+        }
+
+        .gallery__image-description {
+            color: $color--light;
+        }
+    }
+
+
+    &.dark {
+
+        .gallery__image-title {
+            color: $color--lightest;
+        }
+
+        .gallery__image-description {
+            color: $color--light;
+        }
+    }
+}
+
+
+
+
 // Widget Styling
 // -----------------------------
 

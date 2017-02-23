@@ -9,20 +9,25 @@
 // -----------------------------
 
 
-.navigation-item .item-name {
+&.light {
 
-
-    .light & {
+    .navigation-item .item-name {
         color: color(color-light, $color__navigation--text);
     }
+}
 
 
-    .accent & {
+&.accent {
+
+    .navigation-item .item-name {
         color: color(color-light, $color__navigation--text);
     }
+}
 
 
-    .dark & {
+&.dark {
+
+    .navigation-item .item-name {
         color: color(color-light, $color__navigation--text);
     }
 }

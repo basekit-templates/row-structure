@@ -5,25 +5,31 @@
 
 
 
+
 //  Global: Navigation
 // --------------------------
 
 
-[data-widget-type="extendednavigation"] {
+&.light {
 
-
-    .light & {
-        background: color(color-light, $color__navigation--background);
+    [data-widget-type="extendednavigation"] {
+        background: $color--darkest;
     }
+}
 
 
-    .accent & {
-        background: color(color-accent, $color__navigation--background);
+&.accent {
+    
+    [data-widget-type="extendednavigation"] {
+        background: $color--accent;
     }
+}
 
 
-    .dark & {
-        background: color(color-dark, $color__navigation--background);
+&.dark {
+    
+    [data-widget-type="extendednavigation"] {
+        background: $color--lightest;
     }
 }
 

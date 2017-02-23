@@ -53,6 +53,7 @@ $colors: (
 
 
         // Buttons
+        $color__button--background: $color--accent,
         $color__button--text: $color--lightest,
         $color__button--text--hover: $color--lightest,
 
@@ -78,6 +79,7 @@ $colors: (
         $color__form-label--text: fade-out($color--darkest, .4),
         $color__form-input--border: fade-out($color--dark, .65),
         $color__form-input--border--hover: fade-out($color--dark, .75),
+        $color__form-button--background: $color--accent,
         $color__form--text: fade-out($color--darkest, .25),
 
 
@@ -132,7 +134,7 @@ $colors: (
 
 
         // Gallery
-        $color__gallery-caption--background: fade-out($color--accent, .15),
+        $color__gallery-caption--background: fade-out($color--darkest, .15),
         $color__gallery-title--text: $color--lightest,
         $color__gallery-description--text: $color--light,
 
@@ -175,7 +177,7 @@ $colors: (
 
 
         // Navigation
-        $color__navigation--text: $color--light,
+        $color__navigation--text: $color--dark,
         $color__navigation-toggle-icon--background: $color--light,
 
 
@@ -202,9 +204,9 @@ $colors: (
 
 
         // Gallery
-        $color__gallery-caption--background: fade-out($color--lightest, .15),
-        $color__gallery-title--text: $color--darkest,
-        $color__gallery-description--text: $color--dark,
+        $color__gallery-caption--background: fade-out($color--accent, .15),
+        $color__gallery-title--text: $color--lightest,
+        $color__gallery-description--text: $color--light,
 
 
         // Form

@@ -10,8 +10,8 @@
     <form class="layout-selector">
         <fieldset>
             <select class="layout-choice--hero">
-                <option value="row__hero--02">Hero - 1</option>
-                <option value="row__hero--03">Hero - 2</option>
+                <option value="row__hero--02">Hero - 2</option>
+                <option value="row__hero--03">Hero - 1</option>
             </select>
         </fieldset>
     </form>
@@ -67,20 +67,20 @@
     <form class="layout-selector">
         <fieldset>
             <select class="layout-choice--gallery">
-                <option value="row__gallery--01">Gallery 01</option>
                 <option value="row__gallery--02">Gallery 02</option>
+                <option value="row__gallery--01">Gallery 01</option>
                 <option value="row__gallery--03">Gallery 03</option>
             </select>
         </fieldset>
     </form>
 
 
-    <!-- Gallery Row 01 -->
-    {% include "rows/gallery/gallery-01/gallery-01.twig" %}
-
-
     <!-- Gallery Row 02 -->
     {% include "rows/gallery/gallery-02/gallery-02.twig" %}
+
+
+    <!-- Gallery Row 01 -->
+    {% include "rows/gallery/gallery-01/gallery-01.twig" %}
 
 
     <!-- Gallery Row 03 -->
@@ -129,19 +129,18 @@
     <form class="layout-selector">
         <fieldset>
             <select class="layout-choice--footer">
-                <option value="row__footer--01">Footer 01</option>
                 <option value="row__footer--02">Footer 02</option>
+                <option value="row__footer--01">Footer 01</option>
             </select>
         </fieldset>
     </form>
 
+    <!-- Footer Row 02 -->
+    {% include "rows/footer/footer-02/footer-02.twig" %}
+
 
     <!-- Footer Row 01 -->
     {% include "rows/footer/footer-01/footer-01.twig" %}
-
-
-    <!-- Footer Row 02 -->
-    {% include "rows/footer/footer-02/footer-02.twig" %}
 
 
 </div>

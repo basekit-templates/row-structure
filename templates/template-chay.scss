@@ -34,7 +34,6 @@ $colors: (
 
 
         // Companyname
-        $color__companyname--border: $color--accent,
         $color__companyname--text: $color--darkest,
 
 
@@ -250,10 +249,10 @@ $font__icon: 'FontAwesome';
 
 // Heading One
 $font__h1--font-family: $font__heading;
-$font__h1--font-size: 50px;
+$font__h1--font-size: 64px;
 $font__h1--font-weight: 700;
 $font__h1--letter-spacing: 0;
-$font__h1--line-height: 60px;
+$font__h1--line-height: 80px;
 
 
 // Heading Two
@@ -262,7 +261,6 @@ $font__h2--font-size: 38px;
 $font__h2--font-weight: 700;
 $font__h2--letter-spacing: 1px;
 $font__h2--line-height: 46px;
-$font__h2--text-transform: uppercase;
 
 
 // Heading Three
@@ -271,7 +269,6 @@ $font__h3--font-size: 30px;
 $font__h3--font-weight: 700;
 $font__h3--letter-spacing: 1px;
 $font__h3--line-height: 38px;
-$font__h2--text-transform: uppercase;
 
 
 // Heading Four
@@ -315,7 +312,7 @@ $font__companyname--letter-spacing: 1px;
 
 // Form
 $font__form-legend--font-family: $font__heading;
-$font__form-legend--font-size: 32px;
+$font__form-legend--font-size: 30px;
 $font__form-legend--font-weight: 400;
 $font__form-legend--line-height: 38px;
 
@@ -336,12 +333,6 @@ $font__gallery-description--line-height: 24px;
 
 // Style Variables
 // -----------------------------
-
-
-// Companyname
-$style__companyname--border: 2px solid;
-$style__companyname--border-direction: bottom;
-$style__companyname--padding: 0 0 6px 0;
 
 
 // Button

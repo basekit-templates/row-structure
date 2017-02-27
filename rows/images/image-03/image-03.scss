@@ -1,0 +1,84 @@
+
+// -------------------------------------
+// Image: Design One
+// -------------------------------------
+
+
+
+// Row Styling
+// -----------------------------
+
+
+
+.row__image--03 {
+    //background: $color--darkest;
+
+    // Row Height
+    &.row {
+        min-height: $row__height--full;
+        padding: $row__padding--none;
+
+        @include respond-to(tablet) {
+            min-height: $row__height--default;
+        }
+    }
+
+
+    // Row Container Width
+    .row__container {
+        width: $row__width--contained;
+                @include respond-to(tablet) {
+            padding: $column__padding--small;
+        }
+    }
+
+
+    &.row__overlay:after {
+        background: rgba(0,0,0, 0.65);
+    }
+
+    .row__column {
+        @include respond-to(tablet) {
+            padding: $column__padding--none;
+        }
+    }
+}
+
+
+
+// Widget Styling
+// -----------------------------
+
+
+// Full Height
+
+
+.row__image--03 {
+
+    .widget {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &:first-child {
+            padding-top: 40px;
+        }
+
+
+        &:last-child {
+            padding-bottom: 40px;
+        }
+
+
+        &__image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+            width: 100%;
+            @include respond-to(tablet) {
+                height: 350px;
+            }
+        }
+    }
+
+}

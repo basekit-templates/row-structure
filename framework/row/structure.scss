@@ -23,11 +23,17 @@ $row__width--wide: 90%;
 $row__width--contained: 1100px;
 
 
-// Spacing
+// Row Spacing
 $row__padding--large: 60px;
 $row__padding--medium: 30px;
 $row__padding--small: 15px;
 $row__padding--none: 0;
+
+// Column Spacing
+$column__padding--large: 60px;
+$column__padding--medium: 30px;
+$column__padding--small: 15px;
+$column__padding--none: 0;
 
 
 @include respond-to(tablet) {
@@ -70,6 +76,10 @@ $row__padding--none: 0;
     margin: 0 auto;
     min-height: $row__height--default;
 
+    @include respond-to(tablet) {
+        min-height: $row__height--default;
+    }
+
 
     // Reverses Row Content (Invert)
     &--reverse {
@@ -86,13 +96,8 @@ $row__padding--none: 0;
 
 // Row / Container Height
 .row {
-// .row__container {
-    min-height: $row__height--default;
-}
-
-
-.row {
     position: relative;
+    min-height: $row__height--default;
 }
 
 

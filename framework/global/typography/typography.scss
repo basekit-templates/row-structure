@@ -1,0 +1,298 @@
+
+// -------------------------------------
+//  Typography - Grid
+// -------------------------------------
+
+
+
+
+//  Typography - Imports
+// -------------------------------------
+
+@import 'typography-variables';
+@import 'typi';
+
+
+
+
+//  Typography - Typi Defaults
+// -------------------------------------
+
+
+// Set Typographic Breakpoints Default
+$breakpoints: (
+    small: 0px,
+    medium: 650px,
+    large: 960px,
+    xlarge: 1200px
+);
+
+
+// Set Typographic Base Default (Based on paragraph size)
+$typi: (
+    null: ($font__p--font-size, $font__p--line-height),
+    small: ($font__p--font-size, $font__p--line-height),
+    medium: ($font__p--font-size, $font__p--line-height),
+    large: ($font__p--font-size, $font__p--line-height),
+    xlarge: ($font__p--font-size, $font__p--line-height)
+);
+
+
+// Apply Base Default to HTML element (16px - font-size: 100%)
+html {
+    @include typi-base();
+}
+
+
+
+
+//  Font Sizing and Style
+// -----------------------------
+
+
+// H1 Font Map
+$h1-font-map: (
+    null: ($font__h1--font-size, $font__h1--line-height),
+    small: ($font__h1--font-size * 0.7, $font__h1--line-height),
+    medium: ($font__h1--font-size * 0.8, $font__h1--line-height),
+    large: ($font__h1--font-size * 0.9, $font__h1--line-height),
+    xlarge: ($font__h1--font-size, $font__h1--line-height)
+) !default;
+
+
+// H1 Variables
+h1,
+.heading--1 {
+    @include typi($h1-font-map);
+    font-family: $font__h1--font-family;
+    font-weight: $font__h1--font-weight;
+    letter-spacing: $font__h1--letter-spacing;
+    text-transform: $font__h1--text-transform;
+}
+
+
+
+// H2 Font Map
+$h2-font-map: (
+    null: ($font__h2--font-size, $font__h2--line-height),
+    small: ($font__h2--font-size * 0.7, $font__h2--line-height),
+    medium: ($font__h2--font-size * 0.8, $font__h2--line-height),
+    large: ($font__h2--font-size * 0.9, $font__h2--line-height),
+    xlarge: ($font__h2--font-size, $font__h2--line-height)
+) !default;
+
+
+// H2 Variables
+h2,
+.heading--2 {
+    @include typi($h2-font-map);
+    font-family: $font__h2--font-family;
+    font-weight: $font__h2--font-weight;
+    letter-spacing: $font__h2--letter-spacing;
+    text-transform: $font__h2--text-transform;
+}
+
+
+
+// H3 Font Map
+$h3-font-map: (
+    null: ($font__h3--font-size, $font__h3--line-height),
+    small: ($font__h3--font-size * 0.7, $font__h3--line-height),
+    medium: ($font__h3--font-size * 0.8, $font__h3--line-height),
+    large: ($font__h3--font-size * 0.9, $font__h3--line-height),
+    xlarge: ($font__h3--font-size, $font__h3--line-height)
+) !default;
+
+
+// H3 Variables
+h3,
+.heading--3 {
+    @include typi($h3-font-map);
+    font-family: $font__h3--font-family;
+    font-weight: $font__h3--font-weight;
+    letter-spacing: $font__h3--letter-spacing;
+    text-transform: $font__h3--text-transform;
+}
+
+
+
+// H4 Font Map
+$h4-font-map: (
+    null: ($font__h4--font-size, $font__h4--line-height),
+    small: ($font__h4--font-size * 0.7, $font__h4--line-height),
+    medium: ($font__h4--font-size * 0.8, $font__h4--line-height),
+    large: ($font__h4--font-size * 0.9, $font__h4--line-height),
+    xlarge: ($font__h4--font-size, $font__h4--line-height)
+) !default;
+
+
+// H4 Variables
+h4,
+.heading--4 {
+    @include typi($h4-font-map);
+    font-family: $font__h4--font-family;
+    font-weight: $font__h4--font-weight;
+    letter-spacing: $font__h4--letter-spacing;
+    text-transform: $font__h4--text-transform;
+}
+
+
+p,
+.paragraph,
+a,
+li,
+em,
+strong,
+u,
+code,
+blockquote {
+    font-family: $font__p--font-family;
+    font-weight: $font__p--font-weight;
+    letter-spacing: $font__p--letter-spacing;
+}
+
+
+blockquote,
+code {
+    display: table;
+}
+
+
+
+
+//  Font Default Values
+// -----------------------------
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a,
+legend,
+label,
+button,
+blockquote,
+code,
+u,
+strong,
+em,
+legend {
+    margin: 0;
+     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+p,
+li {
+    margin-bottom: 0;
+
+
+    &+ h1,
+    &+ h2,
+    &+ h3,
+    &+ h4 {
+        margin-top: vr(1);
+    }
+
+
+    &+ p,
+    &+ ul,
+    &+ li {
+        margin-top: vr(0.5);
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+blockquote,
+code,
+ul {
+    position: relative;
+
+
+    &+ ul,
+    &+ blockquote,
+    &+ code {
+        margin-top: vr(1);
+    }
+
+
+    &+ h1,
+    &+ h2,
+    &+ h3,
+    &+ h4,
+    &+ p,
+    &+ li {
+        margin-top: vr(0.5);
+    }
+}
+
+
+
+
+//  Text Alignment
+// -----------------------------
+
+
+// Left Alignment
+.text__align-left,
+.align-left {
+    text-align: left;
+}
+
+
+// Center Alignment
+.text__align-center,
+.align-center {
+    text-align: center;
+}
+
+
+// Right Alignment
+.text__align-right,
+.align-right {
+    text-align: right;
+}
+
+
+
+
+//  Font Icons
+// -----------------------------
+
+
+.icon:before {
+    font-family: $font__icon;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Facebook Icon
+.icon--facebook:before {
+    content: "\f09a";
+}
+
+
+// Twitter Icon
+.icon--twitter:before {
+    content: "\f099";
+}
+
+
+// Pinterest Icon
+.icon--instagram:before {
+    content: "\f16d";
+}

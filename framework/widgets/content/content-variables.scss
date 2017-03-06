@@ -11,3 +11,35 @@
 
 
 $font__scroll-to--font-size: 16px !default;
+
+
+
+
+//  Style Properties
+// -----------------------------
+
+
+// Heading Styles
+$style__content-heading--background-position: inherit !default;
+$style__content-heading--background-repeat: inherit !default;
+$style__content-heading--background-size: inherit !default;
+$style__content-heading--border: 0 !default;
+$style__content-heading--box-shadow: none !default;
+$style__content-heading--display: block !default;
+$style__content-heading--outline: 0 !default;
+$style__content-heading--padding: 0 !default;
+$style__content-heading--position-left: inherit !default;
+$style__content-heading--position-right: inherit !default;
+$style__content-heading--text-shadow: none !default;
+
+
+// Notch (:before)
+$style__content-notch-before--height: 0px !default;
+$style__content-notch-before--margin: 0px !default;
+$style__content-notch-before--width: 0px !default;
+
+
+// Notch (:after)
+$style__content-notch-after--height: 0px !default;
+$style__content-notch-after--margin: 0px !default;
+$style__content-notch-after--width: 0px !default;

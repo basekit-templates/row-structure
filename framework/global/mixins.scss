@@ -6,30 +6,6 @@
 
 
 
-//  Media Queries
-// -------------------------------------
-
-
-$break--small: 650px;
-$break--medium: 768px;
-$break--large: 1024px;
-
-
-@mixin respond-to($media) {
-    @if $media == mobile {
-        @media only screen and (max-width: $break--small) { @content; }
-    }
-    @else if $media == tablet {
-        @media only screen and (max-width: $break--medium - 1) { @content; }
-    }
-    @else if $media == desktop {
-        @media only screen and (min-width: $break--large) { @content; }
-    }
-}
-
-
-
-
 //  General
 // -------------------------------------
 

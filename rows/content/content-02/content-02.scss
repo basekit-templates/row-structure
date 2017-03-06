@@ -14,29 +14,31 @@
 
     // Row Height
     &.row {
-        min-height: $row__height--medium;
-    }
-
-
-    // Row Padding
-    &.row {
-        padding: $row__padding--large;
+        min-height: $row__height--small;
     }
 
 
     // Row Container Width
     .row__container {
+        padding: $row__padding--small;
         width: $row__width--contained;
     }
-}
 
 
+    .row__column {
+        padding-left: $column__gutter--small;
+        padding-right: $column__gutter--small;
+    }
 
 
-// Widget Styling
-// -----------------------------
-
-.row__content--02 {
+    .row__column:last-child .widget:before {
+        content: "";
+        display: block;
+        height: 2px;
+        margin-bottom: vr(1);
+        position: relative;
+        width: 50px;
+    }
 
 
     &.light .row__column:last-child .widget:before {
@@ -51,15 +53,5 @@
 
     &.dark .row__column:last-child .widget:before {
         background: color(color-dark, $color__content-notch--background);
-    }
-
-
-    .row__column:last-child .widget:before {
-        content: "";
-        display: block;
-        height: 2px;
-        margin-bottom: 25px;;
-        position: relative;
-        width: 50px;
     }
 }

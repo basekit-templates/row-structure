@@ -6,7 +6,7 @@
     "styles": {
         "font-family": {
             "font__heading": "Helvetica",
-            "font__body": "Georgia"
+            "font__body": "Helvetica"
         },
         "colours": {
             "transparent": "transparent",
@@ -23,39 +23,47 @@
         },
         "typography": {
             "font__h1--font-family": "$font__heading",
-            "font__h1--font-size": "42px",
-            "font__h1--line-height": "42px",
+            "font__h1--font-size": "56px",
+            "font__h1--line-height": "1.1",
             "font__h1--font-weight": "normal",
             "font__h1--letter-spacing": "0",
             "font__h1--text-transform": "normal",
             "color__h1--text": "color__h1--text",
             "font__h2--font-family": "$font__heading",
-            "font__h2--font-size": "36px",
-            "font__h2--line-height": "36px",
+            "font__h2--font-size": "48px",
+            "font__h2--line-height": "1.1",
             "font__h2--font-weight": "normal",
             "font__h2--letter-spacing": "0",
             "font__h2--text-transform": "normal",
             "color__h2--text": "color__h2--text",
             "font__h3--font-family": "$font__heading",
-            "font__h3--font-size": "28px",
+            "font__h3--font-size": "38px",
             "font__h3--font-weight": "normal",
-            "font__h3--line-height": "28px",
+            "font__h3--line-height": "1.1",
             "font__h3--letter-spacing": "0",
             "font__h3--text-transform": "normal",
             "color__h3--text": "color__h3--text",
             "font__h4--font-family": "$font__heading",
-            "font__h4--font-size": "20px",
+            "font__h4--font-size": "24px",
             "font__h4--font-weight": "normal",
-            "font__h4--line-height": "20px",
+            "font__h4--line-height": "1.4",
             "font__h4--letter-spacing": "0",
             "font__h4--text-transform": "normal",
             "color__h4--text": "color__h4--text",
             "font__p--font-family": "$font__body",
             "font__p--font-size": "16px",
             "font__p--font-weight": "normal",
-            "font__p--line-height": "24px",
+            "font__p--line-height": "1.6",
             "font__p--letter-spacing": "0",
             "color__p--text": "color__p--text"
+        },
+        "content": {
+            "color__content-heading--background": "color__content-heading--background",
+            "color__content-heading--border": "color__content-heading--border",
+            "color__content-heading--box-shadow": "color__content-heading--box-shadow",
+            "color__content-heading--outline": "color__content-heading--outline",
+            "color__content-heading--text-shadow": "color__content-heading--text-shadow"
+
         },
         "companyname": {
             "color__companyname--border": "color__companyname--border",

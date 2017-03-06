@@ -1,29 +1,46 @@
 
-<div class="bk-row  row  row__hero  row__hero--02  light">
+<div class="bk-row  row  row__hero  row__hero--02  filter  filter__pre--soft-light  dark">
     <div class="bk-row__container  row__container">
 
-        <div class="row__column  row__column--half  align--middle-left">
+        <div class="row__column  row__column--full  align--top-center  horizontal-alignment--space-between">
 
-            <div class="widget widget__image  color--gradient  filter--color-splash"  style="background-image:url(https://s3.amazonaws.com/basekit-video/basekit-design/fitness/fitness-image1.jpg)">
+            <div class="widget  widget--compound  widget--compound__navigation">
+                {{widget('companyname', 'header-companyname', {"business": "Fitness Goals"})|raw}}
+
+                {{widget('extendednavigation', 'navigation', {})|raw}}
+
+                <div class="navigation-icon--container">
+                    <input id="click" name="exit" type="checkbox" />
+                    <label for="click"><span class="navigation-icon"></span></label>
+                </div>
             </div>
+
         </div>
 
-        <div class="row__column  row__column--half  align--middle-center  vertical-alignment--space-between">
-
-             {{widget('companyname', 'header-companyname', {"business": "Fitness Goals"})|raw}}
+        <div class="row__column  row__column--full  align--middle-left  vertical-alignment--space-between">
 
             <div class="widget  compound-widget">
                 {{widget('content', 'header-content', {
-                    content: '<h1>Connecting the worlds athletes.</h1>
-                    <h4>Track &amp; analyse performance.</h4>'
+                    content: '<h1>Connecting the worlds athletes.</h1>'
                 })|raw}}
             </div>
 
-            {{widget('content', 'header-content-two', {
-                content: '<a class="scroll-to">Read more</a>'
+            {{widget('profile', 'profilearea', {
+                'profileType':'email'
             })|raw}}
 
         </div>
 
     </div>
+
+    {% block scripts %}
+
+        <script>
+            $(document).on("click", ".navigation-icon--container input", function() {
+                $( "body" ).toggleClass( "navigation-open" );
+            });
+        </script>
+
+    {% endblock %}
+
 </div>

@@ -6,44 +6,23 @@
 
 
 
-//  General
+//  Media Queries - Global
 // -------------------------------------
 
 
-@mixin mq($args...) {
-    $media-type: 'only screen';
-    $media-type-key: 'media-type';
-    $args: keywords($args);
-    $expr: '';
+$break--small: 650px;
+$break--medium: 768px;
+$break--large: 1024px;
 
 
-    @if map-has-key($args, $media-type-key) {
-        $media-type: map-get($args, $media-type-key);
-        $args: map-remove($args, $media-type-key);
+@mixin respond-to($media) {
+    @if $media == mobile {
+        @media only screen and (max-width: $break--small) { @content; }
     }
-
-
-    @each $key, $value in $args {
-        @if $value {
-          $expr: "#{$expr} and (#{$key}: #{$value})";
-        }
+    @else if $media == tablet {
+        @media only screen and (max-width: $break--medium - 1) { @content; }
     }
-
-
-    @media #{$media-type} #{$expr} {
-        @content;
+    @else if $media == desktop {
+        @media only screen and (min-width: $break--large) { @content; }
     }
-}
-
-
-@mixin max-screen($max)
-    @include mq($max-width: $max) {
-        @content;
-    }
-}
-
-
-
-@include max-screen(568px) {
-
 }

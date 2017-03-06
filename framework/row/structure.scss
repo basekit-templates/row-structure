@@ -24,40 +24,23 @@ $row__width--contained: 1100px;
 
 
 // Spacing
-$row__padding--large: 60px;
-$row__padding--medium: 30px;
-$row__padding--small: 15px;
-$row__padding--none: 0;
-
-
-@include respond-to(tablet) {
-    $row__padding--large: 30px;
-    $row__padding--medium: 15px;
-    $row__padding--small: 15px;
-}
+$row__padding--large: vr(3);
+$row__padding--medium: vr(2);
+$row__padding--small: vr(1);
+$row__padding--none: vr(0);
 
 
 
 
-//  Grid (Flex)
+//  Grid & Default Values
 // -------------------------------------
 
 
-.row .row__container {
-    @include box-sizing(border-box);
-    @include flex-display;
-    @include flex(0 1 auto);
-    @include flex-direction(row);
-    @include flex-wrap(wrap);
-    margin: 0 auto;
-    padding: $row__padding--none;
-
-
-    // Reverses Row Content (Invert)
-    &--reverse {
-        @include flex-direction(row-reverse);
-    }
+.row,
+.row__container {
+    min-height: $row__height--default;
 }
+
 
 
 .row {
@@ -68,7 +51,7 @@ $row__padding--none: 0;
     @include flex-direction(row);
     @include flex-wrap(wrap);
     margin: 0 auto;
-    min-height: $row__height--default;
+    position: relative;
 
 
     // Reverses Row Content (Invert)
@@ -78,25 +61,20 @@ $row__padding--none: 0;
 }
 
 
-
-
-//  Height & Width Defaults
-// -------------------------------------
-
-
-// Row / Container Height
-.row {
-// .row__container {
-    min-height: $row__height--default;
-}
-
-
-.row {
-    position: relative;
-}
-
-
-// Container Width
 .row__container {
+    @include box-sizing(border-box);
+    @include flex-display;
+    @include flex(0 1 auto);
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    margin: 0 auto;
     max-width: $row__width--full;
+    padding: $row__padding--none $row__padding--none $row__padding--none $row__padding--medium;
+    width: 100%;
+
+
+    // Reverses Row Content (Invert)
+    &--reverse {
+        @include flex-direction(row-reverse);
+    }
 }

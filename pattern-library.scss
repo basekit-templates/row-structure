@@ -1,0 +1,29 @@
+
+// Heading Background
+$color__content-heading--background: $color--darkest;
+$color__content-heading--box-shadow: 10px 0 $color--darkest, -10px 0 $color--darkest;
+$style__content-heading--padding: 10px 0 5px;
+$style__content-heading--display: inline;
+$style__content-heading--position-left: 10px;
+
+
+// Heading Background Overlay
+$color__content-heading--background: linear-gradient(to bottom, transparent 50%, $color--accent 50%);
+$style__content-heading--background-position: 0 85%;
+$style__content-heading--background-repeat: repeat-x;
+$style__content-heading--background-size: 100% 0;
+$style__content-heading--display: inline;
+
+
+// Heading Notch - Bottom
+$color__content-notch--background: $color--accent;
+$style__content-notch-after--height: 2px;
+$style__content-notch-after--margin: 10px 0 0;
+$style__content-notch-after--width: 50px;
+
+
+// Heading Notch - Top
+$color__content-notch--background: $color--accent;
+$style__content-notch-before--height: 2px;
+$style__content-notch-before--margin: 20px 0 0;
+$style__content-notch-before--width: 50px;

@@ -14,7 +14,7 @@
 
     // Row Height
     &.row {
-        min-height: $row__height--medium;
+        min-height: $row__height--small;
     }
 
 
@@ -28,13 +28,4 @@
     .row__container {
         width: $row__width--contained;
     }
-}
-
-
-
-
-// Widget Styling
-// -----------------------------
-
-.row__content--03 {
 }

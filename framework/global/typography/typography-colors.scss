@@ -1,0 +1,155 @@
+
+// -----------------------------
+// Framework: Typography
+// -----------------------------
+
+
+
+
+//  Font Colours
+// -----------------------------
+
+
+// H1 Colours
+h1,
+.heading--1 {
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h1--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h1--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h1--text);
+    }
+}
+
+
+// H2 Colours
+h2,
+.heading--2 {
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h2--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h2--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h2--text);
+    }
+}
+
+
+// H3 Colours
+h3,
+.heading--3 {
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h3--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h3--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h3--text);
+    }
+}
+
+
+// H4 Colours
+h4,
+.heading--4 {
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__h4--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__h4--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__h4--text);
+    }
+}
+
+
+// Paragraph Colour
+p,
+.paragraph,
+li {
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__p--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__p--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__p--text);
+    }
+}
+
+
+// Link Colour
+a,
+.link {
+
+
+    // Light
+    .light & {
+        color: color(color-light, $color__link--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__link--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__link--text);
+    }
+}

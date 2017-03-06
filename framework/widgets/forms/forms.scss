@@ -50,6 +50,7 @@ form {
 
 fieldset {
     margin: 0;
+    padding: 0;
 }
 
 
@@ -59,7 +60,7 @@ legend {
     font-weight: $font__form-legend--font-weight;
     letter-spacing: $font__form-legend--letter-spacing;
     line-height: $font__form-legend--line-height;
-    padding: $style__form-legend--padding;
+    margin: 0 0 vr(1) 0;
     text-transform: $font__form-legend--text-transform;
 
 
@@ -95,12 +96,13 @@ legend {
 
 
 label {
+    display: block;
     font-family: $font__form-label--font-family;
     font-size: $font__form-label--font-size;
     font-weight: $font__form-label--font-weight;
     letter-spacing: $font__form-label--letter-spacing;
     line-height: $font__form-label--line-height;
-    padding: $style__form-label--padding;
+    margin: 0 0 vr(0.5) 0;
     text-transform: $font__form-label--text-transform;
 
 
@@ -143,8 +145,11 @@ select {
     font-weight: $font__form--font-weight;
     letter-spacing: $font__form--letter-spacing;
     line-height: $font__form--line-height;
+    margin: 0 0 vr(1) 0;
+    min-height: 40px;
     padding: $style__form-input--padding;
     text-transform: $font__form--text-transform;
+    width: 100%;
 
 
     // Light

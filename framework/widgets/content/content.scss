@@ -30,54 +30,6 @@
 }
 
 
-// Scroll To Widget
-.scroll-to {
-    font-size: $font__scroll-to--font-size;
-
-
-    .light & {
-        color: color(color-light, $color__scroll--text);
-    }
-
-
-    .accent & {
-        color: color(color-accent, $color__scroll--text);
-    }
-
-
-    .dark & {
-        color: color(color-dark, $color__scroll--text);
-    }
-
-
-    &:after {
-        content: "\203A";
-        display: block;
-        font-family: $font__icon;
-        font-size: 22px;
-        line-height: 0.5;
-        position: relative;
-        text-align: center;
-        @include transform(rotate(90deg));
-
-
-        .light & {
-            color: color(color-light, $color__scroll--icon);
-        }
-
-
-        .accent & {
-            color: color(color-accent, $color__scroll--icon);
-        }
-
-
-        .dark & {
-            color: color(color-dark, $color__scroll--icon);
-        }
-    }
-}
-
-
 .wysiwyg-font-size-xx-small { font-size: 10px; }
 
 
@@ -103,3 +55,70 @@
 
 
 .wysiwyg-font-size-xx-large { font-size: 30px; }
+
+
+
+
+//  Content: Colour
+// -----------------------------
+
+
+.light {
+
+
+    [data-widget-type="content"] {
+        h1,
+        h2,
+        h3,
+        h4 {
+            border: $style__content-heading--border  color(color-light, $color__content-heading--border);
+            @include box-shadow($style__content-heading--box-shadow  color(color-light, $color__content-heading--box-shadow));
+            outline: $style__content-heading--outline  color(color-light, $color__content-heading--outline);
+            text-shadow: $style__content-heading--text-shadow  color(color-light, $color__content-heading--text-shadow);
+        }
+    }
+}
+
+
+.accent {
+
+
+    [data-widget-type="content"] {
+        h1,
+        h2,
+        h3,
+        h4 {
+            border: $style__content-heading--border  color(color-accent, $color__content-heading--border);
+            @include box-shadow($style__content-heading--box-shadow  color(color-accent, $color__content-heading--box-shadow));
+            outline: $style__content-heading--outline  color(color-accent, $color__content-heading--outline);
+            text-shadow: $style__content-heading--text-shadow  color(color-accent, $color__content-heading--text-shadow);
+        }
+    }
+}
+
+
+.dark {
+
+
+    [data-widget-type="content"] {
+        h1,
+        h2,
+        h3,
+        h4 {
+            border: $style__content-heading--border  color(color-dark, $color__content-heading--border);
+            @include box-shadow($style__content-heading--box-shadow  color(color-dark, $color__content-heading--box-shadow));
+            outline: $style__content-heading--outline  color(color-dark, $color__content-heading--outline);
+            text-shadow: $style__content-heading--text-shadow  color(color-dark, $color__content-heading--text-shadow);
+        }
+    }
+}
+
+
+
+
+//  Extended Styling
+// -----------------------------
+
+
+// @import 'content-01';           // Content Background
+// @import 'content-02';           // Content Notch

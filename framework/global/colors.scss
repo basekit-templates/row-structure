@@ -28,6 +28,14 @@ $colors: (
         $color__p--text: $color--dark,
 
 
+        // Content
+        $color__content-heading--background: $transparent,
+        $color__content-heading--border: $transparent,
+        $color__content-heading--box-shadow: $transparent,
+        $color__content-heading--outline: $transparent,
+        $color__content-heading--text-shadow: none,
+
+
         // Companyname
         $color__companyname--border: $transparent,
         $color__companyname--text: $color--darkest,
@@ -115,7 +123,7 @@ $colors: (
         $color__form-legend--background: $transparent,
         $color__form-legend--border: $transparent,
         $color__form-legend--box-shadow: none,
-        $color__form-legend--text: $color--lightest,
+        $color__form-legend--text: $color--darkest,
         $color__form-legend--text-shadow: none,
 
         $color__form-label--background: $transparent,
@@ -124,16 +132,16 @@ $colors: (
         $color__form-label--text: $color--dark,
         $color__form-label--text-shadow: none,
 
-        $color__form-input--background: $color--accent,
-        $color__form-input--background--hover: $color--dark,
+        $color__form-input--background: $color--light,
+        $color__form-input--background--hover: $color--light,
         $color__form-input--border: $transparent,
         $color__form-input--border--hover: $transparent,
         $color__form-input--box-shadow: none,
         $color__form-input--box-shadow--hover: none,
         $color__form-input--outline: $transparent,
         $color__form-input--outline--hover: $transparent,
-        $color__form--text: $color--dark,
-        $color__form--text--hover: $color--lightest,
+        $color__form--text: $color--darkest,
+        $color__form--text--hover: $color--darkest,
 
         $color__form-button--background: $color--accent,
         $color__form-button--background--hover: $color--accent,
@@ -148,8 +156,8 @@ $colors: (
 
 
         // Image
-        $color__image--background: $color--dark,
-        $color__image-title--text: $color--dark,
+        $color__image--background: $transparent,
+        $color__image-title--text: $color--darkest,
         $color__image-description--text: $color--dark,
 
 
@@ -183,6 +191,14 @@ $colors: (
         $color__h4--text: $color--accent,
         $color__link--text: $color--accent,
         $color__p--text: $color--light,
+
+
+        // Content
+        $color__content-heading--background: $transparent,
+        $color__content-heading--border: $transparent,
+        $color__content-heading--box-shadow: $transparent,
+        $color__content-heading--outline: $transparent,
+        $color__content-heading--text-shadow: none,
 
 
         // Companyname
@@ -338,6 +354,14 @@ $colors: (
         $color__h4--text: $color--lightest,
         $color__link--text: $color--accent,
         $color__p--text: $color--light,
+
+
+        // Content
+        $color__content-heading--background: $transparent,
+        $color__content-heading--border: $transparent,
+        $color__content-heading--box-shadow: $transparent,
+        $color__content-heading--outline: $transparent,
+        $color__content-heading--text-shadow: none,
 
 
         // Companyname

@@ -9,11 +9,23 @@
 // Imports: Demo UI
 // -----------------------------
 
-#tdk-toolbar {
-    display: none!important;
-}
+// #tdk-toolbar {
+//     display: none!important;
+// }
 
 @import "misc/demo-ui";
+
+
+
+
+// Imports: Template
+// -----------------------------
+
+
+// @import "templates/template-fitgoal";
+@import "templates/template-chay";
+// @import "templates/template-juiced";
+// @import "templates/template-playground";
 
 
 
@@ -24,7 +36,9 @@
 
 @import "framework/global/resets";
 @import "framework/global/mixins";
+@import "framework/global/typography/typography";
 @import "framework/global/colors";
+@import "framework/global/media-queries";
 
 
 
@@ -49,23 +63,12 @@
 
 
 
-// Imports: Template
+// Imports: Colour
 // -----------------------------
 
 
-// Typography Variable Defaults
-@import "framework/global/typography-variables";
-
-
-// Template Styles
-@import "templates/template-fitgoal";
-// @import "templates/template-chay";
-// @import "templates/template-juiced";
-// @import "templates/template-playground";
-
-
-// Defaults - Needs to be after template to inherit styles
-@import "framework/global/typography";
+// Colour Defaults - Needs to be after template to inherit styles
+@import "framework/global/typography/typography-colors";
 @import "framework/row/row-colors";
 @import "framework/row/background-effects";
 
@@ -74,12 +77,6 @@
 
 // Imports: Rows
 // -----------------------------
-
-
-// Heros
-@import "rows/hero/hero-01/hero-01";
-@import "rows/hero/hero-02/hero-02";
-@import "rows/hero/hero-03/hero-03";
 
 
 // Content
@@ -119,8 +116,16 @@
 @import 'framework/widgets/buttons/buttons';
 @import 'framework/widgets/companyname/companyname';
 @import 'framework/widgets/content/content';
-// //@import 'framework/widgets/divider/divider';
+@import 'framework/widgets/divider/divider';
 // //@import 'framework/widgets/feature/feature';
+
+
+// Heros
+@import 'framework/widgets/hero/hero-01';
+@import 'framework/widgets/hero/hero-02';
+
+
+
 // //@import 'framework/widgets/forms/fonecta-widgets';
 @import "framework/widgets/forms/forms";
 

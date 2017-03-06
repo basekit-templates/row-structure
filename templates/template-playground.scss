@@ -69,9 +69,9 @@ $colors: (
 
 
         // Image
-        $color__image--background: $color--light,
-        $color__image-title--text: $color--accent,
-        $color__image-description--text: $color--darkest,
+        $color__image--background: $transparent,
+        $color__image-title--text: $color--darkest,
+        $color__image-description--text: $color--dark,
 
 
         // Gallery

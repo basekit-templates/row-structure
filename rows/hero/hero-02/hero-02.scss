@@ -1,6 +1,6 @@
 
 // -------------------------------------
-// Header: Design Two
+// Header: Design Three
 // -------------------------------------
 
 
@@ -22,18 +22,18 @@
     // Row Padding
     &.row {
         background-size: cover;
-        padding: $row__padding--none;
     }
 
 
     // Row Container Width
     .row__container {
+        padding: $row__padding--medium;
         width: $row__width--full;
     }
 
 
     .row__column {
-        padding: 0;
+        padding: $column__gutter--none;
     }
 }
 
@@ -46,41 +46,21 @@
 
 .row__hero--02 {
 
-    .widget {
-        padding-left: 40px;
-        padding-right: 40px;
 
-        &:first-child {
-            padding-top: 40px;
-        }
-
-
-        &:last-child {
-            padding-bottom: 40px;
-        }
-
-
-        &__image {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
-        }
+    .row__column {
+        z-index: initial;
     }
 
 
-    .compound-widget {
-        max-width: 650px;
-        text-align: center;
-
-        h1,h2,h3,h4,h5 + * {
-            margin-top: 25px;
-        }
-
-
-        .widget:last-child {
-            margin-top: 40px;
-        }
+    // Navigation
+    .widget--compound__navigation {
+        @include box-sizing(border-box);
+        @include flex-display;
+        @include justify-content(space-between);
+        width: 100%;
     }
+
+
+    @import "rows/navigation/navigation-02/navigation-02";
+
 }

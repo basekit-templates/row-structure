@@ -1,0 +1,76 @@
+
+// -------------------------------------
+// Widgets: Hero
+// -------------------------------------
+
+
+
+
+// Hero - 01
+// -----------------------------
+
+
+.row__hero--01 {
+
+
+    // Row Height
+    &.row,
+    .row__container {
+        min-height: $row__height--full;
+    }
+
+
+    // Row Container Width
+    .row__container {
+        padding: $row__padding--none;
+        width: $row__width--full;
+    }
+
+
+    // Column Gutter
+    .row__column {
+        padding-left: $column__gutter--none;
+        padding-right: $column__gutter--none;
+    }
+
+
+    // Widget Styling
+    .widget {
+        padding-left: vr(1);
+        padding-right: vr(1);
+
+
+        &__image {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+    }
+
+
+    .widget {
+
+
+        &:first-child, {
+            padding-top: vr(1);
+        }
+
+
+        &:last-child {
+            padding-bottom: vr(1);
+        }
+    }
+
+
+    .widget:not(:first-child):not(:last-child) {
+        max-width: 650px;
+        text-align: center;
+
+
+        .widget:last-child {
+            margin-top: vr(1);
+        }
+    }
+}

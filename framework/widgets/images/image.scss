@@ -72,6 +72,23 @@
     padding: $style__image-title--padding;
     text-shadow: $style__image-title--text-shadow;
     text-transform: $font__image-title--text-transform;
+
+    // Light
+    .light & {
+        color: color(color-light, $color__image-title--text);
+    }
+
+
+    // Accent
+    .accent & {
+        color: color(color-accent, $color__image-title--text);
+    }
+
+
+    // Dark
+    .dark & {
+        color: color(color-dark, $color__image-title--text);
+    }
 }
 
 
@@ -100,7 +117,7 @@
 
 
     // Dark
-    .dark3 & {
+    .dark & {
         color: color(color-dark, $color__image-description--text);
     }
 }

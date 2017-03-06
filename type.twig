@@ -1,0 +1,183 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+
+<div class="bk-row  row">
+    <div class="bk-row__container  row__container  light">
+
+        <div class="row__column  row__column--half">
+
+            {{widget('logo', 'sitelogo', {
+                'defaultlogo': asset("templates/barber-logo.png")
+            })|raw}}
+
+            {{widget('companyname', 'headercompanyname', {"business": "profile"})|raw}}
+
+            {{widget('line', 'footerline', {
+                'thickness': '2',
+                'length': '20',
+                'padding': '2',
+                'align': 'left'
+            })|raw}}
+
+            {{widget('extendednavigation', 'navigation', {
+                'align': 'left'
+            })|raw}}
+
+            {{widget('twitter', 'twitterfeed', {
+                'searchType': 'basekit',
+                'count': '3',
+                'refreshTime': '1800000',
+                'includeRts': '0'
+            })|raw}}
+
+            {{widget('image', 'headerimage', {
+                'src': asset("templates/bristol-sports.jpg"),
+                'title': 'The title text',
+                'description': 'The description text',
+                'alt': 'The alternate text',
+                'fileName': 'Logo Image'
+            })|raw}}
+
+            {{widget('responsiveslideshow', 'slideshow', {
+                  'duration':'3',
+                  'transSpeed': '1000',
+                  'transType': 'fade',
+                  'showButtons': true,
+                  'showBullets': false,
+                  'allowPause': true,
+                  'allowLoop': true,
+                  'images':[
+                  {
+                      'imageHeight':'350',
+                      'imageWidth':'300',
+                      'url':'http://placehold.it/350x300',
+                      'title':'First slide title',
+                      'description': 'First slide description'
+                    },
+                  {
+                      'imageHeight':'350',
+                      'imageWidth':'400',
+                      'url':'http://placehold.it/350x400',
+                      'title':'Second slide title',
+                      'description': 'Second slide description'
+                    },
+                  {
+                      'imageHeight':'350',
+                      'imageWidth':'500',
+                      'url':'http://placehold.it/350x500',
+                      'title':'Third slide title',
+                      'description': 'Third slide description'
+                    }
+                  ]
+            })|raw}}
+
+            {{widget('gallery', 'imagegallery', {
+              'showTitle': true,
+              'showDescription': true,
+              'images':[
+                {
+                  'url':'http://placehold.it/350x300',
+                  'title':'First image title',
+                  'description': 'First image description'
+                },
+                {
+                  'url':'http://placehold.it/350x400',
+                  'title':'Second image title',
+                  'description': 'Second image description'
+                },
+                {
+                  'url':'http://placehold.it/650x300',
+                  'title':'Third image title',
+                  'description': 'Third image description'
+                }
+              ]
+            })|raw}}
+
+            {{widget('signupform', 'emailsignup', {
+                'text': 'Send',
+                'label': 'Your Email',
+                'formTitle': 'Signup Form',
+                'email': 'profile'
+            })|raw}}
+
+            {{widget('contactform', 'contact', {
+                'text': 'Submit',
+                'formTitle': 'Contact Us',
+                'email': 'profile'
+            })|raw}}
+
+            {{widget('advancedcontactform', 'contact', {
+                'text': 'Submit',
+                'formTitle': 'Contact Us',
+                'email': 'profile'
+            })|raw}}
+
+            {{widget('companyaddress', 'address', {})|raw}}
+
+            {{widget('button', 'docsbutton', {
+                'text': 'Documentation',
+                'align': 'widget-align-center',
+                'action': 'external',
+                'url': 'http://docs.basekit.com',
+                'target': '_blank'
+            })|raw}}
+
+            {{widget('tweet', 'tweetblog', {
+                'linkText': 'Share the blog',
+                'tweetText': 'Checkout this blog',
+                'align': 'widget-align-right'
+            })|raw}}
+
+            {{widget('clicktocall', 'headerclicktocall', {
+                'phoneText': 'Call Now',
+                'italic': true,
+                'bold': true,
+                'fontSize': 18,
+                'align': 'widget-align-center'
+            })|raw}}
+
+            {{widget('dropbox', 'downloadbutton', {
+                'align': 'widget-align-left',
+                'showFileName': true
+            })|raw}}
+
+            {{widget('socialicons', 'socialnetworks', {
+                'googleplus': 'https://plus.google.com/101946323226233111530',
+                'linkedin':'http://www.linkedin.com/company/mycompanyname',
+                'facebook': 'https://www.facebook.com/mycompanyname',
+                'twitter': 'https://twitter.com/mycompanyname',
+                'youtube': 'https://www.youtube.com/user/mycompanyname',
+                'rss': 'http://news.bbc.co.uk/1/hi/help/rss/default.stm',
+                'pinterest': 'https://www.pinterest.com/mycompanyname',
+                'instagram': 'https://www.instagram.com/mycompanyname'
+            })|raw}}
+
+
+            {{widget('content', 'content-about', {
+                content: '
+                    <h1>Heading One</h1>
+                    <h2>Heading Two</h2>
+                    <h3>Heading Three</h3>
+                    <h4>Heading Four</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium urna id lacus faucibus, ut eleifend ipsum pulvinar. Donec nibh ante, lacinia sed magna et, aliquam consectetur massa.</p>
+                    <p>Pellentesque dignissim libero libero, vel molestie sapien iaculis at. Vivamus rutrum sodales tellus, quis congue diam convallis eget.</p>
+                    <a>Anchor Link</a>
+                    <em>Emphasis</em>
+                    <strong>Bold</strong>
+                    <small>Small</small>
+                    <u>Underline</u>
+                    <ul>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                        <li>List Item</li>
+                    </ul>
+                    <blockquote>This is a blockquote</blockquote>
+                    <code>This is a code snippet</code>'
+            })|raw}}
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

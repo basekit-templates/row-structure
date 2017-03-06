@@ -1,0 +1,84 @@
+
+// ------------------------------
+//  Widgets: Content - 01
+// ------------------------------
+
+
+
+
+//  Extended : Heading Background
+// -------------------------------
+
+
+[data-widget-type="content"] {
+    h1,
+    h2,
+    h3,
+    h4 {
+        background-position: $style__content-heading--background-position;
+        background-repeat: $style__content-heading--background-repeat;
+        background-size: $style__content-heading--background-size;
+        display: $style__content-heading--display;          // Needs to be set to "inline" for the background
+        padding: $style__content-heading--padding;
+        left: $style__content-heading--position-left;       // Resets the offset caused by the box shadow
+        right: $style__content-heading--position-right;     // Resets the offset caused by the box shadow
+    }
+}
+
+
+
+
+//  Colour: Heading Background
+// ----------------------------
+
+
+.light {
+    [data-widget-type="content"] {
+
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            background-color: color(color-light, $color__content-heading--background);
+            background-image: color(color-light, $color__content-heading--background);
+            color: color(color-dark, $color__content-heading--background);
+            @include box-shadow($style__content-heading--box-shadow  color(color-light, $color__content-heading--box-shadow));      // Box shadow to offset the lack of horizontal padding
+        }
+    }
+}
+
+
+.accent {
+    [data-widget-type="content"] {
+
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            background-color: color(color-accent, $color__content-heading--background);
+            background-image: color(color-accent, $color__content-heading--background);
+            color: color(color-accent, $color__content-heading--background);
+            @include box-shadow($style__content-heading--box-shadow  color(color-accent, $color__content-heading--box-shadow));      // Box shadow to offset the lack of horizontal padding
+        }
+    }
+}
+
+
+
+.dark {
+    [data-widget-type="content"] {
+
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            background-color: color(color-dark, $color__content-heading--background);
+            background-image: color(color-dark, $color__content-heading--background);
+            color: color(color-light, $color__content-heading--background);
+            @include box-shadow($style__content-heading--box-shadow  color(color-dark, $color__content-heading--box-shadow));      // Box shadow to offset the lack of horizontal padding
+        }
+    }
+}

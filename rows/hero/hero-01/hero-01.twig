@@ -2,20 +2,25 @@
 <div class="bk-row  row  row__hero  row__hero--01  light">
     <div class="bk-row__container  row__container">
 
+        <div class="row__column  row__column--half  align--middle-left">
 
-        <div class="row__column  row__column--full  align--top-middle">
-            <div class="widget  compound-widget">
-                {{widget('companyname', 'header-companyname', {"business": "Fitness Goals"})|raw}}
-                {{widget('extendednavigation', 'navigation', {})|raw}}
+            <div class="widget widget__image  color--gradient  filter--color-splash"  style="background-image:url(https://s3.amazonaws.com/basekit-video/basekit-design/fitness/fitness-image1.jpg)">
             </div>
         </div>
 
+        <div class="row__column  row__column--half  align--middle-center  vertical-alignment--space-between">
 
-        <div class="row__column  row__column--full ">
-            {{widget('image', 'hero-image', {
-                'src': asset("templates/bristol-sports.jpg"),
-                'description': 'Extensive Indoor and Outdoor Sports and Social Facilities. Call now to look around the facilities and make a reservation'
+             {{widget('companyname', 'header-companyname', {"business": "Fitness Goals"})|raw}}
+
+            {{widget('content', 'header-content', {
+                content: '<h1>Connecting the worlds athletes.</h1>
+                <h4>Track &amp; analyse performance.</h4>'
             })|raw}}
+
+            {{widget('content', 'header-content-two', {
+                content: '<a class="scroll-to">Read more</a>'
+            })|raw}}
+
         </div>
 
     </div>

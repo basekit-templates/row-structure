@@ -1,15 +1,16 @@
 
 // -------------------------------------
-// Header: Design Three
+// Widgets: Hero
 // -------------------------------------
 
 
 
-// Row Styling
+
+// Hero - 02
 // -----------------------------
 
 
-.row__hero--03 {
+.row__hero--02 {
 
 
     // Row Height
@@ -27,27 +28,14 @@
 
     // Row Container Width
     .row__container {
-        padding: $row__padding--large;
+        padding: $row__padding--medium;
         width: $row__width--full;
     }
 
 
     .row__column {
-        padding: 0;
-    }
-}
-
-
-
-
-// Widget Styling
-// -----------------------------
-
-
-.row__hero--03 {
-
-
-    .row__column {
+        padding-left: $column__gutter--none;
+        padding-right: $column__gutter--none;
         z-index: initial;
     }
 

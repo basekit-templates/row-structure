@@ -9,7 +9,11 @@
 //  Defaults - Variables
 // -------------------------------------
 
-$column--gutter: 25px !default;
+
+$column__gutter--large: vr(3) !default;
+$column__gutter--medium: vr(2) !default;
+$column__gutter--small: vr(1) !default;
+$column__gutter--none: vr(0) !default;
 $column--offset-value: 5% !default;
 
 
@@ -26,8 +30,8 @@ $column--offset-value: 5% !default;
     @include flex-direction(column);
     @include flex(0 0 auto);
     max-width: 100%;
-    padding-left: $column--gutter;
-    padding-right: $column--gutter;
+    padding-left: $column__gutter--small;
+    padding-right: $column__gutter--small;
     position: relative;
     height: 100%;
     z-index: 2;
@@ -51,7 +55,7 @@ $column--offset-value: 5% !default;
 
     // Remove first column padding
     &:first-child {
-        padding-left: 0;
+        padding-left: 0!important;
 
 
         @include respond-to(mobile) {
@@ -63,7 +67,7 @@ $column--offset-value: 5% !default;
 
     // Remove last column padding
     &:last-child {
-        padding-right: 0;
+        padding-right: 0!important;
     }
 
 

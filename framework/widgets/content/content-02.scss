@@ -1,0 +1,141 @@
+
+// ------------------------------
+//  Widgets: Content - 02
+// ------------------------------
+
+
+
+
+//  Extended: Notch
+// -----------------
+
+
+[data-widget-type="content"] {
+
+
+    h1:before,
+    h2:before,
+    h3:before,
+    h4:before,
+    h1:after,
+    h2:after,
+    h3:after,
+    h4:after {
+        content: "";
+        display: block;
+        position: relative;
+    }
+
+
+    h1
+    h2,
+    h3,
+    h4 {
+
+
+        &[style="text-align: center;"]:before,
+        &[style="text-align: center;"]:after {
+            margin: 0 auto;
+        }
+
+
+        &[style="text-align: right;"]:before,
+        &[style="text-align: right;"]:after {
+            margin-left: auto;
+        }
+    }
+
+
+    // Above Heading Notch
+    h1:before,
+    h2:before,
+    h3:before,
+    h4:before {
+        height: $style__content-notch-before--height;
+        margin: $style__content-notch-before--margin;
+        width: $style__content-notch-before--width;
+    }
+
+
+    // Below Heading Notch
+    h1:after,
+    h2:after,
+    h3:after,
+    h4:after {
+        height: $style__content-notch-after--height;
+        margin: $style__content-notch-after--margin;
+        width: $style__content-notch-after--width;
+    }
+}
+
+
+
+
+//  Colour: Notch
+// -----------------------------
+
+
+.light {
+    [data-widget-type="content"] {
+
+
+        h1:before,
+        h2:before,
+        h3:before,
+        h4:before {
+            background: color(color-light, $color__content-notch--background);
+        }
+
+
+        h1:after,
+        h2:after,
+        h3:after,
+        h4:after {
+            background: color(color-light, $color__content-notch--background);
+        }
+    }
+}
+
+
+.accent {
+    [data-widget-type="content"] {
+
+
+        h1:before,
+        h2:before,
+        h3:before,
+        h4:before {
+            background: color(color-accent, $color__content-notch--background);
+        }
+
+
+        h1:after,
+        h2:after,
+        h3:after,
+        h4:after {
+            background: color(color-light, $color__content-notch--background);
+        }
+    }
+}
+
+
+.dark {
+    [data-widget-type="content"] {
+
+
+        h1:before,
+        h2:before,
+        h3:before,
+        h4:before {
+            background: color(color-dark, $color__content-notch--background);
+        }
+
+
+        h1:after,
+        h2:after,
+        h3:after,
+        h4:after {
+            background: color(color-light, $color__content-notch--background);
+        }
+    }
+}

@@ -35,6 +35,7 @@ button,
     line-height: $font__button--line-height;
     padding: $style__button--padding;
     position: $style__button--position;
+    text-decoration: none;
     text-transform: $font__button--text-transform;
     @include transition($style__button--transition);
 
@@ -160,6 +161,7 @@ button,
 //  Button: Dropbox
 // -----------------------------
 
+
 // Displays button & label inline
 .dropbox-button__button,
 .dropbox-button__label {
@@ -171,6 +173,7 @@ button,
 
 //  Button: Click To Call
 // -----------------------------
+
 
 .phone-number-link {
     display: inline-block;

@@ -1,6 +1,6 @@
 
 // -------------------------------------
-// Header: Design One
+// Header: Design Two
 // -------------------------------------
 
 
@@ -9,7 +9,7 @@
 // -----------------------------
 
 
-.row__hero--01 {
+.row__hero--02 {
 
 
     // Row Height
@@ -28,102 +28,11 @@
 
     // Row Container Width
     .row__container {
-        @include align-content(flex-start);
         width: $row__width--full;
     }
-}
 
 
-
-
-// Widget Styling
-// -----------------------------
-
-
-.row__hero--01 {
-
-    .compound-widget {
-        @include flex-display;
-        @include align-items(center);
-        @include justify-content(space-between);
-        padding: 10px;
+    .row__column {
+        padding: $column__gutter--none;
     }
-
-
-    [data-widget-type="companyname"] {
-        padding-left: 130px;
-    }
-
-
-    &.light {
-        background: transparent;
-
-
-        .company-link {
-            //@include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
-            color: color(color-light, $color__companyname--text);
-        }
-
-
-        [data-widget-type="image"] {
-            background: color(color-light, $color__image--background);
-        }
-    }
-
-
-    &.accent {
-        background: transparent;
-
-
-        .company-link {
-            //@include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
-            color: color(color-light, $color__companyname--text);
-        }
-
-
-        [data-widget-type="image"] {
-            background: color(color-accent, $color__image--background);
-        }
-    }
-
-
-    &.dark {
-        background: transparent;
-
-
-        .company-link {
-            //@include border($style__companyname--border, color(color-light, $color__companyname--border), $style__companyname--border-direction);
-            color: color(color-light, $color__companyname--text);
-        }
-
-
-        [data-widget-type="image"] {
-            background: color(color-dark, $color__image--background);
-        }
-    }
-
-
-
-    [data-widget-type="image"] {
-        margin: 0 0 60px 100px;
-    }
-
-
-    .imagewidget {
-
-
-        &__figure {
-            @include flex-display;
-            @include align-items(flex-end);
-            @include justify-content(flex-start);
-            padding: 70px 0 70px 100px;
-        }
-
-        &__image-description {
-            padding: 0 40px;
-        }
-    }
-
-
-    @import "rows/navigation/navigation-01/navigation-01";
 }

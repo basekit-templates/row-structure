@@ -4,8 +4,6 @@
 // -------------------------------------
 
 
-
-
 //  Row Variables
 // -------------------------------------
 
@@ -49,7 +47,7 @@ $column__padding--none: 0;
 // -------------------------------------
 
 
-.row .row__container {
+.row .row-container {
     @include box-sizing(border-box);
     @include flex-display;
     @include flex(0 1 auto);
@@ -102,6 +100,6 @@ $column__padding--none: 0;
 
 
 // Container Width
-.row__container {
+.row-container {
     max-width: $row__width--full;
 }

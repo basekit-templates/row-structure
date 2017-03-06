@@ -20,7 +20,7 @@ $column--offset-value: 5% !default;
 
 
 // Global Column Styling
-.row__column {
+.row-column {
     @include box-sizing(border-box);
     @include flex-display;
     @include flex-direction(column);
@@ -40,7 +40,7 @@ $column--offset-value: 5% !default;
 
 
 // Column Sizing
-.row__column {
+.row-column {
 
 
     @include respond-to(mobile) {

@@ -52,8 +52,6 @@ $colors: (
 
 
         // Content
-        // $color__content-heading--background: $color--accent,
-        // $color__content-heading--box-shadow: $color--accent,
 
 
         // Divider
@@ -97,7 +95,7 @@ $colors: (
 
         // Social Icons
         $color__social-icons--background: $color--darkest,
-        $color__social-icons--text: $color--light,
+        $color__social-icons--text: $color--lightest,
         $color__social-icons--background--hover: lighten($color--darkest, 15%),
         $color__social-icons--text--hover: $color--light
     ),
@@ -170,7 +168,7 @@ $colors: (
 
 
         // Social Icons
-        $color__social-icons--background: $color--lightest,
+        $color__social-icons--background: $color--darkest,
         $color__social-icons--text: $color--accent,
         $color__social-icons--background--hover: $color--lightest,
         $color__social-icons--text--hover: $color--accent
@@ -356,10 +354,10 @@ $style__button--padding: 16px 35px;
 $style__button--transition: background 0.5s ease;
 
 
-// Content
-$style__content-notch-before--height: 2px;
-$style__content-notch-before--margin: 0 0 20px;
-$style__content-notch-before--width: 50px;
+// // Content
+// $style__content-notch-before--height: 2px;
+// $style__content-notch-before--margin: 0 0 20px;
+// $style__content-notch-before--width: 50px;
 
 
 // Gallery

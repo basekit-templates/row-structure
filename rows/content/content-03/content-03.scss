@@ -20,12 +20,12 @@
 
     // Row Padding
     &.row {
-        padding: $row__padding--large;
     }
 
 
     // Row Container Width
     .row__container {
+        padding: $row__padding--large;
         width: $row__width--contained;
     }
 }

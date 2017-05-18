@@ -10,7 +10,7 @@
 
 
 .row__contact--01 {
-    
+
 
     // Row Height
     &.row,
@@ -22,13 +22,13 @@
     // Row Padding
     &.row {
         background-size: cover;
-        padding: $row__padding--large;
     }
 
 
     // Row Container Width
     .row__container {
-        width: $row__width--contained;
+        padding: $row__padding--large;
+        width: $row__width--wide;
     }
 
 

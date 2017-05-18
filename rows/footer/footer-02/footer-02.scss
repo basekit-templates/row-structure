@@ -15,33 +15,30 @@
 
     // Row Height
     &.row {
-        height: $row__height--small;
+        min-height: $row__height--default;
     }
 
 
     // Row Padding
     &.row {
-        padding: $row__padding--medium  $row__padding--large;
     }
 
 
     // Row Container Width
     .row__container {
+        padding: $row__padding--large;
         width: $row__width--full;
     }
+
 
     // Row List
     .row-list {
         padding: 0;
         list-style: none;
     }
+
+
     .row-list-link {
         text-decoration: none;
-    }
-
-    // Typography Overrides
-    p {
-        font-size: 14px;
-        line-height: 30px;
     }
 }

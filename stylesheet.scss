@@ -9,9 +9,9 @@
 // Imports: Demo UI
 // -----------------------------
 
-// #tdk-toolbar {
-//     display: none!important;
-// }
+#tdk-toolbar {
+    display: none!important;
+}
 
 @import "misc/demo-ui";
 
@@ -22,8 +22,8 @@
 // -----------------------------
 
 
-// @import "templates/template-fitgoal";
-@import "templates/template-chay";
+@import "templates/template-fitgoal";
+// @import "templates/template-chay";
 // @import "templates/template-juiced";
 // @import "templates/template-playground";
 

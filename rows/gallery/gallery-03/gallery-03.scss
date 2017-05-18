@@ -21,13 +21,13 @@
 
     // Row Padding
     &.row {
-        padding: $row__padding--large;
     }
 
 
     // Row Container Width
     .row__container {
-        width: $row__width--contained;
+        padding: $row__padding--large;
+        width: $row__width--wide;
     }
 }
 
@@ -39,7 +39,7 @@
 
 
 .row__gallery--03 {
-    
+
     &.light {
 
         .gallery__image-title {
@@ -135,7 +135,7 @@
 
         margin-top: 30px;
         text-align: center;
-       
+
     }
 
 

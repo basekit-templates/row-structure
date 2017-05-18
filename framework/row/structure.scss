@@ -69,8 +69,14 @@ $row__padding--none: vr(0);
     @include flex-wrap(wrap);
     margin: 0 auto;
     max-width: $row__width--full;
-    padding: $row__padding--none $row__padding--none $row__padding--none $row__padding--medium;
+    padding: $row__padding--none;
     width: 100%;
+
+
+    @include respond-to(mobile) {
+        padding: $row__padding--medium vr(1.25)!important;
+        width: $row__width--full !important;
+    }
 
 
     // Reverses Row Content (Invert)

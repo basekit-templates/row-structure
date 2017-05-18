@@ -21,12 +21,12 @@
 
     // Row Padding
     &.row {
-        padding: $row__padding--large;
     }
 
 
     // Row Container Width
     .row__container {
+         padding: $row__padding--medium;
         width: $row__width--wide;
         @media only screen and (max-width: 1200px) {
             width: 100%;

@@ -114,6 +114,54 @@
 }
 
 
+// Scroll To Widget
+.scroll-to {
+    font-size: $font__scroll-to--font-size;
+
+
+    .light & {
+        color: color(color-light, $color__scroll--text);
+    }
+
+
+    .accent & {
+        color: color(color-accent, $color__scroll--text);
+    }
+
+
+    .dark & {
+        color: color(color-dark, $color__scroll--text);
+    }
+
+
+    &:after {
+        content: "\203A";
+        display: block;
+        font-family: $font__icon;
+        font-size: 22px;
+        line-height: 0.5;
+        position: relative;
+        text-align: center;
+        @include transform(rotate(90deg));
+
+
+        .light & {
+            color: color(color-light, $color__scroll--icon);
+        }
+
+
+        .accent & {
+            color: color(color-accent, $color__scroll--icon);
+        }
+
+
+        .dark & {
+            color: color(color-dark, $color__scroll--icon);
+        }
+    }
+}
+
+
 
 
 //  Extended Styling
